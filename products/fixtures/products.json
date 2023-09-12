@@ -1,0 +1,170 @@
+[
+    {
+        "pk": 1,
+        "model": "products.product",
+        "fields": {
+            "code": "SB-001",
+            "brand": "WaveMaster",
+            "name": "WaveMaster Performance Surfboard",
+            "description": "The WaveMaster Performance Surfboard is designed for advanced surfers seeking high-performance and precision. It offers exceptional control and speed in all wave conditions.",
+            "price": 699.99,
+            "category": 1,
+            "rating": 4.8,
+            "image": ""
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.product",
+        "fields": {
+            "code": "SB-002",
+            "brand": "RidePro",
+            "name": "RidePro All-Round Surfboard",
+            "description": "The RidePro All-Round Surfboard is perfect for surfers of all skill levels. It's stable, easy to paddle, and provides a smooth ride on smaller waves.",
+            "price": 449.99,
+            "category": 1,
+            "rating": 4.5,
+            "image": ""
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.product",
+        "fields": {
+            "code": "SB-003",
+            "brand": "EpicWave",
+            "name": "EpicWave Big Wave Surfboard",
+            "description": "The EpicWave Big Wave Surfboard is built for conquering the largest waves. Its performance and stability make it the choice of big wave riders worldwide.",
+            "price": 899.99,
+            "category": 1,
+            "rating": 4.9,
+            "image": ""
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.product",
+        "fields": {
+            "code": "SB-004",
+            "brand": "SunRider",
+            "name": "SunRider Retro Longboard",
+            "description": "The SunRider Retro Longboard brings back the classic style of longboarding. It's perfect for relaxed rides and nose riding in small to medium waves.",
+            "price": 549.99,
+            "category": 1,
+            "rating": 4.7,
+            "image": ""
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.product",
+        "fields": {
+            "code": "SB-005",
+            "brand": "AquaGlide",
+            "name": "AquaGlide Inflatable Surfboard",
+            "description": "The AquaGlide Inflatable Surfboard is a versatile and portable option for surfers on the go. It's easy to inflate and offers stability in various conditions.",
+            "price": 299.99,
+            "category": 1,
+            "rating": 4.4,
+            "image": ""
+        }
+    },
+    {
+        "pk": 6,
+        "model": "products.product",
+        "fields": {
+            "code": "SB-006",
+            "brand": "RipTide",
+            "name": "RipTide Performance Shortboard",
+            "description": "The RipTide Performance Shortboard is designed for aggressive maneuvers and quick turns. It's the choice of competitive surfers looking to push their limits.",
+            "price": 749.99,
+            "category": 1,
+            "rating": 4.8,
+            "image": ""
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.product",
+        "fields": {
+            "code": "SB-007",
+            "brand": "BeachBliss",
+            "name": "BeachBliss Mini Malibu",
+            "description": "The BeachBliss Mini Malibu is a beginner-friendly surfboard known for its stability and ease of use. It's a great choice for learners and casual surfers.",
+            "price": 399.99,
+            "category": 1,
+            "rating": 4.6,
+            "image": ""
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.product",
+        "fields": {
+            "code": "SB-008",
+            "brand": "LiquidRide",
+            "name": "LiquidRide Fish Surfboard",
+            "description": "The LiquidRide Fish Surfboard is a versatile option for small to medium waves. Its unique shape provides excellent speed and maneuverability.",
+            "price": 499.99,
+            "category": 1,
+            "rating": 4.7,
+            "image": ""
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.product",
+        "fields": {
+            "code": "SB-009",
+            "brand": "SwellTech",
+            "name": "SwellTech Carver Surfboard",
+            "description": "The SwellTech Carver Surfboard mimics the feeling of surfing on land. It's designed for practicing maneuvers and improving your surfing skills.",
+            "price": 279.99,
+            "category": 1,
+            "rating": 4.4,
+            "image": ""
+        }
+    },
+    {
+        "pk": 10,
+        "model": "products.product",
+        "fields": {
+            "code": "SB-010",
+            "brand": "SeaRider",
+            "name": "SeaRider Soft Top Surfboard",
+            "description": "The SeaRider Soft Top Surfboard is ideal for beginners and surf schools. It features a soft, forgiving top surface for safety and stability.",
+            "price": 349.99,
+            "category": 1,
+            "rating": 4.5,
+            "image": ""
+        }
+    },
+    {
+        "pk": 11,
+        "model": "products.product",
+        "fields": {
+            "code": "SB-011",
+            "brand": "WaveMaster",
+            "name": "WaveMaster Mini Simmons",
+            "description": "The WaveMaster Mini Simmons is a modern take on a classic design. It offers speed and maneuverability in a compact package for those seeking a unique ride.",
+            "price": 599.99,
+            "category": 1,
+            "rating": 4.9,
+            "image": ""
+        }
+    },
+    {
+        "pk": 12,
+        "model": "products.product",
+        "fields": {
+            "code": "SB-012",
+            "brand": "RidePro",
+            "name": "RidePro Performance Fish Surfboard",
+            "description": "The RidePro Performance Fish Surfboard is known for its versatility and wave-catching ability. It excels in a wide range of wave conditions.",
+            "price": 679.99,
+            "category": 1,
+            "rating": 4.8,
+            "image": ""
+        }
+    }
+]
