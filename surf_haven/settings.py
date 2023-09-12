@@ -33,8 +33,9 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://surf-haven-39d68e86c0f1.herokuapp.com/',
-                 '8000-bwogit-cipp5surfhaven-5o9dy0ts1dt.ws-eu104.gitpod.io']
+ALLOWED_HOSTS = ['surf-haven-39d68e86c0f1.herokuapp.com',
+                 '8000-bwogit-cipp5surfhaven-5o9dy0ts1dt.ws-eu104.gitpod.io',
+                 ]
 
 
 # Application definition
