@@ -38,5 +38,37 @@
             "name": "surf_footwear",
             "friendly_name": "Surf Footwear"
         }
+    },
+    {
+        "pk": 6,
+        "model": "products.category",
+        "fields": {
+            "name": "ladies_surfwear",
+            "friendly_name": "Ladies Surfwear"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "products.category",
+        "fields": {
+            "name": "children_surfwear",
+            "friendly_name": "Children's Surfwear"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "products.category",
+        "fields": {
+            "name": "ladies_wetsuits",
+            "friendly_name": "Ladies Wetsuits"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "products.category",
+        "fields": {
+            "name": "children_wetsuits",
+            "friendly_name": "Children's Wetsuits"
+        }
     }
 ]
