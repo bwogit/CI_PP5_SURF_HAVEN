@@ -1,0 +1,42 @@
+[
+    {
+        "pk": 1,
+        "model": "products.category",
+        "fields": {
+            "name": "surfboard",
+            "friendly_name": "Surfboards"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "products.category",
+        "fields": {
+            "name": "wetsuit",
+            "friendly_name": "Wetsuits"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "products.category",
+        "fields": {
+            "name": "surf_clothing",
+            "friendly_name": "Surf Clothing"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "products.category",
+        "fields": {
+            "name": "surf_accessories",
+            "friendly_name": "Surf Accessories"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "products.category",
+        "fields": {
+            "name": "surf_footwear",
+            "friendly_name": "Surf Footwear"
+        }
+    }
+]
