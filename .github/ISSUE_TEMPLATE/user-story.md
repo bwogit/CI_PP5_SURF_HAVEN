@@ -10,6 +10,6 @@ assignees: ''
 As a **role** I can **capability**, so that **received benefit**
 
 ## Acceptance Criteria:
-* a
-* b
-* c
+* a.
+* b.
+* c.
