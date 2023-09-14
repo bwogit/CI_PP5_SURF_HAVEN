@@ -141,30 +141,142 @@
     },
     {
         "pk": 11,
-        "model": "products.product",
-        "fields": {
-            "code": "SB-011",
-            "brand": "WaveMaster",
-            "name": "WaveMaster Mini Simmons",
-            "description": "The WaveMaster Mini Simmons is a modern take on a classic design. It offers speed and maneuverability in a compact package for those seeking a unique ride.",
-            "price": 599.99,
-            "category": 1,
-            "rating": 4.9,
-            "image": ""
+            "model": "products.product",
+            "fields": {
+                "code": "WSM-011",
+                "brand": "AquaRider",
+                "name": "AquaRider Premium Full Wetsuit",
+                "description": "The AquaRider Premium Full Wetsuit is designed for maximum warmth and flexibility. It's perfect for cold-water surfing adventures.",
+                "price": 299.99,
+                "category": 2,
+                "rating": 4.7,
+                "image": "wetsuit-aquarider-001.jpg"
         }
     },
     {
         "pk": 12,
+            "model": "products.product",
+            "fields": {
+                "code": "WSM-012",
+                "brand": "WaveMaster",
+                "name": "WaveMaster Performance Shorty Wetsuit",
+                "description": "The WaveMaster Performance Shorty Wetsuit offers excellent mobility and protection in warmer waters. Ideal for summer surfing.",
+                "price": 169.99,
+                "category": 2,
+                "rating": 4.6,
+                "image": "wetsuit-wavemaster-002.jpg"
+        }
+    },
+    {
+        "pk": 13,
+            "model": "products.product",
+            "fields": {
+                "code": "WSM-013",
+                "brand": "RipTide",
+                "name": "RipTide Advanced Spring Wetsuit",
+                "description": "The RipTide Advanced Spring Wetsuit provides the perfect balance between warmth and flexibility. Ideal for changing seasons.",
+                "price": 219.99,
+                "category": 2,
+                "rating": 4.5,
+                "image": "wetsuit-riptide-003.jpg"
+        }
+    },
+    {
+        "pk": 14,
         "model": "products.product",
         "fields": {
-            "code": "SB-012",
-            "brand": "RidePro",
-            "name": "RidePro Performance Fish Surfboard",
-            "description": "The RidePro Performance Fish Surfboard is known for its versatility and wave-catching ability. It excels in a wide range of wave conditions.",
-            "price": 679.99,
-            "category": 1,
+            "code": "WSM-014",
+            "brand": "SurfTech",
+            "name": "SurfTech Lightweight Wetsuit Jacket",
+            "description": "The SurfTech Lightweight Wetsuit Jacket is a versatile option for layering in various weather conditions. Stay comfortable during your sessions.",
+            "price": 129.99,
+            "category": 2,
+            "rating": 4.4,
+            "image": "wetsuit-surftech-004.jpg"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "products.product",
+        "fields": {
+            "code": "WSM-015",
+            "brand": "XtremeSurf",
+            "name": "XtremeSurf Titanium Lined Wetsuit",
+            "description": "The XtremeSurf Titanium Lined Wetsuit features a heat-retaining lining for extended surf sessions in cold waters. Conquer the waves with confidence.",
+            "price": 349.99,
+            "category": 2,
             "rating": 4.8,
-            "image": ""
+            "image": "wetsuit-xtremesurf-005.jpg"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "products.product",
+        "fields": {
+            "code": "WSM-016",
+            "brand": "EpicWave",
+            "name": "EpicWave Neoprene Hooded Wetsuit",
+            "description": "The EpicWave Neoprene Hooded Wetsuit offers full-body protection and a built-in hood for added warmth in challenging conditions.",
+            "price": 279.99,
+            "category": 2,
+            "rating": 4.7,
+            "image": "wetsuit-epicwave-006.jpg"
+        }
+    },
+    {
+        "pk": 17,
+        "model": "products.product",
+        "fields": {
+            "code": "WSM-017",
+            "brand": "SeaRider",
+            "name": "SeaRider Ultraflex Wetsuit",
+            "description": "The SeaRider Ultraflex Wetsuit is crafted for flexibility and comfort, making it an excellent choice for surfers who demand agility in the water.",
+            "price": 199.99,
+            "category": 2,
+            "rating": 4.6,
+            "image": "wetsuit-searider-007.jpg"
+        }
+    },
+    {
+        "pk": 18,
+        "model": "products.product",
+        "fields": {
+            "code": "WSM-018",
+            "brand": "LiquidRide",
+            "name": "LiquidRide Performance Short John",
+            "description": "The LiquidRide Performance Short John is perfect for tropical surf conditions. It offers freedom of movement and protection from the sun.",
+            "price": 149.99,
+            "category": 2,
+            "rating": 4.5,
+            "image": "wetsuit-liquidride-008.jpg"
+        }
+    },
+    {
+        "pk": 19,
+        "model": "products.product",
+        "fields": {
+            "code": "WSM-019",
+            "brand": "BeachBliss",
+            "name": "BeachBliss Sleeveless Wetsuit Vest",
+            "description": "The BeachBliss Sleeveless Wetsuit Vest provides core warmth and flexibility. It's an excellent choice for layering in moderate water temperatures.",
+            "price": 99.99,
+            "category": 2,
+            "rating": 4.5,
+            "image": "wetsuit-liquidride-008.jpg"
+        }
+    },
+    {
+        "pk": 20,
+        "model": "products.product",
+        "fields": {
+            "code": "WSM-020",
+            "brand": "SwellTech",
+            "name": "SwellTech Rash Guard",
+            "description": "The SwellTech Rash Guard offers sun protection and comfort for surfers hitting the waves in style. Stay protected and stylish during your sessions.",
+            "price": 119.99,
+            "category": 2,
+            "rating": 4.3,
+            "image": "wetsuit-swelltech-010.jpg"
         }
     }
 ]
