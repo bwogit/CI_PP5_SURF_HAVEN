@@ -10,7 +10,7 @@
             "price": 699.99,
             "category": 1,
             "rating": 4.8,
-            "image": ""
+            "image": "product-board-01.jpg"
         }
     },
     {
@@ -24,7 +24,7 @@
             "price": 449.99,
             "category": 1,
             "rating": 4.5,
-            "image": ""
+            "image": "product-board-02.jpg"
         }
     },
     {
@@ -38,7 +38,7 @@
             "price": 899.99,
             "category": 1,
             "rating": 4.9,
-            "image": ""
+            "image": "product-board-03.jpg"
         }
     },
     {
@@ -52,7 +52,7 @@
             "price": 549.99,
             "category": 1,
             "rating": 4.7,
-            "image": ""
+            "image": "product-board-04.jpg"
         }
     },
     {
@@ -66,7 +66,7 @@
             "price": 299.99,
             "category": 1,
             "rating": 4.4,
-            "image": ""
+            "image": "product-board-05.jpg"
         }
     },
     {
@@ -80,7 +80,7 @@
             "price": 749.99,
             "category": 1,
             "rating": 4.8,
-            "image": ""
+            "image": "product-board-06.jpg"
         }
     },
     {
@@ -94,7 +94,7 @@
             "price": 399.99,
             "category": 1,
             "rating": 4.6,
-            "image": ""
+            "image": "product-board-07.jpg"
         }
     },
     {
@@ -108,7 +108,7 @@
             "price": 499.99,
             "category": 1,
             "rating": 4.7,
-            "image": ""
+            "image": "product-board-08.jpg"
         }
     },
     {
@@ -122,7 +122,7 @@
             "price": 279.99,
             "category": 1,
             "rating": 4.4,
-            "image": ""
+            "image": "product-board-09.jpg"
         }
     },
     {
@@ -136,7 +136,7 @@
             "price": 349.99,
             "category": 1,
             "rating": 4.5,
-            "image": ""
+            "image": "product-board-10.jpg"
         }
     },
     {
