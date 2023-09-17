@@ -19,7 +19,7 @@
         "pk": 3,
         "model": "products.category",
         "fields": {
-            "name": "men_surf_clothing",
+            "name": "men_surfwear",
             "friendly_name": "Men Surfwear"
         }
     },
@@ -27,20 +27,12 @@
         "pk": 4,
         "model": "products.category",
         "fields": {
-            "name": "surf_accessories",
-            "friendly_name": "Surf Accessories"
-        }
-    },
-    {
-        "pk": 5,
-        "model": "products.category",
-        "fields": {
             "name": "ladies_surfwear",
             "friendly_name": "Ladies Surfwear"
         }
     },
     {
-        "pk": 6,
+        "pk": 5,
         "model": "products.category",
         "fields": {
             "name": "children_surfwear",
@@ -48,7 +40,7 @@
         }
     },
     {
-        "pk": 7,
+        "pk": 6,
         "model": "products.category",
         "fields": {
             "name": "ladies_wetsuits",
@@ -56,7 +48,7 @@
         }
     },
     {
-        "pk": 9,
+        "pk": 7,
         "model": "products.category",
         "fields": {
             "name": "children_wetsuits",
