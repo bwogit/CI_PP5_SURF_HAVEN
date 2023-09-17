@@ -1,0 +1,9 @@
+/* Custom CSS to remove the gap on the left of the logo */
+.main-logo-link {
+    margin-left: 0; /* Remove any left margin */
+  }
+
+  /* Optional: To adjust the spacing between the logo and the navigation elements */
+  .navbar-nav {
+    margin-left: 1px; /* Adjust the margin as needed */
+  }
