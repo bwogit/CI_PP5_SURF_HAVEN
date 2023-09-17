@@ -362,11 +362,91 @@
             "rating": 4.7,
             "image": "product-m-surfwear-06.jpg"
         }
-    }
+    },
+    {
+        "pk": 41,
+        "model": "products.product",
+        "fields": {
+            "code": "AON-TS01",
+            "brand": "Aonleil",
+            "name": "Aonleil T-Shirt for Women",
+            "description": "Elevate your beach look with the Aonleil T-Shirt for Women. Comfortable and stylish, perfect for a day by the ocean.",
+            "price": 24.99,
+            "category": 4,
+            "rating": 4.6,
+            "image": "product-f-beachwear-01.jpg"
+        }
+    },
+    {
+        "pk": 42,
+        "model": "products.product",
+        "fields": {
+            "code": "BEACH-BLK01",
+            "brand": "Seaside Chic",
+            "name": "Black Beach Dress",
+            "description": "Step out in style with the Black Beach Dress by Seaside Chic. Perfect for beachfront dining or evening strolls.",
+            "price": 34.99,
+            "category": 4,
+            "rating": 4.7,
+            "image": "product-f-beachwear-02.jpg"
+        }
+    },
+    {
+        "pk": 43,
+        "model": "products.product",
+        "fields": {
+            "code": "BEACH-BLK01",
+            "brand": "Seaside Chic",
+            "name": "Orange Beach Dress",
+            "description": "Step out in style with the Black Beach Dress by Seaside Chic. Perfect for beachfront dining or evening strolls.",
+            "price": 34.99,
+            "category": 4,
+            "rating": 4.7,
+            "image": "product-f-beachwear-03.jpg"
+        }
+    },
+    {
+        "pk": 44,
+        "model": "products.product",
+        "fields": {
+            "code": "PONCHO-FLUO01",
+            "brand": "BeachWave",
+            "name": "Bee Kee Knee",
+            "description": "Stand out on the beach with this vibrant Fluorescent Beach Poncho by BeachWave. Keep cozy after a swim.",
+            "price": 19.99,
+            "category": 4,
+            "rating": 4.4,
+            "image": "product-f-beachwear-04.jpg"
+        }
+    },
+    {
+        "pk": 45,
+        "model": "products.product",
+        "fields": {
+            "code": "PONCHO-COL01",
+            "brand": "FluOride",
+            "name": "Fluo Beach Poncho",
+            "description": "Experience quality and comfort with the Columbia Beach Poncho. Stay warm and dry at the beach or poolside.",
+            "price": 39.99,
+            "category": 4,
+            "rating": 4.8,
+            "image": "product-f-beachwear-05.jpg"
+        }
+    },
+    {
+        "pk": 46,
+        "model": "products.product",
+        "fields": {
+            "code": "PONCHO-COL01",
+            "brand": "Columbia",
+            "name": "Columbia Beach Poncho",
+            "description": "Experience quality and comfort with the Columbia Beach Poncho. Stay warm and dry at the beach or poolside.",
+            "price": 39.99,
+            "category": 4,
+            "rating": 4.8,
+            "image": "product-f-beachwear-06.jpg"
+        }
+    },
     
-    
-    
-    
-
     
 ]
