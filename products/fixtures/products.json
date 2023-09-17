@@ -572,6 +572,90 @@
             "rating": 4.4,
             "image": "product-w-wetsuit-05.jpg"
         }
+    },
+    {
+        "pk": 71,
+        "model": "products.product",
+        "fields": {
+            "code": "KID-WET-NAVY",
+            "brand": "BeachKids",
+            "name": "Navy Blue Short Wetsuit for Kids",
+            "description": "Let your child enjoy the water in style with the BeachKids Navy Blue Short Wetsuit. Designed for comfort and flexibility.",
+            "price": 59.99,
+            "category": 7,
+            "rating": 4.5,
+            "image": "product-c-wetsuit-01.jpg"
+        }
+    },
+    {
+        "pk": 72,
+        "model": "products.product",
+        "fields": {
+            "code": "KID-WET-PURPLE",
+            "brand": "Seaside Splash",
+            "name": "Purple Short Wetsuit for Kids",
+            "description": "Make beach days extra fun with the Seaside Splash Purple Short Wetsuit for Kids. Keep them warm and protected.",
+            "price": 54.99,
+            "category": 7,
+            "rating": 4.6,
+            "image": "product-c-wetsuit-02.jpg"
+        }
+    },
+    {
+        "pk": 73,
+        "model": "products.product",
+        "fields": {
+            "code": "KID-WET-BLK-BLU",
+            "brand": "WaveRider Jr.",
+            "name": "Black and Blue Short Wetsuit for Kids",
+            "description": "Junior surfers will love the WaveRider Jr. Black and Blue Short Wetsuit. Stay stylish while riding the waves.",
+            "price": 64.99,
+            "category": 7,
+            "rating": 4.7,
+            "image": "product-c-wetsuit-03.jpg"
+        }
+    },
+    {
+        "pk": 74,
+        "model": "products.product",
+        "fields": {
+            "code": "KID-WET-TURQ",
+            "brand": "BeachWave Jr.",
+            "name": "Turquoise Short Wetsuit for Kids",
+            "description": "Ensure your child's comfort and safety with the BeachWave Jr. Turquoise Short Wetsuit. Perfect for young water enthusiasts.",
+            "price": 57.99,
+            "category": 7,
+            "rating": 4.8,
+            "image": "product-c-wetsuit-04.jpg"
+        }
+    },
+    {
+        "pk": 75,
+        "model": "products.product",
+        "fields": {
+            "code": "KID-WET-YELLOW",
+            "brand": "SunGuard Kids",
+            "name": "Yellow Full Wetsuit for Kids",
+            "description": "Keep your child warm and protected in the water with the SunGuard Kids Yellow Full Wetsuit. A great choice for young swimmers.",
+            "price": 69.99,
+            "category": 7,
+            "rating": 4.4,
+            "image": "product-c-wetsuit-05.jpg"
+        }
+    },
+    {
+        "pk": 76,
+        "model": "products.product",
+        "fields": {
+            "code": "KID-WET-BLUE-FULL",
+            "brand": "OceanPro Jr.",
+            "name": "Blue Full Wetsuit for Kids",
+            "description": "The OceanPro Jr. Blue Full Wetsuit is perfect for young adventurers. Provides full-body protection for water activities.",
+            "price": 74.99,
+            "category": 7,
+            "rating": 4.5,
+            "image": "product-c-wetsuit-06.jpg"
+        }
     }
     
     
