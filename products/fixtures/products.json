@@ -502,6 +502,76 @@
             "rating": 4.9,
             "image": "product-c-beachwear-04.jpg"
         }
+    },
+    {
+        "pk": 61,
+        "model": "products.product",
+        "fields": {
+            "code": "WSL-BLK-GRN",
+            "brand": "AquaWave",
+            "name": "Black Dark Green Wetsuit",
+            "description": "Dive into the waves with the AquaWave Black Dark Green Wetsuit. Stay warm and comfortable while enjoying your water adventures.",
+            "price": 149.99,
+            "category": 6,
+            "rating": 4.5,
+            "image": "product-w-wetsuit-01.jpg"
+        }
+    },
+    {
+        "pk": 62,
+        "model": "products.product",
+        "fields": {
+            "code": "WSL-ORANGE",
+            "brand": "SurfStyle",
+            "name": "Orange Wetsuit",
+            "description": "Make a statement on the waves with the SurfStyle Orange Wetsuit. Enjoy the perfect blend of style and functionality.",
+            "price": 169.99,
+            "category": 6,
+            "rating": 4.6,
+            "image": "product-w-wetsuit-02.jpg"
+        }
+    },
+    {
+        "pk": 63,
+        "model": "products.product",
+        "fields": {
+            "code": "WSL-PURP-SES",
+            "brand": "WaveRider",
+            "name": "Purple Session Wetsuit",
+            "description": "Experience superior performance with the WaveRider Purple Session Wetsuit. Perfect for serious surf sessions.",
+            "price": 189.99,
+            "category": 6,
+            "rating": 4.7,
+            "image": "product-w-wetsuit-04.jpg"
+        }
+    },
+    {
+        "pk": 64,
+        "model": "products.product",
+        "fields": {
+            "code": "WSL-TURQ-EXQ",
+            "brand": "Exquisit",
+            "name": "Turquoise Exquisit Wetsuit",
+            "description": "Embrace the waves in style with the Turquoise Exquisit Wetsuit by Exquisit. Designed for both fashion and function.",
+            "price": 199.99,
+            "category": 6,
+            "rating": 4.8,
+            "image": "product-w-wetsuit-04.jpg"
+        }
+    },
+    {
+        "pk": 65,
+        "model": "products.product",
+        "fields": {
+            "code": "WSL-BLK-2",
+            "brand": "OceanPro",
+            "name": "Black Wetsuit",
+            "description": "Stay comfortable and protected with the OceanPro Black Wetsuit. Designed for women who love the water.",
+            "price": 139.99,
+            "category": 6,
+            "rating": 4.4,
+            "image": "product-w-wetsuit-05.jpg"
+        }
     }
     
     
