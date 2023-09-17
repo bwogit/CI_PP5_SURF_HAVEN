@@ -447,6 +447,66 @@
             "image": "product-f-beachwear-06.jpg"
         }
     },
+    {
+        "pk": 51,
+        "model": "products.product",
+        "fields": {
+            "code": "ONESIE-BLUE-BOY",
+            "brand": "BeachKids",
+            "name": "Blue Onesie for Boys",
+            "description": "Keep your little one comfortable and stylish at the beach with this Blue Onesie for Boys from BeachKids.",
+            "price": 19.99,
+            "category": 5,
+            "rating": 4.7,
+            "image": "product-c-beachwear-01.jpg"
+        }
+    },
+    {
+        "pk": 52,
+        "model": "products.product",
+        "fields": {
+            "code": "ONESIE-PINK-GIRL",
+            "brand": "BeachKids",
+            "name": "Pink Onesie for Girls",
+            "description": "Dress your little princess in style with the Pink Onesie for Girls by BeachKids. Perfect for a day at the beach.",
+            "price": 21.99,
+            "category": 5,
+            "rating": 4.6,
+            "image": "product-c-beachwear-02.jpg"
+        }
+    },
+    {
+        "pk": 53,
+        "model": "products.product",
+        "fields": {
+            "code": "RASH-BLUE-KIDS",
+            "brand": "SunGuard",
+            "name": "Long Sleeve Rash Guard for Kids (Blue)",
+            "description": "Ensure sun protection for your child with this Long Sleeve Rash Guard in Blue from SunGuard. Ideal for beach days.",
+            "price": 29.99,
+            "category": 5,
+            "rating": 4.8,
+            "image": "product-c-beachwear-03.jpg"
+        }
+    },
+    {
+        "pk": 54,
+        "model": "products.product",
+        "fields": {
+            "code": "RASH-PINK-KIDS",
+            "brand": "SunGuard",
+            "name": "Long Sleeve Rash Guard for Kids (Pink)",
+            "description": "Keep your child protected and cute with this Long Sleeve Rash Guard in Pink from SunGuard. Perfect for beach adventures.",
+            "price": 29.99,
+            "category": 5,
+            "rating": 4.9,
+            "image": "product-c-beachwear-04.jpg"
+        }
+    }
+    
+    
+    
+    
     
     
 ]
