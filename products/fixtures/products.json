@@ -278,5 +278,95 @@
             "rating": 4.3,
             "image": "wetsuit-swelltech-010.jpg"
         }
+    },
+    {
+        "pk": 21,
+        "model": "products.product",
+        "fields": {
+            "code": "WSM-020",
+            "brand": "SwellTech",
+            "name": "SwellTech t shirt",
+            "description": "The SwellTech Rash Guard t-shirt offers sun protection and comfort for surfers relaxing on the beach in style. Stay protected and stylish when you  kick back.",
+            "price": 19.99,
+            "category": 3,
+            "rating": 4.3,
+            "image": "product-m-surfwear-01.jpg"
+        }
+    },
+    {
+        "pk": 22,
+        "model": "products.product",
+        "fields": {
+            "code": "WSM-020",
+            "brand": "Local Action",
+            "name": "SwellTech t shirt",
+            "description": "The local action t-shirt offers sun protection and comfort for everybody relaxing on the beach in style.",
+            "price": 19.99,
+            "category": 3,
+            "rating": 4.3,
+            "image": "product-m-surfwear-02.jpg"
+        }
+    },
+    {
+        "pk": 23,
+        "model": "products.product",
+        "fields": {
+            "code": "UVL-005",
+            "brand": "SunGuardian",
+            "name": "HUSUA UV Shield Long Sleeve",
+            "description": "Experience superior sun protection with the SunGuardian UV Shield Long Sleeve. Perfect for after-surf wear.",
+            "price": 49.99,
+            "category": 3,
+            "rating": 4.9,
+            "image": "product-m-surfwear-03.jpg"
+        }
+    },
+    {
+        "pk": 24,
+        "model": "products.product",
+        "fields": {
+            "code": "UVL-005",
+            "brand": "SunGuardian",
+            "name": "SunGuardian UV Shield Long Sleeve",
+            "description": "Experience superior sun protection with the SunGuardian UV Shield Long Sleeve. Perfect for after-surf wear.",
+            "price": 39.99,
+            "category": 3,
+            "rating": 4.9,
+            "image": "product-m-surfwear-04.jpg"
+        }
+    },
+    {
+        "pk": 25,
+        "model": "products.product",
+        "fields": {
+            "code": "UVL-001",
+            "brand": "SunShield",
+            "name": "SunShield Long Sleeve UV Protector",
+            "description": "Stay protected from the sun's harmful rays with the SunShield Long Sleeve UV Protector. Perfect for after-surf wear.",
+            "price": 35.99,
+            "category": 3,
+            "rating": 4.7,
+            "image": "product-m-surfwear-05.jpg"
+        }
+    },
+    {
+        "pk": 26,
+        "model": "products.product",
+        "fields": {
+            "code": "UVL-001",
+            "brand": "QuickSilvr",
+            "name": "QuickSilvr Long Sleeve UV Protector",
+            "description": "Stay protected from the sun's harmful rays with the SunShield Long Sleeve UV Protector. Perfect for after-surf wear.",
+            "price": 39.99,
+            "category": 3,
+            "rating": 4.7,
+            "image": "product-m-surfwear-06.jpg"
+        }
     }
+    
+    
+    
+    
+
+    
 ]
