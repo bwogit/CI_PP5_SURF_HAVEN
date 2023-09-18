@@ -45,84 +45,84 @@
 
     
       <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand main-logo-link" href="{% url 'home' %}">
-                <img class="logo" src="{% static 'img/apple-touch-icon.png' %}" alt="surf haven logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'home' %}">Home</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="surfSchoolsDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            Surf Schools
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="surfSchoolsDropdown">
-                            <li><a class="dropdown-item" href="#">School 1</a></li>
-                            <li><a class="dropdown-item" href="#">School 2</a></li>
-                            <li><a class="dropdown-item" href="#">School 3</a></li>
-                            <li><a class="dropdown-item" href="#">School 4</a></li>
-                        </ul>
-                    </li>
-                    <!-- Use Django's if statement to conditionally show the menu item -->
-                    {% if user.is_authenticated %}
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="surfLessonsDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                Surf Lessons
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="surfLessonsDropdown">
-                                <li><a class="dropdown-item" href="#">Lesson Type 1</a></li>
-                                <li><a class="dropdown-item" href="#">Lesson Type 2</a></li>
-                                <li><a class="dropdown-item" href="#">Lesson Type 3</a></li>
-                                <li><a class="dropdown-item" href="#">Lesson Type 4</a></li>
-                            </ul>
-                        </li>
-                    {% endif %}
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
-                          Shop
-                        </a>
-                        <div class="dropdown-menu">
-                          <a class="dropdown-item" href="#">Surfboards</a>
-                          <a class="dropdown-item" href="#">Men Wetsuits</a>
-                          <a class="dropdown-item" href="#">Men Surfwear</a>
-                          <a class="dropdown-item" href="#">Ladies Surfwear</a>
-                          <a class="dropdown-item" href="#">Children Surfwear</a>
-                          <a class="dropdown-item" href="#">Ladies Wetsuits</a>
-                          <a class="dropdown-item" href="#">Children Wetsuits</a>
-                          <div class="dropdown-divider"></div>
-                          <a class="dropdown-item" href="{% url 'products' %}">All Products</a>
-                        </div>
-                      </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
-                 <!-- Search Box -->
-                <div class="container">
-                    <div class="row mx-auto">
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-dark" type="submit"><span class="icon"><i
-                            class="fas fa-search"></i></span></button>
-                        </button>
-                    </form>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand main-logo-link" href="{% url 'home' %}">
+            <img class="logo" src="{% static 'img/apple-touch-icon.png' %}" alt="surf haven logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'home' %}">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="surfSchoolsDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Surf Schools
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="surfSchoolsDropdown">
+                        <li><a class="dropdown-item" href="#">School 1</a></li>
+                        <li><a class="dropdown-item" href="#">School 2</a></li>
+                        <li><a class="dropdown-item" href="#">School 3</a></li>
+                        <li><a class="dropdown-item" href="#">School 4</a></li>
+                    </ul>
+                </li>
+                <!-- Use Django's if statement to conditionally show the menu item -->
+                {% if user.is_authenticated %}
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="surfLessonsDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Surf Lessons
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="surfLessonsDropdown">
+                        <li><a class="dropdown-item" href="#">Lesson Type 1</a></li>
+                        <li><a class="dropdown-item" href="#">Lesson Type 2</a></li>
+                        <li><a class="dropdown-item" href="#">Lesson Type 3</a></li>
+                        <li><a class="dropdown-item" href="#">Lesson Type 4</a></li>
+                    </ul>
+                </li>
+                {% endif %}
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
+                        aria-expanded="false">
+                        Shop
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Surfboards</a>
+                        <a class="dropdown-item" href="#">Men Wetsuits</a>
+                        <a class="dropdown-item" href="#">Men Surfwear</a>
+                        <a class="dropdown-item" href="#">Ladies Surfwear</a>
+                        <a class="dropdown-item" href="#">Children Surfwear</a>
+                        <a class="dropdown-item" href="#">Ladies Wetsuits</a>
+                        <a class="dropdown-item" href="#">Children Wetsuits</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="{% url 'products' %}">All Products</a>
                     </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
+            <!-- Search Box -->
+            <form class="form-inline my-2 my-lg-0">
+                <div class="input-group">
+                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-dark" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
                 </div>
-            </div>
+            </form>
         </div>
-    </nav>
+    </div>
+</nav>
+
 </header>
 
 {% if messages %}
