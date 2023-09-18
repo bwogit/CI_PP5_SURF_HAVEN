@@ -2,20 +2,20 @@
 
 <!doctype html>
 <html lang="en">
-  <head>
-    {% block meta %}
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Book Surf Lessons, Buy Surf Clothing and accessories">
-    <meta name="keywords" content="Surf Lessons, Surfing Ireland, Surf Gear, Wetsuits, Surfboards, Surf Equipment, Surf School, Learn to Surf, Surfing Instructors, Surfing Classes, Surf Rentals, Beach Breaks, Irish Surfing, Surfing Spots, Surfing Holidays, Surf Camps, Surfing Gear Shop, Surfboard Rentals, Surfing Adventures, Surfing Gear Online, Surfing Safety, Surfing Tips, Surfing Techniques, Surfing Community, Surfing Events, Surfboard Maintenance, Surfboard Repair, Surfboard Brands, Surfboard Types, Surfboard Shapes, Surfboard Size Guide, Surfboard Fins, Surfing Accessories, Surfboard Leashes, Surfboard Wax, Surfboard Bags, Surfing Apparel, Surfing Lifestyle, Surfing Weather, Irish Coastline">
-    <meta name="author" content="BWOGIT">
-    {% endblock %}
-
-    {% block extra_meta %}
-    {% endblock %}
-
-    {% block corecss %}
+    <head>
+        {% block meta %}
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Book Surf Lessons, Buy Surf Clothing and accessories">
+        <meta name="keywords" content="Surf Lessons, Surfing Ireland, Surf Gear, Wetsuits, Surfboards, Surf Equipment, Surf School, Learn to Surf, Surfing Instructors, Surfing Classes, Surf Rentals, Beach Breaks, Irish Surfing, Surfing Spots, Surfing Holidays, Surf Camps, Surfing Gear Shop, Surfboard Rentals, Surfing Adventures, Surfing Gear Online, Surfing Safety, Surfing Tips, Surfing Techniques, Surfing Community, Surfing Events, Surfboard Maintenance, Surfboard Repair, Surfboard Brands, Surfboard Types, Surfboard Shapes, Surfboard Size Guide, Surfboard Fins, Surfing Accessories, Surfboard Leashes, Surfboard Wax, Surfboard Bags, Surfing Apparel, Surfing Lifestyle, Surfing Weather, Irish Coastline">
+        <meta name="author" content="BWOGIT">
+        {% endblock %}
+    
+        {% block extra_meta %}
+        {% endblock %}
+    
+        {% block corecss %}
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
@@ -23,216 +23,211 @@
         <link rel="icon" type="image/png" sizes="32x32" href="{% static 'img/favicon-32x32.png' %}">
         <link rel="icon" type="image/png" sizes="16x16" href="{% static 'img/favicon-16x16.png' %}">
         <link rel="manifest" href="{% static 'img/site.webmanifest' %}">
-      {% endblock %}
-
-    {% block extra_css %}
-    {% endblock %}
-
-    {% block corejs %}
-        <script src="https://kit.fontawesome.com/0580896cd6.js" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
-    {% endblock %}
-
-    {% block extra_js %}
-    {% endblock %}
-
-    <title>Surf Haven {% block extra_title %}{% endblock %}</title>
-  </head>
-  <body>
-    <header class="container-fluid fixed-top">
-
+        {% endblock %}
     
-      <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-        <a class="navbar-brand main-logo-link" href="{% url 'home' %}">
-            <img class="logo" src="{% static 'img/apple-touch-icon.png' %}" alt="surf haven logo">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="{% url 'home' %}">Home</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="surfSchoolsDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Surf Schools
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="surfSchoolsDropdown">
-                        <li><a class="dropdown-item" href="#">School 1</a></li>
-                        <li><a class="dropdown-item" href="#">School 2</a></li>
-                        <li><a class="dropdown-item" href="#">School 3</a></li>
-                        <li><a class="dropdown-item" href="#">School 4</a></li>
-                    </ul>
-                </li>
-                <!-- Use Django's if statement to conditionally show the menu item -->
-                {% if user.is_authenticated %}
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="surfLessonsDropdown" role="button"
-                        data-bs-toggle="dropdown" aria-expanded="false">
-                        Surf Lessons
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="surfLessonsDropdown">
-                        <li><a class="dropdown-item" href="#">Lesson Type 1</a></li>
-                        <li><a class="dropdown-item" href="#">Lesson Type 2</a></li>
-                        <li><a class="dropdown-item" href="#">Lesson Type 3</a></li>
-                        <li><a class="dropdown-item" href="#">Lesson Type 4</a></li>
-                    </ul>
-                </li>
-                {% endif %}
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown"
-                        aria-expanded="false">
-                        Shop
-                    </a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Surfboards</a>
-                        <a class="dropdown-item" href="#">Men Wetsuits</a>
-                        <a class="dropdown-item" href="#">Men Surfwear</a>
-                        <a class="dropdown-item" href="#">Ladies Surfwear</a>
-                        <a class="dropdown-item" href="#">Children Surfwear</a>
-                        <a class="dropdown-item" href="#">Ladies Wetsuits</a>
-                        <a class="dropdown-item" href="#">Children Wetsuits</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="{% url 'products' %}">All Products</a>
+        {% block extra_css %}
+        {% endblock %}
+    
+        {% block corejs %}
+        <script src="https://kit.fontawesome.com/0580896cd6.js" crossorigin="anonymous"></script>
+        <script	src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        {% endblock %}
+    
+        {% block extra_js %}
+        {% endblock %}
+    
+        <title>Surf Haven {% block extra_title %}{% endblock %}</title>
+    </head>
+<body>
+<header class="container-fluid fixed-top">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand main-logo-link" href="{% url 'home' %}">
+                <img class="logo" src="{% static 'img/apple-touch-icon.png' %}" alt="surf haven logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'home' %}">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="surfSchoolsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Surf Schools
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="surfSchoolsDropdown">
+                            <li><a class="dropdown-item" href="#">School 1</a></li>
+                            <li><a class="dropdown-item" href="#">School 2</a></li>
+                            <li><a class="dropdown-item" href="#">School 3</a></li>
+                            <li><a class="dropdown-item" href="#">School 4</a></li>
+                        </ul>
+                    </li>
+                    <!-- Use Django's if statement to conditionally show the menu item -->
+                    {% if user.is_authenticated %}
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="surfLessonsDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            Surf Lessons
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="surfLessonsDropdown">
+                            <li><a class="dropdown-item" href="#">Lesson Type 1</a></li>
+                            <li><a class="dropdown-item" href="#">Lesson Type 2</a></li>
+                            <li><a class="dropdown-item" href="#">Lesson Type 3</a></li>
+                            <li><a class="dropdown-item" href="#">Lesson Type 4</a></li>
+                        </ul>
+                    </li>
+                    {% endif %}
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            Shop
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Surfboards</a>
+                            <a class="dropdown-item" href="#">Men Wetsuits</a>
+                            <a class="dropdown-item" href="#">Men Surfwear</a>
+                            <a class="dropdown-item" href="#">Ladies Surfwear</a>
+                            <a class="dropdown-item" href="#">Children Surfwear</a>
+                            <a class="dropdown-item" href="#">Ladies Wetsuits</a>
+                            <a class="dropdown-item" href="#">Children Wetsuits</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="{% url 'products' %}">All Products</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+                <!-- Search Box -->
+                <form class="form-inline my-2 my-lg-0">
+                    <div class="input-group">
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-dark" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
                     </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Blog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-            </ul>
-            <!-- Search Box -->
-            <form class="form-inline my-2 my-lg-0">
-                <div class="input-group">
-                    <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-dark" type="submit">
-                        <i class="fas fa-search"></i>
-                    </button>
-                </div>
-            </form>
+                </form>
+            </div>
         </div>
-    </div>
-</nav>
-
+    </nav>
 </header>
 
 {% if messages %}
-        <div class="message-container"></div>
-    {% endif %}
+<div class="message-container"></div>
+{% endif %}
 
-    {% block page_header %}
-    {% endblock %}
+{% block page_header %}
+{% endblock %}
 
-    {% block content %}
-    {% endblock %}
-    {% block postloadjs %}
-    {% endblock %}
+{% block content %}
+{% endblock %}
+{% block postloadjs %}
+{% endblock %}
 
-    <!-- This Footer is inspired from MDBootstrap.com -->
-    <footer class="text-center text-lg-start bg-light text-muted">
-        <!-- Section: Social media -->
-        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
-            <!-- Left -->
-            <div class="me-5 d-none d-lg-block">
-                <span>Connect with us on social media:</span>
-            </div>
-            <!-- Left -->
-            <!-- Right -->
-            <div>
-                <a href="#" class="me-4 link-secondary">
-                    <i class="fab fa-twitter fa-lg"></i>
-                </a>
-                <a href="#" class="me-4 link-secondary">
-                    <i class="fab fa-linkedin-in fa-lg"></i>
-                </a>
-                <a href="#" class="me-4 link-secondary">
-                    <i class="fab fa-youtube fa-lg"></i>
-                </a>
-            </div>
-            <!-- Right -->
-        </section>
-        <!-- Section: Links  -->
-        <section class="pt-2">
-            <div class="container text-center text-md-start">
-                <!-- Grid row -->
-                <div class="row mt-3">
-                    <!-- Grid column -->
-                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                        <!-- Content -->
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            <i class="fas fa-golf-ball me-2"></i> Bookings
-                        </h6>
-                        <p>
-                            surf stuff
-                        </p>
-                    </div>
-                    <!-- Grid column -->
-                    <!-- Links -->
-                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            Products
-                        </h6>
-                        <p>
-                            <a href="#" class="text-reset">equipment</a>
-                        </p>
-                        <p>
-                            <a href="#" class="text-reset">bookings</a>
-                        </p>
-                        <p>
-                            <a href="#" class="text-reset">All Products</a>
-                        </p>
-                        <p>
-                            <a href="#" class="text-reset">Blog</a>
-                        </p>
-                    </div>
-                    <!-- Links -->
-                    <!-- Links -->
-                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-                        <h6 class="text-uppercase fw-bold mb-4">
-                            Useful Links
-                        </h6>
-                        <p>
-                            <a href="#" class="text-reset">FAQ</a>
-                        </p>
-                        <p>
-                            <a href="#" class="text-reset">Orders</a>
-                        </p>
-                        <p>
-                            <a href="#" class="text-reset">Sitemap</a>
-                        </p>
-                        <p>
-                            <a href="#" class="text-reset">Privacy Policy</a>
-                        </p>
-                    </div>
-                    <!-- Links -->
-                    <!-- Contact -->
-                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-                        <p><i class="fas fa-home me-3 text-secondary"></i> Surf Haven, Carlow, Ireland</p>
-                        <p><i class="fas fa-envelope me-3 text-secondary"></i> info@surfhaven.com</p>
-                        <p><i class="fas fa-phone me-3 text-secondary"></i> +1 234 567 899</p>
-                        <p><i class="fas fa-print me-3 text-secondary"></i> +1 234 567 888</p>
-                    </div>
-                    <!-- Contact -->
-                </div>
-                <!-- Grid row -->
-            </div>
-        </section>
-        <!-- Copyright -->
-        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
-            © 2023 SurfHaven. All rights reserved.
+<!-- This Footer is inspired from MDBootstrap.com -->
+<footer class="text-center text-lg-start bg-light text-muted">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+            <span>Connect with us on social media:</span>
         </div>
-        <!-- Copyright -->
-    </footer>
-      
-  </body>
+        <!-- Left -->
+        <!-- Right -->
+        <div>
+            <a href="#" class="me-4 link-secondary">
+                <i class="fab fa-twitter fa-lg"></i>
+            </a>
+            <a href="#" class="me-4 link-secondary">
+                <i class="fab fa-linkedin-in fa-lg"></i>
+            </a>
+            <a href="#" class="me-4 link-secondary">
+                <i class="fab fa-youtube fa-lg"></i>
+            </a>
+        </div>
+        <!-- Right -->
+    </section>
+    <!-- Section: Links  -->
+    <section class="pt-2">
+        <div class="container text-center text-md-start">
+            <!-- Grid row -->
+            <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        <i class="fas fa-golf-ball me-2"></i> Bookings
+                    </h6>
+                    <p>
+                        surf stuff
+                    </p>
+                </div>
+                <!-- Grid column -->
+                <!-- Links -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Products
+                    </h6>
+                    <p>
+                        <a href="#" class="text-reset">equipment</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-reset">bookings</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-reset">All Products</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-reset">Blog</a>
+                    </p>
+                </div>
+                <!-- Links -->
+                <!-- Links -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Useful Links
+                    </h6>
+                    <p>
+                        <a href="#" class="text-reset">FAQ</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-reset">Orders</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-reset">Sitemap</a>
+                    </p>
+                    <p>
+                        <a href="#" class="text-reset">Privacy Policy</a>
+                    </p>
+                </div>
+                <!-- Links -->
+                <!-- Contact -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                    <p><i class="fas fa-home me-3 text-secondary"></i> Surf Haven, Carlow, Ireland</p>
+                    <p><i class="fas fa-envelope me-3 text-secondary"></i> info@surfhaven.com</p>
+                    <p><i class="fas fa-phone me-3 text-secondary"></i> +1 234 567 899</p>
+                    <p><i class="fas fa-print me-3 text-secondary"></i> +1 234 567 888</p>
+                </div>
+                <!-- Contact -->
+            </div>
+            <!-- Grid row -->
+        </div>
+    </section>
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+        © 2023 SurfHaven. All rights reserved.
+    </div>
+    <!-- Copyright -->
+</footer>
+</body>
 </html>
