@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block page_header %}
+<!-- Add any specific page header content here if needed -->
+{% endblock %}
+
+{% block content %}
+<div class="container-fluid">
+    <div class="row p-3 rounded bg-light m-5">
+        <div class="col-lg-2 d-none d-lg-block">
+            <a class="text-muted text-decoration-none" href="{% url 'products' %}">
+                <h1 class="nav-link text-muted nav-item my-5">
+                    Explore Our Shop
+                </h1>
+            </a>
+            <h2 class="fs-6">Categories</h2>
+            <hr>
+            {% for category in categories %}
+            <p><a class="text-decoration-none text-reset" href="">{{ category.friendly_name }}</a></p>
+            {% endfor %}
+        </div>
+        <div class="col-12 col-lg-4 offset-lg-1">
+            <div class="image-container my-4">
+                {% if product.image %}
+                <a href="{{ product.image.url }}" target="_blank"><img class="card-img-top"
+                        src="{{ product.image.url }}" alt="{{ product.name }}"></a>
+                {% else %}
+                <a href="#"><img class="card-img-top" src="{% static 'img/default-image.jpg' %}"
+                        alt="{{ product.name }}"></a>
+                {% endif %}
+            </div>
+        </div>
+        <div class="col-12 col-lg-4">
+            <div class="mb-5 mt-md-5">
+                <span class="fs-6 text-muted">{{ product.brand }}</span>
+                <p>{{ product.name }}</p>
+                <p class="lead text-left font-weight-bold">Price: €{{ product.price }}{% if product.rating %}
+                    <span class="text-muted text-right"><i class="fas fa-star"></i>{{ product.rating }}</span>
+                    {% endif %}</p>
+                <p class="mt-4">{{ product.description }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
