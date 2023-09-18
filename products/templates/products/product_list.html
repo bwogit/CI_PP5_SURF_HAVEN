@@ -12,9 +12,48 @@
 {% block content %}
     <div class="container">
         <div class="row">
-            <div class="col">
-                {{ products }}
+            <div class="col-md-2">
+                <div class="d-none d-lg-block">
+                    <h2 class="fs-6">CATEGORIES</h2>
+                    <hr>
+                    <ul class="list-unstyled">
+                        {% for category in categories %}
+                            <li>
+                                <a class="text-decoration-none text-reset" href="">{{ category.friendly_name }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <h1 class="my-5">SHOP</h1>
+                <div class="row">
+                    {% for product in products %}
+                        <div class="col-lg-3 col-md-4 col-sm-6">
+                            <div class="card mb-4">
+                                {% if product.image %}
+                                    <a href=""><img class="card-img-top" src="{{ product.image.url }}" alt="{{ product.name }}"></a>
+                                {% else %}
+                                    <a href=""><img class="card-img-top" src="{% static 'img/default-image.jpg' %}" alt="{{ product.name }}"></a>
+                                {% endif %}
+                                <div class="card-body">
+                                    <p class="card-title fs-6"><strong>{{ product.friendly_name }}</strong></p>
+                                    <h3 class="fs-5">{{ product.name }}</h3>
+                                    <span class="fs-6">{{ product.brand }}</span>
+                                    <hr>
+                                    <span>€{{ product.price }}</span>
+                                </div>
+                            </div>
+                        </div>
+                    {% empty %}
+                        <div class="col-12">
+                            <p class="text-center fs-6 mt-5">Sorry, no matching products</p>
+                        </div>
+                    {% endfor %}
+                </div>
             </div>
         </div>
     </div>
+
+    
 {% endblock %}
