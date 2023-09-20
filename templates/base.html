@@ -103,6 +103,12 @@
                         </button>
                     </div>
                 </form>
+                <!-- Basket Section -->
+                <div class="basket-section">
+                    <a href="{% url 'basket' %}" class="btn btn-link text-success">
+                        <i class="fas fa-shopping-basket"></i> Basket
+                    </a>
+                </div>
             </div>
         </div>
     </nav>
@@ -117,12 +123,7 @@
 
 {% block content %}
 {% endblock %}
-<!-- Basket Section -->
-<div class="basket-section">
-    <a href="{% url 'basket' %}" class="btn btn-link text-success">
-        <i class="fas fa-shopping-basket"></i> Basket
-    </a>
-</div>
+
 {% block postloadjs %}
 {% endblock %}
 
