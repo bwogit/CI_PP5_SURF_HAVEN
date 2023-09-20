@@ -25,18 +25,16 @@
                 {% endfor %}
                 <p><a class="nav-link text-muted" href="{% url 'products' %}">All Products</a></p>
                 <h2 class="fs-6">Sort</h2>
-                <p><a href="{% url 'products' %}?sort=category&direction=desc"
-                    class="nav-link text-decoration-none text-muted">By
-                    Category</a></p>
-                <p><a href="{% url 'products' %}?sort=price&direction=desc"
-                    class="nav-link text-decoration-none text-muted">By
-                    Price</a></p>
-                <p><a href="{% url 'products' %}?sort=brand&direction=desc"
-                    class="nav-link text-decoration-none text-muted">By
-                    Brand</a></p>
-                <p><a href="{% url 'products' %}?sort=brand&direction=desc"
-                    class="nav-link text-decoration-none text-muted">By
-                    Rating</a></p>
+                <form id="sort-form" method="get" action="{% url 'products' %}">
+                    <select name="sort" id="sort-select" class="form-select">
+                        <option value="">Sort by...</option>
+                        <option value="category">By Category</option>
+                        <option value="price">By Price</option>
+                        <option value="brand">By Brand</option>
+                        <option value="rating">By Rating</option>
+                    </select>
+                    <button type="submit" class="btn btn-sm btn-secondary mt-2">Sort</button>
+                </form>
             </ul>
         </div>
         <div class="col">
