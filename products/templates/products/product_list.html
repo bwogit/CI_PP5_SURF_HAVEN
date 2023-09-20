@@ -58,7 +58,7 @@
                             {% if product.rating %}
                             <div class="text-muted"><i class="fas fa-star"></i> {{ product.rating }}</div>
                             {% endif %}
-                            <button class="btn btn-sm btn-secondary">Details</button>
+                            <a class="btn btn-sm btn-secondary" href="{% url 'product_detail' product.id %}" role="button">Details</a>
                         </div>
                     </div>
                     {% empty %}
