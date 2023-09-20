@@ -49,11 +49,13 @@ def all_products(request):
                 Q(description__icontains=query)
             products = products.filter(queries)
 
+    current_sort = f'{sort}_{direction}'
+
     context = {
         'products': products,
         'categories_list': categories_list,
         'search_term': query,
-        # 'current_sort': current_sort
+        'current_sort': current_sort
     }
 
     return render(request, 'products/product_list.html', context)
