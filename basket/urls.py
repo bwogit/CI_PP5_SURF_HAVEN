@@ -8,5 +8,5 @@ from . import views
 
 # url for the home page
 urlpatterns = [
-    path('', views.view_basket, name="basket"),
+    path('', views.view_basket, name="view_basket"),
 ]
