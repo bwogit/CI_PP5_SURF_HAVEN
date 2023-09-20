@@ -19,9 +19,24 @@
             <h2 class="fs-6">Browse Categories</h2>
             <hr>
             <ul class="list-unstyled">
-                {% for category in categories %}
-                <li><a class="text-decoration-none text-reset" href="">{{ category.friendly_name }}</a></li>
+                {% for category in categories_list %}
+                <p><a class="nav-link text-muted"
+                    href="{% url 'products' %}?category={{category.name}}">{{ category.friendly_name }}</a></p>
                 {% endfor %}
+                <p><a class="nav-link text-muted" href="{% url 'products' %}">All Products</a></p>
+                <h2 class="fs-6">Sort</h2>
+                <p><a href="{% url 'products' %}?sort=category&direction=desc"
+                    class="nav-link text-decoration-none text-muted">By
+                    Category</a></p>
+                <p><a href="{% url 'products' %}?sort=price&direction=desc"
+                    class="nav-link text-decoration-none text-muted">By
+                    Price</a></p>
+                <p><a href="{% url 'products' %}?sort=brand&direction=desc"
+                    class="nav-link text-decoration-none text-muted">By
+                    Brand</a></p>
+                <p><a href="{% url 'products' %}?sort=brand&direction=desc"
+                    class="nav-link text-decoration-none text-muted">By
+                    Rating</a></p>
             </ul>
         </div>
         <div class="col">
