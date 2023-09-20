@@ -83,22 +83,9 @@
                         </ul>
                     </li>
                     {% endif %}
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                           aria-expanded="false">
-                            Shop
-                        </a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Surfboards</a>
-                            <a class="dropdown-item" href="#">Men Wetsuits</a>
-                            <a class="dropdown-item" href="#">Men Surfwear</a>
-                            <a class="dropdown-item" href="#">Ladies Surfwear</a>
-                            <a class="dropdown-item" href="#">Children Surfwear</a>
-                            <a class="dropdown-item" href="#">Ladies Wetsuits</a>
-                            <a class="dropdown-item" href="#">Children Wetsuits</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="{% url 'products' %}">All Products</a>
-                        </div>
+                     <!-- Shop -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'products' %}">Shop</a>                       
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Blog</a>

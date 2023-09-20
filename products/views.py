@@ -12,7 +12,7 @@ def all_products(request):
     """ A view to show all products, sorting and search queries """
 
     products = Product.objects.all()
-    categories = Category.objects.all()
+    categories_list = Category.objects.all()
     query = None
     sort = None
     direction = None
@@ -51,7 +51,7 @@ def all_products(request):
 
     context = {
         'products': products,
-        'categories': categories,
+        'categories_list': categories_list,
         'search_term': query,
         # 'current_sort': current_sort
     }
