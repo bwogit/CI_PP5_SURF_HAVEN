@@ -140,7 +140,7 @@
         }
     },
     {
-        "pk": 11,
+            "pk": 21,
             "model": "products.product",
             "fields": {
                 "code": "WSM-011",
@@ -150,11 +150,12 @@
                 "price": 299.99,
                 "category": 2,
                 "rating": 4.7,
-                "image": "products/wetsuit-aquarider-001.jpg"
-        }
-    },
-    {
-        "pk": 12,
+                "image": "products/wetsuit-aquarider-001.jpg",
+                "has_sizes": true
+            }
+        },
+        {
+            "pk": 22,
             "model": "products.product",
             "fields": {
                 "code": "WSM-012",
@@ -164,11 +165,12 @@
                 "price": 169.99,
                 "category": 2,
                 "rating": 4.6,
-                "image": "products/wetsuit-wavemaster-002.jpg"
-        }
-    },
-    {
-        "pk": 13,
+                "image": "products/wetsuit-wavemaster-002.jpg",
+                "has_sizes": true
+            }
+        },
+        {
+            "pk": 23,
             "model": "products.product",
             "fields": {
                 "code": "WSM-013",
@@ -178,489 +180,460 @@
                 "price": 219.99,
                 "category": 2,
                 "rating": 4.5,
-                "image": "products/wetsuit-riptide-003.jpg"
+                "image": "products/wetsuit-riptide-003.jpg",
+                "has_sizes": true
+            }
+        },
+        {
+            "pk": 24,
+            "model": "products.product",
+            "fields": {
+                "code": "WSM-014",
+                "brand": "SurfTech",
+                "name": "SurfTech Lightweight Wetsuit Jacket",
+                "description": "The SurfTech Lightweight Wetsuit Jacket is a versatile option for layering in various weather conditions. Stay comfortable during your sessions.",
+                "price": 129.99,
+                "category": 2,
+                "rating": 4.4,
+                "image": "products/wetsuit-surftech-004.jpg",
+                "has_sizes": true
+            }
+        },
+        {
+            "pk": 25,
+            "model": "products.product",
+            "fields": {
+                "code": "WSM-015",
+                "brand": "XtremeSurf",
+                "name": "XtremeSurf Titanium Lined Wetsuit",
+                "description": "The XtremeSurf Titanium Lined Wetsuit features a heat-retaining lining for extended surf sessions in cold waters. Conquer the waves with confidence.",
+                "price": 349.99,
+                "category": 2,
+                "rating": 4.8,
+                "image": "products/wetsuit-xtremesurf-005.jpg",
+                "has_sizes": true
+            }
+        },
+        {
+            "pk": 26,
+            "model": "products.product",
+            "fields": {
+                "code": "WSM-016",
+                "brand": "EpicWave",
+                "name": "EpicWave Neoprene Hooded Wetsuit",
+                "description": "The EpicWave Neoprene Hooded Wetsuit offers full-body protection and a built-in hood for added warmth in challenging conditions.",
+                "price": 279.99,
+                "category": 2,
+                "rating": 4.7,
+                "image": "products/wetsuit-epicwave-006.jpg",
+                "has_sizes": true
+            }
+        },
+        {
+            "pk": 27,
+            "model": "products.product",
+            "fields": {
+                "code": "WSM-017",
+                "brand": "SeaRider",
+                "name": "SeaRider Ultraflex Wetsuit",
+                "description": "The SeaRider Ultraflex Wetsuit is crafted for flexibility and comfort, making it an excellent choice for surfers who demand agility in the water.",
+                "price": 199.99,
+                "category": 2,
+                "rating": 4.6,
+                "image": "products/wetsuit-searider-007.jpg",
+                "has_sizes": true
+            }
+        },
+        {
+            "pk": 28,
+            "model": "products.product",
+            "fields": {
+                "code": "WSM-018",
+                "brand": "LiquidRide",
+                "name": "LiquidRide Performance Short John",
+                "description": "The LiquidRide Performance Short John is perfect for tropical surf conditions. It offers freedom of movement and protection from the sun.",
+                "price": 149.99,
+                "category": 2,
+                "rating": 4.5,
+                "image": "products/wetsuit-liquidride-008.jpg",
+                "has_sizes": true
+            }
+        },
+        {
+            "pk": 29,
+            "model": "products.product",
+            "fields": {
+                "code": "WSM-019",
+                "brand": "BeachBliss",
+                "name": "BeachBliss Sleeveless Wetsuit Vest",
+                "description": "The BeachBliss Sleeveless Wetsuit Vest provides core warmth and flexibility. It's an excellent choice for layering in moderate water temperatures.",
+                "price": 99.99,
+                "category": 2,
+                "rating": 4.5,
+                "image": "products/wetsuit-liquidride-008.jpg",
+                "has_sizes": true
+            }
+        },
+        {
+            "pk": 30,
+            "model": "products.product",
+            "fields": {
+                "code": "WSM-020",
+                "brand": "SwellTech",
+                "name": "SwellTech Rash Guard",
+                "description": "The SwellTech Rash Guard offers sun protection and comfort for surfers hitting the waves in style. Stay protected and stylish during your sessions.",
+                "price": 119.99,
+                "category": 2,
+                "rating": 4.3,
+                "image": "products/wetsuit-swelltech-010.jpg",
+                "has_sizes": true
+            }
+        },
+        {
+            "pk": 31,
+            "model": "products.product",
+            "fields": {
+                "code": "WSM-020",
+                "brand": "SwellTech",
+                "name": "SwellTech t shirt",
+                "description": "The SwellTech Rash Guard t-shirt offers sun protection and comfort for surfers relaxing on the beach in style. Stay protected and stylish when you kick back.",
+                "price": 19.99,
+                "category": 3,
+                "rating": 4.3,
+                "image": "products/product-m-surfwear-01.jpg",
+                "has_sizes": true
+            }
+        },
+        {
+            "pk": 32,
+            "model": "products.product",
+            "fields": {
+                "code": "WSM-020",
+                "brand": "Local Action",
+                "name": "SwellTech v",
+                "description": "The local action t-shirt offers sun protection and comfort for everybody relaxing on the beach in style.",
+                "price": 19.99,
+                "category": 3,
+                "rating": 4.3,
+                "image": "products/product-m-surfwear-02.jpg",
+                "has_sizes": true
+            }
+        },
+        {
+            "pk": 33,
+            "model": "products.product",
+            "fields": {
+                "code": "UVL-005",
+                "brand": "SunGuardian",
+                "name": "HUSUA UV Shield Long Sleeve",
+                "description": "Experience superior sun protection with the SunGuardian UV Shield Long Sleeve. Perfect for after-surf wear.",
+                "price": 49.99,
+                "category": 3,
+                "rating": 4.9,
+                "image": "products/product-m-surfwear-03.jpg",
+                "has_sizes": true
+            }
+        },
+        {
+            "pk": 34,
+            "model": "products.product",
+            "fields": {
+                "code": "UVL-005",
+                "brand": "SunGuardian",
+                "name": "SunGuardian UV Shield Long Sleeve",
+                "description": "Experience superior sun protection with the SunGuardian UV Shield Long Sleeve. Perfect for after-surf wear.",
+                "price": 39.99,
+                "category": 3,
+                "rating": 4.9,
+                "image": "products/product-m-surfwear-04.jpg",
+                "has_sizes": true
+            }
+        },
+        {
+            "pk": 35,
+            "model": "products.product",
+            "fields": {
+                "code": "UVL-001",
+                "brand": "SunShield",
+                "name": "SunShield Long Sleeve UV Protector",
+                "description": "Stay protected from the sun's harmful rays with the SunShield Long Sleeve UV Protector. Perfect for after-surf wear.",
+                "price": 35.99,
+                "category": 3,
+                "rating": 4.7,
+                "image": "products/product-m-surfwear-05.jpg",
+                "has_sizes": true
+            }
+        },
+        {
+            "pk": 36,
+            "model": "products.product",
+            "fields": {
+                "code": "UVL-001",
+                "brand": "QuickSilvr",
+                "name": "QuickSilvr Long Sleeve UV Protector",
+                "description": "Stay protected from the sun's harmful rays with the SunShield Long Sleeve UV Protector. Perfect for after-surf wear.",
+                "price": 39.99,
+                "category": 3,
+                "rating": 4.7,
+                "image": "products/product-m-surfwear-06.jpg",
+                "has_sizes": true
+            }
+        },
+        {
+            "pk": 41,
+            "model": "products.product",
+            "fields": {
+                "code": "AON-TS01",
+                "brand": "Aonleil",
+                "name": "Aonleil T-Shirt for Women",
+                "description": "Elevate your beach look with the Aonleil T-Shirt for Women. Comfortable and stylish, perfect for a day by the ocean.",
+                "price": 24.99,
+                "category": 4,
+                "rating": 4.6,
+                "image": "products/product-f-beachwear-01.jpg",
+                "has_sizes": true
+            }
+        },
+        {
+            "pk": 42,
+            "model": "products.product",
+            "fields": {
+                "code": "BEACH-BLK01",
+                "brand": "Seaside Chic",
+                "name": "Black Beach Dress",
+                "description": "Step out in style with the Black Beach Dress by Seaside Chic. Perfect for beachfront dining or evening strolls.",
+                "price": 34.99,
+                "category": 4,
+                "rating": 4.7,
+                "image": "products/product-f-beachwear-02.jpg",
+                "has_sizes": true
+            }
+        },
+        {
+            "pk": 43,
+            "model": "products.product",
+            "fields": {
+                "code": "BEACH-BLK01",
+                "brand": "Seaside Chic",
+                "name": "Orange Beach Dress",
+                "description": "Step out in style with the Black Beach Dress by Seaside Chic. Perfect for beachfront dining or evening strolls.",
+                "price": 34.99,
+                "category": 4,
+                "rating": 4.7,
+                "image": "products/product-f-beachwear-03.jpg",
+                "has_sizes": true
+            }
+        },
+        {
+            "pk": 44,
+            "model": "products.product",
+            "fields": {
+                "code": "PONCHO-FLUO01",
+                "brand": "BeachWave",
+                "name": "Bee Kee Knee",
+                "description": "Stand out on the beach with this vibrant Fluorescent Beach Poncho by BeachWave. Keep cozy after a swim.",
+                "price": 19.99,
+                "category": 4,
+                "rating": 4.4,
+                "image": "products/product-f-beachwear-04.jpg",
+                "has_sizes": true
+            }
+        },
+        {
+            "pk": 45,
+            "model": "products.product",
+            "fields": {
+                "code": "PONCHO-COL01",
+                "brand": "FluOride",
+                "name": "Fluo Beach Poncho",
+                "description": "Experience quality and comfort with the Columbia Beach Poncho. Stay warm and dry at the beach or poolside.",
+                "price": 39.99,
+                "category": 4,
+                "rating": 4.8,
+                "image": "products/product-f-beachwear-05.jpg",
+                "has_sizes": true
+            }
+        },
+        {
+            "pk": 46,
+            "model": "products.product",
+            "fields": {
+                "code": "PONCHO-COL01",
+                "brand": "Columbia",
+                "name": "Columbia Beach Poncho",
+                "description": "Experience quality and comfort with the Columbia Beach Poncho. Stay warm and dry at the beach or poolside.",
+                "price": 39.99,
+                "category": 4,
+                "rating": 4.8,
+                "image": "products/product-f-beachwear-06.jpg",
+                "has_sizes": true
+            }
+        },
+        {
+            "pk": 51,
+            "model": "products.product",
+            "fields": {
+                "code": "ONESIE-BLUE-BOY",
+                "brand": "BeachKids",
+                "name": "Blue Onesie for Boys",
+                "description": "Keep your little one comfortable and stylish at the beach with this Blue Onesie for Boys from BeachKids.",
+                "price": 19.99,
+                "category": 5,
+                "rating": 4.7,
+                "image": "products/product-c-beachwear-01.jpg",
+                "has_sizes": true
+            }
+        },
+        {
+            "pk": 52,
+            "model": "products.product",
+            "fields": {
+                "code": "ONESIE-PINK-GIRL",
+                "brand": "BeachKids",
+                "name": "Pink Onesie for Girls",
+                "description": "Dress your little princess in style with the Pink Onesie for Girls by BeachKids. Perfect for a day at the beach.",
+                "price": 21.99,
+                "category": 5,
+                "rating": 4.6,
+                "image": "products/product-c-beachwear-02.jpg",
+                "has_sizes": true
+            }
+        },
+        {
+            "pk": 53,
+            "model": "products.product",
+            "fields": {
+                "code": "RASH-BLUE-KIDS",
+                "brand": "SunGuard",
+                "name": "Long Sleeve Rash Guard for Kids (Blue)",
+                "description": "Ensure sun protection for your child with this Long Sleeve Rash Guard in Blue from SunGuard. Ideal for beach days.",
+                "price": 29.99,
+                "category": 5,
+                "rating": 4.8,
+                "image": "products/product-c-beachwear-03.jpg",
+                "has_sizes": true
+            }
+        },
+        {
+            "pk": 54,
+            "model": "products.product",
+            "fields": {
+                "code": "RASH-PINK-KIDS",
+                "brand": "SunGuard",
+                "name": "Long Sleeve Rash Guard for Kids (Pink)",
+                "description": "Keep your child protected and cute with this Long Sleeve Rash Guard in Pink from SunGuard. Perfect for beach adventures.",
+                "price": 29.99,
+                "category": 5,
+                "rating": 4.9,
+                "image": "products/product-c-beachwear-04.jpg",
+                "has_sizes": true
+            }
+        },
+        {
+            "pk": 61,
+            "model": "products.product",
+            "fields": {
+                "code": "WSL-BLK-GRN",
+                "brand": "AquaWave",
+                "name": "Black Dark Green Wetsuit",
+                "description": "Dive into the waves with the AquaWave Black Dark Green Wetsuit. Stay warm and comfortable while enjoying your water adventures.",
+                "price": 149.99,
+                "category": 6,
+                "rating": 4.5,
+                "image": "products/product-w-wetsuit-01.jpg",
+                "has_sizes": true
+            }
+        },
+        {
+            "pk": 62,
+            "model": "products.product",
+            "fields": {
+                "code": "WSL-ORANGE",
+                "brand": "SurfStyle",
+                "name": "Orange Wetsuit",
+                "description": "Make a statement on the waves with the SurfStyle Orange Wetsuit. Enjoy the perfect blend of style and functionality.",
+                "price": 169.99,
+                "category": 6,
+                "rating": 4.6,
+                "image": "products/product-w-wetsuit-02.jpg",
+                "has_sizes": true
+            }
+        },
+        {
+            "pk": 63,
+            "model": "products.product",
+            "fields": {
+                "code": "WSL-PURP-SES",
+                "brand": "WaveRider",
+                "name": "Purple Session Wetsuit",
+                "description": "Experience superior performance with the WaveRider Purple Session Wetsuit. Perfect for serious surf sessions.",
+                "price": 189.99,
+                "category": 6,
+                "rating": 4.7,
+                "image": "products/product-w-wetsuit-04.jpg",
+                "has_sizes": true
+            }
+        },
+        {
+            "pk": 64,
+            "model": "products.product",
+            "fields": {
+                "code": "WSL-TURQ-EXQ",
+                "brand": "Exquisit",
+                "name": "Turquoise Exquisit Wetsuit",
+                "description": "Embrace the waves in style with the Turquoise Exquisit Wetsuit by Exquisit. Designed for both fashion and function.",
+                "price": 199.99,
+                "category": 6,
+                "rating": 4.8,
+                "image": "products/product-w-wetsuit-04.jpg",
+                "has_sizes": true
+            }
+        },
+        {
+            "pk": 65,
+            "model": "products.product",
+            "fields": {
+                "code": "WSL-BLK-2",
+                "brand": "OceanPro",
+                "name": "Black Wetsuit",
+                "description": "Stay comfortable and protected with the OceanPro Black Wetsuit. Designed for women who love the water.",
+                "price": 139.99,
+                "category": 6,
+                "rating": 4.4,
+                "image": "products/product-w-wetsuit-05.jpg",
+                "has_sizes": true
+            }
+        },
+        {
+            "pk": 71,
+            "model": "products.product",
+            "fields": {
+                "code": "PFD-YEL",
+                "brand": "RapidFloat",
+                "name": "Yellow Personal Flotation Device",
+                "description": "Stay safe in the water with the RapidFloat Yellow Personal Flotation Device. Ideal for various water activities.",
+                "price": 49.99,
+                "category": 7,
+                "rating": 4.9,
+                "image": "products/product-pfd-01.jpg",
+                "has_sizes": true
+            }
+        },
+        {
+            "pk": 72,
+            "model": "products.product",
+            "fields": {
+                "code": "PFD-RED",
+                "brand": "RapidFloat",
+                "name": "Red Personal Flotation Device",
+                "description": "Stay safe in the water with the RapidFloat Red Personal Flotation Device. Ideal for various water activities.",
+                "price": 49.99,
+                "category": 7,
+                "rating": 4.9,
+                "image": "products/product-pfd-02.jpg",
+                "has_sizes": true
+            }
         }
-    },
-    {
-        "pk": 14,
-        "model": "products.product",
-        "fields": {
-            "code": "WSM-014",
-            "brand": "SurfTech",
-            "name": "SurfTech Lightweight Wetsuit Jacket",
-            "description": "The SurfTech Lightweight Wetsuit Jacket is a versatile option for layering in various weather conditions. Stay comfortable during your sessions.",
-            "price": 129.99,
-            "category": 2,
-            "rating": 4.4,
-            "image": "products/wetsuit-surftech-004.jpg"
-        }
-    },
-    {
-        "pk": 15,
-        "model": "products.product",
-        "fields": {
-            "code": "WSM-015",
-            "brand": "XtremeSurf",
-            "name": "XtremeSurf Titanium Lined Wetsuit",
-            "description": "The XtremeSurf Titanium Lined Wetsuit features a heat-retaining lining for extended surf sessions in cold waters. Conquer the waves with confidence.",
-            "price": 349.99,
-            "category": 2,
-            "rating": 4.8,
-            "image": "products/wetsuit-xtremesurf-005.jpg"
-        }
-    },
-    {
-        "pk": 16,
-        "model": "products.product",
-        "fields": {
-            "code": "WSM-016",
-            "brand": "EpicWave",
-            "name": "EpicWave Neoprene Hooded Wetsuit",
-            "description": "The EpicWave Neoprene Hooded Wetsuit offers full-body protection and a built-in hood for added warmth in challenging conditions.",
-            "price": 279.99,
-            "category": 2,
-            "rating": 4.7,
-            "image": "products/wetsuit-epicwave-006.jpg"
-        }
-    },
-    {
-        "pk": 17,
-        "model": "products.product",
-        "fields": {
-            "code": "WSM-017",
-            "brand": "SeaRider",
-            "name": "SeaRider Ultraflex Wetsuit",
-            "description": "The SeaRider Ultraflex Wetsuit is crafted for flexibility and comfort, making it an excellent choice for surfers who demand agility in the water.",
-            "price": 199.99,
-            "category": 2,
-            "rating": 4.6,
-            "image": "products/wetsuit-searider-007.jpg"
-        }
-    },
-    {
-        "pk": 18,
-        "model": "products.product",
-        "fields": {
-            "code": "WSM-018",
-            "brand": "LiquidRide",
-            "name": "LiquidRide Performance Short John",
-            "description": "The LiquidRide Performance Short John is perfect for tropical surf conditions. It offers freedom of movement and protection from the sun.",
-            "price": 149.99,
-            "category": 2,
-            "rating": 4.5,
-            "image": "products/wetsuit-liquidride-008.jpg"
-        }
-    },
-    {
-        "pk": 19,
-        "model": "products.product",
-        "fields": {
-            "code": "WSM-019",
-            "brand": "BeachBliss",
-            "name": "BeachBliss Sleeveless Wetsuit Vest",
-            "description": "The BeachBliss Sleeveless Wetsuit Vest provides core warmth and flexibility. It's an excellent choice for layering in moderate water temperatures.",
-            "price": 99.99,
-            "category": 2,
-            "rating": 4.5,
-            "image": "products/wetsuit-liquidride-008.jpg"
-        }
-    },
-    {
-        "pk": 20,
-        "model": "products.product",
-        "fields": {
-            "code": "WSM-020",
-            "brand": "SwellTech",
-            "name": "SwellTech Rash Guard",
-            "description": "The SwellTech Rash Guard offers sun protection and comfort for surfers hitting the waves in style. Stay protected and stylish during your sessions.",
-            "price": 119.99,
-            "category": 2,
-            "rating": 4.3,
-            "image": "products/wetsuit-swelltech-010.jpg"
-        }
-    },
-    {
-        "pk": 21,
-        "model": "products.product",
-        "fields": {
-            "code": "WSM-020",
-            "brand": "SwellTech",
-            "name": "SwellTech t shirt",
-            "description": "The SwellTech Rash Guard t-shirt offers sun protection and comfort for surfers relaxing on the beach in style. Stay protected and stylish when you  kick back.",
-            "price": 19.99,
-            "category": 3,
-            "rating": 4.3,
-            "image": "products/product-m-surfwear-01.jpg"
-        }
-    },
-    {
-        "pk": 22,
-        "model": "products.product",
-        "fields": {
-            "code": "WSM-020",
-            "brand": "Local Action",
-            "name": "SwellTech v",
-            "description": "The local action t-shirt offers sun protection and comfort for everybody relaxing on the beach in style.",
-            "price": 19.99,
-            "category": 3,
-            "rating": 4.3,
-            "image": "products/product-m-surfwear-02.jpg"
-        }
-    },
-    {
-        "pk": 23,
-        "model": "products.product",
-        "fields": {
-            "code": "UVL-005",
-            "brand": "SunGuardian",
-            "name": "HUSUA UV Shield Long Sleeve",
-            "description": "Experience superior sun protection with the SunGuardian UV Shield Long Sleeve. Perfect for after-surf wear.",
-            "price": 49.99,
-            "category": 3,
-            "rating": 4.9,
-            "image": "products/product-m-surfwear-03.jpg"
-        }
-    },
-    {
-        "pk": 24,
-        "model": "products.product",
-        "fields": {
-            "code": "UVL-005",
-            "brand": "SunGuardian",
-            "name": "SunGuardian UV Shield Long Sleeve",
-            "description": "Experience superior sun protection with the SunGuardian UV Shield Long Sleeve. Perfect for after-surf wear.",
-            "price": 39.99,
-            "category": 3,
-            "rating": 4.9,
-            "image": "products/product-m-surfwear-04.jpg"
-        }
-    },
-    {
-        "pk": 25,
-        "model": "products.product",
-        "fields": {
-            "code": "UVL-001",
-            "brand": "SunShield",
-            "name": "SunShield Long Sleeve UV Protector",
-            "description": "Stay protected from the sun's harmful rays with the SunShield Long Sleeve UV Protector. Perfect for after-surf wear.",
-            "price": 35.99,
-            "category": 3,
-            "rating": 4.7,
-            "image": "products/product-m-surfwear-05.jpg"
-        }
-    },
-    {
-        "pk": 26,
-        "model": "products.product",
-        "fields": {
-            "code": "UVL-001",
-            "brand": "QuickSilvr",
-            "name": "QuickSilvr Long Sleeve UV Protector",
-            "description": "Stay protected from the sun's harmful rays with the SunShield Long Sleeve UV Protector. Perfect for after-surf wear.",
-            "price": 39.99,
-            "category": 3,
-            "rating": 4.7,
-            "image": "products/product-m-surfwear-06.jpg"
-        }
-    },
-    {
-        "pk": 41,
-        "model": "products.product",
-        "fields": {
-            "code": "AON-TS01",
-            "brand": "Aonleil",
-            "name": "Aonleil T-Shirt for Women",
-            "description": "Elevate your beach look with the Aonleil T-Shirt for Women. Comfortable and stylish, perfect for a day by the ocean.",
-            "price": 24.99,
-            "category": 4,
-            "rating": 4.6,
-            "image": "products/product-f-beachwear-01.jpg"
-        }
-    },
-    {
-        "pk": 42,
-        "model": "products.product",
-        "fields": {
-            "code": "BEACH-BLK01",
-            "brand": "Seaside Chic",
-            "name": "Black Beach Dress",
-            "description": "Step out in style with the Black Beach Dress by Seaside Chic. Perfect for beachfront dining or evening strolls.",
-            "price": 34.99,
-            "category": 4,
-            "rating": 4.7,
-            "image": "products/product-f-beachwear-02.jpg"
-        }
-    },
-    {
-        "pk": 43,
-        "model": "products.product",
-        "fields": {
-            "code": "BEACH-BLK01",
-            "brand": "Seaside Chic",
-            "name": "Orange Beach Dress",
-            "description": "Step out in style with the Black Beach Dress by Seaside Chic. Perfect for beachfront dining or evening strolls.",
-            "price": 34.99,
-            "category": 4,
-            "rating": 4.7,
-            "image": "products/product-f-beachwear-03.jpg"
-        }
-    },
-    {
-        "pk": 44,
-        "model": "products.product",
-        "fields": {
-            "code": "PONCHO-FLUO01",
-            "brand": "BeachWave",
-            "name": "Bee Kee Knee",
-            "description": "Stand out on the beach with this vibrant Fluorescent Beach Poncho by BeachWave. Keep cozy after a swim.",
-            "price": 19.99,
-            "category": 4,
-            "rating": 4.4,
-            "image": "products/product-f-beachwear-04.jpg"
-        }
-    },
-    {
-        "pk": 45,
-        "model": "products.product",
-        "fields": {
-            "code": "PONCHO-COL01",
-            "brand": "FluOride",
-            "name": "Fluo Beach Poncho",
-            "description": "Experience quality and comfort with the Columbia Beach Poncho. Stay warm and dry at the beach or poolside.",
-            "price": 39.99,
-            "category": 4,
-            "rating": 4.8,
-            "image": "products/product-f-beachwear-05.jpg"
-        }
-    },
-    {
-        "pk": 46,
-        "model": "products.product",
-        "fields": {
-            "code": "PONCHO-COL01",
-            "brand": "Columbia",
-            "name": "Columbia Beach Poncho",
-            "description": "Experience quality and comfort with the Columbia Beach Poncho. Stay warm and dry at the beach or poolside.",
-            "price": 39.99,
-            "category": 4,
-            "rating": 4.8,
-            "image": "products/product-f-beachwear-06.jpg"
-        }
-    },
-    {
-        "pk": 51,
-        "model": "products.product",
-        "fields": {
-            "code": "ONESIE-BLUE-BOY",
-            "brand": "BeachKids",
-            "name": "Blue Onesie for Boys",
-            "description": "Keep your little one comfortable and stylish at the beach with this Blue Onesie for Boys from BeachKids.",
-            "price": 19.99,
-            "category": 5,
-            "rating": 4.7,
-            "image": "products/product-c-beachwear-01.jpg"
-        }
-    },
-    {
-        "pk": 52,
-        "model": "products.product",
-        "fields": {
-            "code": "ONESIE-PINK-GIRL",
-            "brand": "BeachKids",
-            "name": "Pink Onesie for Girls",
-            "description": "Dress your little princess in style with the Pink Onesie for Girls by BeachKids. Perfect for a day at the beach.",
-            "price": 21.99,
-            "category": 5,
-            "rating": 4.6,
-            "image": "products/product-c-beachwear-02.jpg"
-        }
-    },
-    {
-        "pk": 53,
-        "model": "products.product",
-        "fields": {
-            "code": "RASH-BLUE-KIDS",
-            "brand": "SunGuard",
-            "name": "Long Sleeve Rash Guard for Kids (Blue)",
-            "description": "Ensure sun protection for your child with this Long Sleeve Rash Guard in Blue from SunGuard. Ideal for beach days.",
-            "price": 29.99,
-            "category": 5,
-            "rating": 4.8,
-            "image": "products/product-c-beachwear-03.jpg"
-        }
-    },
-    {
-        "pk": 54,
-        "model": "products.product",
-        "fields": {
-            "code": "RASH-PINK-KIDS",
-            "brand": "SunGuard",
-            "name": "Long Sleeve Rash Guard for Kids (Pink)",
-            "description": "Keep your child protected and cute with this Long Sleeve Rash Guard in Pink from SunGuard. Perfect for beach adventures.",
-            "price": 29.99,
-            "category": 5,
-            "rating": 4.9,
-            "image": "products/product-c-beachwear-04.jpg"
-        }
-    },
-    {
-        "pk": 61,
-        "model": "products.product",
-        "fields": {
-            "code": "WSL-BLK-GRN",
-            "brand": "AquaWave",
-            "name": "Black Dark Green Wetsuit",
-            "description": "Dive into the waves with the AquaWave Black Dark Green Wetsuit. Stay warm and comfortable while enjoying your water adventures.",
-            "price": 149.99,
-            "category": 6,
-            "rating": 4.5,
-            "image": "products/product-w-wetsuit-01.jpg"
-        }
-    },
-    {
-        "pk": 62,
-        "model": "products.product",
-        "fields": {
-            "code": "WSL-ORANGE",
-            "brand": "SurfStyle",
-            "name": "Orange Wetsuit",
-            "description": "Make a statement on the waves with the SurfStyle Orange Wetsuit. Enjoy the perfect blend of style and functionality.",
-            "price": 169.99,
-            "category": 6,
-            "rating": 4.6,
-            "image": "products/product-w-wetsuit-02.jpg"
-        }
-    },
-    {
-        "pk": 63,
-        "model": "products.product",
-        "fields": {
-            "code": "WSL-PURP-SES",
-            "brand": "WaveRider",
-            "name": "Purple Session Wetsuit",
-            "description": "Experience superior performance with the WaveRider Purple Session Wetsuit. Perfect for serious surf sessions.",
-            "price": 189.99,
-            "category": 6,
-            "rating": 4.7,
-            "image": "products/product-w-wetsuit-04.jpg"
-        }
-    },
-    {
-        "pk": 64,
-        "model": "products.product",
-        "fields": {
-            "code": "WSL-TURQ-EXQ",
-            "brand": "Exquisit",
-            "name": "Turquoise Exquisit Wetsuit",
-            "description": "Embrace the waves in style with the Turquoise Exquisit Wetsuit by Exquisit. Designed for both fashion and function.",
-            "price": 199.99,
-            "category": 6,
-            "rating": 4.8,
-            "image": "products/product-w-wetsuit-04.jpg"
-        }
-    },
-    {
-        "pk": 65,
-        "model": "products.product",
-        "fields": {
-            "code": "WSL-BLK-2",
-            "brand": "OceanPro",
-            "name": "Black Wetsuit",
-            "description": "Stay comfortable and protected with the OceanPro Black Wetsuit. Designed for women who love the water.",
-            "price": 139.99,
-            "category": 6,
-            "rating": 4.4,
-            "image": "products/product-w-wetsuit-05.jpg"
-        }
-    },
-    {
-        "pk": 71,
-        "model": "products.product",
-        "fields": {
-            "code": "KID-WET-NAVY",
-            "brand": "BeachKids",
-            "name": "Navy Blue Short Wetsuit for Kids",
-            "description": "Let your child enjoy the water in style with the BeachKids Navy Blue Short Wetsuit. Designed for comfort and flexibility.",
-            "price": 59.99,
-            "category": 7,
-            "rating": 4.5,
-            "image": "products/product-c-wetsuit-01.jpg"
-        }
-    },
-    {
-        "pk": 72,
-        "model": "products.product",
-        "fields": {
-            "code": "KID-WET-PURPLE",
-            "brand": "Seaside Splash",
-            "name": "Purple Short Wetsuit for Kids",
-            "description": "Make beach days extra fun with the Seaside Splash Purple Short Wetsuit for Kids. Keep them warm and protected.",
-            "price": 54.99,
-            "category": 7,
-            "rating": 4.6,
-            "image": "products/product-c-wetsuit-02.jpg"
-        }
-    },
-    {
-        "pk": 73,
-        "model": "products.product",
-        "fields": {
-            "code": "KID-WET-BLK-BLU",
-            "brand": "WaveRider Jr.",
-            "name": "Black and Blue Short Wetsuit for Kids",
-            "description": "Junior surfers will love the WaveRider Jr. Black and Blue Short Wetsuit. Stay stylish while riding the waves.",
-            "price": 64.99,
-            "category": 7,
-            "rating": 4.7,
-            "image": "products/product-c-wetsuit-03.jpg"
-        }
-    },
-    {
-        "pk": 74,
-        "model": "products.product",
-        "fields": {
-            "code": "KID-WET-TURQ",
-            "brand": "BeachWave Jr.",
-            "name": "Turquoise Short Wetsuit for Kids",
-            "description": "Ensure your child's comfort and safety with the BeachWave Jr. Turquoise Short Wetsuit. Perfect for young water enthusiasts.",
-            "price": 57.99,
-            "category": 7,
-            "rating": 4.8,
-            "image": "products/product-c-wetsuit-04.jpg"
-        }
-    },
-    {
-        "pk": 75,
-        "model": "products.product",
-        "fields": {
-            "code": "KID-WET-YELLOW",
-            "brand": "SunGuard Kids",
-            "name": "Yellow Full Wetsuit for Kids",
-            "description": "Keep your child warm and protected in the water with the SunGuard Kids Yellow Full Wetsuit. A great choice for young swimmers.",
-            "price": 69.99,
-            "category": 7,
-            "rating": 4.4,
-            "image": "products/product-c-wetsuit-05.jpg"
-        }
-    },
-    {
-        "pk": 76,
-        "model": "products.product",
-        "fields": {
-            "code": "KID-WET-BLUE-FULL",
-            "brand": "OceanPro Jr.",
-            "name": "Blue Full Wetsuit for Kids",
-            "description": "The OceanPro Jr. Blue Full Wetsuit is perfect for young adventurers. Provides full-body protection for water activities.",
-            "price": 74.99,
-            "category": 7,
-            "rating": 4.5,
-            "image": "products/product-c-wetsuit-06.jpg"
-        }
-    }
-    
-    
-    
-    
     
     
 ]

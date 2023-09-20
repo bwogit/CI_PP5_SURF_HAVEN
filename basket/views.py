@@ -1,8 +1,10 @@
 # Imports
 # 3rd Party
 from django.shortcuts import render, redirect, get_object_or_404
-from products.models import Product, Category
+from django.contrib import messages
+
 # Internal
+from products.models import Product, Category
 
 
 def view_basket(request):
