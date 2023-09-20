@@ -22,7 +22,8 @@ def all_products(request):
                 messages.error(request, "Please input search criteria")
                 return redirect(reverse('products'))
 
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
+            queries = Q(name__icontains=query) | \
+                Q(description__icontains=query)
             products = products.filter(queries)
 
     context = {
@@ -42,7 +43,9 @@ def product_detail(request, product_id):
 
     context = {
         'product': product,
-        'categories': categories
+        'categories': categories,
+        'categories_list': categories_list,
     }
 
     return render(request, 'products/product_detail.html', context)
+    
