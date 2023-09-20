@@ -51,9 +51,9 @@ def all_products(request):
 
     context = {
         'products': products,
-        'categories_list': categories_list,
+        'categories': categories,
         'search_term': query,
-        'current_sort': current_sort
+        # 'current_sort': current_sort
     }
 
     return render(request, 'products/product_list.html', context)

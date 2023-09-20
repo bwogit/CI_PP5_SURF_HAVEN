@@ -10,7 +10,7 @@
             "price": 699.99,
             "category": 1,
             "rating": 4.8,
-            "image": "product-board-01.jpg"
+            "image": "products/product-board-01.jpg"
         }
     },
     {
@@ -24,7 +24,7 @@
             "price": 449.99,
             "category": 1,
             "rating": 4.5,
-            "image": "product-board-02.jpg"
+            "image": "products/product-board-02"
         }
     },
     {
@@ -38,7 +38,7 @@
             "price": 899.99,
             "category": 1,
             "rating": 4.9,
-            "image": "product-board-03.jpg"
+            "image": "products/product-board-03.jpg"
         }
     },
     {
@@ -52,7 +52,7 @@
             "price": 549.99,
             "category": 1,
             "rating": 4.7,
-            "image": "product-board-04.jpg"
+            "image": "products/product-board-04.jpg"
         }
     },
     {
@@ -66,7 +66,7 @@
             "price": 299.99,
             "category": 1,
             "rating": 4.4,
-            "image": "product-board-05.jpg"
+            "image": "products/product-board-05.jpg"
         }
     },
     {
@@ -80,7 +80,7 @@
             "price": 749.99,
             "category": 1,
             "rating": 4.8,
-            "image": "product-board-06.jpg"
+            "image": "products/product-board-06.jpg"
         }
     },
     {
@@ -94,7 +94,7 @@
             "price": 399.99,
             "category": 1,
             "rating": 4.6,
-            "image": "product-board-07.jpg"
+            "image": "products/product-board-07.jpg"
         }
     },
     {
@@ -108,7 +108,7 @@
             "price": 499.99,
             "category": 1,
             "rating": 4.7,
-            "image": "product-board-08.jpg"
+            "image": "products/product-board-08.jpg"
         }
     },
     {
@@ -122,7 +122,7 @@
             "price": 279.99,
             "category": 1,
             "rating": 4.4,
-            "image": "product-board-09.jpg"
+            "image": "products/product-board-09.jpg"
         }
     },
     {
@@ -136,7 +136,7 @@
             "price": 349.99,
             "category": 1,
             "rating": 4.5,
-            "image": "product-board-10.jpg"
+            "image": "products/product-board-10.jpg"
         }
     },
     {
@@ -150,7 +150,7 @@
                 "price": 299.99,
                 "category": 2,
                 "rating": 4.7,
-                "image": "wetsuit-aquarider-001.jpg"
+                "image": "products/wetsuit-aquarider-001.jpg"
         }
     },
     {
@@ -164,7 +164,7 @@
                 "price": 169.99,
                 "category": 2,
                 "rating": 4.6,
-                "image": "wetsuit-wavemaster-002.jpg"
+                "image": "products/wetsuit-wavemaster-002.jpg"
         }
     },
     {
@@ -178,7 +178,7 @@
                 "price": 219.99,
                 "category": 2,
                 "rating": 4.5,
-                "image": "wetsuit-riptide-003.jpg"
+                "image": "products/wetsuit-riptide-003.jpg"
         }
     },
     {
@@ -192,7 +192,7 @@
             "price": 129.99,
             "category": 2,
             "rating": 4.4,
-            "image": "wetsuit-surftech-004.jpg"
+            "image": "products/wetsuit-surftech-004.jpg"
         }
     },
     {
@@ -206,7 +206,7 @@
             "price": 349.99,
             "category": 2,
             "rating": 4.8,
-            "image": "wetsuit-xtremesurf-005.jpg"
+            "image": "products/wetsuit-xtremesurf-005.jpg"
         }
     },
     {
@@ -220,7 +220,7 @@
             "price": 279.99,
             "category": 2,
             "rating": 4.7,
-            "image": "wetsuit-epicwave-006.jpg"
+            "image": "products/wetsuit-epicwave-006.jpg"
         }
     },
     {
@@ -234,7 +234,7 @@
             "price": 199.99,
             "category": 2,
             "rating": 4.6,
-            "image": "wetsuit-searider-007.jpg"
+            "image": "products/wetsuit-searider-007.jpg"
         }
     },
     {
@@ -248,7 +248,7 @@
             "price": 149.99,
             "category": 2,
             "rating": 4.5,
-            "image": "wetsuit-liquidride-008.jpg"
+            "image": "products/wetsuit-liquidride-008.jpg"
         }
     },
     {
@@ -262,7 +262,7 @@
             "price": 99.99,
             "category": 2,
             "rating": 4.5,
-            "image": "wetsuit-liquidride-008.jpg"
+            "image": "products/wetsuit-liquidride-008.jpg"
         }
     },
     {
@@ -276,7 +276,7 @@
             "price": 119.99,
             "category": 2,
             "rating": 4.3,
-            "image": "wetsuit-swelltech-010.jpg"
+            "image": "products/wetsuit-swelltech-010.jpg"
         }
     },
     {
@@ -290,7 +290,7 @@
             "price": 19.99,
             "category": 3,
             "rating": 4.3,
-            "image": "product-m-surfwear-01.jpg"
+            "image": "products/product-m-surfwear-01.jpg"
         }
     },
     {
@@ -304,7 +304,7 @@
             "price": 19.99,
             "category": 3,
             "rating": 4.3,
-            "image": "product-m-surfwear-02.jpg"
+            "image": "products/product-m-surfwear-02.jpg"
         }
     },
     {
@@ -318,7 +318,7 @@
             "price": 49.99,
             "category": 3,
             "rating": 4.9,
-            "image": "product-m-surfwear-03.jpg"
+            "image": "products/product-m-surfwear-03.jpg"
         }
     },
     {
@@ -332,7 +332,7 @@
             "price": 39.99,
             "category": 3,
             "rating": 4.9,
-            "image": "product-m-surfwear-04.jpg"
+            "image": "products/product-m-surfwear-04.jpg"
         }
     },
     {
@@ -346,7 +346,7 @@
             "price": 35.99,
             "category": 3,
             "rating": 4.7,
-            "image": "product-m-surfwear-05.jpg"
+            "image": "products/product-m-surfwear-05.jpg"
         }
     },
     {
@@ -360,7 +360,7 @@
             "price": 39.99,
             "category": 3,
             "rating": 4.7,
-            "image": "product-m-surfwear-06.jpg"
+            "image": "products/product-m-surfwear-06.jpg"
         }
     },
     {
@@ -374,7 +374,7 @@
             "price": 24.99,
             "category": 4,
             "rating": 4.6,
-            "image": "product-f-beachwear-01.jpg"
+            "image": "products/product-f-beachwear-01.jpg"
         }
     },
     {
@@ -388,7 +388,7 @@
             "price": 34.99,
             "category": 4,
             "rating": 4.7,
-            "image": "product-f-beachwear-02.jpg"
+            "image": "products/product-f-beachwear-02.jpg"
         }
     },
     {
@@ -402,7 +402,7 @@
             "price": 34.99,
             "category": 4,
             "rating": 4.7,
-            "image": "product-f-beachwear-03.jpg"
+            "image": "products/product-f-beachwear-03.jpg"
         }
     },
     {
@@ -416,7 +416,7 @@
             "price": 19.99,
             "category": 4,
             "rating": 4.4,
-            "image": "product-f-beachwear-04.jpg"
+            "image": "products/product-f-beachwear-04.jpg"
         }
     },
     {
@@ -430,7 +430,7 @@
             "price": 39.99,
             "category": 4,
             "rating": 4.8,
-            "image": "product-f-beachwear-05.jpg"
+            "image": "products/product-f-beachwear-05.jpg"
         }
     },
     {
@@ -444,7 +444,7 @@
             "price": 39.99,
             "category": 4,
             "rating": 4.8,
-            "image": "product-f-beachwear-06.jpg"
+            "image": "products/product-f-beachwear-06.jpg"
         }
     },
     {
@@ -458,7 +458,7 @@
             "price": 19.99,
             "category": 5,
             "rating": 4.7,
-            "image": "product-c-beachwear-01.jpg"
+            "image": "products/product-c-beachwear-01.jpg"
         }
     },
     {
@@ -472,7 +472,7 @@
             "price": 21.99,
             "category": 5,
             "rating": 4.6,
-            "image": "product-c-beachwear-02.jpg"
+            "image": "products/product-c-beachwear-02.jpg"
         }
     },
     {
@@ -486,7 +486,7 @@
             "price": 29.99,
             "category": 5,
             "rating": 4.8,
-            "image": "product-c-beachwear-03.jpg"
+            "image": "products/product-c-beachwear-03.jpg"
         }
     },
     {
@@ -500,7 +500,7 @@
             "price": 29.99,
             "category": 5,
             "rating": 4.9,
-            "image": "product-c-beachwear-04.jpg"
+            "image": "products/product-c-beachwear-04.jpg"
         }
     },
     {
@@ -514,7 +514,7 @@
             "price": 149.99,
             "category": 6,
             "rating": 4.5,
-            "image": "product-w-wetsuit-01.jpg"
+            "image": "products/product-w-wetsuit-01.jpg"
         }
     },
     {
@@ -528,7 +528,7 @@
             "price": 169.99,
             "category": 6,
             "rating": 4.6,
-            "image": "product-w-wetsuit-02.jpg"
+            "image": "products/product-w-wetsuit-02.jpg"
         }
     },
     {
@@ -542,7 +542,7 @@
             "price": 189.99,
             "category": 6,
             "rating": 4.7,
-            "image": "product-w-wetsuit-04.jpg"
+            "image": "products/product-w-wetsuit-04.jpg"
         }
     },
     {
@@ -556,7 +556,7 @@
             "price": 199.99,
             "category": 6,
             "rating": 4.8,
-            "image": "product-w-wetsuit-04.jpg"
+            "image": "products/product-w-wetsuit-04.jpg"
         }
     },
     {
@@ -570,7 +570,7 @@
             "price": 139.99,
             "category": 6,
             "rating": 4.4,
-            "image": "product-w-wetsuit-05.jpg"
+            "image": "products/product-w-wetsuit-05.jpg"
         }
     },
     {
@@ -584,7 +584,7 @@
             "price": 59.99,
             "category": 7,
             "rating": 4.5,
-            "image": "product-c-wetsuit-01.jpg"
+            "image": "products/product-c-wetsuit-01.jpg"
         }
     },
     {
@@ -598,7 +598,7 @@
             "price": 54.99,
             "category": 7,
             "rating": 4.6,
-            "image": "product-c-wetsuit-02.jpg"
+            "image": "products/product-c-wetsuit-02.jpg"
         }
     },
     {
@@ -612,7 +612,7 @@
             "price": 64.99,
             "category": 7,
             "rating": 4.7,
-            "image": "product-c-wetsuit-03.jpg"
+            "image": "products/product-c-wetsuit-03.jpg"
         }
     },
     {
@@ -626,7 +626,7 @@
             "price": 57.99,
             "category": 7,
             "rating": 4.8,
-            "image": "product-c-wetsuit-04.jpg"
+            "image": "products/product-c-wetsuit-04.jpg"
         }
     },
     {
@@ -640,7 +640,7 @@
             "price": 69.99,
             "category": 7,
             "rating": 4.4,
-            "image": "product-c-wetsuit-05.jpg"
+            "image": "products/product-c-wetsuit-05.jpg"
         }
     },
     {
@@ -654,7 +654,7 @@
             "price": 74.99,
             "category": 7,
             "rating": 4.5,
-            "image": "product-c-wetsuit-06.jpg"
+            "image": "products/product-c-wetsuit-06.jpg"
         }
     }
     
