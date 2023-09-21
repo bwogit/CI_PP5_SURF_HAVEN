@@ -1,8 +1,9 @@
 {% extends 'base.html' %}
 {% load static %}
+{% load basket_tools %}
 
 {% block page_header %}
-    <!-- Add any content you want for the page header here -->
+    <!-- -->
 {% endblock %}
 
 {% block content %}
@@ -74,7 +75,7 @@
                                             <p class="my-0"><strong>Size:</strong> {{ item.size|upper }}</p>
                                         </td>
                                         <td>
-                                            <p class="my-0"><strong>Subtotal: €{{ item.product.price }}</strong></p>
+                                            <p class="my-0"><strong>Subtotal: €{{ item.product.price | calc_subtotal:item.quantity }}</strong></p>
                                             {% include "basket/quantity_form.html" %}
                                         </td>
                                     </tr>
