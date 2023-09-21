@@ -18,13 +18,13 @@ for (var i = 0; i < allQtyInputs.length; i++) {
     EnableDisable(itemId);
 }
 
-// It also checks and updates the button status every time a quantity input field is changed.
+// Checks and updates the button status every time a quantity input field is changed.
 $('.qty_input').change(function () {
     var itemId = $(this).data('item_id');
     EnableDisable(itemId);
 });
 
-// Additionally, it handles the increment and decrement buttons for quantity adjustments.
+// Handles the increment and decrement buttons for quantity adjustments.
 $('.increment-qty').click(function (e) {
     e.preventDefault();
     var closestInput = $(this).closest('.input-group').find('.qty_input')[0];
