@@ -8,3 +8,8 @@
     margin-left: 1px; /* Adjust the margin as needed */
   }
 
+.toast {
+  position: absolute !important;
+  top: 200px;
+  display: block;
+}
