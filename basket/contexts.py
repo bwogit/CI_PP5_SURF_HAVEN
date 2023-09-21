@@ -1,7 +1,6 @@
 from decimal import Decimal
 from django.conf import settings
-from django.shortcuts import get_object_or_404
-# Internal
+from django.shortcuts import get_object_or_404, Http404
 from products.models import Product
 
 def basket_contents(request):
@@ -10,32 +9,6 @@ def basket_contents(request):
     total = 0
 
     basket = request.session.get('basket', {})
-
-    for item_id, quantity_data in basket.items():
-        # Check if 'quantity' is a dictionary
-        if isinstance(quantity_data, dict):
-            # Extract the numeric value from the 'quantity' dictionary
-            quantity = quantity_data.get('value', 0)  # Replace 'value' with the correct key
-        else:
-            # If 'quantity' is not a dictionary, assume it's a numeric value
-            quantity = quantity_data
-
-        try:
-            product = Product.objects.get(pk=item_id)
-        except Product.DoesNotExist:
-            raise Http404("Product not found")
-
-        item_total = quantity * product.price
-        total += item_total
-        product_count += quantity
-
-        basket_item = {
-            'item_id': item_id,
-            'quantity': quantity,
-            'product': product,
-            'item_total': item_total,
-        }
-        basket_items.append(basket_item)
 
     for item_id, item_data in basket.items():
         if isinstance(item_data, int):
@@ -49,15 +22,24 @@ def basket_contents(request):
             })
         else:
             product = get_object_or_404(Product, pk=item_id)
+            product_added = False
+
             for size, quantity in item_data['items_by_size'].items():
-                total += quantity * product.price
-                product_count += quantity
-                basket_items.append({
-                    'item_id': item_id,
-                    'quantity': quantity,
-                    'product': product,
-                    'size': size,
-                })
+                if not product_added:
+                    basket_items.append({
+                        'item_id': item_id,
+                        'quantity': quantity,
+                        'product': product,
+                        'size': size,
+                    })
+                    product_added = True
+                else:
+                    for item in basket_items:
+                        if item['item_id'] == item_id and item.get('size') == size:
+                            item['quantity'] += quantity
+
+            if product_added:
+                total += sum(quantity for size, quantity in item_data['items_by_size'].items()) * product.price
 
     if total < settings.FREE_DELIVERY_THRESHOLD:
         delivery = total * Decimal(settings.STANDARD_DELIVERY_PERCENTAGE / 100)
