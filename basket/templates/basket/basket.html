@@ -119,10 +119,12 @@
                                                     </div>
                                                 </div>
                                             </form>
-                                            <a class="remove-qty-link text-danger float-right"
-                                                id="remove_{{ item.item_id }}"
-                                                data-product_size="{{ item.size }}"><small>Remove</small></a>
-                                            <a class="update-qty-link text-success"><small>Update</small></a>
+                                            <button class="btn btn-danger remove-qty float-right" id="remove_{{ item.item_id }}"
+                                                data-product_size="{{ item.size }}"><small>Remove</small>
+                                            </button>
+                                            <button class="btn btn-success update-qty">
+                                                <small>Update</small>>
+                                            </button>
                                         </td>
                                     </tr>
                                 {% endfor %}
