@@ -71,7 +71,10 @@
                                             <p class="my-0">{{ item.quantity }}</p>
                                         </td>
                                         <td class="py-3">
-                                            <p class="my-0">${{ item.product.price }}</p>
+                                            <p class="my-0"><strong>Size:</strong> {{ item.size|upper }}</p>
+                                        </td>
+                                        <td>
+                                            <p class="my-0"><strong>Subtotal: €{{ item.product.price }}</strong></p>
                                         </td>
                                     </tr>
                                 {% endfor %}
