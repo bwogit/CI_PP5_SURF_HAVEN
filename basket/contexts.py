@@ -3,6 +3,7 @@ from django.conf import settings
 from django.shortcuts import get_object_or_404, Http404
 from products.models import Product
 
+
 def basket_contents(request):
     basket_items = []
     product_count = 0
