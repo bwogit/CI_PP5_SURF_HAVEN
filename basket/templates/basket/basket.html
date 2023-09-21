@@ -126,7 +126,6 @@
                                         </td>
                                     </tr>
                                 {% endfor %}
-                                <!-- Additional Section You Provided -->
                                 <tr>
                                     <td colspan="5" class="pt-5 text-right">
                                         <h6><strong>Basket Total: ${{ total|floatformat:2 }}</strong></h6>
@@ -140,7 +139,6 @@
                                         {% endif %}
                                     </td>
                                 </tr>
-                                <!-- End of Additional Section -->
                             </table>
                         </div>
                     {% else %}
@@ -165,6 +163,31 @@
 
 {% block postloadjs %}
 {{ block.super }}
+{% include 'products/includes/quantity_script.html' %}
+<script type="text/javascript">
+    // Update quantity on click
+    $('.update-qty').click(function (e) {
+        var form = $(this).prev('.update-form');
+        form.submit();
+    })
+
+    // Remove item and reload on click
+    $('.remove-qty').click(function (e) {
+        var csrfToken = "{{ csrf_token }}";
+        var itemId = $(this).attr('id').split('remove_')[1];
+        var size = $(this).data('product_size');
+        var url = `/basket/remove/${itemId}/`;
+        var data = {
+            'csrfmiddlewaretoken': csrfToken,
+            'product_size': size
+        };
+
+        $.post(url, data)
+            .done(function () {
+                location.reload();
+            });
+    })
+</script>
 
 <script type="text/javascript">
     $('.back-to-top').click(function (e) {
