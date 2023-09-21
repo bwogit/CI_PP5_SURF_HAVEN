@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block page_header %}
-
+    <!-- Add any content you want for the page header here -->
 {% endblock %}
 
 {% block content %}
@@ -18,13 +18,16 @@
     </div>
     <div class="row bg-light p-3 rounded">
         <div class="d-none d-lg-block col-md-2">
+            <!-- Product Categories -->
             <h2 class="fs-6">Product Categories</h2>
             <hr>
             <p><a class="nav-link text-muted" href="{% url 'products' %}">All Products</a></p>
             {% for category in categories_list %}
-            <p><a class="nav-link text-muted"
+                <p><a class="nav-link text-muted"
                     href="{% url 'products' %}?category={{category.name}}">{{ category.friendly_name }}</a></p>
             {% endfor %}
+            
+            <!-- Sort By -->
             <h2 class="fs-6">Sort By</h2>
             <hr>
             <p><a href="{% url 'products' %}?sort=price&direction=desc"
@@ -40,46 +43,62 @@
             <div class="row">
                 <div class="col-sm d-flex flex-wrap">
                     {% if basket_items %}
-                    <div class="table-responsive rounded">
-                        <table class="table table-sm table-borderless">
-                            <thead class="text-success">
+                        <!-- Shopping Basket Table -->
+                        <div class="table-responsive rounded">
+                            <table class="table table-sm table-borderless">
+                                <thead class="text-success">
+                                    <tr>
+                                        <th scope="col">Product Info</th>
+                                        <th scope="col"></th>
+                                        <th scope="col">Price</th>
+                                        <th scope="col">Qty</th>
+                                        <th scope="col">Subtotal</th>
+                                    </tr>
+                                </thead>
+                                {% for item in basket_items %}
+                                    <tr>
+                                        <td class="w-25">
+                                            <img class="img-fluid rounded" src="{{ item.product.image.url }}">
+                                        </td>
+                                        <td class="py-3">
+                                            <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+                                            <p class="my-0 text-muted small">{{ item.product.code }}</p>
+                                        </td>
+                                        <td class="py-3">
+                                            <p class="my-0">€{{ item.product.price }}</p>
+                                        </td>
+                                        <td class="py-3 w-25">
+                                            <p class="my-0">{{ item.quantity }}</p>
+                                        </td>
+                                        <td class="py-3">
+                                            <p class="my-0">${{ item.product.price }}</p>
+                                        </td>
+                                    </tr>
+                                {% endfor %}
+                                <!-- Additional Section You Provided -->
                                 <tr>
-                                    <th scope="col">Product Info</th>
-                                    <th scope="col"></th>
-                                    <th scope="col">Price</th>
-                                    <th scope="col">Qty</th>
-                                    <th scope="col">Subtotal</th>
-                                </tr>
-                            </thead>
-
-                            {% for item in basket_items %}
-                                <tr>
-                                    <td class="p-3 w-25">
-                                        <img class="img-fluid rounded" src="{{ item.product.image.url }}">
-                                    </td>
-                                    <td class="py-3">
-                                        <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-                                        <p class="my-0 text-muted small">{{ item.product.code }}</p>
-                                    </td>
-                                    <td class="py-3">
-                                        <p class="my-0">€{{ item.product.price }}</p>
-                                    </td>
-                                    <td class="py-3 w-25">
-                                        <p class="my-0">{{ item.quantity }}</p>
-                                    </td>
-                                    <td class="py-3">
-                                        <p class="my-0">${{ item.product.price }}</p>
+                                    <td colspan="5" class="pt-5 text-right">
+                                        <h6><strong>Basket Total: ${{ total|floatformat:2 }}</strong></h6>
+                                        <h6>Delivery: ${{ delivery|floatformat:2 }}</h6>
+                                        <h4 class="mt-4"><strong>Grand Total: ${{ grand_total|floatformat:2 }}</strong></h4>
+                                        {% if free_delivery_delta > 0 %}
+                                        <p class="mb-1 text-danger">
+                                            You could get free delivery by spending just
+                                            <strong>${{ free_delivery_delta }}</strong> more!
+                                        </p>
+                                        {% endif %}
                                     </td>
                                 </tr>
-                            {% endfor %}
-                        </table>
-                    </div>
+                                <!-- End of Additional Section -->
+                            </table>
+                        </div>
                     {% else %}
-                    <p class="lead mb-5">Your basket is empty</p>
-                    <a class="rounded btn btn-lg text-success" href="{% url 'products' %}">
-                        <span class="icon"><i class="fas fa-backward"></i></span>
-                        <span>Return to Shop</span>
-                    </a>
+                        <!-- Empty Basket Message -->
+                        <p class="lead mb-5">Your basket is empty</p>
+                        <a class="rounded btn btn-lg text-success" href="{% url 'products' %}">
+                            <span class="icon"><i class="fas fa-backward"></i></span>
+                            <span>Return to Shop</span>
+                        </a>
                     {% endif %}
                 </div>
             </div>
