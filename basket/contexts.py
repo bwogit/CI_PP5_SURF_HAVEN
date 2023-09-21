@@ -4,9 +4,7 @@ from django.shortcuts import get_object_or_404
 # Internal
 from products.models import Product
 
-
 def basket_contents(request):
-
     basket_items = []
     product_count = 0
     total = 0
@@ -22,22 +20,22 @@ def basket_contents(request):
             # If 'quantity' is not a dictionary, assume it's a numeric value
             quantity = quantity_data
 
-    try:
-        product = Product.objects.get(pk=item_id)
-    except Product.DoesNotExist:
-        raise Http404("Product not found")
+        try:
+            product = Product.objects.get(pk=item_id)
+        except Product.DoesNotExist:
+            raise Http404("Product not found")
 
-    item_total = quantity * product.price
-    total += item_total
-    product_count += quantity
+        item_total = quantity * product.price
+        total += item_total
+        product_count += quantity
 
-    basket_item = {
-        'item_id': item_id,
-        'quantity': quantity,
-        'product': product,
-        'item_total': item_total,
-    }
-    basket_items.append(basket_item)
+        basket_item = {
+            'item_id': item_id,
+            'quantity': quantity,
+            'product': product,
+            'item_total': item_total,
+        }
+        basket_items.append(basket_item)
 
     for item_id, item_data in basket.items():
         if isinstance(item_data, int):
