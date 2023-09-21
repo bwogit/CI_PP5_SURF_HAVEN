@@ -118,14 +118,9 @@
 <div class="message-container"></div>
 {% endif %}
 
-{% block page_header %}
-{% endblock %}
 
-{% block content %}
-{% endblock %}
 
-{% block postloadjs %}
-{% endblock %}
+
 
 <!-- This Footer is inspired from MDBootstrap.com -->
 <footer class="text-center text-lg-start bg-light text-muted">
@@ -242,12 +237,13 @@
         </div>
     {% endif %}
 
-    {% block page_header %}
-    {% endblock %}
+{% block page_header %}
+{% endblock %}
 
-    {% block content %}
-    {% endblock %}
+{% block content %}
+{% endblock %}
 
+        
     {% block postloadjs %}
     <script type="text/javascript">
         $('.toast').toast('show');
