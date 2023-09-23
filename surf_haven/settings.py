@@ -58,6 +58,9 @@ INSTALLED_APPS = [
     'basket',
     'checkout',
     'django_countries',
+
+    # Other
+    'crispy_forms',
 ]
 
 MIDDLEWARE = [
@@ -71,6 +74,8 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'surf_haven.urls'
+
+CRISPY_TEMPLATE_PACK = 'bootstrap5'
 
 TEMPLATES = [
     {
@@ -86,6 +91,10 @@ TEMPLATES = [
                 'django.template.context_processors.media',  # no media
                 'basket.contexts.basket_contents',
             ],
+            'builtins': [
+                'crispy_forms.templatetags.crispy_forms_tags',
+                'crispy_forms.templatetags.crispy_forms_field',
+            ]
         },
     },
 ]
