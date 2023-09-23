@@ -56,6 +56,8 @@ INSTALLED_APPS = [
     'home',
     'products',
     'basket',
+    'checkout',
+    'django_countries',
 ]
 
 MIDDLEWARE = [
@@ -81,7 +83,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',  # required
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'django.template.context_processors.media', # processing the no media
+                'django.template.context_processors.media',  # no media
                 'basket.contexts.basket_contents',
             ],
         },

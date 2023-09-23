@@ -1,9 +1,11 @@
 asgiref==3.7.2
 cloudinary==1.34.0
+countries==0.2.0
 dj-database-url==0.5.0
 dj3-cloudinary-storage==0.0.6
 Django==3.2.21
 django-allauth==0.41.0
+django-countries==7.5.1
 gunicorn==21.2.0
 oauthlib==3.2.2
 Pillow==10.0.1
