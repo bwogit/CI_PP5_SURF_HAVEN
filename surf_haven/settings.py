@@ -81,6 +81,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',  # required
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.media', # processing the no media
                 'basket.contexts.basket_contents',
             ],
         },
