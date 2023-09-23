@@ -79,8 +79,14 @@
                                             {% include "basket/quantity_form.html" %}
                                         </td>
                                     </tr>
-
+                                    
                                 {% endfor %}
+                                <a href="{% url 'checkout' %}" class="btn btn-success rounded btn-lg">
+                                    <span class="text-uppercase">Secure Checkout</span>
+                                    <span class="icon">
+                                        <i class="fas fa-lock"></i>
+                                    </span>
+                                </a>
                                 <tr>
                                     <td colspan="5" class="pt-5 text-right">
                                         <h6><strong>Basket Total: ${{ total|floatformat:2 }}</strong></h6>
@@ -95,6 +101,7 @@
                                     </td>
                                 </tr>
                             </table>
+                            
                         </div>
                     {% else %}
                         <!-- Empty Basket Message -->
