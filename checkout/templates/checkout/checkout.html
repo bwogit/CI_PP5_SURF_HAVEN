@@ -1,0 +1,153 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load basket_tools %}
+
+{% block page_header %}
+    <!-- -->
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row my-5">
+        <div class="col bg-light rounded">
+            <div class="col">
+                <h1 class="my-5 text-muted">
+                    Your Shopping Basket
+                </h1>
+            </div>
+        </div>
+    </div>
+    <div class="row bg-light p-3 rounded">
+        <div class="d-none d-lg-block col-md-2">
+            <!-- Product Categories -->
+            <h2 class="fs-6">Product Categories</h2>
+            <hr>
+            <p><a class="nav-link text-muted" href="{% url 'products' %}">All Products</a></p>
+            {% for category in categories_list %}
+                <p><a class="nav-link text-muted"
+                    href="{% url 'products' %}?category={{category.name}}">{{ category.friendly_name }}</a></p>
+            {% endfor %}
+            
+            <!-- Sort By -->
+            <h2 class="fs-6">Sort By</h2>
+            <hr>
+            <p><a href="{% url 'products' %}?sort=price&direction=desc"
+                    class="nav-link text-decoration-none text-muted">Price (High to Low)</a></p>
+            <p><a href="{% url 'products' %}?sort=category&direction=asc"
+                    class="nav-link text-decoration-none text-muted">Category (A-Z)</a></p>
+            <p><a href="{% url 'products' %}?sort=brand&direction=desc"
+                    class="nav-link text-decoration-none text-muted">Brand (Z-A)</a></p>
+            <p><a href="{% url 'products' %}?sort=rating&direction=desc"
+                    class="nav-link text-decoration-none text-muted">Rating (High to Low)</a></p>
+        </div>
+        <div class="col">
+            <div class="row">
+                <div class="col-sm d-flex flex-wrap">
+                    {% if basket_items %}
+                        <!-- Shopping Basket Table -->
+                        <div class="table-responsive rounded">
+                            <table class="table table-sm table-borderless">
+                                <thead class="text-success">
+                                    <tr>
+                                        <th scope="col">Product Info</th>
+                                        <th scope="col"></th>
+                                        <th scope="col">Price</th>
+                                        <th scope="col">Qty</th>
+                                        <th scope="col">Subtotal</th>
+                                    </tr>
+                                </thead>
+                                {% for item in basket_items %}
+                                    <tr>
+                                        <td class="w-25">
+                                            <img class="img-fluid rounded" src="{{ item.product.image.url }}">
+                                        </td>
+                                        <td class="py-3">
+                                            <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+                                            <p class="my-0 text-muted small">{{ item.product.code }}</p>
+                                        </td>
+                                        <td class="py-3">
+                                            <p class="my-0">€{{ item.product.price }}</p>
+                                        </td>
+                                        <td class="py-3 w-25">
+                                            <p class="my-0">{{ item.quantity }}</p>
+                                        </td>
+                                        <td class="py-3">
+                                            <p class="my-0"><strong>Size:</strong> {{ item.size|upper }}</p>
+                                        </td>
+                                        <td>
+                                            <p class="my-0"><strong>Subtotal: €{{ item.product.price | calc_subtotal:item.quantity }}</strong></p>
+                                            {% include "basket/quantity_form.html" %}
+                                        </td>
+                                    </tr>
+
+                                {% endfor %}
+                                <tr>
+                                    <td colspan="5" class="pt-5 text-right">
+                                        <h6><strong>Basket Total: ${{ total|floatformat:2 }}</strong></h6>
+                                        <h6>Delivery: ${{ delivery|floatformat:2 }}</h6>
+                                        <h4 class="mt-4"><strong>Grand Total: ${{ grand_total|floatformat:2 }}</strong></h4>
+                                        {% if free_delivery_delta > 0 %}
+                                        <p class="mb-1 text-danger">
+                                            You could get free delivery by spending just
+                                            <strong>${{ free_delivery_delta }}</strong> more!
+                                        </p>
+                                        {% endif %}
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    {% else %}
+                        <!-- Empty Basket Message -->
+                        <p class="lead mb-5">Your basket is empty</p>
+                        <a class="rounded btn btn-lg text-success" href="{% url 'products' %}">
+                            <span class="icon"><i class="fas fa-backward"></i></span>
+                            <span>Return to Shop</span>
+                        </a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <span style="float:right;" class="btn text-success back-to-top">Back to Top</span>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+{% include 'products/includes/quantity_script.html' %}
+<script type="text/javascript">
+    // Update quantity on click
+    $('.update-qty').click(function (e) {
+        var form = $(this).prev('.update-form');
+        form.submit();
+    })
+
+    // Remove item and reload on click
+    $('.remove-item').click(function (e) {
+        var csrfToken = "{{ csrf_token }}";
+        var itemId = $(this).attr('id').split('remove_')[1];
+        var size = $(this).data('product_size');
+        var url = `/basket/remove/${itemId}/`;
+        var data = {
+            'csrfmiddlewaretoken': csrfToken,
+            'product_size': size
+        };
+
+        $.post(url, data)
+            .done(function () {
+                location.reload();
+            });
+    })
+</script>
+
+<script type="text/javascript">
+    $('.back-to-top').click(function (e) {
+        window.scrollTo(0, 0)
+    })
+</script>
+
+{% endblock %}
