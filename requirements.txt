@@ -6,6 +6,7 @@ dj3-cloudinary-storage==0.0.6
 Django==3.2.21
 django-allauth==0.41.0
 django-countries==7.5.1
+django-crispy-forms==1.14.0
 gunicorn==21.2.0
 oauthlib==3.2.2
 Pillow==10.0.1
