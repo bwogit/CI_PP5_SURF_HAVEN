@@ -1,13 +1,24 @@
-from django.shortcuts import render, redirect, reverse
+# Imports
+# 3rd Party
+from django.shortcuts import (render, redirect, reverse, get_object_or_404, HttpResponse )
+from django.views.decorators.http import require_POST
 from django.contrib import messages
+from django.conf import settings
+import stripe
+import json
 
+# Internal
 from .forms import OrderForm
+from .models import Order, OrderLineItem
+from products.models import Product, Category
+from basket.contexts import basket_contents
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 def checkout(request):
-    bag = request.session.get('basket', {})
-    if not bag:
-        messages.error(request, "Your basket is empty")
+    basket = request.session.get('basket', {})
+    if not basket:
+        messages.error(request, "There's nothing in your basket at the moment")
         return redirect(reverse('products'))
 
     order_form = OrderForm()
