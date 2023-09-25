@@ -8,6 +8,7 @@ from django.contrib import messages
 from django.conf import settings
 import stripe
 import json
+import logging
 # Internal
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 from .forms import OrderForm
@@ -132,6 +133,9 @@ def checkout_success(request, order_number):
     """
     Process successful checkouts
     """
+    logger = logging.getLogger(__name__)
+
+    logger.info("Reached the checkout_success view")  # Log the message
     save_info = request.session.get('save_info')
     order = get_object_or_404(Order, order_number=order_number)
 
