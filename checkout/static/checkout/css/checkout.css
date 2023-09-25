@@ -75,7 +75,7 @@
         z-index: 9999;
     }
     
-    .loading-spinner {
+    .spinner-border {
         display: flex;
         align-items: center;
         justify-content: center;
