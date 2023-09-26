@@ -1,4 +1,11 @@
-{% extends "base.html" %}
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_filters %}
+{% load crispy_forms_tags %}
+
+{% block extracss %}
+<link rel="stylesheet" href="{% static 'profiles/css/profile.css' %}">
+{% endblock %}
 
 {% block content %}
 <div class="container">
@@ -6,8 +13,8 @@
         <div class="col bg-light rounded">
             <div class="col">
                 <a class="text-muted text-decoration-none" href="{% url 'products' %}">
-                    <h1 class="my-5 p-3">
-                        Accounts
+                    <h1 class="my-5">
+                        My Profile
                     </h1>
                 </a>
             </div>
@@ -18,11 +25,11 @@
             <div class="row">
                 <div class="col-12">
                     <div class="card mt-5">
+                        <div class="card-header text-muted">
+                            <h2 class="h4">Information</h2>
+                        </div>
                         <div class="card-body">
-                            <div class="col-lg-6 allauth-form-inner-content p-3">
-                                {% block inner_content %}
-                                {% endblock %}
-                            </div>
+                            <!-- Add your content here -->
                         </div>
                     </div>
                 </div>
