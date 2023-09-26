@@ -26,3 +26,18 @@
 .allauth-form-inner-content input::placeholder {
   color:#6c757d;
 }
+
+.btn-files {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-files input[type=file] {
+  position:absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}

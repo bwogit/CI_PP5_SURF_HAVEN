@@ -87,9 +87,20 @@
                     </li>
                     {% endif %}
                     <!-- Shop -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="{% url 'products' %}">Shop</a>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Shop
+                        </a>
+                        <ul class="dropdown-menu">
+                            {% for category in Categories_list %}
+                            <li><a class="dropdown-item text-muted p-2"
+                                   href="{% url 'products' %}?category={{category.name}}">{{ category.friendly_name }}</a></li>
+                            {% endfor %}
+                            <div class="dropdown-divider"></div>
+                            <li><a class="dropdown-item text-muted" href="{% url 'products' %}">All Products</a></li>
+                        </ul>
                     </li>
+                    
                     <li class="nav-item">
                         <a class="nav-link" href="#">Blog</a>
                     </li>
@@ -120,6 +131,7 @@
                             {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
                             <li><a class="dropdown-item" href="#">Management</a></li>
+                            <a class="dropdown-item" href="{% url 'add_product' %}">Add Product</a>
                             {% endif %}
                             <li><a class="dropdown-item" href="{% url 'profile' %}">Profile</a></li>
                             <li><a class="dropdown-item" href="{% url 'account_logout' %}">Logout</a></li>
@@ -131,11 +143,25 @@
                     </li>
                 </ul>
                 <!-- Basket Section -->
-                <div class="basket-section">
-                    <a href="{% url 'view_basket' %}" class="btn btn-link text-success">
-                        <i class="fas fa-shopping-basket"></i> Basket
-                    </a>
-                </div>
+                <!-- Basket -->
+<ul class="navbar-nav me-auto me-lg-1 ms-lg-auto mb-2 mb-lg-0">
+    <li class="list-inline-item">
+        <a class="{% if grand_total %}text-success font-weight-bold{% else %}text-success{% endif %} nav-link"
+           href="{% url 'view_basket' %}">
+            <div>
+                <div><i class="fas fa-shopping-bag fa-lg btn-outline-info" aria-hidden="true"></i></div>
+                <p class="my-0">
+                    {% if grand_total %}
+                    €{{ grand_total|floatformat:2 }}
+                    {% else %}
+                    €0.00
+                    {% endif %}
+                </p>
+            </div>
+        </a>
+    </li>
+</ul>
+
             </div>
         </div>
     </nav>
