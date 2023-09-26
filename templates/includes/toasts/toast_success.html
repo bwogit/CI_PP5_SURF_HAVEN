@@ -1,17 +1,15 @@
-<div class="toast custom-toast rounded-0 border-top-0" data-autohide="false">
-    <div class="arrow-up arrow-sucess"></div>
+<div class="toast custom-toast rounded-0 border-0" data-bs-autohide="false">
+    <div class="arrow-up arrow-success"></div>
     <div class="w-100 toast-capper bg-success"></div>
     <div class="toast-header bg-light text-dark">
-        <strong class="mr-auto">Information</strong>
-        <button type="button" class="ml-2 mb-1 close text-dark" data-dismiss="toast" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>
+        <strong class="me-auto">Information</strong>
+        <button type="button" class="btn-close text-dark" data-bs-dismiss="toast" aria-label="Close"></button>
     </div>
     <div class="toast-body bg-light">
         <div class="row">
             <div class="col">
                 {{ message }}
-                <hr class="mt-1 mb-3">
+                <hr class="my-1 mb-3">
             </div>
         </div>
         {% if grand_total and not on_profile_page %}
@@ -38,7 +36,7 @@
                 <div class="col">
                     <strong><p class="mt-3 mb-1 text-dark">
                         Total{% if free_delivery_delta > 0 %} (Excluding delivery){% endif %}: 
-                        <span class="float-right">${{ total|floatformat:2 }}</span>
+                        <span class="float-end">${{ total|floatformat:2 }}</span>
                     </p></strong>
                     {% if free_delivery_delta > 0 %}
                         <p class="mb-0 p-2 bg-warning shadow-sm text-dark text-center">
