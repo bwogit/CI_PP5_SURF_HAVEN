@@ -5,11 +5,13 @@ from .models import UserProfile
 from .forms import UserProfileForm
 
 from checkout.models import Order
+from products.models import Product, Category
 
 
 @login_required
 def profile(request):
     """ Display the user's profile. """
+    categories_list = Category.objects.all()
     profile = get_object_or_404(UserProfile, user=request.user)
 
     if request.method == 'POST':
@@ -28,12 +30,14 @@ def profile(request):
         'form': form,
         'orders': orders,
         'on_profile_page': True
+        'categories_list': categories_list
     }
 
     return render(request, template, context)
 
 
 def order_history(request, order_number):
+    categories_list = Category.objects.all()
     order = get_object_or_404(Order, order_number=order_number)
 
     messages.info(request, (
@@ -45,6 +49,7 @@ def order_history(request, order_number):
     context = {
         'order': order,
         'from_profile': True,
+        'categories_list': categories_list,
     }
 
     return render(request, template, context)
