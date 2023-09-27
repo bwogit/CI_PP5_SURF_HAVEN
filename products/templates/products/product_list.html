@@ -58,6 +58,12 @@
                             <div class="text-muted"><i class="fas fa-star"></i> {{ product.rating }}</div>
                             {% endif %}
                             <a class="btn btn-sm btn-secondary" href="{% url 'product_detail' product.id %}" role="button">Details</a>
+                            {% if request.user.is_superuser %}
+                            <small>
+                                <a class="btn btn-sm btn-outline-success" href="{% url 'edit_product' product.id %}">Edit</a>
+                                <a class='btn btn-sm btn-outline-danger' href="{% url 'delete_product' product.id %}">Delete</a>
+                            </small>
+                            {% endif %}
                         </div>
                     </div>
                     {% empty %}
