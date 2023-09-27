@@ -1,4 +1,6 @@
 asgiref==3.7.2
+boto3==1.28.55
+botocore==1.31.55
 cloudinary==1.34.0
 countries==0.2.0
 crispy-bootstrap5==0.7
@@ -9,12 +11,15 @@ django-allauth==0.41.0
 django-bootstrap5==23.3
 django-countries==7.5.1
 django-crispy-forms==1.14.0
+django-storages==1.14
 gunicorn==21.2.0
+jmespath==1.0.1
 oauthlib==3.2.2
 Pillow==10.0.1
 psycopg2==2.9.7
 python3-openid==3.2.0
 requests-oauthlib==1.3.1
+s3transfer==0.7.0
 sqlparse==0.4.4
 stripe==6.6.0
 urllib3==1.26.15
