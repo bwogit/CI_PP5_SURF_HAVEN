@@ -136,7 +136,6 @@ def checkout(request):
         else:
             order_form = OrderForm()
 
-
     if not stripe_public_key:
         messages.warning(request, 'Stripe public key is missing. \
             Did you forget to set it in your environment?')
@@ -179,7 +178,6 @@ def checkout_success(request, order_number):
             user_profile_form = UserProfileForm(profile_data, instance=profile)
             if user_profile_form.is_valid():
                 user_profile_form.save()
-
 
     messages.success(request, f'Order successful! \
         Your order number is {order_number}. A confirmation \
