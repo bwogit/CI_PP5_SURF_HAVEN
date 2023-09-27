@@ -9,6 +9,7 @@ from django.db.models import Q
 from .models import Product, Category
 from .forms import ProductForm
 
+
 def all_products(request):
     """ A view to show all products, sorting and search queries """
 
@@ -77,13 +78,14 @@ def product_detail(request, product_id):
     return render(request, 'products/product_detail.html', context)
 
 
-
-
 @login_required
 def add_product(request):
     """
     Add a product to the shop
     """
+
+    categories_list = Category.objects.all()
+
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only admins can do that.')
         return redirect(reverse('home'))
@@ -105,6 +107,7 @@ def add_product(request):
     template = 'products/add_product.html'
     context = {
         'form': form,
+        'categories_list': categories_list,
     }
 
     return render(request, template, context)
