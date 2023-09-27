@@ -289,8 +289,15 @@
 </footer>
 
 {% block postloadjs %}
-
+<!-- Back to Top -->
+<script type="text/javascript">
+    $('.back-to-top').click(function (e) {
+      window.scrollTo(0, 0)
+        window.scrollTo(0, 0)
+    })
+</script>
 <script>
+    
     $(document).ready(function() {
         // Initialize and show Bootstrap toasts
         $('.toast').toast('show');
