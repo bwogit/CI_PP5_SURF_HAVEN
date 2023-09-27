@@ -44,7 +44,7 @@ TEMPLATES_DIR = os.path.join(BASE_DIR, 'templates')
 SECRET_KEY = os.environ.get('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False 
 
 ALLOWED_HOSTS = ['surf-haven-39d68e86c0f1.herokuapp.com',
                  '8000-bwogit-cipp5surfhaven-5o9dy0ts1dt.ws-eu104.gitpod.io',
@@ -238,7 +238,7 @@ STRIPE_WH_SECRET = os.getenv('STRIPE_WH_SECRET', '')
 
 if DEBUG:
     EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-    DEFAULT_FROM_EMAIL = 'info@sufhaven.com'
+    DEFAULT_FROM_EMAIL = 'info@surfhaven.com'
 else:
     EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
     EMAIL_USE_TLS = True
