@@ -61,7 +61,14 @@
                 <p>Comment is pending approval.</p>
             </div>
             {% else %}
-            {% if user.is_authenticated %}
+            {% if not user.is_authenticated %}
+            <div class="row justify-content-center">
+                <div class="col-md-8 col-lg-6 mx-auto mt-3 mb-3 p-3 bg-white rounded">
+                    <h2>Please login to leave a message</h2>
+                    <a href="{% url 'account_login' %}" class="btn btn-primary">Login</a>
+                </div>
+            </div>
+            {% elif user.is_authenticated %}
             <div class="row justify-content-center">
                 <div class="col-md-8 col-lg-6 mx-auto mt-3 mb-3 p-3 bg-white rounded">
                     <h2>Add a Comment</h2>
