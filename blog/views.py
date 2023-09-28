@@ -1,16 +1,11 @@
 # Imports
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# 3rd party:
 from django.shortcuts import render, get_object_or_404
 from django.views import generic, View
 from django.contrib import messages
 from django.core.paginator import Paginator
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Internal:
 from .models import Post
 from .forms import CommentForm
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 
 # View for all posts that are published
 
@@ -19,14 +14,14 @@ class PostList(generic.ListView):
     model = Post
     queryset = Post.objects.filter(status=1).order_by('-created_date')
     template_name = 'blog.html'
-    paginated_by = 4
+    paginated_by = 2
 
     def get(self, request, *args, **kwargs):
         """
         This view renders the blog page and also all published posts
         """
         posts = Post.objects.all()
-        paginator = Paginator(Post.objects.all(), 4)
+        paginator = Paginator(Post.objects.all(), 2)
         page = request.GET.get('page')
         postings = paginator.get_page(page)
 

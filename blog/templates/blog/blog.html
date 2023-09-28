@@ -18,39 +18,32 @@
                 <div class="col-sm product-list d-flex flex-wrap">
                     {% for post in postings %}
                     {% if post.status %}
-                    <div class="col-md-4 m-5 grow bg-darker rounded">
-                        {% if 'placeholder' in post.featured_image.url %}
-                        <a href=""><img src="" class="card-img-top rounded img-fluid" alt="default blog post photo"></a>
+                    <div class="col-md-4 m-3 bg-surf rounded shadow-lg text-dark">
+                        {% if post.featured_image %}
+                        <a href="{% url 'post_detail' post.slug %}">
+                            <img class="card-img-top mt-2" src="{{ post.featured_image.url }}" alt="blog post image"></a>
                         {% else %}
-                        <a href=""><img src="" class="card-img-top rounded img-fluid" alt="blog post photo"></a>
+                        <a href="{% url 'post_detail' post.slug %}">
+                            <img class="card-img-top mt-2" src="{% static 'img/default-image.jpg' %}" alt="blog post image"></a>
                         {% endif %}
+                
                         <div class="card-body">
-                            <a href="" class="post-link">
+                            <a href="{% url 'post_detail' post.slug %}">
                                 <h2 class="card-title mt-3">{{ post.title }}</h2>
                             </a>
-                            <p class="card-subtitle mb-2 text-muted">By: {{ post.author }}</p>
-                            <a href="" class="post-link">
+                            <p class="card-subtitle mb-2">By: {{ post.author }}</p>
+                            <a href="{% url 'post_detail' post.slug %}" class="post-link">
                                 <p class="card-text mt-3"><em>{{ post.excerpt }}</em></p>
                             </a>
                             <hr>
-                            <p class="card-text text-muted h6 mb-3">{{ post.created_date }}</p>
+                            <p class="card-text h6 mb-3">{{ post.created_date }}</p>
                         </div>
                     </div>
                     {% endif %}
                     {% endfor %}
                 </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col">
-                <button style="float:right;" class="btn btn-success back-to-top">Back to Top</button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Pagination -->
-    <div class="row justify-content-center">
-        <ul class="pagination">
+                <!-- Pagination -->
+        <ul class="pagination justify-content-center">
             {% if postings.has_previous %}
             <li class="page-item">
                 <a class="page-link" href="?page=1">&laquo; First</a>
@@ -71,6 +64,14 @@
             </li>
             {% endif %}
         </ul>
+</div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <button style="float:right;" class="btn btn-success back-to-top">Back to Top</button>
+            </div>
+        </div>
     </div>
 </div>
 {% endblock %}
