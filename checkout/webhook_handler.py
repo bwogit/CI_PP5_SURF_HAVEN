@@ -14,7 +14,7 @@ from profiles.models import UserProfile
 
 
 # From CI Boutique Ado webhook handler
-class StripeWebHook_Handler:
+class StripeWH_Handler:
     """
     Handle webhook for Stripe
     """
