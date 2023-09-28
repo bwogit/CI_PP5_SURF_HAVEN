@@ -110,14 +110,21 @@
                     </li>
                 </ul>
                 <!-- Search Box -->
-                <form class="form-inline my-2 my-lg-0">
-                    <div class="input-group">
-                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-dark" type="submit">
+                <div class="container">
+                    <div class="row mx-auto">
+                    <form method="GET" action="{% url 'products' %}">
+                        <div class="input-group w-50">
+                        <input class="form-control rounded-start" type="text" name="q" placeholder="Search">
+                        <button class="btn btn-outline-info rounded-end" type="submit">
+                            <span class="icon">
                             <i class="fas fa-search"></i>
+                            </span>
                         </button>
+                        </div>
+                    </form>
                     </div>
-                </form>
+                </div>
+  
                 <ul class="navbar-nav me-auto me-lg-1 ms-lg-auto mb-2 mb-lg-0">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
