@@ -14,5 +14,6 @@ urlpatterns = [
     path('profile/', include('profiles.urls')),
     path('summernote/', include('django_summernote.urls')),
     path('', include('blog.urls')),
+    path('', include('contact.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 handler404 = 'surf_haven.views.handler404'
