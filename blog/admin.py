@@ -1,16 +1,10 @@
 # Imports
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-# 3rd party:
 from django.contrib import admin
 from django_summernote.admin import SummernoteModelAdmin
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # Internal:
 from .models import Post, Comment
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-# Registration of the post items for the admin panel,
-# display and search filters
 @admin.register(Post)
 class PostAdmin(SummernoteModelAdmin):
 
