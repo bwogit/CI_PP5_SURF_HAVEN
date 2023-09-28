@@ -6,6 +6,7 @@ from django.template.loader import render_to_string
 from django.conf import settings
 import json
 import time
+import stripe
 # Internal
 from .models import Order, OrderLineItem
 from products.models import Product
@@ -55,7 +56,7 @@ class StripeWebHook_Handler:
         """
         intent = event.data.object
         pid = intent.id
-        bag = intent.metadata.bag
+        basket = intent.metadata.basket
         save_info = intent.metadata.save_info
 
         # Get the Charge object
