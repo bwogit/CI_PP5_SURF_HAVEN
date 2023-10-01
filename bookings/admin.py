@@ -7,7 +7,7 @@ class SchoolAdmin(admin.ModelAdmin):
     summernote_fields = ('description',)
     list_display = ('school_name', 'location', 'description', 'is_available')
     list_filter = ('location',)
-    search_fields = ('name', 'location', 'description')
+    search_fields = ('school_name', 'location', 'description')
     prepopulated_fields = {'slug': ('school_name',)}
 
     def is_available(self, obj):
@@ -26,6 +26,5 @@ class BookingAdmin(admin.ModelAdmin):
     actions = ['confirm_bookings']
 
     def confirm_bookings(self, request, queryset):
-        # Note: I corrected the status value to 'Booking Confirmed'
         queryset.update(status='Booking Confirmed')
     confirm_bookings.short_description = "Confirm selected bookings"
