@@ -33,13 +33,14 @@ class School(models.Model):
     slug = models.SlugField(max_length=200, unique=True, default='',)
     location = models.CharField(max_length=200)
     description = models.TextField()
+    available = models.BooleanField(default=True)
     image = models.ImageField(upload_to='school_images/', null=True, blank=True)
 
     class Meta:
         ordering = ['school_name']
 
     def __str__(self):
-        return self.name
+        return self.school_name
 
 
 class Booking(models.Model):

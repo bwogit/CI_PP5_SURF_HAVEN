@@ -16,7 +16,6 @@ from .forms import BookingForm
 
 class AllSchools(generic.ListView):
     model = School
-    # queryset = Club.objects.filter(status=1).order_by('club_name')
     template_name = 'school_list.html'
     paginated_by = 4
 
