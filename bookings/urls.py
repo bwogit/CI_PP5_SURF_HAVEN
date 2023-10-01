@@ -5,7 +5,7 @@ from bookings import views
 
 # Urls for all the pages in the bookings app
 urlpatterns = [
-    path('schools', views.AllSchools.as_view(), name='schools'),
+    path('bookings/', views.AllSchools.as_view(), name='surf_schools'),
     path('reservations', views.Reservations.as_view(), name='reservations'),
     path('confirmed', views.Confirmed.as_view(), name='confirmed'),
     path('booking_list', views.BookingList.as_view(), name='booking_list'),

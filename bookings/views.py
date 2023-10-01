@@ -9,9 +9,10 @@ from django.core.paginator import Paginator
 # Internal:
 from .models import School, Booking
 from .forms import BookingForm
+from products.models import Product, Category
 
 
-# View for all posts that are published
+# 
 
 
 class AllSchools(generic.ListView):
@@ -24,7 +25,7 @@ class AllSchools(generic.ListView):
         This view renders the list of all partner surfschools 
         """
         schools = School.objects.all()
-        paginator = Paginator(Post.objects.all(), 4)
+        paginator = Paginator(School.objects.all(), 4)
         page = request.GET.get('page')
         postings = paginator.get_page(page)
         products = Product.objects.all()
@@ -96,7 +97,7 @@ class BookingList(generic.ListView):
     def get(self, request, *args, **kwargs):
 
         booking = Booking.objects.all()
-        paginator = Paginator(Post.objects.filter(user=request.user), 4)
+        paginator = Paginator(School.objects.filter(user=request.user), 4)
         page = request.GET.get('page')
         booking_page = paginator.get_page(page)
         today = datetime.datetime.now().date()
