@@ -18,6 +18,7 @@ from products.models import Product, Category
 
 class AllSchools(generic.ListView):
     model = School
+    queryset = School.objects.filter(available=1).order_by('school_name')
     template_name = 'school_list.html'
     paginated_by = 4
 

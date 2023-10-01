@@ -10,18 +10,33 @@
 {% endblock %}
 
 {% block content %}
-<div class="container">
-    <div class="row bg-light my-5 p-3 rounded">
-        <div class="col">
-            <div class="row">
-                <div class="col-sm">
-                    <div class="card bg-light mb-3">
-                        {% for school in Schools %}
-                        <div class="card-body">
-                            <h1 class="text-success">{{ school.school_name }}</h1>
-                            <p class="card-text">{{ school.description }}</p>
-                        </div>
-                        {% endfor %}
+<div class="col-12">
+    {% for school in schools %}
+    <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+            <div class="col-md-4">
+                {% if club.image %}
+                <a href="#">
+                    <img src="{{ school.image.url }}" alt="Surf School" class="img-fluid rounded-start">
+                </a>
+                {% else %}
+                <a href="#">
+                    <img src="{% static 'img/default-image.jpg' %}" alt="Surf School" class="img-fluid rounded-start">
+                </a>
+                {% endif %}
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title text-success">{{ school.school_name }}</h5>
+                    <p class="card-text">{{ school.description }}</p>
+                    <a href="#" class="btn btn-primary">Details</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
                     </div>
                 </div>
             </div>
