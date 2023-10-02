@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="container">
+    <div class="row my-5">
+        <div class="col bg-light rounded p-4">
+            <a class="text-success text-decoration-none" href="{% url 'booking_list' %}">
+                <h1 class="my-3">
+                    Bookings
+                </h1>
+            </a>
+        </div>
+    </div>
+    <!-- Cards -->
+    <div class="row bg-light my-5 p-3 rounded">
+        <div class="col-12 col-md-6 mx-auto">
+            <!-- Display if user is not logged in -->
+            {% if not user.is_authenticated %}
+            <div class="row">
+                <div class="col-12 col-md-6 m-5 mx-auto">
+                    <h2 class="text-danger">Login Required</h2>
+                    <p class="text-secondary">Please login to edit bookings</p>
+                    <a class="btn btn-success" href="{% url 'account_login' %}">Go to Login Page</a>
+                </div>
+            </div>
+            {% else %}
+            <!-- Display form if user is logged in -->
+            {% if user.is_authenticated and user == booking.user %}
+            <div class="card m-5 col-12 col-md-6 mx-auto">
+                <div class="card-body text-center">
+                    <h3 class="text-danger">Cancel surf lesson</h3>
+                    <h5 class="card-title text-success">Location: {{ booking.school_name }}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Name: {{ booking.name }}</h6>
+                    <p class="fw-bold">Date: {{ booking.requested_date }}</p>
+                    <p class="fw-bold">Lesson Time: {{ booking.requested_time }}</p>
+                    <p class="fw-bold">Surfers: {{ booking.surfer_count }}</p>
+                    <h6 class="text-danger">Are you sure?</h6>
+                    <form method="POST">
+                        {% csrf_token %}
+                        <button class="btn btn-danger" type="submit">YES</button>
+                        <a href="{% url 'booking_list' %}" class="btn btn-secondary">Return</a>
+                    </form>
+                </div>
+            </div>
+            {% endif %}
+            {% endif %}
+            <div class="row">
+                <div class="col">
+                    <span style="float:right;" class="btn btn-success text-white back-to-top">Back to Top</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

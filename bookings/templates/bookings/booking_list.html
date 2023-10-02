@@ -34,7 +34,7 @@
                     <p class="fw-bold">Tee Time: {{ booking.requested_time }}</p>
                     <p class="fw-bold">Players: {{ booking.player_count }}</p>
                     <a class="btn btn-success" href="#" role="button">Edit</a>
-                    <a class="btn btn-warning" href="#" role="button">Cancel Booking</a>
+                    <a class="btn btn-warning" href="{% url 'cancel_booking' booking.pk %}" role="button">Cancel Booking</a>
                 </div>
             </div>
             {% endfor %}
