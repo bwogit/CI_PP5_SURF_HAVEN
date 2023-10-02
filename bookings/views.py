@@ -29,7 +29,7 @@ class AllSchools(generic.ListView):
         schools = School.objects.all()
         paginator = Paginator(School.objects.all(), 4)
         page = request.GET.get('page')
-        schools = paginator.get_page(page)
+        postings = paginator.get_page(page)
         products = Product.objects.all()
         categories_list = Category.objects.all()
 
@@ -37,6 +37,7 @@ class AllSchools(generic.ListView):
             'products': products,
             'categories_list': categories_list,
             'schools': schools,
+            'postings': postings
         }
 
         return render(
