@@ -27,6 +27,7 @@ class AllSchools(generic.ListView):
         This view renders the list of all partner surfschools 
         """
         schools = School.objects.all()
+        queryset = School.objects.filter(available=1).order_by('school_name')
         paginator = Paginator(School.objects.all(), 4)
         page = request.GET.get('page')
         postings = paginator.get_page(page)
@@ -36,8 +37,8 @@ class AllSchools(generic.ListView):
         context = {
             'products': products,
             'categories_list': categories_list,
-            'schools': schools,
-            'postings': postings
+            'schools': postings,
+            # 'postings': postings
         }
 
         return render(
