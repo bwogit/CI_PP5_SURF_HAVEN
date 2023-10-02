@@ -32,7 +32,7 @@
                     <p class="fw-bold">Name: {{ booking.name }}</p>
                     <p class="fw-bold">Date: {{ booking.requested_date }}</p>
                     <p class="fw-bold">Tee Time: {{ booking.requested_time }}</p>
-                    <p class="fw-bold">Players: {{ booking.player_count }}</p>
+                    <p class="fw-bold">Surfers: {{ booking.surfer_count }}</p>
                     <a class="btn btn-success" href="{% url 'edit_booking' booking.pk %}" role="button">Edit</a>
                     <a class="btn btn-warning" href="{% url 'cancel_booking' booking.pk %}" role="button">Cancel Booking</a>
                 </div>
