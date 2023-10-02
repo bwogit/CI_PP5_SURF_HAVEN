@@ -2,50 +2,44 @@
 {% load static %}
 
 {% block page_header %}
-<div class="container header-container">
+  <div class="container header-container">
     <div class="row">
-        <div class="col"></div>
+      <div class="col"></div>
     </div>
-</div>
+  </div>
 {% endblock %}
 
 {% block content %}
-<div class="col-12">
+  <div class="col-12">
     {% for school in schools %}
-    <div class="card mb-3" style="max-width: 540px;">
+      <div class="card mb-3" style="max-width: 540px;">
         <div class="row g-0">
-            <div class="col-md-4">
-                {% if school.image %}
-                <a href="#">
-                    <img src="{{ school.image.url }}" alt="Surf School" class="card-img-top" style="height: 500px;">
-                </a>
-                {% else %}
-                <a href="#">
-                    <img src="{% static 'img/default-image.jpg' %}" alt="Surf School" class="img-fluid rounded-start">
-                </a>
-                {% endif %}
+          <div class="col-md-4">
+            {% if school.image %}
+              <a href="#">
+                <img src="{{ school.image.url }}" alt="Surf School" class="card-img-top">
+              </a>
+            {% else %}
+              <a href="#">
+                <img src="{% static 'img/default-image.jpg' %}" alt="Surf School" class="img-fluid rounded-start">
+              </a>
+            {% endif %}
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title text-success">{{ school.school_name }}</h5>
+              <p class="card-text">{{ school.description }}</p>
+              <a href="#" class="btn btn-primary">Details</a>
             </div>
-            <div class="col-md-8">
-                <div class="card-body">
-                    <h5 class="card-title text-success">{{ school.school_name }}</h5>
-                    <p class="card-text">{{ school.description }}</p>
-                    <a href="#" class="btn btn-primary">Details</a>
-                </div>
-            </div>
+          </div>
         </div>
-    </div>
+      </div>
     {% endfor %}
-</div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col">
-            <a href="#" class="btn btn-success float-end back-to-top">Back to Top</a>
-        </div>
-    </div>
-</div>
+  </div>
 {% endblock %}
+
+<div class="row">
+  <div class="col">
+    <a href="#" class="btn btn-success float-end back-to-top">Back to Top</a>
+  </div>
+</div>
