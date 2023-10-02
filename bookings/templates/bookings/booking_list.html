@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="container my-5">
+    <div class="row">
+        <div class="col bg-light p-4 rounded">
+            <a class="text-success text-decoration-none" href="{% url 'surf_school' %}">
+                <h1 class="mb-4">Bookings</h1>
+            </a>
+            <!-- Display login link if user is not authenticated -->
+            {% if not user.is_authenticated %}
+            <p class="mb-3">Please login to view your tee times.</p>
+            <a href="{% url 'account_login' %}" class="btn btn-success">Go to Login Page</a>
+            {% else %}
+            <h1 class="text-success">Bookings historical:</h1>
+            <hr>
+            <!-- Loop through bookings -->
+            {% for booking in booking_page %}
+            <div class="row mb-4">
+                <div class="col-12 col-md-4">
+                    <!-- Use an anchor tag with appropriate href -->
+                    <a href="#">
+                        <img class="img-fluid rounded" src="{{ booking.image.url }}" alt="">
+                    </a>
+                </div>
+                <div class="col-12 col-md-8">
+                    <a href="#">
+                        <h2 class="text-success">{{ booking.golf_club_name }}</h2>
+                    </a>
+                    <p class="fw-bold">Name: {{ booking.name }}</p>
+                    <p class="fw-bold">Date: {{ booking.requested_date }}</p>
+                    <p class="fw-bold">Tee Time: {{ booking.requested_time }}</p>
+                    <p class="fw-bold">Players: {{ booking.player_count }}</p>
+                    <a class="btn btn-success" href="#" role="button">Edit</a>
+                    <a class="btn btn-warning" href="#" role="button">Cancel Booking</a>
+                </div>
+            </div>
+            {% endfor %}
+            <!-- Pagination -->
+            <div class="row d-flex justify-content-center text-center">
+                <div class="col">
+                    {% if booking_page.has_previous %}
+                    <a href="?page=1" class="btn btn-link">&laquo; First</a>
+                    <a href="?page={{ booking_page.previous_page_number }}" class="btn btn-link">Previous</a>
+                    {% endif %}
+                    Page {{ booking_page.number }} of {{ booking_page.paginator.num_pages }}
+                    {% if booking_page.has_next %}
+                    <a href="?page={{ booking_page.next_page_number }}" class="btn btn-link">Next</a>
+                    <a href="?page={{ booking_page.paginator.num_pages }}" class="btn btn-link">Last &raquo;</a>
+                    {% endif %}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <a href="#" class="btn btn-success float-end">Back to Top</a>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}
