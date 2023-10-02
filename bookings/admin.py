@@ -13,8 +13,8 @@ class SchoolAdmin(admin.ModelAdmin):
     def is_available(self, obj):
         return obj.available
 
-    is_available.boolean = True  # 
-    is_available.short_description = 'Available'  # 
+    is_available.boolean = True 
+    is_available.short_description = 'Available'
 
 
 @admin.register(Booking)
