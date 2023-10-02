@@ -7,7 +7,7 @@ from django.contrib.messages.views import SuccessMessageMixin
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic.edit import UpdateView
 from django.core.paginator import Paginator
-import datetime
+from datetime import datetime
 # Internal:
 from .models import School, Booking
 from .forms import BookingForm

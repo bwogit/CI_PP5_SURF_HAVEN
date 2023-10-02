@@ -6,7 +6,7 @@
 <div class="container my-5">
     <div class="row">
         <div class="col bg-light p-4 rounded">
-            <a class="text-success text-decoration-none" href="{% url 'surf_school' %}">
+            <a class="text-success text-decoration-none" href="{% url 'school_list' %}">
                 <h1 class="mb-4">Bookings</h1>
             </a>
             <!-- Display login link if user is not authenticated -->
@@ -27,7 +27,7 @@
                 </div>
                 <div class="col-12 col-md-8">
                     <a href="#">
-                        <h2 class="text-success">{{ booking.golf_club_name }}</h2>
+                        <h2 class="text-success">{{ booking.school_name }}</h2>
                     </a>
                     <p class="fw-bold">Name: {{ booking.name }}</p>
                     <p class="fw-bold">Date: {{ booking.requested_date }}</p>
