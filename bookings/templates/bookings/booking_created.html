@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="row bg-light my-5 p-3 rounded">
+        <div class="card m-5 col-12 col-md-6 mx-auto">
+            <div class="card-body text-center">
+                <h1 class="text-success">Booking Created</h1>
+                <p>Thank you for booking with us. We look forward to see you in the water.</p>
+                <div class="col-12 col-md-6 rounded m-2 mx-auto">
+                    <a class="btn btn-success btn-lg" href="{% url 'school_list' %}" role="button">back to school list</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <span style="float:right;" class="btn text-success back-to-top">Back to Top</span>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

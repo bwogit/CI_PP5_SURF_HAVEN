@@ -1,6 +1,6 @@
 # Imports
 # 3rd party:
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from django.views import generic, View
 from django.contrib import messages
 from django.contrib.messages.views import SuccessMessageMixin
@@ -49,6 +49,43 @@ class AllSchools(generic.ListView):
         )
 
 
+# class SchoolDetail(View):
+#     template_name = 'bookings/school_detail.html'
+#     success_message = 'Booking has been made.'
+
+#     def get(self, request, slug, *args, **kwargs):
+#         school = get_object_or_404(School.objects.filter(available=1), slug=slug)
+#         products = Product.objects.all()
+#         categories_list = Category.objects.all()
+
+#         initial_data = {}
+#         if request.user.is_authenticated:
+#             initial_data = {
+#                 'email': request.user.email,
+#                 'school': school,
+#             }
+
+#         booking_form = BookingForm(initial=initial_data)
+
+#         context = {
+#             'products': products,
+#             'categories_list': categories_list,
+#             'school': school,
+#             'booking_form': booking_form
+#         }
+
+#         if booking_form.is_valid():
+#             booking = booking_form.save(commit=False)
+#             booking.user = request.user
+#             booking.save()
+#             messages.success(
+#                 request, "Booking succesful")
+#             return render(request, 'bookings/booking_created.html')
+#         return render(
+#             request, 'bookings/school_detail.html', context)
+#         # return render(request, self.template_name, context)
+
+# 
 class SchoolDetail(View):
     template_name = 'bookings/school_detail.html'
     success_message = 'Booking has been made.'
@@ -65,17 +102,39 @@ class SchoolDetail(View):
                 'school': school,
             }
 
-
         booking_form = BookingForm(initial=initial_data)
 
         context = {
             'products': products,
             'categories_list': categories_list,
             'school': school,
-            'booking_form': booking_form
+            'booking_form': booking_form,
         }
 
         return render(request, self.template_name, context)
+
+    def post(self, request, slug, *args, **kwargs):
+        queryset = School.objects.filter(available=1)
+        school_instance = get_object_or_404(queryset, slug=slug)  # Use a different variable name, e.g., school_instance
+        booking_form = BookingForm(data=request.POST)
+        template_name = 'bookings/school_detail.html'
+
+        context = {
+            'school': school_instance,  # Update the variable name here as well
+            'booking_form': booking_form,
+            'slug': slug
+        }
+
+        if booking_form.is_valid():
+            booking = booking_form.save(commit=False)
+            booking.user = request.user
+            booking.school = school_instance  # Use the school_instance variable
+            booking.save()
+            messages.success(
+                request, "Booking successful")
+            return render(request, 'bookings/booking_created.html')
+        return render(
+            request, 'bookings/school_detail.html', context)
 
 
 # Show all of the user's current bookings.
