@@ -61,8 +61,9 @@ class SchoolDetail(View):
         if request.user.is_authenticated:
             initial_data = {
                 'email': request.user.email,
-                'school_name': school,
+                'school': school,
             }
+
 
         booking_form = BookingForm(initial=initial_data)
 
