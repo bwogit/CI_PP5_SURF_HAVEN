@@ -83,37 +83,31 @@ class SchoolDetail(View):
 
 
 class BookingList(generic.ListView):
-    """
-   
-    """
     model = Booking
-    queryset = Booking.objects.filter().order_by('-created_date')
-    template_name = 'booking_list.html'
-    paginated_by = 4
+    template_name = 'bookings/booking_list.html'
+    context_object_name = 'bookings'
+    paginate_by = 4
 
-    def get(self, request, *args, **kwargs):
+    def get_queryset(self):
+        user = self.request.user
+        if user.is_authenticated:
+            # Filter bookings for the authenticated user
+            return Booking.objects.filter(user=user).order_by('-created_date')
+        return Booking.objects.none()
 
-        booking = Booking.objects.all()
-        paginator = Paginator(School.objects.filter(user=request.user), 4)
-        page = request.GET.get('page')
-        booking_page = paginator.get_page(page)
-        today = datetime.datetime.now().date()
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        booking_page = context['page_obj']
 
-        for date in booking:
-            if date.requested_date < today:
-                date.status = 'Booking is Expired'
+        today = datetime.now().date()
 
-        if request.user.is_authenticated:
-            bookings = Booking.objects.filter(user=request.user)
-            return render(
-                request,
-                'bookings/booking_list.html',
-                {
-                    'booking': booking,
-                    'bookings': bookings,
-                    'booking_page': booking_page})
-        else:
-            return redirect('accounts/login.html')
+        # Update the status of bookings based on the requested_date
+        for booking in booking_page:
+            if booking.requested_date < today:
+                booking.status = 'Booking is Expired'
+
+        context['booking_page'] = booking_page
+        return context
 
 
 # Opens the booking editing page and form, 
