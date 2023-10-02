@@ -21,7 +21,7 @@
               <div class="card-body">
                 <h5 class="card-title text-success">{{ school.school_name }}</h5>
                 <p class="card-text">{{ school.description }}</p>
-                <a href="#" class="btn btn-primary">Details</a>
+                <a href="{% url 'school_detail' slug=school.slug %}" class="btn btn-primary">Details</a>
               </div>
             </div>
           </div>

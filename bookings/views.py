@@ -48,39 +48,32 @@ class AllSchools(generic.ListView):
         )
 
 
-class Reservations(View):
-    """
-    This view presents the booking form to 
-    registered users and automatically populates 
-    the email field with their registered email address.
-    """
-    template_name = 'bookings/reservations.html'
+class SchoolDetail(View):
+    template_name = 'bookings/school_detail.html'
     success_message = 'Booking has been made.'
 
-    def get(self, request, *args, **kwargs):
-        """
-        Retrieves users email and populate email field
-        """
+    def get(self, request, slug, *args, **kwargs):
+        school = get_object_or_404(School.objects.filter(available=1), slug=slug)
+        products = Product.objects.all()
+        categories_list = Category.objects.all()
+
+        initial_data = {}
         if request.user.is_authenticated:
-            email = request.user.email
-            booking_form = BookingForm(initial={'email': email})
-        else:
-            booking_form = BookingForm()
-        return render(request, 'bookings/reservations.html',
-                      {'booking_form': booking_form})
+            initial_data = {
+                'email': request.user.email,
+                'school_name': school,
+            }
 
+        booking_form = BookingForm(initial=initial_data)
 
-# Dispays the confirmation page after a succesful booking
+        context = {
+            'products': products,
+            'categories_list': categories_list,
+            'school': school,
+            'booking_form': booking_form
+        }
 
-
-class Confirmed(generic.DetailView):
-    """
-    This view will display confirmation upon successful booking
-    """
-    template_name = 'bookings/confirmed.html'
-
-    def get(self, request):
-        return render(request, 'bookings/confirmed.html')
+        return render(request, self.template_name, context)
 
 
 # Show all of the user's current bookings.
