@@ -182,6 +182,7 @@ class EditBooking(SuccessMessageMixin, UpdateView):
     form_class = BookingForm
     template_name = 'bookings/edit_booking.html'
     success_message = 'Booking has been updated.'
+    categories_list = Category.objects.all()
 
     def get_success_url(self, **kwargs):
         return reverse('booking_list')
