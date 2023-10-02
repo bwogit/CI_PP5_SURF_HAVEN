@@ -4,6 +4,7 @@ from django.shortcuts import render, get_object_or_404
 from django.views import generic, View
 from django.contrib import messages
 from django.contrib.messages.views import SuccessMessageMixin
+from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic.edit import UpdateView
 from django.core.paginator import Paginator
 import datetime
@@ -82,7 +83,7 @@ class SchoolDetail(View):
 # Once a booking is expired, the user cannot modify or cancel it.
 
 
-class BookingList(generic.ListView):
+class BookingList(LoginRequiredMixin, generic.ListView):
     model = Booking
     template_name = 'bookings/booking_list.html'
     context_object_name = 'bookings'
