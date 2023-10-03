@@ -1,7 +1,7 @@
 /* Custom CSS to remove the gap on the left of the logo */
 
 body {
-  background: url('/media/base_image.webp') no-repeat center center fixed;
+  background: url('/media/base_image.jpg') no-repeat center center fixed;
   background-size: cover;
   height: calc(100vh - 164px);
   color: black;
