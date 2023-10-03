@@ -1,10 +1,10 @@
 /* Custom CSS to remove the gap on the left of the logo */
 
 body {
-  background: url('/media/base_image.jpg') no-repeat center center fixed;
+  background: url('/media/base_image2.jpg') no-repeat center center fixed;
   background-size: cover;
   height: calc(100vh - 164px);
-  color: black;
+  /* color: black; */
   font-family: 'Roboto', sans-serif;
 }
 
@@ -49,4 +49,10 @@ body {
   min-height: 100%;
   opacity: 0;
   cursor: pointer;
+}
+
+footer {
+  opacity: 0.6;
+  color:#ffffff;
+  background-color: rgb(7, 8, 11);
 }
