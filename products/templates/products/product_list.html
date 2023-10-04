@@ -8,7 +8,7 @@
 {% block content %}
 <div class="overlay"></div>
 <div class="container">
-  <div class="row bg-light my-5 p-3 rounded">
+  <div class="row my-5 p-3 rounded">
     <div class="col">
       <div class="justify-content-center text-center rounded">
         <div class="card-body">
@@ -30,9 +30,10 @@
                 {{ products|length }} Items{% if search_term %} found for
                 <strong>"{{ search_term }}"</strong>{% endif %}
             </span>
+          </div>
         </div>
           
-        <div class="row bg-light p-3 rounded mt-3">
+        <div class="row p-3 rounded mt-3">
             <div class="col-md-2 d-none d-lg-block">
                 <h2 class="fs-6">CATEGORIES</h2>
                 <hr>
@@ -70,7 +71,7 @@
                                 </a>
                                 {% else %}
                                 <a href="{% url 'product_detail' product.id %}">
-                                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                                    <img class="card-img-top img-fluid" src="{% static 'img/noimage.jpg' %}" alt="Default no image for {{ product.name }}">
                                 </a>
                                 {% endif %}
                                 <div class="card-body pb-0">
@@ -125,7 +126,7 @@
                         {% endif %}
                     {% endfor %}
                 </div>
-          </div>
+            </div>
         </div>
       </div>
     </div>
