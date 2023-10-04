@@ -99,44 +99,47 @@
                 <!-- Search Box -->
                 <div class="container">
                     <div class="row mx-auto">
-                    <form method="GET" action="{% url 'products' %}">
-                        <div class="input-group w-50">
-                        <input class="form-control rounded-start" type="text" name="q" placeholder="Search">
-                        <button class="btn btn-outline-info rounded-end" type="submit">
-                            <span class="icon">
-                            <i class="fas fa-search"></i>
-                            </span>
-                        </button>
-                        </div>
-                    </form>
+                        <form method="GET" action="{% url 'products' %}">
+                            <div class="input-group w-50">
+                                <input class="form-control border rounded" type="text" name="q" aria-label="Search">
+                                <div class="input-group-append">
+                                    <button class="btn btn-outline-success border rounded" type="sumit">
+                                        Search
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
   
                 <ul class="navbar-nav me-auto me-lg-1 ms-lg-auto mb-2 mb-lg-0">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle{% if request.user.is_authenticated %} {{ 'text-success' }}{% endif %}" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             {% if request.user.is_authenticated %}
-                            <i class="text-success fas fa-user fa-lg"></i>
+                                <i class="fas fa-user fa-lg"></i><span
+                                class="sr-only">Profile</span>
                             {% else %}
-                            <i class="fas fa-user fa-lg"></i>
+                                <i class="fas fa-user fa-lg"></i><span
+                                class="sr-only">Profile</span>
                             {% endif %}
                         </a>
                         <!-- Login Dropdown -->
                         <ul class="dropdown-menu">
                             {% if request.user.is_authenticated %}
-                            {% if request.user.is_superuser %}
-                            <li><a class="dropdown-item" href="#">Management</a></li>
-                            <a class="dropdown-item" href="{% url 'add_product' %}">Add Product</a>
-                            {% endif %}
-                            <li><a class="dropdown-item" href="{% url 'profile' %}">Profile</a></li>
-                            <li><a class="dropdown-item" href="{% url 'account_logout' %}">Logout</a></li>
+                                {% if request.user.is_superuser %}
+                                    <li><a class="dropdown-item" href="#">Management</a></li>
+                                    <li><a class="dropdown-item" href="{% url 'add_product' %}">Add Product</a></li>
+                                {% endif %}
+                                <li><a class="dropdown-item" href="{% url 'profile' %}">Profile</a></li>
+                                <li><a class="dropdown-item" href="{% url 'account_logout' %}">Logout</a></li>
                             {% else %}
-                            <li><a class="dropdown-item" href="{% url 'account_signup' %}">Register</a></li>
-                            <li><a class="dropdown-item" href="{% url 'account_login' %}">Login</a></li>
+                                <li><a class="dropdown-item" href="{% url 'account_signup' %}">Register</a></li>
+                                <li><a class="dropdown-item" href="{% url 'account_login' %}">Login</a></li>
                             {% endif %}
                         </ul>
                     </li>
                 </ul>
+                
                 <!-- Basket Section -->
                 <!-- Basket -->
                 <ul class="navbar-nav me-auto me-lg-1 ms-lg-auto mb-2 mb-lg-0">
