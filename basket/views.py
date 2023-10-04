@@ -2,7 +2,6 @@
 # 3rd Party
 from django.shortcuts import render, redirect, get_object_or_404, reverse, HttpResponse
 from django.contrib import messages
-from products.models import Product
 
 # Internal
 from products.models import Product, Category
