@@ -10,36 +10,12 @@
 <div class="container">
     <div class="row my-5">
         <div class="col bg-light rounded">
-            <div class="col">
-                <h1 class="my-5 text-muted">
-                    Your Shopping Basket
-                </h1>
-            </div>
+            <h1 class="my-5 text-muted">
+                Your Shopping Basket
+            </h1>
         </div>
     </div>
     <div class="row bg-light p-3 rounded">
-        <div class="d-none d-lg-block col-md-2">
-            <!-- Product Categories -->
-            <h2 class="fs-6">Product Categories</h2>
-            <hr>
-            <p><a class="nav-link text-muted" href="{% url 'products' %}">All Products</a></p>
-            {% for category in categories_list %}
-                <p><a class="nav-link text-muted"
-                    href="{% url 'products' %}?category={{category.name}}">{{ category.friendly_name }}</a></p>
-            {% endfor %}
-            
-            <!-- Sort By -->
-            <h2 class="fs-6">Sort By</h2>
-            <hr>
-            <p><a href="{% url 'products' %}?sort=price&direction=desc"
-                    class="nav-link text-decoration-none text-muted">Price (High to Low)</a></p>
-            <p><a href="{% url 'products' %}?sort=category&direction=asc"
-                    class="nav-link text-decoration-none text-muted">Category (A-Z)</a></p>
-            <p><a href="{% url 'products' %}?sort=brand&direction=desc"
-                    class="nav-link text-decoration-none text-muted">Brand (Z-A)</a></p>
-            <p><a href="{% url 'products' %}?sort=rating&direction=desc"
-                    class="nav-link text-decoration-none text-muted">Rating (High to Low)</a></p>
-        </div>
         <div class="col">
             <div class="row">
                 <div class="col-sm d-flex flex-wrap">
@@ -62,7 +38,7 @@
                                             {% if item.product.image %}
                                             <img class="w-100 rounded" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
                                             {% else %}
-                                            <img class="w-100 rounded" src="{{ MEDIA_URL }}/products/noimage.jpg" alt="{{ item.product.name }}">
+                                            <img class="w-100 rounded" src="{% static 'img/default-image.jpg' %}" alt="{{ item.product.name }}">
                                             {% endif %}
                                         </td>
                                         <td class="py-3">
@@ -83,7 +59,6 @@
                                             {% include "basket/quantity_form.html" %}
                                         </td>
                                     </tr>
-                                    
                                 {% endfor %}
                             </table>
                         </div>
@@ -93,22 +68,20 @@
                             Keep Shopping
                         </a>
                         <a href="{% url 'checkout' %}" class="btn btn-success rounded btn-lg">
+                            <i class="fas fa-lock me-2"></i>
                             <span class="text-uppercase">Secure Checkout</span>
-                            <span class="icon">
-                                <i class="fas fa-lock"></i>
-                            </span>
                         </a>
                         <div class="row">
                             <div class="col">
-                                <span style="float:right;" class="btn text-success back-to-top">Back to Top</span>
+                                <a href="#" class="btn btn-link text-success float-end back-to-top">Back to Top</a>
                             </div>
                         </div>
                     {% else %}
                         <!-- Empty Basket Message -->
                         <p class="lead mb-5">Your basket is empty</p>
-                        <a class="rounded btn btn-lg text-success" href="{% url 'products' %}">
-                            <span class="icon"><i class="fas fa-backward"></i></span>
-                            <span>Return to Shop</span>
+                        <a class="btn btn-lg btn-link text-success" href="{% url 'products' %}">
+                            <i class="fas fa-backward me-2"></i>
+                            Return to Shop
                         </a>
                     {% endif %}
                 </div>
@@ -148,7 +121,7 @@
 
 <script type="text/javascript">
     $('.back-to-top').click(function (e) {
-        window.scrollTo(0, 0)
+        window.scrollTo(0, 0);
     })
 </script>
 
