@@ -62,7 +62,7 @@
         </div>
           
         <div class="row p-3 rounded mt-3">
-            <div class="col-md-2 bg-light d-none d-lg-block">
+            <div class="col-md-2 bg-light d-none d-lg-block sticky-sidebar">
                 <h2 class="fs-6">CATEGORIES</h2>
                 <hr>
                 <p><a class="nav-link text-success" href="{% url 'products' %}">All Products</a></p>
@@ -159,7 +159,16 @@
       </div>
     </div>
   </div>
+  <!-- Back to Top button -->
+<div class="container">
+    <div class="row">
+        <div class="col text-center">
+            <button class="btn btn-success back-to-top">Back to Top</button>
+        </div>
+    </div>
 </div>
+</div>
+
 {% endblock %}
 
 {% block postloadjs %}
@@ -192,4 +201,5 @@
             }
         })
     </script>
+    
 {% endblock %}

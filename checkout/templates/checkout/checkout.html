@@ -12,33 +12,12 @@
 <div class="container">
     <div class="row my-5">
         <div class="col bg-light rounded custom-header">
-            <div class="col">
-                <a class="text-muted text-decoration-none" href="{% url 'products' %}">
-                    <h1 class="my-5 custom-title">Surf Haven checkout</h1>
-                </a>
-            </div>
+            <a class="text-muted text-decoration-none" href="{% url 'products' %}">
+                <h1 class="my-5 custom-title">Surf Haven checkout</h1>
+            </a>
         </div>
     </div>
     <div class="row bg-light p-3 rounded custom-card">
-        <!-- <div class="d-none d-lg-block col-md-2">
-            <h2 class="fs-6">CATEGORIES</h2>
-            <hr>
-            <p><a class="nav-link text-muted" href="{% url 'products' %}">All Products</a></p>
-            {% for category in categories_list %}
-            <p><a class="nav-link text-muted"
-                    href="{% url 'products' %}?category={{category.name}}">{{ category.friendly_name }}</a></p>
-            {% endfor %}
-            <h2 class="fs-6">All Products</h2>
-            <hr> -->
-            <!-- <p><a href="{% url 'products' %}?sort=price&direction=desc"
-                    class="nav-link text-decoration-none text-muted">By Price</a></p>
-            <p><a href="{% url 'products' %}?sort=category&direction=asc"
-                    class="nav-link text-decoration-none text-muted">By Category</a></p>
-            <p><a href="{% url 'products' %}?sort=brand&direction=desc"
-                    class="nav-link text-decoration-none text-muted">By Brand</a></p>
-            <p><a href="{% url 'products' %}?sort=rating&direction=desc"
-                    class="nav-link text-decoration-none text-muted">By Rating</a></p> -->
-        <!-- </div> -->
         <div class="col">
             <div class="row">
                 <div class="col-12">
@@ -142,9 +121,7 @@
                                     </fieldset>
                                     <div class="submit-button text-end mt-5 mb-2">
                                         <a href="{% url 'view_basket' %}" class="btn btn-outline-black rounded-0">
-                                            <span class="icon">
-                                                <i class="fas fa-chevron-left"></i>
-                                            </span>
+                                            <i class="fas fa-chevron-left me-2"></i>
                                             <span class="font-weight-bold">Adjust Bag</span>
                                         </a>
                                         <button id="submit-button" class="btn custom-submit-button rounded-0">
@@ -176,9 +153,8 @@
             </div>
             <div class="row">
                 <div class="col">
-                    <span style="float:right;" class="btn text-success back-to-top">Back to Top</span>
+                    <a href="#" class="btn text-success float-end back-to-top">Back to Top</a>
                 </div>
-                
             </div>
         </div>
     </div>
