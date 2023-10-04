@@ -19,9 +19,11 @@
                     <div class="row">
                         <div class="col-3 my-1">
                             {% if item.product.image %}
-                            <img class="w-100" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
+                                <!-- Display product image here -->
+                                <img class="w-100" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
                             {% else %}
-                            <img class="w-100" src="{{ MEDIA_URL }}/products/noimage.jpg" alt="{{ item.product.name }}">
+                                <!-- Display a default image if no product image is available -->
+                                <img class="w-100" src="{{ MEDIA_URL }}/products/noimage.jpg" alt="{{ item.product.name }}">
                             {% endif %}
                         </div>
                         <div class="col-9">
