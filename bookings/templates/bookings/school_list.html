@@ -10,16 +10,16 @@
 {% endblock %}
 
 {% block content %}
-<div class="row my-5 p-3 rounded">
-  <div class="col">
-    <div class="row d-flex my-5 justify-content-center text-center rounded">
-      <div class="col-md-7">
+<div class="container">
+  <div class="row bg-light my-5 p-3 rounded">
+    <div class="col">
+      <div class="justify-content-center text-center rounded">
         <div class="card-body">
           <div class="row">
             <div class="col-12 p-5 rounded card">
               {% for school in schools %}
               <div class="col-12 p-5 bg-light rounded card w-100">
-                <div class="card shadow-sm">
+                <!-- <div class="card shadow-sm"> -->
                   <img src="{{ school.image.url }}" alt="Surf School" class="card-img-top">
                   <div class="card-body">
                     <h5 class="card-title text-success">{{ school.school_name }}</h5>
