@@ -20,7 +20,7 @@
             <p><a class="text-decoration-none text-muted"
                     href="{% url 'products' %}?category={{category.name}}">{{ category.friendly_name }}</a></p>
             {% endfor %}
-            <hr>
+            <!-- <hr>
             <p><a href="{% url 'products' %}?sort=category&direction=desc"
                 class="text-decoration-none text-muted">By
                 Category</a></p>
@@ -32,7 +32,7 @@
                 Brand</a></p>
             <p><a href="{% url 'products' %}?sort=brand&direction=desc"
                 class="text-decoration-none text-muted">By
-                Rating</a></p>
+                Rating</a></p> -->
         </div>
         <div class="col-12 col-lg-4 offset-lg-1">
             <div class="image-container my-4">
@@ -40,7 +40,7 @@
                 <a href="{{ product.image.url }}" target="_blank"><img class="img-fluid"
                         src="{{ product.image.url }}" alt="{{ product.name }}"></a>
                 {% else %}
-                <a href="#"><img class="img-fluid" src="{% static 'img/default-image.jpg' %}"
+                <a href="#"><img class="img-fluid" src="{% static 'img/noimage.jpg' %}"
                         alt="{{ product.name }}"></a>
                 {% endif %}
             </div>
@@ -128,5 +128,34 @@
 
 {% block postloadjs %}
 {{ block.super }}
+<script>
+    $(document).ready(function () {
+        $('.open').click(function () {
+            $('.popupOverlay, .popupContent').addClass('active');
+        });
+        $('.close, .popupOverlay').click(function () {
+            $('.popupOverlay, .popupContent').removeClass('active');
+        });
+    });
+</script>
+<script>
+    $(document).ready(function() {
+        const incrementButtons = $('.increment-qty');
+        incrementButtons.each(function() {
+            $(this).on('click', function() {
+                let productId = $(this).data('item_id');
+                let quantityInput = $('.id_qty_' + productId);
+                let maxStock = quantityInput.data('max');
+                let currentValue = parseInt(quantityInput.val());
+                if (currentValue < maxStock) {
+                    quantityInput.val(currentValue + 1);
+                }
+                if (currentValue + 1 >= maxStock) {
+                    $(this).prop('disabled', true);
+                }
+            });
+        });
+    });
+</script>
 {% include 'products/includes/quantity_script.html' %}
 {% endblock %}
