@@ -12,6 +12,15 @@ body {
     margin-left: 0; /* Remove any left margin */
   }
 
+/* Default black icon color */
+.black-icon {
+  color: #000;
+}
+
+/* White icon color on button click (active) */
+#search-btn:active #search-icon {
+  color: #fff;
+}
   /* Optional: To adjust the spacing between the logo and the navigation elements */
   .navbar-nav {
     margin-left: 1px; /* Adjust the margin as needed */
