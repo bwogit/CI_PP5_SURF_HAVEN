@@ -65,3 +65,13 @@ footer {
   color:#ffffff;
   background-color: rgb(7, 8, 11);
 }
+
+/* Add a custom class to the sidebar for styling */
+.sticky-sidebar {
+  position: sticky;
+  top: 20px; /* Adjust this value to set the distance from the top */
+  z-index: 1; /* Ensure the sidebar stays above content */
+  background-color: #fff; /* Add your desired background color */
+  padding: 15px; /* Add padding for spacing */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
+}

@@ -15,7 +15,7 @@ from .forms import BookingForm
 from products.models import Product, Category
 
 
-# 
+
 
 
 class AllSchools(generic.ListView):
