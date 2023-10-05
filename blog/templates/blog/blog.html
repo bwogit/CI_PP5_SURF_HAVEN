@@ -42,7 +42,9 @@
             {% endfor %}
         </div>
     </div>
-
+    <div class="container my-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-6">
     <!-- Pagination -->
     <ul class="pagination justify-content-center">
         {% if postings.has_previous %}
@@ -69,8 +71,11 @@
 
 <div class="row">
     <div class="col">
-        <button style="float:right;" class="btn btn-success back-to-top">Back to Top</button>
+        <span class="btn btn-success back-to-top">Back to Top</span>
     </div>
 </div>
 </div>
+    </div>
+</div>
+
 {% endblock %}
