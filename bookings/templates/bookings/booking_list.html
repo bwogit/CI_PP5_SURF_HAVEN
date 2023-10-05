@@ -2,40 +2,54 @@
 {% load static %}
 {% load crispy_forms_tags %}
 
+
+{% block page_header %}
+<div class="container header-container">
+  <div class="row">
+    <div class="col"></div>
+  </div>
+</div>
+{% endblock %}
+
 {% block content %}
-<div class="container my-5">
-    <div class="row">
-        <div class="col bg-light p-4 rounded">
-            <a class="text-success text-decoration-none" href="{% url 'school_list' %}">
-                <h1 class="mb-4">Bookings</h1>
-            </a>
-            <!-- Display login link if user is not authenticated -->
+<div class="container">
+  <div class="row my-5">
+      <div class="col bg-light rounded">
+              <h1 class="my-5">Bookings</h1>
+      </div>
+  </div>
+                <!-- <h1 class="mb-4">Bookings</h1>
+            </a> -->
+            <!-- Display login link if user is not authenticated
             {% if not user.is_authenticated %}
             <p class="mb-3">Please login to view your tee times.</p>
             <a href="{% url 'account_login' %}" class="btn btn-success">Go to Login Page</a>
-            {% else %}
-            <h1 class="text-success">Bookings historical:</h1>
-            <hr>
+            {% else %} -->
+            <!-- <h1 class="text-success">Bookings historical:</h1>
+            <hr> -->
             <!-- Loop through bookings -->
             {% for booking in booking_page %}
             <div class="row mb-4">
+                {% for booking in booking_page %}
                 <div class="col-12 col-md-4">
-                    <!-- Use an anchor tag with appropriate href -->
-                    <a href="#">
-                        <img class="img-fluid rounded" src="{{ booking.image.url }}" alt="">
-                    </a>
+                    <div class="card">
+                        <img class="card-img-top" src="{{ booking.image.url }}" alt="{{ booking.school_name }}">
+                        <div class="card-body">
+                            <h5 class="card-title text-success"><a href="#">{{ booking.school_name }}</a></h5>
+                            <p class="card-text">
+                                <strong>Name:</strong> {{ booking.name }}<br>
+                                <strong>Date:</strong> {{ booking.requested_date }}<br>
+                                <strong>Tee Time:</strong> {{ booking.requested_time }}<br>
+                                <strong>Surfers:</strong> {{ booking.surfer_count }}
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="{% url 'edit_booking' booking.pk %}" class="btn btn-success">Edit</a>
+                            <a href="{% url 'cancel_booking' booking.pk %}" class="btn btn-warning">Cancel Booking</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-12 col-md-8">
-                    <a href="#">
-                        <h2 class="text-success">{{ booking.school_name }}</h2>
-                    </a>
-                    <p class="fw-bold">Name: {{ booking.name }}</p>
-                    <p class="fw-bold">Date: {{ booking.requested_date }}</p>
-                    <p class="fw-bold">Tee Time: {{ booking.requested_time }}</p>
-                    <p class="fw-bold">Surfers: {{ booking.surfer_count }}</p>
-                    <a class="btn btn-success" href="{% url 'edit_booking' booking.pk %}" role="button">Edit</a>
-                    <a class="btn btn-warning" href="{% url 'cancel_booking' booking.pk %}" role="button">Cancel Booking</a>
-                </div>
+                {% endfor %}
             </div>
             {% endfor %}
             <!-- Pagination -->
