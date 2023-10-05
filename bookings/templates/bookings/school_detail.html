@@ -10,8 +10,7 @@
         <div class="card-body">
           <div class="row">
             <div class="col-12 p-5 rounded card">
-              <h1 class="my-4">Surf School</h1>
-              <a class="text-success text-decoration-none" href="{% url 'school_list' %}"></a>
+              <h2 class="card-title text-success">{{ school.school_name }}</h2>
               <!-- Card -->
               <div class="row bg-light my-4 p-3 rounded">
                 <div class="col-12 col-md-6">
@@ -22,7 +21,7 @@
                   {% endif %}
                 </div>
                 <div class="col-12 col-md-6 mt-2 p-3">
-                  <h2 class="card-title text-success">{{ school.school_name }}</h2>
+                  <!-- <h2 class="card-title text-success">{{ school.school_name }}</h2> -->
                   <p class="card-text">{{ school.description }}</p>
                   <!-- Display if user is not logged in -->
                   {% if not user.is_authenticated %}
@@ -47,6 +46,12 @@
 
                     <button class="btn btn-success" type="submit">Book lesson time</button>
                   </form>
+                </div>
+                <div class="row">
+                  <div class="col">
+                      <span class="btn btn-success back-to-top">Back to Top</span>
+                  </div>
+                </div>
                   {% endif %}
                   <!-- Form Errors from stack overflow -->
                   {% if booking_form.errors %}
