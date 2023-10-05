@@ -28,14 +28,14 @@
 
                 <div class="card-body w-100">
                     <a href="{% url 'post_detail' post.slug %}">
-                        <h2 class="card-title mt-3">{{ post.title }}</h2>
+                        <h2 class="card-title mt-3">Title: {{ post.title }}</h2>
                     </a>
                     <p class="card-subtitle mb-2">By: {{ post.author }}</p>
                     <a href="{% url 'post_detail' post.slug %}" class="post-link">
-                        <p class="card-text mt-3"><em>{{ post.excerpt|safe }}</em></p>
+                        <p class="card-text mt-3"><em>Excerpt: {{ post.excerpt|safe }}</em></p>
                     </a>
                     <hr>
-                    <p class="card-text h6 mb-3">{{ post.created_date }}</p>
+                    <p class="card-text h6 mb-3">Created: {{ post.created_date }}</p>
                 </div>
             </div>
             {% endif %}
