@@ -151,7 +151,7 @@
                 "category": 2,
                 "rating": 4.7,
                 "has_sizes": true,
-                "image": "products/wetsuit-aquarider-001.jpg"
+                "image": "products/product-m-surfwear-01.jpg"
         }
     },
     {
@@ -166,7 +166,7 @@
                 "category": 2,
                 "rating": 4.6,
                 "has_sizes": true,
-                "image": "products/wetsuit-wavemaster-002.jpg"
+                "image": "products/product-m-surfwear-02.jpg"
         }
     },
     {
@@ -181,7 +181,7 @@
                 "category": 2,
                 "rating": 4.5,
                 "has_sizes": true,
-                "image": "products/wetsuit-riptide-003.jpg"
+                "image": "products/product-m-surfwear-03.jpg"
         }
     },
     {
@@ -196,7 +196,7 @@
             "category": 2,
             "rating": 4.4,
             "has_sizes": true,
-            "image": "products/wetsuit-surftech-004.jpg"
+            "image": "products/product-m-surfwear-04.jpg"
         }
     },
     {
@@ -211,7 +211,7 @@
             "category": 2,
             "rating": 4.8,
             "has_sizes": true,
-            "image": "products/wetsuit-xtremesurf-005.jpg"
+            "image": "products/product-m-surfwear-05.jpg"
         }
     },
     {
@@ -226,7 +226,7 @@
             "category": 2,
             "rating": 4.7,
             "has_sizes": true,
-            "image": "products/wetsuit-epicwave-006.jpg"
+            "image": "products/product-m-surfwear-06.jpg"
         }
     },
     {
