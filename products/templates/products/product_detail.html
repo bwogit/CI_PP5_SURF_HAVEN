@@ -9,8 +9,8 @@
 <div class="container-fluid">
     <div class="row p-3 rounded bg-light m-5">
         <div class="col-lg-2 d-none d-lg-block">
-            <a class="text-muted text-decoration-none" href="{% url 'products' %}">
-                <h1 class="nav-link text-muted nav-item my-5">
+            <a class="text-black text-decoration-none" href="{% url 'products' %}">
+                <h1 class="nav-link text-black nav-item my-5">
                     Explore the shop by categories
                 </h1>
             </a>
@@ -18,7 +18,7 @@
             <hr>
             <!-- Loop through categories and display links -->
             {% for category in categories_list %}
-            <p><a class="text-decoration-none text-muted"
+            <p><a class="text-decoration-none text-black"
                     href="{% url 'products' %}?category={{category.name}}">{{ category.friendly_name }}</a></p>
             {% endfor %}
         </div>
@@ -39,10 +39,10 @@
         <div class="col-12 col-lg-4">
             <!-- Product details -->
             <div class="mb-5 mt-md-5">
-                <span class="fs-6 text-muted">{{ product.brand }}</span>
+                <span class="fs-6 text-black">{{ product.brand }}</span>
                 <p>{{ product.name }}</p>
                 <p class="lead text-start fw-bold">Price: €{{ product.price }}{% if product.rating %}
-                    <span class="text-muted text-end"><i class="fas fa-star"></i>{{ product.rating }}</span>
+                    <span class="text-black text-end"><i class="fas fa-star"></i>{{ product.rating }}</span>
                     {% endif %}</p>
                 <p class="mt-4">{{ product.description }}</p>
 
@@ -85,7 +85,7 @@
                                 {% if request.user.is_superuser %}
                                 <small class="my-5">
                                     <a href="#" class="btn open btn-danger">Delete</a>
-                                    <a class="btn btn-outline-success"
+                                    <a class="btn btn-success"
                                         href="{% url 'edit_product' product.id %}">Edit</a>
                                 </small>
                                 {% endif %}
@@ -94,7 +94,7 @@
                         </div>
                     </div>
                     <div class="col{% if s %}-12 mt-2{% endif %}">
-                        <a href="{% url 'products' %}" class="btn btn-outline-secondary rounded h-100 mt-5">
+                        <a href="{% url 'products' %}" class="btn btn-secondary rounded h-100 mt-5">
                             <span class="icon">
                                 <i class="fas fa-arrow-left"></i>
                             </span>
