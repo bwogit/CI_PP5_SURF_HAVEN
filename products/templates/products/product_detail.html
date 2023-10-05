@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block page_header %}
-    <!-- Add any specific page header content here if needed -->
+    
 {% endblock %}
 
 {% block content %}
@@ -16,13 +16,15 @@
             </a>
             <h2 class="fs-6">Categories</h2>
             <hr>
+            <!-- Loop through categories and display links -->
             {% for category in categories_list %}
             <p><a class="text-decoration-none text-muted"
                     href="{% url 'products' %}?category={{category.name}}">{{ category.friendly_name }}</a></p>
             {% endfor %}
-            
         </div>
+        
         <div class="col-12 col-lg-4 offset-lg-1">
+            <!-- Product image -->
             <div class="image-container my-4">
                 {% if product.image %}
                 <a href="{{ product.image.url }}" target="_blank"><img class="img-fluid"
@@ -33,7 +35,9 @@
                 {% endif %}
             </div>
         </div>
+        
         <div class="col-12 col-lg-4">
+              <!-- Product details -->
             <div class="mb-5 mt-md-5">
                 <span class="fs-6 text-muted">{{ product.brand }}</span>
                 <p>{{ product.name }}</p>
@@ -48,6 +52,7 @@
                         {% with product.has_sizes as s %}
                         {% if s %}
                         <div class="col-12">
+                            <!-- Select product size if available -->
                             <p><strong>Size:</strong></p>
                             <select class="form-select rounded-0 w-50" name="product_size" id='id_product_size'>
                                 <option value="xs">XS</option>
@@ -59,6 +64,7 @@
                         </div>
                         {% endif %}
                         <div class="col-12">
+                            <!-- Input quantity -->
                             <p class="mt-3"><strong>Quantity:</strong></p>
                             <div class="form-group w-50">
                                 <div class="input-group input-group-{{ product.id }}">
@@ -81,31 +87,30 @@
                                     </button>
                                 </div>
                             </div>
-                                    
-                                    {% if request.user.is_superuser %}
-                                    <small class="my-2">
-                                        <a class="btn btn-sm btn-outline-success"
-                                            href="{% url 'edit_product' product.id %}">Edit</a>
-                                        <a class='btn btn-sm btn-outline-danger'
-                                            href="{% url 'delete_product' product.id %}">Delete</a>
-                                    </small>
-                                    {% endif %}
-                                </div>
+                            {% if request.user.is_superuser %}
+                            <!-- Superuser actions -->
+                            <small class="my-2">
+                                <a class="btn btn-sm btn-outline-success"
+                                    href="{% url 'edit_product' product.id %}">Edit</a>
+                                <a class='btn btn-sm btn-outline-danger'
+                                    href="{% url 'delete_product' product.id %}">Delete</a>
+                            </small>
+                            {% endif %}       
                             </div>
                         </div>
-
-                        <div class="col{% if s %}-12 mt-2{% endif %}">
-                            <a href="{% url 'products' %}" class="btn btn-outline-secondary rounded mt-5">
-                                <span class="icon">
-                                    <i class="fas fa-arrow-left"></i>
-                                </span>
-                                <span class="text-uppercase">Return</span>
-                            </a>
-                            <input type="submit" class="btn text-uppercase btn-outline-secondary rounded mt-5"
-                                value="Add to Basket">
-                        </div>
-                        <input type="hidden" name="redirect_url" value="{{ request.path }}">
-                        {% endwith %}
+                    </div>
+                    <div class="col{% if s %}-12 mt-2{% endif %}">
+                        <a href="{% url 'products' %}" class="btn btn-outline-secondary rounded mt-5">
+                            <span class="icon">
+                                <i class="fas fa-arrow-left"></i>
+                            </span>
+                            <span class="text-uppercase">Return</span>
+                        </a>
+                        <input type="submit" class="btn text-uppercase btn-outline-secondary rounded mt-5"
+                            value="Add to Basket">
+                    </div>
+                    <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                    {% endwith %}
                     </div>
                 </form>
             </div>
