@@ -23,10 +23,10 @@
                         <!-- Shopping Basket Table -->
                         <div class="table-responsive rounded">
                             <table class="table table-sm table-borderless">
-                                <thead class="text-success">
+                                <thead class="">
                                     <tr>
-                                        <th scope="col">Image</th>
-                                        <th scope="col">Product Info</th>
+                                        <th scope="col"><strong>Image</strong></th>
+                                        <th scope="col"><strong>Product Info</strong></th>
                                         <th scope="col">Price</th>
                                         <th scope="col">Qty</th>
                                         <th scope="col">Subtotal</th>
@@ -40,13 +40,13 @@
                                             <img class="w-100 rounded" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
                                             {% else %}
                                             <!-- Display Default Image If No Image Available -->
-                                            <img class="w-100 rounded" src="{% static 'img/default-image.jpg' %}" alt="{{ item.product.name }}">
+                                            <img class="w-100 rounded" src="{% static 'img/noimage.jpg' %}" alt="{{ item.product.name }}">
                                             {% endif %}
                                         </td>
                                         <td class="py-3">
                                             <!-- Display Product Name and Code -->
                                             <p class="my-0"><strong>{{ item.product.name }}</strong></p>
-                                            <p class="my-0 text-muted small">{{ item.product.code }}</p>
+                                            <!-- <p class="my-0 text-muted small">{{ item.product.code }}</p> -->
                                         </td>
                                         <td class="py-3">
                                             <!-- Display Product Price -->
