@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block page_header %}
-  <!-- Add any specific page header content here if needed -->
+  
 {% endblock %}
 
 {% block content %}
@@ -15,13 +15,13 @@
           <div class="row">
             <div class="col-12 p-3 rounded card">
               <h2 class="logo-font">Shop</h2>
-              {% for c in current_categories %}
+              <!-- {% for c in current_categories %}
                 <a class="category-badge text-decoration-none" href="{% url 'products' %}?category={{ c.name }}">
                   <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-dark">{{ c.friendly_name }}</span>
                 </a>
-              {% endfor %}
+              {% endfor %} -->
               <h2 class="border bg-success text-light rounded p-1 shadow" style="float:right;">Free Shipping on orders over €{{ free_delivery_threshold }}</h2>
-              <div class="m-3 w-50">
+              <!-- <div class="m-3 w-50">
                 <select id="sort-selector" aria-label="option select for sorting"
                     class=" rounded-0 border border-{% if current_sort != 'None_None' %}success{% else %}light{% endif %}">
                     <option value="reset" {% if current_sort == 'None_None' %}selected{% endif %}>Sort by...
@@ -55,7 +55,7 @@
                     {{ products|length }} Items{% if search_term %} found for
                     <strong>"{{ search_term }}"</strong>{% endif %}
                 </span>
-            </div>  
+            </div>   -->
             </div>
             
           </div>
@@ -67,12 +67,12 @@
                 <hr>
                 <p><a class="nav-link text-success" href="{% url 'products' %}">All Products</a></p>
                 {% for category in categories_list %}
-                <p><a class="nav-link text-success"
-                        href="{% url 'products' %}?category={{category.name}}">{{ category.friendly_name }}</a></p>
+                <p><a class="nav-link text-success {% if category.name == selected_category %}selected-category{% endif %}"
+                    href="{% url 'products' %}?category={{ category.name }}">{{ category.friendly_name }}</a></p>
                 {% endfor %}
                 <h2 class="fs-6">All Products</h2>
                 <hr>
-                <p><a href="{% url 'products' %}?sort=price&direction=desc"
+                <!-- <p><a href="{% url 'products' %}?sort=price&direction=desc"
                         class="nav-link text-decoration-none text-success">By
                         Price</a></p>
                 <p><a href="{% url 'products' %}?sort=category&direction=asc"
@@ -83,8 +83,42 @@
                         Brand</a></p>
                 <p><a href="{% url 'products' %}?sort=rating&direction=desc"
                         class="nav-link text-decoration-none text-success">By
-                        Rating</a></p>
-              
+                        Rating</a></p> -->
+                        <div class="m-3 w-50">
+                            <select id="sort-selector" aria-label="option select for sorting"
+                                class=" rounded-0 border border-{% if current_sort != 'None_None' %}success{% else %}light{% endif %}">
+                                <option value="reset" {% if current_sort == 'None_None' %}selected{% endif %}>Sort by...
+                                </option>
+                                <option value="price_asc" {% if current_sort == 'price_asc' %}selected{% endif %}>Price (low
+                                    to high)</option>
+                                <option value="price_desc" {% if current_sort == 'price_desc' %}selected{% endif %}>Price
+                                    (high to low)</option>
+                                <option value="rating_asc" {% if current_sort == 'rating_asc' %}selected{% endif %}>Rating
+                                    (low to high)</option>
+                                <option value="rating_desc" {% if current_sort == 'rating_desc' %}selected{% endif %}>Rating
+                                    (high to low)</option>
+                                <option value="brand_asc" {% if current_sort == 'brand_asc' %}selected{% endif %}>
+                                    Brand (A-Z)</option>
+                                <option value="brand_desc" {% if current_sort == 'brand_desc' %}selected{% endif %}>
+                                    Brand (Z-A)</option>
+                                <option value="category_asc" {% if current_sort == 'category_asc' %}selected{% endif %}>
+                                    Category (A-Z)</option>
+                                <option value="category_desc" {% if current_sort == 'category_desc' %}selected{% endif %}>
+                                    Category (Z-A)</option>
+                                <option value="name_asc" {% if current_sort == 'name_asc' %}selected{% endif %}>Name (A-Z)
+                                </option>
+                                <option value="name_desc" {% if current_sort == 'name_desc' %}selected{% endif %}>Name (Z-A)
+                                </option>
+                            </select>
+                            <span class="text-muted mt-3 text-center text-success text-md-left">
+                                {% if search_term or current_categories or current_sorting != 'None_None' %}
+                                <span class="small"><a class="text-success" href="{% url 'products' %}">All Products</a>
+                                    |</span>
+                                {% endif %}
+                                {{ products|length }} Items{% if search_term %} found for
+                                <strong>"{{ search_term }}"</strong>{% endif %}
+                            </span>
+                        </div>
               <form id="sort-form" method="get" action="{% url 'products' %}">
               </form>
             </div>
@@ -165,9 +199,10 @@
       <div class="col-lg-6">
         <div class="container">
             <div class="row">
-                <div class="col ">
-                    <button class="btn btn-success back-to-top">Back to Top</button>
+                <div class="col">
+                    <span class="btn btn-success back-to-top">Back to Top</span>
                 </div>
+            </div>
             </div>
         </div>
       </div>

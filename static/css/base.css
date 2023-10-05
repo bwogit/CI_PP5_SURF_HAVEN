@@ -75,3 +75,8 @@ footer {
   padding: 15px; /* Add padding for spacing */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
 }
+/* Change the color of selected categories*/
+.selected-category {
+  color: red; 
+  
+}
