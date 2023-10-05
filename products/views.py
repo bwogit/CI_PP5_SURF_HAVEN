@@ -4,6 +4,7 @@ from django.views.generic import ListView
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
+from django.db.models.functions import Lower
 
 # Internal
 from .models import Product, Category

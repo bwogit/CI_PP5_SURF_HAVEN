@@ -1,3 +1,4 @@
+
 {% extends 'base.html' %}
 {% load static %}
 {% load basket_tools %}
@@ -5,55 +6,72 @@
 {% load crispy_forms_tags %}
 
 {% block extracss %}
-<link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
 {% endblock %}
 
 {% block content %}
-<div class="container">
-    <div class="row my-5">
+<div class="container my-5">
+    <div class="row">
         <div class="col bg-light rounded">
-            <div class="col">
-                <a class="text-muted text-decoration-none" href="{% url 'products' %}">
-                    <h1 class="my-5 text-success">
-                        Management: Add Product
-                    </h1>
-                </a>
-            </div>
+            <a class="text-danger text-decoration-none" href="{% url 'contact' %}">
+                <h1 class="my-5">
+                    Management: Add Product
+                </h1>
+            </a>
         </div>
     </div>
-    <div class="row bg-light p-3 rounded">
-        <div class="col-12 col-md-6">
-            <form action="{% url 'add_product' %}" method="POST" class="form mb-2" enctype="multipart/form-data">
-                {% csrf_token %}
-                {% for field in form %}
-                    {% if field.name != 'image' %}
-                        <div class="mb-3">
-                            {{ field.label_tag }}
-                            {{ field|add_class:"form-control" }}
-                            {% if field.help_text %}
-                                <small class="text-muted">{{ field.help_text }}</small>
+
+    <div class="row my-5 p-3 rounded bg-light">
+        <div class="col-lg-8">
+            <div class="card rounded">
+                <div class="card-body">
+                    <form action="{% url 'add_product' %}" method="POST" class="mb-2" enctype="multipart/form-data">
+                        {% csrf_token %}
+                        {% for field in form %}
+                            {% if field.name != 'image' %}
+                                <div class="mb-3">
+                                    {{ field | as_crispy_field }}
+                                </div>
+                            {% else %}
+                                {{ field | as_crispy_field }}
                             {% endif %}
+                        {% endfor %}
+                        <div class="text-end">
+                            <a href="{% url 'products' %}" class="btn btn-outline-dark rounded">Cancel</a>
+                            <button class="btn btn-outline-dark rounded" type="submit">Add Product</button>
                         </div>
-                    {% else %}
-                        {{ field }}
-                    {% endif %}
-                {% endfor %}
-                <div class="text-end">
-                    <a href="{% url 'products' %}" class="btn btn-outline-dark rounded">Cancel</a>
-                    <button class="btn btn-outline-dark rounded" type="submit">Add Product</button>
+                    </form>
                 </div>
-            </form>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="card rounded">
+                <div class="card-body">
+                    <div class="alert alert-danger">
+                        <h3 class="text-uppercase fw-bold mb-4">Attention!</h3>
+                        <p class="mb-2">This is a highly secure Management Interface.</p>
+                        <p class="mb-2">Unauthorized access is strictly prohibited.</p>
+                        <p class="mb-2">You are being monitored.</p>
+                        <p class="mb-2">Ensure you log out after your session.</p>
+                        <p class="mb-2">Any unauthorized activity will be prosecuted.</p>
+                        <p class="mb-2">Contact us at info@surfhaven.com for assistance.</p>
+                        <p class="mb-0">Emergency: Phone: +565 852 963 85 852</p>
+                    </div>
+                    <hr>
+                    <p><em>Opening Hours:</em></p>
+                    <p><em>Mon - Sun: 09:00 - 18:00</em></p>
+                </div>
+            </div>
         </div>
     </div>
 </div>
 {% endblock %}
 
 {% block postloadjs %}
-    {{ block.super }}
-    <script type="text/javascript">
-        $('#new-image').change(function() {
-            var file = $('#new-image')[0].files[0];
-            $('#filename').text(`Image will be set to: ${file.name}`);
-        });
-    </script>
+{{ block.super }}
+<script type="text/javascript">
+    $('#new-image').change(function() {
+        var file = $('#new-image')[0].files[0];
+        $('#filename').text(`Image will be set to: ${file.name}`);
+    });
+</script>
 {% endblock %}
