@@ -48,13 +48,12 @@
 
                 <form class="form" action="{% url 'add_to_basket' product.id %}" method="POST">
                     {% csrf_token %}
-                    <div class="row">
+                    <div class="form-row">
                         {% with product.has_sizes as s %}
                         {% if s %}
                         <div class="col-12">
-                            <!-- Select product size if available -->
-                            <p><strong>Size:</strong></p>
-                            <select class="form-select rounded-0 w-50" name="product_size" id='id_product_size'>
+                            <label for="id_product_size">Size</label>
+                            <select class="form-control rounded w-50" name="product_size" id='id_product_size'>
                                 <option value="xs">XS</option>
                                 <option value="s">S</option>
                                 <option value="m" selected>M</option>
@@ -64,55 +63,51 @@
                         </div>
                         {% endif %}
                         <div class="col-12">
-                            <!-- Input quantity -->
                             <p class="mt-3"><strong>Quantity:</strong></p>
                             <div class="form-group w-50">
                                 <div class="input-group input-group-{{ product.id }}">
-                                    <button
-                                        class="decrement-qty btn btn-danger rounded decrement-qty_{{ product.id }}"
-                                        data-item_id="{{ product.id }}">
-                                        <span class="icon">
-                                            <i class="fas fa-minus"></i>
-                                        </span>
-                                    </button>
-                                    <input class="form-control qty_input rounded h-100 id_qty_{{ product.id }}"
+                                    <div class="input-group-prepend">
+                                        <button
+                                            class="decrement-qty btn btn-sm btn-danger rounded decrement-qty_{{ product.id }}"
+                                            data-item_id="{{ product.id }}">
+                                            <span class="icon">-</span>
+                                        </button>
+                                    </div>
+                                    <input class="form-control qty_input rounded h-100 w-25 id_qty_{{ product.id }}"
                                         type="number" name="quantity" value="1" min="1" max="99"
-                                        data-item_id="{{ product.id }}">
-                                    <button
-                                        class="increment-qty btn btn-success rounded increment-qty_{{ product.id }}"
-                                        data-item_id="{{ product.id }}">
-                                        <span class="icon">
-                                            <i class="fas fa-plus"></i>
-                                        </span>
-                                    </button>
+                                        data-item_id="{{ product.id }}" aria-label="add to basket">
+                                    <div class="input-group-append">
+                                        <button
+                                            class="increment-qty btn btn-sm btn-success rounded increment-qty_{{ product.id }}"
+                                            data-item_id="{{ product.id }}">
+                                            <span class="icon">+</span>
+                                        </button>
+                                    </div>
+                                    {% if request.user.is_superuser %}
+                                    <small class="my-5">
+                                        <a href="#" class="btn open btn-danger">Delete</a>
+                                        <a class="btn btn-outline-success"
+                                            href="{% url 'edit_product' product.id %}">Edit</a>
+                                    </small>
+                                    {% endif %}
                                 </div>
                             </div>
-                            {% if request.user.is_superuser %}
-                            <!-- Superuser actions -->
-                            <small class="my-2">
-                                <a class="btn btn-sm btn-outline-success"
-                                    href="{% url 'edit_product' product.id %}">Edit</a>
-                                <a class='btn btn-sm btn-outline-danger'
-                                    href="{% url 'delete_product' product.id %}">Delete</a>
-                            </small>
-                            {% endif %}       
-                            </div>
                         </div>
-                    </div>
-                    <div class="col{% if s %}-12 mt-2{% endif %}">
-                        <a href="{% url 'products' %}" class="btn btn-outline-secondary rounded mt-5">
-                            <span class="icon">
-                                <i class="fas fa-arrow-left"></i>
-                            </span>
-                            <span class="text-uppercase">Return</span>
-                        </a>
-                        <input type="submit" class="btn text-uppercase btn-outline-secondary rounded mt-5"
-                            value="Add to Basket">
-                    </div>
-                    <input type="hidden" name="redirect_url" value="{{ request.path }}">
-                    {% endwith %}
+                        <div class="col{% if s %}-12 mt-2{% endif %}">
+                            <a href="{% url 'products' %}" class="btn btn-outline-secondary rounded mt-5 h-100">
+                                <span class="icon">
+                                    <i class="fas fa-arrow-left"></i>
+                                </span>
+                                <span class="text-uppercase">Return</span>
+                            </a>
+                            <input type="submit" class="btn text-uppercase btn-success rounded mt-5 h-100"
+                                value="Add to Basket">
+                        </div>
+                        <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                        {% endwith %}
                     </div>
                 </form>
+                
             </div>
         </div>
     </div>
@@ -121,7 +116,7 @@
 
 {% block postloadjs %}
 {{ block.super }}
-<script>
+<!-- <script>
     $(document).ready(function () {
         $('.open').click(function () {
             $('.popupOverlay, .popupContent').addClass('active');
@@ -130,7 +125,7 @@
             $('.popupOverlay, .popupContent').removeClass('active');
         });
     });
-</script>
+</script> -->
 <script>
     $(document).ready(function() {
         const incrementButtons = $('.increment-qty');
