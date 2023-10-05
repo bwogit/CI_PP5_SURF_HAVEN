@@ -1,8 +1,7 @@
-# Imports
-# 3rd party:
+# 3rd party Imports
 from django.contrib import admin
 from django.urls import path
-# Internal
+# Internal Imports
 from . import views
 
 

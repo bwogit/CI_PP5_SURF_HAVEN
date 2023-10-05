@@ -1,10 +1,16 @@
+# 3rd Party Imports
 from decimal import Decimal
 from django.conf import settings
 from django.shortcuts import get_object_or_404, Http404
+
+# Internal Imports
 from products.models import Product
 
 
 def basket_contents(request):
+    """
+    Retrieve and calculate the contents of the user's shopping basket.
+    """
     basket_items = []
     product_count = 0
     total = 0
