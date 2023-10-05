@@ -24,18 +24,18 @@
                 <div class="row p-3 rounded mt-3">
                     <div class="col-md-2 bg-light d-none d-lg-block sticky-sidebar">
                         <!-- Display the number of items found and provide sorting options -->
-                        <span class="text-muted mt-3 text-center text-success text-md-left">
+                        <span class="mt-3 text-center text-md-left">
                             {% if search_term or current_categories or current_sorting != 'None_None' %}
-                            <span class="small"><a class="text-success" href="{% url 'products' %}">All Products</a> |</span>
+                            <span class=""><a class="text-black" href="{% url 'products' %}">All Products</a> |</span>
                             {% endif %}
                             {{ products|length }} Items{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
                         </span>
                         <hr>
                         <h2 class="fs-6">CATEGORIES</h2>
                         <hr>
-                        <p><a class="nav-link text-success" href="{% url 'products' %}">All Products</a></p>
+                        <!-- <p><a class="nav-link text-black " href="{% url 'products' %}">All Products</a></p> -->
                         {% for category in categories_list %}
-                        <p><a class="nav-link text-success {% if category.name == selected_category %}selected-category{% endif %}" href="{% url 'products' %}?category={{ category.name }}">{{ category.friendly_name }}</a></p>
+                        <p><a class="nav-link {% if category.name == selected_category %}selected-category{% endif %}" href="{% url 'products' %}?category={{ category.name }}">{{ category.friendly_name }}</a></p>
                         {% endfor %}
                         <hr>
                         <div class="m-3 w-50">
