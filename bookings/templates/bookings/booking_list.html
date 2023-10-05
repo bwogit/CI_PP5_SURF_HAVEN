@@ -59,13 +59,13 @@
             <div class="row d-flex justify-content-center text-center">
                 <div class="col">
                     {% if booking_page.has_previous %}
-                    <a href="?page=1" class="btn btn-link">&laquo; First</a>
-                    <a href="?page={{ booking_page.previous_page_number }}" class="btn btn-link">Previous</a>
+                    <a href="?page=1" class="btn btn-secondary">&laquo; First</a>
+                    <a href="?page={{ booking_page.previous_page_number }}" class="btn btn-secondary">Previous</a>
                     {% endif %}
                     Page {{ booking_page.number }} of {{ booking_page.paginator.num_pages }}
                     {% if booking_page.has_next %}
-                    <a href="?page={{ booking_page.next_page_number }}" class="btn btn-link">Next</a>
-                    <a href="?page={{ booking_page.paginator.num_pages }}" class="btn btn-link">Last &raquo;</a>
+                    <a href="?page={{ booking_page.next_page_number }}" class="btn btn-secondary ">Next</a>
+                    <a href="?page={{ booking_page.paginator.num_pages }}" class="btn btn-secondary ">Last &raquo;</a>
                     {% endif %}
                 </div>
             </div>
