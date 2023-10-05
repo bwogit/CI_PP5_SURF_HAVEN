@@ -32,7 +32,7 @@
                     </a>
                     <p class="card-subtitle mb-2">By: {{ post.author }}</p>
                     <a href="{% url 'post_detail' post.slug %}" class="post-link">
-                        <p class="card-text mt-3"><em>{{ post.excerpt }}</em></p>
+                        <p class="card-text mt-3"><em>{{ post.excerpt|safe }}</em></p>
                     </a>
                     <hr>
                     <p class="card-text h6 mb-3">{{ post.created_date }}</p>
