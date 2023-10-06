@@ -4,6 +4,7 @@ from django.contrib.auth.models import User
 
 STATUS = ((0, 'Draft'), (1, 'Posted'))
 
+
 # Post model
 class Post(models.Model):
     """
@@ -24,8 +25,8 @@ class Post(models.Model):
         on_delete=models.CASCADE,
         related_name='blog_posts'
         )
-    created_date = models.DateTimeField(auto_now_add=True)  # Auto set
-    updated_date = models.DateTimeField(auto_now=True)  # Auto updated on save
+    created_date = models.DateTimeField(auto_now_add=True)  # set on creation
+    updated_date = models.DateTimeField(auto_now=True)  # update on every save
     content = models.TextField()
     featured_image = models.ImageField(
         null=True,
@@ -49,6 +50,7 @@ class Post(models.Model):
 class Comment(models.Model):
     """
     A comment on a blog post.
+
     """
     post = models.ForeignKey(
         Post,
