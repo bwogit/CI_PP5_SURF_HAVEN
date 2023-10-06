@@ -1,6 +1,7 @@
-from django.db import models
-from django.db import models
+# 3rd Party imports:
 from phonenumber_field.modelfields import PhoneNumberField
+# Internal imports
+from django.db import models
 from django.contrib.auth.models import User
 
 
@@ -28,13 +29,18 @@ status_options = (
 
 
 class School(models.Model):
+    """
+    A class to create a surf school.
+
+    """
     school_id = models.AutoField(primary_key=True)
     school_name = models.CharField(max_length=100, unique=True)
     slug = models.SlugField(max_length=200, unique=True, default='',)
     location = models.CharField(max_length=200)
     description = models.TextField()
     available = models.BooleanField(default=True)
-    image = models.ImageField(upload_to='school_images/', null=True, blank=True)
+    image = models.ImageField(upload_to='school_images/',
+                              null=True, blank=True)
 
     class Meta:
         ordering = ['school_name']
@@ -44,16 +50,23 @@ class School(models.Model):
 
 
 class Booking(models.Model):
+    """
+    A class to create a booking for a surf lesson.
+    """
     booking_id = models.AutoField(primary_key=True)
     created_date = models.DateTimeField(auto_now_add=True)
     requested_date = models.DateField()
-    requested_time = models.CharField(max_length=25, choices=lesson_times, default='12:00')
-    school = models.ForeignKey(School, on_delete=models.CASCADE, related_name="surf_school_name")
-    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="user")
+    requested_time = models.CharField(max_length=25, choices=lesson_times,
+                                      default='12:00')
+    school = models.ForeignKey(School, on_delete=models.CASCADE,
+                               related_name="surf_school_name")
+    user = models.ForeignKey(User, on_delete=models.CASCADE,
+                             related_name="user")
     name = models.CharField(max_length=50, null=True)
     email = models.EmailField(max_length=254, default="")
     phone = PhoneNumberField(null=True)
-    status = models.CharField(max_length=25, choices=status_options, default='Lesson Confirmed')
+    status = models.CharField(max_length=25, choices=status_options,
+                              default='Lesson Confirmed')
     surfers = (
         (1, "1 surfer"),
         (2, "2 surfers"),

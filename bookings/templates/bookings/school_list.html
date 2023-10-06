@@ -12,13 +12,13 @@
 {% block content %}
 <div class="container">
   <div class="row my-5">
-      <div class="col bg-light rounded">
-          <!-- <a class="text-success text-decoration-none" href="{% url 'contact' %}"> -->
-              <h1 class="my-5">
-                  Schools
-              </h1>
-          <!-- </a> -->
-      </div>
+    <div class="col bg-light rounded">
+      <!-- <a class="text-success text-decoration-none" href="{% url 'contact' %}"> -->
+      <h1 class="my-5">
+        Schools
+      </h1>
+      <!-- </a> -->
+    </div>
   </div>
 
   <div class="container">
@@ -41,54 +41,52 @@
       {% endfor %}
     </div>
   </div>
-  
 
-<div class="container my-5">
-  <div class="row justify-content-center">
-    <div class="col-lg-6">
-      <!-- Pagination -->
-      <nav aria-label="Page navigation">
-        <ul class="pagination justify-content-center">
-          {% if schools.has_previous %}
-          <li class="page-item">
-            <a class="page-link" href="?page=1" aria-label="First">
-              &laquo; First
-            </a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="?page={{ schools.previous_page_number }}" aria-label="Previous">
-              Previous
-            </a>
-          </li>
-          {% endif %}
-          <li class="page-item disabled">
-            <span class="page-link">
-              Page {{ schools.number }} of {{ schools.paginator.num_pages }}
-            </span>
-          </li>
-          {% if schools.has_next %}
-          <li class="page-item">
-            <a class="page-link" href="?page={{ schools.next_page_number }}" aria-label="Next">
-              Next
-            </a>
-          </li>
-          <li class="page-item">
-            <a class="page-link" href="?page={{ schools.paginator.num_pages }}" aria-label="Last">
-              Last &raquo;
-            </a>
-          </li>
-          {% endif %}
-        </ul>
-      </nav>
-      <!-- End Pagination -->
+  <div class="container my-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <!-- Pagination -->
+        <nav aria-label="Page navigation">
+          <ul class="pagination justify-content-center">
+            {% if schools.has_previous %}
+            <li class="page-item">
+              <a class="page-link" href="?page=1" aria-label="First">
+                &laquo; First
+              </a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="?page={{ schools.previous_page_number }}" aria-label="Previous">
+                Previous
+              </a>
+            </li>
+            {% endif %}
+            <li class="page-item disabled">
+              <span class="page-link">
+                Page {{ schools.number }} of {{ schools.paginator.num_pages }}
+              </span>
+            </li>
+            {% if schools.has_next %}
+            <li class="page-item">
+              <a class="page-link" href="?page={{ schools.next_page_number }}" aria-label="Next">
+                Next
+              </a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="?page={{ schools.paginator.num_pages }}" aria-label="Last">
+                Last &raquo;
+              </a>
+            </li>
+            {% endif %}
+          </ul>
+        </nav>
+        <!-- End Pagination -->
+      </div>
     </div>
-  </div>
-  <div class="row">
-    <div class="col">
+    <div class="row">
+      <div class="col">
         <span class="btn btn-success back-to-top">Back to Top</span>
+      </div>
     </div>
   </div>
-</div>
 </div>
 {% endblock %}
-
