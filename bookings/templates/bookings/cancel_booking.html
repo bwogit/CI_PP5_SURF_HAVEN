@@ -15,17 +15,6 @@
     <!-- Cards -->
     <div class="row bg-light my-5 p-3 rounded">
         <div class="col-12 col-md-6 mx-auto">
-            <!-- Display if user is not logged in
-            {% if not user.is_authenticated %}
-            <div class="row">
-                <div class="col-12 col-md-6 m-5 mx-auto">
-                    <h2 class="text-danger">Login Required</h2>
-                    <p class="text-secondary">Please login to edit bookings</p>
-                    <a class="btn btn-success" href="{% url 'account_login' %}">Go to Login Page</a>
-                </div>
-            </div>
-            {% else %} -->
-            <!-- Display form if user is logged in -->
             {% if user.is_authenticated and user == booking.user %}
             <div class="card m-5 col-12 col-md-6 mx-auto">
                 <div class="card-body text-center">
