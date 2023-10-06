@@ -1,8 +1,6 @@
-# Imports
-# 3rd party:
+# 3rd party imports:
 from django.urls import path
-# Internal:
-# from .views import ContactUser
+# Internal imports
 from contact import views
 
 urlpatterns = [

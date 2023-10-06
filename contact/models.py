@@ -1,7 +1,6 @@
-# Imports
-# 3rd party:
+# 3rd party imports
 from phonenumber_field.modelfields import PhoneNumberField
-# Internal
+# Internal imports
 from django.db import models
 from django.contrib.auth.models import User
 
@@ -26,6 +25,7 @@ class Contact(models.Model):
 
     class Meta:
         ordering = ['created_date']
+        unique_together = ['user', 'email']
 
     def __str__(self):
         return self.name

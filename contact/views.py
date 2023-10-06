@@ -1,7 +1,6 @@
-# Imports
-# 3rd Party
+# 3rd Party imports
 from .forms import ContactForm
-# Internal
+# Internal imports
 from django.shortcuts import render
 from django.views import View
 from django.contrib.auth.mixins import LoginRequiredMixin
