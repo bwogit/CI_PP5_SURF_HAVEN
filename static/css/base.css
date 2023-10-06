@@ -66,15 +66,8 @@ footer {
   background-color: rgb(7, 8, 11);
 }
 
-/* Add a custom class to the sidebar for styling */
-.sticky-sidebar {
-  position: sticky;
-  top: 20px; /* Adjust this value to set the distance from the top */
-  z-index: 1; /* Ensure the sidebar stays above content */
-  background-color: #fff; /* Add your desired background color */
-  padding: 15px; /* Add padding for spacing */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
-}
+
+
 /* Change the color of selected categories*/
 .selected-category {
   color: red; 
@@ -126,6 +119,38 @@ footer {
 }
 
 .back-to-top-sl:hover {
+  background-color: #1e7e34; /* Change the button's background color on hover */
+  border-color: #1e7e34; /* Change the button's border color on hover */
+}
+
+
+/*------------------------------------------------------Style for Product List------------------------------------------------------------------*/
+
+/* Style for the card */
+.card-pl {
+  height: 200px; /* Adjust this value to your desired card height */
+}
+
+
+/* Style for the card images */
+.img-fluid-pl {
+  height: 300px; /* Set a fixed height for the images */
+  object-fit: contain; 
+}
+
+/* Style for the card titles */
+.card-title-pl {
+  font-size: 1.25rem; /* Increase font size for card titles */
+  margin-bottom: 0.5rem; /* Add some spacing below the title */
+}
+
+/* Style for the card text */
+.card-text-pl {
+  font-size: 1rem; /* Adjust font size for card text */
+}
+
+
+.back-to-top-pl:hover {
   background-color: #1e7e34; /* Change the button's background color on hover */
   border-color: #1e7e34; /* Change the button's border color on hover */
 }
