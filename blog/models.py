@@ -5,9 +5,11 @@ from django.contrib.auth.models import User
 STATUS = ((0, 'Draft'), (1, 'Posted'))
 
 # Post model
-
-
 class Post(models.Model):
+    """
+    A blog post.
+    """
+
     post_id = models.AutoField(primary_key=True)
     title = models.CharField(
         max_length=200,
@@ -23,7 +25,7 @@ class Post(models.Model):
         related_name='blog_posts'
         )
     created_date = models.DateTimeField(blank=True)
-    updated_date = models.DateTimeField()
+    # updated_date = models.DateTimeField()
     content = models.TextField()
     featured_image = models.ImageField(
         null=True,
@@ -45,6 +47,9 @@ class Post(models.Model):
 # Comment model
 
 class Comment(models.Model):
+    """
+    A comment on a blog post.
+    """
     post = models.ForeignKey(
         Post,
         on_delete=models.CASCADE,

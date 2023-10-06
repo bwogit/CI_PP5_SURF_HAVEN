@@ -1,9 +1,10 @@
+# 3rd Party Imports
+from django.shortcuts import render, redirect
+from django.shortcuts import get_object_or_404, reverse, HttpResponse
+from django.contrib import messages
+
 # Internal Imports
 from products.models import Product, Category
-from django.contrib import messages
-# 3rd Party Imports
-from django.shortcuts import render, redirect,
-get_object_or_404, reverse, HttpResponse
 
 
 def view_basket(request):
@@ -24,9 +25,6 @@ def add_to_basket(request, item_id):
     """
     Add a quantity of the product to the basket
 
-    Parameters:
-    - request: The HTTP request object
-    - item_id: The ID of the product to add to the basket
     """
 
     product = get_object_or_404(Product, pk=item_id)
@@ -45,24 +43,18 @@ def add_to_basket(request, item_id):
                 basket[item_id]['items_by_size'][size] += quantity
             else:
                 basket[item_id]['items_by_size'][size] = quantity
-                messages.success(
-                    request,
-                    f'Updated size {size.upper()} {product.name} quantity to '
-                    f'{basket[item_id]["items_by_size"][size]}'
-                )
+                messages.success(request, f'Updated size\
+                     {size.upper()} {product.name} quantity to\
+                         {basket[item_id]["items_by_size"][size]}')
         else:
             basket[item_id] = {'items_by_size': {size: quantity}}
-            messages.success(
-                request,
-                f'Added size {size.upper()} {product.name} to your basket'
-            )
+            messages.success(request, f'Added size\
+                 {size.upper()} {product.name} to your basket')
     else:
         if item_id in basket:
             basket[item_id] += quantity
-            messages.success(
-                request,
-                f'Updated {product.name} quantity to {basket[item_id]}'
-            )
+            messages.success(request, f'Updated {product.name} quantity to\
+                 {basket[item_id]}')
         else:
             basket[item_id] = quantity
             messages.success(request, f'Added {product.name} to your basket')
@@ -70,10 +62,14 @@ def add_to_basket(request, item_id):
     request.session['basket'] = basket
     return redirect(redirect_url)
 
+
 def update_basket(request, item_id):
     """
     Adjust the quantity of the specified product to the specified amount
 
+    Parameters:
+    - request: The HTTP request object
+    - item_id: The ID of the product to update in the basket
     """
     product = get_object_or_404(Product, pk=item_id)
     quantity = int(request.POST.get('quantity'))
@@ -85,25 +81,24 @@ def update_basket(request, item_id):
     if size:
         if quantity > 0:
             basket[item_id]['items_by_size'][size] = quantity
-            messages.success(request, f'Updated size
-                             {size.upper()} {product.name}
-                             quantity to {basket[item_id]
-                                          ["items_by_size"][size]}')
+            messages.success(request, f'Updated size\
+                 {size.upper()} {product.name} quantity to\
+                     {basket[item_id]["items_by_size"][size]}')
         else:
             del basket[item_id]['items_by_size'][size]
             if not basket[item_id]['items_by_size']:
                 basket.pop(item_id)
-            messages.success(request, f'Removed size
-                             {size.upper()} {product.name} from your basket')
+            messages.success(request, f'Removed size {size.upper()}\
+                 {product.name} from your basket')
     else:
         if quantity > 0:
             basket[item_id] = quantity
-            messages.success(request, f'Updated {product.name}
-                             quantity to {basket[item_id]}')
+            messages.success(request, f'Updated {product.name}\
+                 quantity to {basket[item_id]}')
         else:
             basket.pop(item_id)
-            messages.success(request, f'Removed
-                             {product.name} from your basket')
+            messages.success(request, f'Removed {product.name}\
+                 from your basket')
 
     request.session['basket'] = basket
     return redirect(reverse('view_basket'))
@@ -113,6 +108,9 @@ def remove_from_basket(request, item_id):
     """
     Remove the item from the shopping basket
 
+    Parameters:
+    - request: The HTTP request object
+    - item_id: The ID of the product to remove from the basket
     """
     try:
         product = get_object_or_404(Product, pk=item_id)
@@ -125,12 +123,12 @@ def remove_from_basket(request, item_id):
             del basket[item_id]['items_by_size'][size]
             if not basket[item_id]['items_by_size']:
                 basket.pop(item_id)
-            messages.success(request, f'Removed size {size.upper()}
-                             {product.name} from your basket')
+            messages.success(request, f'Removed size {size.upper()}\
+                 {product.name} from your basket')
         else:
             basket.pop(item_id)
-            messages.success(request, f'Removed {product.name}
-                             from your basket')
+            messages.success(request, f'Removed {product.name}\
+                 from your basket')
 
         request.session['basket'] = basket
         return HttpResponse(status=200)

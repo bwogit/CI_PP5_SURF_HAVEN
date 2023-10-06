@@ -9,7 +9,7 @@ from products.models import Product
 
 def basket_contents(request):
     """
-    Retrieve and calculate the contents of the user's shopping basket.
+    Retrieve and process the contents of the shopping basket.
     """
     basket_items = []
     product_count = 0
@@ -42,11 +42,14 @@ def basket_contents(request):
                     product_added = True
                 else:
                     for item in basket_items:
-                        if item['item_id'] == item_id and item.get('size') == size:
+                        if item['item_id'] == item_id\
+                             and item.get('size') == size:
                             item['quantity'] += quantity
 
             if product_added:
-                total += sum(quantity for size, quantity in item_data['items_by_size'].items()) * product.price
+                total += sum(quantity for size,
+                             quantity in item_data['items_by_size'].items()) *\
+                              product.price
 
     if total < settings.FREE_DELIVERY_THRESHOLD:
         delivery = total * Decimal(settings.STANDARD_DELIVERY_PERCENTAGE / 100)

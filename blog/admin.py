@@ -1,7 +1,7 @@
-# Imports
+# 3rd party Imports
 from django.contrib import admin
 from django_summernote.admin import SummernoteModelAdmin
-# Internal:
+# Internal imports
 from .models import Post, Comment
 
 
