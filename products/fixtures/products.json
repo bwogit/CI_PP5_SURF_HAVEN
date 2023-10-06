@@ -616,7 +616,7 @@
             "category": 7,
             "rating": 4.5,
             "has_sizes": true,
-            "image": "products/product-c-wetsuit-01.jpg"
+            "image": "products/product-c-beachwear-01.jpg"
         }
     },
     {
@@ -631,7 +631,7 @@
             "category": 7,
             "rating": 4.6,
             "has_sizes": true,
-            "image": "products/product-c-wetsuit-02.jpg"
+            "image": "products/product-c-beachwear-02.jpg"
         }
     },
     {
@@ -646,7 +646,7 @@
             "category": 7,
             "rating": 4.7,
             "has_sizes": true,
-            "image": "products/product-c-wetsuit-03.jpg"
+            "image": "products/product-c-beachwear-03.jpg"
         }
     },
     {
@@ -661,7 +661,7 @@
             "category": 7,
             "rating": 4.8,
             "has_sizes": true,
-            "image": "products/product-c-wetsuit-04.jpg"
+            "image": "products/product-c-beachwear-04.jpg"
         }
     },
     {
@@ -676,7 +676,7 @@
             "category": 7,
             "rating": 4.4,
             "has_sizes": true,
-            "image": "products/product-c-wetsuit-05.jpg"
+            "image": ""
         }
     },
     {
@@ -691,7 +691,7 @@
             "category": 7,
             "rating": 4.5,
             "has_sizes": true,
-            "image": "products/product-c-wetsuit-06.jpg"
+            "image": "products/product-c-beachwear-06.jpg"
            
         }
     }
