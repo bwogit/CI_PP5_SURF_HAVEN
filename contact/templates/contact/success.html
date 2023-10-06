@@ -1,37 +1,36 @@
 {% extends 'base.html' %}
 {% load static %}
 
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div>
+    </div>
+</div>
+{% endblock %}
+
 {% block content %}
 <div class="container">
-    <div class="row my-5">
-        <div class="col bg-light rounded">
-                <h1 class="my-5">
-                    Say what you have to say.....or else!
-                </h1>
-            </a>
-        </div>
-    </div>
-
     <div class="row bg-light my-5 p-3 rounded">
-        <div class="col">
-            <div class="row d-flex my-5 justify-content-center text-center bg-light rounded">
-                <div class="row justify-content-center mt-5">
-                    <div class="col-md-6">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="row">
-                                    <h2 class="card-title">We've received your message...now lets see!</h2>
-                                    <hr>
-                                    <p class="card-text">We will get back to you soon!</p>
-                                    <h5 class="card-text">Return home, <a href="{% url 'home' %}" class="btn btn-success">click</a></h5>
-                                </div>            
-                            </div>
-                        </div>
+        <div class="card m-5 col-12 col-md-6 mx-auto">
+            <div class="card-body text-center">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <img src="{% static 'img/surfhaven_logo.png' %}" alt="Your Logo" class="img-fluid">
+                        <h1 class="display-4 text-success mt-3">Message sent!</h1>
+                        <p class="lead">Thanks you for your feedback! we will get back to you ASAP.</p>
                     </div>
                 </div>
+                <div class="col-12 col-md-6 rounded m-2 mx-auto">
+                    <a class="btn btn-success btn-lg" href="{% url 'contact' %}" role="button">Leave another comment</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <span style="float:right;" class="btn btn-success back-to-top">Back to Top</span>
             </div>
         </div>
     </div>
 </div>
-
 {% endblock %}
