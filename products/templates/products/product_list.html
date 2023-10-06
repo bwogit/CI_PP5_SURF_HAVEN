@@ -16,7 +16,7 @@
                         <div class="col-12 p-3 rounded card-pl">
                             <h2 class="logo-font-pl">Shop</h2>
                             <!-- Add a border with success background color, text color, and shadow -->
-                            <h2 class="border bg-success text-light rounded p-1 shadow" style="float:right;">Free Shipping on orders over €{{ free_delivery_threshold }}</h2>
+                            <h2 class="border bg-success text-light rounded p-1 shadow" >Free Shipping on orders over €{{ free_delivery_threshold }}</h2>
                         </div>
                     </div>
                 </div>
@@ -68,7 +68,7 @@
                                     </a>
                                     {% else %}
                                     <a href="{% url 'product_detail' product.id %}">
-                                        <img class="card-img-top img-fluid img-fluid-pl" src="{% static 'img/noimage.jpg' %}" alt="Default no image for {{ product.name }}">
+                                        <img class="card-img-top img-fluid img-fluid-pl" src="{% static 'noimage.jpg' %}" alt="No image for {{ product.name }}">
                                     </a>
                                     {% endif %}
                                     <div class="card-body pb-0">

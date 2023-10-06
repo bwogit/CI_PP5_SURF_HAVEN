@@ -51,8 +51,8 @@ class Product(models.Model):
         )
     image = models.ImageField(
         null=True,
-        blank=True
-        )
+        blank=True,
+        default='img/noimage.jpg')
 
     def __str__(self):
         return self.name
