@@ -8,6 +8,7 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic.edit import UpdateView
 from django.core.paginator import Paginator
 from datetime import datetime
+from django.utils import timezone
 # Internal Imports
 from .models import School, Booking
 from .forms import BookingForm
@@ -39,7 +40,7 @@ class AllSchools(generic.ListView):
             'products': products,
             'categories_list': categories_list,
             'schools': postings,
-            # 'postings': postings
+            'postings': postings
         }
 
         return render(
@@ -126,7 +127,7 @@ class BookingList(LoginRequiredMixin, generic.ListView):
         context = super().get_context_data(**kwargs)
         booking_page = context['page_obj']
 
-        today = datetime.now().date()
+        today = timezone.now().date()  # Use timezone-aware datetime
 
         # Update the status of bookings based on the requested_date
         for booking in booking_page:

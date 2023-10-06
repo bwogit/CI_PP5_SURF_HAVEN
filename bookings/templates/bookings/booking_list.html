@@ -31,9 +31,6 @@
             <strong>Surfer:</strong> {{ booking.surfer_count }}
           </p>
           {% if booking.status == 'Lesson Time Confirmed' %}
-          <p class="text-danger fw-bold">EXPIRED</p>
-          <a class="btn btn-warning btn-sm" href="{% url 'cancel_booking' booking.pk %}" role="button">Cancel</a>
-          {% else %}
           <p class="text-primary fw-bold">Don't forget to pay upon arrival</p>
           <div class="d-grid gap-2">
             <div class="text-center">
@@ -41,12 +38,16 @@
               <a class="btn btn-dark btn-sm btn-block" href="{% url 'cancel_booking' booking.pk %}" role="button">Cancel</a>
             </div>
           </div>
+          {% else %}
+          <p class="text-danger fw-bold">EXPIRED</p>
+          <a class="btn btn-warning btn-sm" href="{% url 'cancel_booking' booking.pk %}" role="button">Cancel</a>
           {% endif %}
         </div>
       </div>
     </div>
     {% endfor %}
   </div>
+</div>
 
   <div class="container my-5">
     <div class="row justify-content-center">
@@ -94,5 +95,6 @@
       </div>
     </div>
   </div>
+</div>
 </div>
 {% endblock %}
