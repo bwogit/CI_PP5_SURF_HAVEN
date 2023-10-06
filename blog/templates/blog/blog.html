@@ -1,6 +1,14 @@
 {% extends 'base.html' %}
 {% load static %}
 
+{% block page_header %}
+<div class="container header-container">
+  <div class="row">
+    <div class="col"></div>
+  </div>
+</div>
+{% endblock %}
+
 {% block content %}
 <div class="container">
     <div class="row my-5">
@@ -18,36 +26,29 @@
         <div class="row my-5 justify-content-center">
             {% for post in postings %}
             {% if post.status %}
-            <div class="col-md-4 m-3 bg-surf bg-light rounded shadow-lg text-dark card-sl">
-                <a href="{% url 'post_detail' post.slug %}">
+            <div class="col-12 col-md-6 my-3">
+                <div class="card shadow card-sl">
                     <!-- Post image -->
                     {% if post.featured_image %}
                     <img class="card-img-top mt-2 w-100 card-img-top-sl" src="{{ post.featured_image.url }}" alt="blog post image">
                     {% else %}
                     <img class="card-img-top mt-2 w-100 card-img-top-sl" src="{% static 'img/noimage.jpg' %}" alt="blog post image">
                     {% endif %}
-                </a>
-
-                <div class="card-body w-100">
-                    <a href="{% url 'post_detail' post.slug %}">
+                    <div class="card-body">
                         <!-- Post title -->
                         <h2 class="card-title mt-3 card-title-sl">Title: {{ post.title }}</h2>
-                    </a>
-                    <!-- Author -->
-                    <p class="card-subtitle mb-2">By: {{ post.author }}</p>
-                    <a href="{% url 'post_detail' post.slug %}" class="post-link">
+                        <!-- Author -->
+                        <p class="card-subtitle mb-2">By: {{ post.author }}</p>
                         <!-- Excerpt -->
                         <p class="card-text mt-3 card-text-sl">Excerpt: {{ post.excerpt|safe }}</p>
-                    </a>
-                    <hr>
-                    <!-- Created date -->
-                    <p class="card-text h6 mb-3">Created: {{ post.created_date }}</p>
+                        <hr>
+                        <!-- Created date -->
+                        <p class="card-text h6 mb-3">Created: {{ post.created_date }}</p>
+                        <!-- Details button -->
+                        <a href="{% url 'post_detail' post.slug %}" class="btn btn-primary btn-primary-sl">Details</a>
+                    </div>
                 </div>
             </div>
-            {% endif %}
-            {% if forloop.counter|divisibleby:3 %}
-            </div>
-            <div class="row my-5 justify-content-center">
             {% endif %}
             {% endfor %}
         </div>
@@ -83,11 +84,10 @@
             <div class="row">
                 <div class="col">
                     <!-- Back to Top button -->
-                    <span class="btn btn-success back-to-top back-to-top-sl">Back to Top</span>
+                    <span class="btn btn-success back-to-top">Back to Top</span>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
 {% endblock %}
