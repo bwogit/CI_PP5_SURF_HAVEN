@@ -2,12 +2,15 @@
     {% csrf_token %}
     <div class="form-group">
         <div class="input-group input-group-{{ item.item_id }}">
+            <!-- Quantity Label -->
             <label for="quantityInput" class="form-label">Quantity:</label>
+            <!-- Quantity Input -->
             <input
                 class="form-control form-control-sm w-100 w-md-50 qty_input id_qty_{{ item.item_id }} {% if item.size %}size_{{ item.item_id }}_{{ item.size }}{% endif %}"
                 id="quantityInput" type="number" name="quantity" value="{{ item.quantity }}" min="1" max="99"
                 data-item_id="{{ item.item_id }}" data-size="{{ item.size }}">
             <div class="input-group-prepend">
+                <!-- Decrement Quantity Button -->
                 <button
                     class="decrement-qty btn btn-sm btn-danger rounded m-1 decrement-qty_{{ item.item_id }} {% if item.size %}decrement-size_{{ item.item_id }}_{{ item.size }}{% endif %}"
                     data-item_id="{{ item.item_id }}" data-size="{{ item.size }}">
@@ -15,6 +18,7 @@
                 </button>
             </div>
             <div class="input-group-append">
+                <!-- Increment Quantity Button -->
                 <button
                     class="increment-qty btn btn-sm btn-success rounded m-1 increment-qty_{{ item.item_id }} {% if item.size %}increment-size_{{ item.item_id }}_{{ item.size }}{% endif %}"
                     data-item_id="{{ item.item_id }}" data-size="{{ item.size }}">
@@ -22,11 +26,13 @@
                 </button>
             </div>
             {% if item.product.has_sizes %}
+            <!-- Hidden Input for Product Size -->
             <input type="hidden" name="product_size" value="{{ item.size }}">
             {% endif %}
         </div>
     </div>
 </form>
+<!-- Update Quantity Button -->
 <button class="update-qty btn btn-success"><span><small>Update</small></span></button>
+<!-- Remove Item Button -->
 <button class="remove-item btn btn-danger float-end" id="remove_{{ item.item_id }}" data-product_size="{{ item.size }}"><span><small>Delete</small></span></button>
-

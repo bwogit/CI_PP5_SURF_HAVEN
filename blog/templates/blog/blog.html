@@ -5,6 +5,7 @@
 <div class="container">
     <div class="row my-5">
         <div class="col bg-light rounded">
+            <!-- Blog title link -->
             <a class="text-success text-decoration-none" href="{% url 'blog' %}">
                 <h1 class="my-5">
                     Blog
@@ -19,6 +20,7 @@
             {% if post.status %}
             <div class="col-md-4 m-3 bg-surf bg-light rounded shadow-lg text-dark">
                 <a href="{% url 'post_detail' post.slug %}">
+                    <!-- Post image -->
                     {% if post.featured_image %}
                     <img class="card-img-top mt-2 w-100" src="{{ post.featured_image.url }}" alt="blog post image">
                     {% else %}
@@ -28,13 +30,17 @@
 
                 <div class="card-body w-100">
                     <a href="{% url 'post_detail' post.slug %}">
+                        <!-- Post title -->
                         <h2 class="card-title mt-3">Title: {{ post.title }}</h2>
                     </a>
+                    <!-- Author -->
                     <p class="card-subtitle mb-2">By: {{ post.author }}</p>
                     <a href="{% url 'post_detail' post.slug %}" class="post-link">
+                        <!-- Excerpt -->
                         <p class="card-text mt-3"><em>Excerpt: {{ post.excerpt|safe }}</em></p>
                     </a>
                     <hr>
+                    <!-- Created date -->
                     <p class="card-text h6 mb-3">Created: {{ post.created_date }}</p>
                 </div>
             </div>
@@ -42,39 +48,41 @@
             {% endfor %}
         </div>
     </div>
+
     <div class="container my-5">
         <div class="row justify-content-center">
-          <div class="col-lg-6">
-    <!-- Pagination -->
-    <ul class="pagination justify-content-center">
-        {% if postings.has_previous %}
-        <li class="page-item">
-            <a class="page-link" href="?page=1">&laquo; First</a>
-        </li>
-        <li class="page-item">
-            <a class="page-link" href="?page={{ postings.previous_page_number }}">Previous</a>
-        </li>
-        {% endif %}
-        <li class="page-item disabled">
-            <span class="page-link">Page {{ postings.number }} of {{ postings.paginator.num_pages }}</span>
-        </li>
-        {% if postings.has_next %}
-        <li class="page-item">
-            <a class="page-link" href="?page={{ postings.next_page_number }}">Next</a>
-        </li>
-        <li class="page-item">
-            <a class="page-link" href="?page={{ postings.paginator.num_pages }}">Last &raquo;</a>
-        </li>
-        {% endif %}
-    </ul>
-</div>
+            <div class="col-lg-6">
+                <!-- Pagination -->
+                <ul class="pagination justify-content-center">
+                    {% if postings.has_previous %}
+                    <li class="page-item">
+                        <a class="page-link" href="?page=1">&laquo; First</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="?page={{ postings.previous_page_number }}">Previous</a>
+                    </li>
+                    {% endif %}
+                    <li class="page-item disabled">
+                        <span class="page-link">Page {{ postings.number }} of {{ postings.paginator.num_pages }}</span>
+                    </li>
+                    {% if postings.has_next %}
+                    <li class="page-item">
+                        <a class="page-link" href="?page={{ postings.next_page_number }}">Next</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link" href="?page={{ postings.paginator.num_pages }}">Last &raquo;</a>
+                    </li>
+                    {% endif %}
+                </ul>
+            </div>
 
-<div class="row">
-    <div class="col">
-        <span class="btn btn-success back-to-top">Back to Top</span>
-    </div>
-</div>
-</div>
+            <div class="row">
+                <div class="col">
+                    <!-- Back to Top button -->
+                    <span class="btn btn-success back-to-top">Back to Top</span>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
 
