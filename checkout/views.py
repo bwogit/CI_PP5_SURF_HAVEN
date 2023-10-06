@@ -2,12 +2,11 @@
 from django.shortcuts import (render, redirect, reverse, get_object_or_404,
                               HttpResponse)
 from django.views.decorators.http import require_POST
-from django.core.mail import send_mail
 from django.contrib import messages
 from django.conf import settings
 import stripe
 import json
-# Internal imports
+# Internal
 from .forms import OrderForm
 from .models import Order, OrderLineItem
 from products.models import Product, Category
@@ -70,8 +69,7 @@ def checkout(request):
                         )
                         order_line_item.save()
                     else:
-                        for size, quantity in\
-                             item_data['items_by_size'].items():
+                        for size, quantity in item_data['items_by_size'].items():
                             order_line_item = OrderLineItem(
                                 order=order,
                                 product=product,
@@ -152,7 +150,7 @@ def checkout_success(request, order_number):
     """
     Process successful checkouts
     """
-
+    
     save_info = request.session.get('save_info')
     order = get_object_or_404(Order, order_number=order_number)
 
@@ -176,16 +174,6 @@ def checkout_success(request, order_number):
             user_profile_form = UserProfileForm(profile_data, instance=profile)
             if user_profile_form.is_valid():
                 user_profile_form.save()
-
-    # Send email confirmation
-    subject = 'Order Confirmation'
-    message = f'Thank you for your purchase.\
-         Your order #{order_number} has been confirmed.'
-    from_email = 'EMAIL_HOST_USER'  # defined in settings.py
-    recipient_list = [order.email]
-
-    send_mail(subject, message, from_email,
-              recipient_list, fail_silently=False)
 
     messages.success(request, f'Order successful! \
         Your order number is {order_number}. A confirmation \
