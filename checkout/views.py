@@ -1,5 +1,4 @@
-# Imports
-# 3rd Party
+# 3rd Party Imports
 from django.shortcuts import (render, redirect, reverse, get_object_or_404,
                               HttpResponse)
 from django.views.decorators.http import require_POST
@@ -8,15 +7,13 @@ from django.contrib import messages
 from django.conf import settings
 import stripe
 import json
-
-# Internal
+# Internal imports
 from .forms import OrderForm
 from .models import Order, OrderLineItem
 from products.models import Product, Category
 from basket.contexts import basket_contents
 from profiles.models import UserProfile
 from profiles.forms import UserProfileForm
-# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 @require_POST
@@ -73,7 +70,8 @@ def checkout(request):
                         )
                         order_line_item.save()
                     else:
-                        for size, quantity in item_data['items_by_size'].items():
+                        for size, quantity in\
+                             item_data['items_by_size'].items():
                             order_line_item = OrderLineItem(
                                 order=order,
                                 product=product,
@@ -154,7 +152,7 @@ def checkout_success(request, order_number):
     """
     Process successful checkouts
     """
-    
+
     save_info = request.session.get('save_info')
     order = get_object_or_404(Order, order_number=order_number)
 
@@ -181,12 +179,14 @@ def checkout_success(request, order_number):
 
     # Send email confirmation
     subject = 'Order Confirmation'
-    message = f'Thank you for your purchase. Your order #{order_number} has been confirmed.'
+    message = f'Thank you for your purchase.\
+         Your order #{order_number} has been confirmed.'
     from_email = 'EMAIL_HOST_USER'  # defined in settings.py
     recipient_list = [order.email]
 
-    send_mail(subject, message, from_email, recipient_list, fail_silently=False)
-    
+    send_mail(subject, message, from_email,
+              recipient_list, fail_silently=False)
+
     messages.success(request, f'Order successful! \
         Your order number is {order_number}. A confirmation \
         email will be sent to {order.email}.')
