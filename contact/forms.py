@@ -1,8 +1,8 @@
-# Imports
-# Internals
+# 3rd Party Imports
 from django import forms
 from crispy_forms.helper import FormHelper
 from phonenumber_field.formfields import PhoneNumberField
+# Internal Imports
 from .models import Contact
 
 

@@ -30,6 +30,7 @@ class ContactUser(View):
         if contact_form.is_valid():
             contact_form.save()
             messages.success(request, "Message submitted. Thank you!")
-            return HttpResponseRedirect(reverse('home'))
+            # Redirect the user to the success page
+            return render(request, 'contact/success.html')
         return render(request, self.template_name,
                       {'contact_form': contact_form})

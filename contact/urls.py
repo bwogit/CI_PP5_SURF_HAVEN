@@ -5,4 +5,5 @@ from contact import views
 
 urlpatterns = [
     path('contact/', views.ContactUser.as_view(), name='contact'),
+    path('success/', views.ContactUser.as_view(), name='success'),
 ]
