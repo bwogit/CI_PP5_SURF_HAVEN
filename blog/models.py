@@ -24,8 +24,8 @@ class Post(models.Model):
         on_delete=models.CASCADE,
         related_name='blog_posts'
         )
-    created_date = models.DateTimeField(blank=True)
-    # updated_date = models.DateTimeField()
+    created_date = models.DateTimeField(auto_now_add=True)  # Auto set
+    updated_date = models.DateTimeField(auto_now=True)  # Auto updated on save
     content = models.TextField()
     featured_image = models.ImageField(
         null=True,
