@@ -74,10 +74,10 @@
                     {% endif %}
                     {% endif %}
                     <!-- Shop -->
-                    <li class="nav-item dropdown">
+                    <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Shop
-                        </a>
+                        </a> -->
                         <!-- <ul class="dropdown-menu">
                             {% for category in Categories_list %}
                             <li><a class="dropdown-item text-muted p-2"
@@ -86,12 +86,12 @@
                             <div class="dropdown-divider"></div>
                             <li><a class="dropdown-item text-muted" href="{% url 'products' %}">All Products</a></li>
                         </ul> -->
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item">
-                                <a class="nav-link text-muted" href="{% url 'products' %}">Shop</a>
-                            </li>
-                        </ul>
-                    </li>
+                    <!-- </li> -->
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" href="{% url 'products' %}">Shop</a>
+                        </li>
+                    </ul>
                     <!-- Blog -->
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'blog' %}">Blog</a>
@@ -129,7 +129,7 @@
                             {% endif %}
                         </a>
                         <!-- Login Dropdown -->
-                        <ul class="dropdown-menu">
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                             {% if request.user.is_authenticated %}
                                 {% if request.user.is_superuser %}
                                     <li><a class="dropdown-item" href="#">Management</a></li>
