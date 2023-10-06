@@ -14,10 +14,15 @@
     <div class="row bg-light my-5 p-3 rounded">
         <div class="card m-5 col-12 col-md-6 mx-auto">
             <div class="card-body text-center">
-                <h1 class="text-success">Booking Created</h1>
-                <p>Thank you for booking with us. We look forward to see you in the water.</p>
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <img src="{% static 'img/surfhaven_logo.png' %}" alt="Your Logo" class="img-fluid">
+                        <h1 class="display-4 text-success mt-3">Booking Successful!</h1>
+                        <p class="lead">Thank you for choosing us for your booking. We can't wait to share the waves with you.</p>
+                    </div>
+                </div>
                 <div class="col-12 col-md-6 rounded m-2 mx-auto">
-                    <a class="btn btn-success btn-lg" href="{% url 'school_list' %}" role="button">back to school list</a>
+                    <a class="btn btn-success btn-lg" href="{% url 'school_list' %}" role="button">Explore More Schools</a>
                 </div>
             </div>
         </div>
