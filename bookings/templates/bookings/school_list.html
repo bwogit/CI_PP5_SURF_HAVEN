@@ -13,11 +13,9 @@
 <div class="container">
   <div class="row my-5">
     <div class="col bg-light rounded">
-      <!-- <a class="text-success text-decoration-none" href="{% url 'contact' %}"> -->
       <h1 class="my-5">
         Schools
       </h1>
-      <!-- </a> -->
     </div>
   </div>
 
@@ -25,12 +23,12 @@
     <div class="row my-5 justify-content-center">
       {% for school in schools %}
       <div class="col-12 col-md-6 my-3">
-        <div class="card shadow">
-          <img src="{{ school.image.url }}" alt="Surf School" class="card-img-top">
+        <div class="card shadow card-sl">
+          <img src="{{ school.image.url }}" alt="Surf School" class="card-img-top card-img-top-sl">
           <div class="card-body">
-            <h5 class="card-title text-success">{{ school.school_name }}</h5>
-            <p class="card-text">{{ school.description }}</p>
-            <a href="{% url 'school_detail' slug=school.slug %}" class="btn btn-primary">Details</a>
+            <h5 class="card-title text-success card-title-sl">{{ school.school_name }}</h5>
+            <p class="card-text card-text-sl">{{ school.description }}</p>
+            <a href="{% url 'school_detail' slug=school.slug %}" class="btn btn-primary btn-primary-sl">Details</a>
           </div>
         </div>
       </div>
@@ -84,7 +82,7 @@
     </div>
     <div class="row">
       <div class="col">
-        <span class="btn btn-success back-to-top">Back to Top</span>
+        <span class="btn btn-success back-to-top back-to-top-sl">Back to Top</span>
       </div>
     </div>
   </div>

@@ -80,3 +80,52 @@ footer {
   color: red; 
   
 }
+
+/*-------------------------------------------------- style for school list----------------------------------------------------*/
+
+.card-sl {
+  border: 1px solid #ccc; /* Add a border around the cards */
+  border-radius: 8px; /* Rounded corners for the cards */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Style for the card images */
+.card-img-top-sl {
+  height: 500px; /* Set a fixed height for the images */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  border-top-left-radius: 8px; /* Rounded top-left corner for the image */
+  border-top-right-radius: 8px; /* Rounded top-right corner for the image */
+}
+
+/* Style for the card titles */
+.card-title-sl {
+  font-size: 1.25rem; /* Increase font size for card titles */
+  margin-bottom: 0.5rem; /* Add some spacing below the title */
+}
+
+/* Style for the card text */
+.card-text-sl {
+  font-size: 1rem; /* Adjust font size for card text */
+}
+
+/* Style for the "Details" button */
+.btn-primary-sl {
+  background-color: #007bff; /* Change the button's background color */
+  border-color: #007bff; /* Change the button's border color */
+}
+
+.btn-primary-sl:hover {
+  background-color: #0056b3; /* Change the button's background color on hover */
+  border-color: #0056b3; /* Change the button's border color on hover */
+}
+
+/* Style for the "Back to Top" button */
+.back-to-top-sl {
+  background-color: #28a745; /* Change the button's background color */
+  border-color: #28a745; /* Change the button's border color */
+}
+
+.back-to-top-sl:hover {
+  background-color: #1e7e34; /* Change the button's background color on hover */
+  border-color: #1e7e34; /* Change the button's border color on hover */
+}
