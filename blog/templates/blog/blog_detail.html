@@ -27,7 +27,7 @@
                     </a>
                     {% else %}
                     <a href="{% url 'post_detail' post.slug %}">
-                        <img class="img-fluid my-2" src="{% static 'img/default-image.jpg' %}" alt="Default Image">
+                        <img class="img-fluid my-2" src="{% static 'img/noimage.jpg' %}" alt="Default Image">
                     </a>
                     {% endif %}
                     {{ post.content| safe }}
