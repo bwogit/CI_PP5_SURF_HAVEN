@@ -694,6 +694,21 @@
             "image": "products/product-c-beachwear-06.jpg"
            
         }
+    },{
+        "pk": 77,
+        "model": "products.product",
+        "fields": {
+            "code": "KID-WET-FULL",
+            "brand": "LocalAction Jr.",
+            "name": "full 5mm Wetsuit for Kids",
+            "description": "The LocalAction Jr. Full 5 mm Wetsuit is perfect for young adventurers. Provides full-body protection for cold water activities.",
+            "price": 94.99,
+            "category": 8,
+            "rating": 4.5,
+            "has_sizes": true,
+            "image": "products/product-c-wetsuit-07.jpg"
+           
+        }
     }
     
     
