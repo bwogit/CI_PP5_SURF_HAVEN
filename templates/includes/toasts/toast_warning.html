@@ -2,7 +2,7 @@
     <div class="arrow-up arrow-warning"></div>
     <div class="w-100 toast-capper bg-warning"></div>
     <div class="toast-header bg-light text-dark">
-        <strong class="me-auto">Information</strong>
+        <strong class="me-auto">Warning</strong>
         <button type="button" class="btn-close text-dark" data-bs-dismiss="toast" aria-label="Close"></button>
     </div>
     <div class="toast-body bg-light">
@@ -13,15 +13,15 @@
             </div>
         </div>
         {% if grand_total and not on_profile_page %}
-            <p class="logo-font bg-light text-dark py-1">Your Cart ({{ product_count }})</p>
+            <p class="logo-font bg-light text-dark py-1">Your Basket ({{ product_count }})</p>
             <div class="cart-notification-wrapper">
-                {% for item in cart_items %}
+                {% for item in basket_items %}
                     <div class="row">
                         <div class="col-3 my-1">
                             {% if item.product.image %}
                             <img class="w-100" src="{{ item.product.image.url }}" alt="{{ item.product.name }}">
                             {% else %}
-                            <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ item.product.name }}">
+                            <img class="w-100" src="{{ MEDIA_URL }}/products/noimage.png" alt="{{ item.product.name }}">
                             {% endif %}
                         </div>
                         <div class="col-9">
