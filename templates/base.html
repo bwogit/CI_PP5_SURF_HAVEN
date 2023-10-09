@@ -135,8 +135,7 @@
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownButton">
                             {% if request.user.is_authenticated %}
                                 {% if request.user.is_superuser %}
-                                    <li><a class="dropdown-item" href="#">Management</a></li>
-                                    <li><a class="dropdown-item" href="{% url 'add_product' %}">Add Product</a></li>
+                                    <li><a class="dropdown-item text-danger" href="{% url 'add_product' %}">Add Product</a></li>
                                 {% endif %}
                                 <li><a class="dropdown-item" href="{% url 'profile' %}">Profile</a></li>
                                 <li><a class="dropdown-item" href="{% url 'account_logout' %}">Logout</a></li>
@@ -153,8 +152,8 @@
                     <li class="list-inline-item">
                         <a class="{% if grand_total %}text-success font-weight-bold{% else %}text-success{% endif %} nav-link"
                            href="{% url 'view_basket' %}">
-                            <div>
-                                <div><i class="fas fa-shopping-bag fa-lg btn-outline-info" aria-hidden="true"></i></div>
+                            <div class="d-flex align-items-center">
+                                <div class="mr-2"><i class="fas fa-shopping-bag fa-lg btn-outline-info" aria-hidden="true"></i></div>
                                 <p class="my-0">
                                     {% if grand_total %}
                                     €{{ grand_total|floatformat:2 }}
