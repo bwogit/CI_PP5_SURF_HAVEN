@@ -1,12 +1,13 @@
 # 3rd party imports
 from django.contrib import admin
+from django_summernote.admin import SummernoteModelAdmin
 # Internal imports
 from .models import School, Booking
 
 
 # SchoolAdmin class
 @admin.register(School)
-class SchoolAdmin(admin.ModelAdmin):
+class SchoolAdmin(SummernoteModelAdmin):
     """
     Admin class for the School model.
     """
