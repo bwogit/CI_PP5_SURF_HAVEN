@@ -31,7 +31,7 @@
           {% endif %}
           <div class="card-body">
             <h5 class="card-title text-success card-title-sl">{{ school.school_name }}</h5>
-            <p class="card-text card-text-sl">{{ school.description }}</p>
+            <p class="card-text card-text-sl">{{ school.description | safe }}</p>
             <a href="{% url 'school_detail' slug=school.slug %}" class="btn btn-primary btn-primary-sl">Details</a>
           </div>
         </div>
