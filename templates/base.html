@@ -118,24 +118,21 @@
                 </div>
   
                 <!-- User Profile Dropdown -->
-    <ul class="navbar-nav me-auto me-lg-1 ms-lg-auto mb-2 mb-lg-0">
-        <li class="nav-item dropdown">
-            <a class="nav-link {% if request.user.is_authenticated %} {{ 'text-success' }}{% endif %}" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                {% if request.user.is_authenticated %}
-                    {% if request.user.is_staff %}
-                        <i class="fas fa-user fa-lg text-danger"></i><span
-                            class="sr-only">Profile</span>
-                    {% else %}
-                        <i class="fas fa-user fa-lg"></i><span
-                            class="sr-only">Profile</span>
-                    {% endif %}
-                {% else %}
-                    <i class="fas fa-user fa-lg"></i><span
-                        class="sr-only">Profile</span>
-                {% endif %}
-            </a>
+                <ul class="navbar-nav me-auto me-lg-1 ms-lg-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link {% if request.user.is_authenticated %} {{ 'text-success' }}{% endif %}" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="navbarDropdownButton">
+                            {% if request.user.is_authenticated %}
+                                {% if request.user.is_staff %}
+                                    <i class="fas fa-user fa-lg text-danger"></i><span class="sr-only">Profile</span>
+                                {% else %}
+                                    <i class="fas fa-user fa-lg"></i><span class="sr-only">Profile</span>
+                                {% endif %}
+                            {% else %}
+                                <i class="fas fa-user fa-lg"></i><span class="sr-only">Profile</span>
+                            {% endif %}
+                        </a>
                         <!-- Login Dropdown -->
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownButton">
                             {% if request.user.is_authenticated %}
                                 {% if request.user.is_superuser %}
                                     <li><a class="dropdown-item" href="#">Management</a></li>
@@ -150,7 +147,6 @@
                         </ul>
                     </li>
                 </ul>
-                
                 <!-- Basket Section -->
                 <!-- Basket -->
                 <ul class="navbar-nav me-auto me-lg-1 ms-lg-auto mb-2 mb-lg-0">
