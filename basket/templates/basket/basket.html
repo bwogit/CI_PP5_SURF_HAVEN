@@ -10,8 +10,8 @@
 <div class="container">
     <div class="row my-5">
         <div class="col bg-light rounded">
-            <h1 class="my-5 text-muted">
-                Your Shopping Basket
+            <h1 class="my-5 text-success">
+                Shopping Basket
             </h1>
         </div>
     </div>
@@ -87,11 +87,13 @@
                         </div>
                     {% else %}
                         <!-- Empty Basket Message -->
-                        <p class="lead mb-5">Your basket is empty</p>
-                        <a class="btn btn-lg btn-link text-success" href="{% url 'products' %}">
-                            <i class="fas fa-backward me-2"></i>
-                            Return to Shop
-                        </a>
+                        <div class="justify-content-center text-center">
+                            <p class="display-8 mb-3">Your basket is empty</p>
+                            <!-- <p class="lead mb-5">Start shopping now to discover amazing products.</p> -->
+                            <a class="btn btn-lg btn-success" href="{% url 'products' %}">
+                                <i class="fas fa-shopping-cart me-2"></i> Shop Now
+                            </a>
+                        </div>
                     {% endif %}
                 </div>
             </div>
