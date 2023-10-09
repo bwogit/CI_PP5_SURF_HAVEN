@@ -15,9 +15,9 @@
               <div class="row bg-light my-4 p-3 rounded">
                 <div class="col-12 col-md-6">
                   {% if school.image %}
-                  <img class="card-img-top mt-2 p-3 rounded" src="{{ school.image.url }}" alt="Surf School Image">
+                  <img class="card-img-top mt-2 p-3 rounded" src="{{ school.image.url }}" alt="{{ school.school_name }} Image">
                   {% else %}
-                  <img class="card-img-top mt-2 p-3 rounded" src="{% static 'img/default-image.jpg' %}" alt="Default Image">
+                  <img class="card-img-top mt-2 p-3 rounded" src="{% static 'img/noimage.jpg' %}" alt="Default Image">
                   {% endif %}
                 </div>
                 <div class="col-12 col-md-6 mt-2 p-3">

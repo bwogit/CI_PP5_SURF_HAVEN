@@ -24,7 +24,11 @@
       {% for school in schools %}
       <div class="col-12 col-md-6 my-3">
         <div class="card shadow card-sl">
-          <img src="{{ school.image.url }}" alt="Surf School" class="card-img-top card-img-top-sl">
+          {% if school.image %}
+          <img src="{{ school.image.url }}" alt="A photo of {{ school.school_name }}" class="card-img-top card-img-top-sl">
+          {% else %}
+          <img src="{% static 'img/noimage.jpg' %}" alt="No Image Available" class="card-img-top card-img-top-sl">
+          {% endif %}
           <div class="card-body">
             <h5 class="card-title text-success card-title-sl">{{ school.school_name }}</h5>
             <p class="card-text card-text-sl">{{ school.description }}</p>
