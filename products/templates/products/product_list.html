@@ -6,7 +6,20 @@
 {% endblock %}
 
 {% block content %}
-<div class="overlay-pl"></div>
+<div class="container">
+    <div class="row my-5">
+        <div class="col bg-light rounded">
+            <!-- Blog title link -->
+            <a class="text-success text-decoration-none" href="{% url 'blog' %}">
+                <h1 class="my-5">
+                    Shop
+                </h1>
+            </a>
+        </div>
+        <hr>
+        <h2 class="border bg-success text-light rounded p-1 shadow" >Free Shipping on orders over €{{ free_delivery_threshold }}</h2>
+    </div>
+<!-- <div class="overlay-pl"></div>
 <div class="container">
     <div class="row my-5 p-3 rounded">
         <div class="col">
@@ -16,10 +29,10 @@
                         <div class="col-12 p-3 rounded card-pl">
                             <h1 class="logo-font-pl">Shop</h1>
                             <!-- Add a border with success background color, text color, and shadow -->
-                            <h2 class="border bg-success text-light rounded p-1 shadow" >Free Shipping on orders over €{{ free_delivery_threshold }}</h2>
+                            <!-- <h2 class="border bg-success text-light rounded p-1 shadow" >Free Shipping on orders over €{{ free_delivery_threshold }}</h2>
                         </div>
                     </div>
-                </div>
+                </div>  -->
                 
                 <div class="row p-3 rounded mt-3">
                     <div class="col-md-2 bg-light d-none d-lg-block">
