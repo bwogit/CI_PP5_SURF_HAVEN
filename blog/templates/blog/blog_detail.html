@@ -23,11 +23,12 @@
                 <div class="col-md-8 col-lg-6 mx-auto bg-light mt-5 rounded p-3">
                     {% if post.featured_image %}
                     <a href="{% url 'post_detail' post.slug %}">
-                        <img class="img-fluid my-2" src="{{ post.featured_image.url }}" alt="blog post image"></a>
+                        <img class="img-fluid my-2" src="{{ post.featured_image.url }}" alt="An image of{{ post.title }}">
+                    </a>
                     {% else %}
                     <a href="{% url 'post_detail' post.slug %}">
-                        <img class="img-fluid my-2" src="{% static 'img/default-image.jpg' %}"
-                            alt="blog post image"></a>
+                        <img class="img-fluid my-2" src="{% static 'img/default-image.jpg' %}" alt="Default Image">
+                    </a>
                     {% endif %}
                     {{ post.content| safe }}
                 </div>
