@@ -1,0 +1,178 @@
+/* Custom CSS to remove the gap on the left of the logo */
+
+body {
+  background: url('/media/base_image2.jpg') no-repeat center center fixed;
+  background-size: cover;
+  height: calc(100vh - 164px);
+  font-family: 'Roboto', sans-serif;
+}
+
+.main-logo-link {
+    margin-left: 0; /* Remove any left margin */
+  }
+
+/* Default black icon color */
+.black-icon {
+  color: #000;
+}
+
+/* White icon color on button click (active) */
+#search-btn:active #search-icon {
+  color: #fff;
+}
+  /* Optional: To adjust the spacing between the logo and the navigation elements */
+  .navbar-nav {
+    margin-left: 1px; /* Adjust the margin as needed */
+  }
+
+.toast {
+  position: absolute !important;
+  top: 200px;
+  display: block;
+}
+
+.allauth-form-inner-content p {
+  color: #6c757d;
+  margin-top: 1.4rem;
+}
+
+.allauth-form-inner-content label:not([for='id_remember']) {
+  display: none;
+}
+
+.allauth-form-inner-content input::placeholder {
+  color:#6c757d;
+}
+
+.btn-files {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-files input[type=file] {
+  position:absolute;
+  top: 0;
+  right: 0;
+  min-width: 100%;
+  min-height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+footer {
+  opacity: 0.6;
+  color:#ffffff;
+  background-color: rgb(7, 8, 11);
+}
+
+
+
+/* Change the color of selected categories*/
+.selected-category {
+  color: red; 
+  
+}
+
+/*-------------------------------------------------- style for school list----------------------------------------------------*/
+
+.card-sl {
+  border: 1px solid #ccc; /* Add a border around the cards */
+  border-radius: 8px; /* Rounded corners for the cards */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+/* Style for the card images */
+.card-img-top-sl {
+  height: 500px; /* Set a fixed height for the images */
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+  border-top-left-radius: 8px; /* Rounded top-left corner for the image */
+  border-top-right-radius: 8px; /* Rounded top-right corner for the image */
+}
+
+/* Style for the card titles */
+.card-title-sl {
+  font-size: 1.25rem; /* Increase font size for card titles */
+  margin-bottom: 0.5rem; /* Add some spacing below the title */
+}
+
+/* Style for the card text */
+.card-text-sl {
+  font-size: 1rem; /* Adjust font size for card text */
+}
+
+/* Style for the "Details" button */
+.btn-primary-sl {
+  background-color: #007bff; /* Change the button's background color */
+  border-color: #007bff; /* Change the button's border color */
+}
+
+.btn-primary-sl:hover {
+  background-color: #0056b3; /* Change the button's background color on hover */
+  border-color: #0056b3; /* Change the button's border color on hover */
+}
+
+/* Style for the "Back to Top" button */
+.back-to-top-sl {
+  background-color: #28a745; /* Change the button's background color */
+  border-color: #28a745; /* Change the button's border color */
+}
+
+.back-to-top-sl:hover {
+  background-color: #1e7e34; /* Change the button's background color on hover */
+  border-color: #1e7e34; /* Change the button's border color on hover */
+}
+
+
+/*------------------------------------------------------Style for Product List------------------------------------------------------------------*/
+
+/* Style for the card */
+.card-pl {
+  height: 200px; /* Adjust this value to your desired card height */
+}
+
+
+/* Style for the card images */
+.img-fluid-pl {
+  height: 300px; /* Set a fixed height for the images */
+  object-fit: contain; 
+}
+
+/* Style for the card titles */
+.card-title-pl {
+  font-size: 1.25rem; /* Increase font size for card titles */
+  margin-bottom: 0.5rem; /* Add some spacing below the title */
+}
+
+/* Style for the card text */
+.card-text-pl {
+  font-size: 1rem; /* Adjust font size for card text */
+}
+
+
+.back-to-top-pl:hover {
+  background-color: #1e7e34; /* Change the button's background color on hover */
+  border-color: #1e7e34; /* Change the button's border color on hover */
+}
+
+/* Turning profile icon red when management mode is selected */
+.red-icon {
+  color: red;
+}
+/*MAilChimp*/
+
+.black-bg {
+  background-color:white;
+  /* opacity: ; */
+  color:rgb(250, 9, 9);
+  font-size: x-large;
+
+}
+/* .mailchimp-section {
+  background-image: none; 
+  background-color: transparent; 
+} */
+
+#mc_embed_signup{background:#fff; false;clear:left; font:14px Helvetica,Arial,sans-serif; width: 600px;}
+              /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+                 We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+
