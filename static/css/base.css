@@ -161,9 +161,9 @@ footer {
 /*MAilChimp*/
 
 .black-bg {
-  background-color:black;
+  background-color:white;
   /* opacity: ; */
-  color:black;
+  color:rgb(250, 9, 9);
   font-size: x-large;
 
 }
