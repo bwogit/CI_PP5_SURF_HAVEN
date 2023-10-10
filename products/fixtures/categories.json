@@ -36,7 +36,7 @@
         "model": "products.category",
         "fields": {
             "name": "children_beachwear",
-            "friendly_name": "Children Surfwear"
+            "friendly_name": "Children Beachwear"
         }
     },
     {
