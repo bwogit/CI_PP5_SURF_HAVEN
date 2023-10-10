@@ -151,8 +151,10 @@
                 <!-- Basket -->
                 <ul class="navbar-nav me-auto me-lg-1 ms-lg-auto mb-2 mb-lg-0">
                     <li class="list-inline-item">
+                        <!-- Add an accessible label to the link -->
                         <a class="{% if grand_total > 0 %}text-success font-weight-bold{% endif %} nav-link"
-                           href="{% url 'view_basket' %}">
+                           href="{% url 'view_basket' %}"
+                           aria-label="Shopping Cart">
                             <div class="d-flex align-items-center">
                                 <div class="mr-2"><i class="fas fa-shopping-bag fa-lg btn-outline-info" aria-hidden="true"></i></div>
                                 <p class="my-0">
@@ -193,86 +195,84 @@
 {% block content %}
 {% endblock %}
 
-<!-- This Footer is inspired from MDBootstrap.com -->
 <footer class="text-center text-lg-start">
-        <!--Mailchimp-->
-        <div id="mc_embed_shell">
-      <div id="mc_embed_signup">
-          <form action="https://herokuapp.us21.list-manage.com/subscribe/post?u=16c3fff3abaa15279ee4715e5&amp;id=105b77e262&amp;f_id=007ce1e6f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
-              <div id="mc_embed_signup_scroll"><h2>Subscribe</h2>
-                  <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
-                  <div class="mc-field-group"><label for="mce-EMAIL">Email Address <span class="asterisk">*</span></label><input type="email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value=""><span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span></div>
+    <div class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <div id="mc_embed_signup" class="mx-auto black-bg">
+          <form
+            action="https://gmail.us21.list-manage.com/subscribe/post?u=93fd03b5e626ccdace3880271&amp;id=c7f0c47d2e&amp;f_id=0025c4e1f0"
+            method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate"
+            target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+              <div class="mc-field-group text-center ">
+                <label for="mce-EMAIL">Subscribe to SurfHaven Mailing List</label>
+                <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL"
+                  placeholder="Email address" required>
+                <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
+              </div>
               <div id="mce-responses" class="clear foot">
-                  <div class="response" id="mce-error-response" style="display: none;"></div>
-                  <div class="response" id="mce-success-response" style="display: none;"></div>
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
               </div>
-          <div style="position: absolute; left: -5000px;" aria-hidden="true">
-              /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
-              <input type="text" name="b_16c3fff3abaa15279ee4715e5_105b77e262" tabindex="-1" value="">
-          </div>
+              <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
+                  name="b_93fd03b5e626ccdace3880271_c7f0c47d2e" tabindex="-1" value="" aria-label="Search"></div>
               <div class="optionalParent">
-                  <div class="clear foot">
-                      <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Subscribe">
-                      <p style="margin: 0px auto;"><a href="http://eepurl.com/iBuZUA" title="Mailchimp - email marketing made easy and fun"><span style="display: inline-block; background-color: transparent; border-radius: 4px;"><img class="refferal_badge" src="https://digitalasset.intuit.com/render/content/dam/intuit/mc-fe/en_us/images/intuit-mc-rewards-text-dark.svg" alt="Intuit Mailchimp" style="width: 220px; height: 40px; display: flex; padding: 2px 0px; justify-content: center; align-items: center;"></span></a></p>
-                  </div>
-              </div>
-          </div>
-      </form>
-      </div>
+                <div class="clear foot text-center">
+                  <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="custom-button mx-auto">
                 </div>
-      
-        <!-- Right -->
-    </section>
-    <!-- Section: Links  -->
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    
+    <!-- Section: Links -->
     <section class="pt-2">
         <div class="container text-center text-md-start">
-            <!-- Grid row -->
             <div class="row mt-3">
-                <!-- Grid column -->
+                <!-- Social Links Column -->
                 <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-                    <!-- Content -->
                     <h6 class="text-uppercase fw-bold mb-4">
-                        <i></i> Social
+                        Social
                     </h6>
                     <div>
                         <div class="mb-2">
                             <a href="https://www.instagram.com/" rel="noopener noreferrer nofollow" target="_blank" aria-hidden="true" class="me-4 link-secondary">
-                                <i class="fab fa-instagram fa-lg"></i><span
-                                class="sr-only">Instagram</span>
+                                <i class="fab fa-instagram fa-lg"></i>
+                                <span class="sr-only">Instagram</span>
                             </a>
                         </div>
                         <div class="mb-2">
                             <a href="https://www.linkedin.com/" rel="noopener noreferrer nofollow" class="me-4 link-secondary">
-                                <i class="fab fa-linkedin-in fa-lg"></i><span
-                                class="sr-only">LInkedIn</span>
+                                <i class="fab fa-linkedin-in fa-lg"></i>
+                                <span class="sr-only">LinkedIn</span>
                             </a>
                         </div>
                         <div>
                             <a href="https://www.youtube.com/" rel="noopener noreferrer nofollow" class="me-4 link-secondary">
-                                <i class="fab fa-youtube fa-lg"></i><span
-                                class="sr-only">Youtube</span>
+                                <i class="fab fa-youtube fa-lg"></i>
+                                <span class="sr-only">Youtube</span>
                             </a>
                         </div>
                         <div>
                             <a href="https://www.facebook.com/profile.php?id=61552109496668" target="_blank" class="me-4 link-secondary">
-                                <i class="fab fa-facebook fa-lg"></i><span
-                                class="sr-only">Facebook</span>
+                                <i class="fab fa-facebook fa-lg"></i>
+                                <span class="sr-only">Facebook</span>
                             </a>
                         </div>
                     </div>
                 </div>
                 
-                <!-- Grid column -->
-                <!-- Links -->
+                <!-- Products Links Column -->
                 <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
                     <h6 class="text-uppercase fw-bold mb-4">
                         Products
                     </h6>
                     <p>
-                        <a href="{% url 'school_list' %}" class="text-reset">schools</a>
+                        <a href="{% url 'school_list' %}" class="text-reset">Schools</a>
                     </p>
                     <p>
-                        <a href="{% url 'booking_list' %}" class="text-reset">bookings</a>
+                        <a href="{% url 'booking_list' %}" class="text-reset">Bookings</a>
                     </p>
                     <p>
                         <a href="{% url 'products' %}" class="text-reset">Shop</a>
@@ -281,8 +281,8 @@
                         <a href="{% url 'blog' %}" class="text-reset">Blog</a>
                     </p>
                 </div>
-                <!-- Links -->
-                <!-- Links -->
+                
+                <!-- Useful Links Column -->
                 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                     <h6 class="text-uppercase fw-bold mb-4">
                         Useful Links
@@ -300,8 +300,8 @@
                         <a href="#" class="text-reset">Privacy Policy</a>
                     </p>
                 </div>
-                <!-- Links -->
-                <!-- Contact -->
+                
+                <!-- Contact Column -->
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
                     <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
                     <p><i class="fas fa-home me-3 text-secondary"></i> Surf Haven, Carlow, Ireland</p>
@@ -309,17 +309,13 @@
                     <p><i class="fas fa-phone me-3 text-secondary"></i> +1 234 567 899</p>
                     <p><i class="fas fa-print me-3 text-secondary"></i> +1 234 567 888</p>
                 </div>
-                <!-- Contact -->
+                <!-- Contact Column -->
             </div>
             <!-- Grid row -->
         </div>
     </section>
-    <!-- Copyright -->
-    <!-- <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
-        © 2023 SurfHaven. All rights reserved.
-    </div> -->
-    <!-- Copyright -->
 </footer>
+
 
 {% block postloadjs %}
 <!-- Back to Top -->
