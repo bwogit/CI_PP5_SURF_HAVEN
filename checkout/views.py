@@ -98,7 +98,7 @@ def checkout(request):
         basket = request.session.get('basket', {})
         if not basket:
             messages.error(
-                request, "There's nothing in your basket at the moment")
+                request, "Your basket is empty")
             return redirect(reverse('products'))
 
         current_basket = basket_contents(request)
