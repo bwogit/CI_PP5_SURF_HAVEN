@@ -52,7 +52,7 @@ class Product(models.Model):
     image = models.ImageField(
         null=True,
         blank=True,
-        default='img/noimage.jpg')
+        default='')
 
     def __str__(self):
         return self.name
