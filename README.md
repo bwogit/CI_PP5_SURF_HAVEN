@@ -80,7 +80,52 @@ We have established a detailed budget to support our business operations, allowi
 Our marketing efforts are central to building brand visibility and engaging with potential customers.
 
 ### Social Media
-Leveraging the power of social media is a cornerstone of our marketing strategy. We use various platforms to share engaging content related to surfing, such as surf tips, remarkable surf destinations, and updates on available lessons and equipment. This approach helps us build a vibrant community of surf enthusiasts, connect with our audience, and create a supportive and enthusiastic online presence. Join our community and stay informed about the latest in the world of surfing.
+Leveraging the power of social media is a cornerstone of our marketing strategy. We use various platforms to share engaging content related to surfing, such as surf tips, remarkable surf destinations, and updates on available lessons and equipment. This approach helps us build a vibrant community of surf enthusiasts, connect with our audience, and create a supportive and enthusiastic online presence. Our Facebook page is more than just a virtual space; it's a digital hub for surfers of all levels to come together, share their experiences, and stay updated on everything related to the world of surfing. Join our community and stay informed about the latest in our world.
+
+[Facebook](https://www.facebook.com/people/Surf-Haven/61552109496668/)  
+
 
 ### Mailing List
-Our mailing list is a valuable tool for communication. We recognize that staying connected with our customers is essential, and our mailing list enables us to do just that. We regularly send out newsletters, promotional offers, and updates to keep our customers informed and engaged. By being part of our mailing list, you'll receive timely information and special deals that enhance your surfing experience. Join us, and be a part of the SurfHaven community.
+Our mailing list is a valuable tool for communication. We recognize that staying connected with our customers is essential, and our mailing list enables us to do just that. We regularly send out newsletters, promotional offers, and updates to keep our customers informed and engaged. At SurfHaven, we understand the importance of effective communication and staying connected with our valued customers. That's why we've partnered with MailChimp, a trusted email marketing platform, to keep you informed and engaged.
+
+Our MailChimp-powered newsletters are your direct line to the latest insights related to surfing and everything SurfHaven.
+
+<details><summary>See Image</summary>
+
+![Mailchimp]()
+![Email]()
+![Email content]()
+</details> 
+
+### User Goals
+
+- Seamlessly book surf lessons and acquire the best surf equipment.
+- Explore the latest in the world of surfing through our blog.
+- Reach out to our dedicated team for any assistance.
+
+### Site Owner Goals
+
+- Ensuring you receive top-quality surf experiences.
+- Offering reliability, security, and extensive options.
+- Building a loyal community and a trusted brand.
+
+## User Experience
+
+### Target Audience
+
+- Surf enthusiasts seeking lessons and equipment.
+- Surf schools and equipment providers.
+- Those in search of surfing insights and resources.
+- Anyone interested in scheduling surf experiences.
+
+### User Requirements and Expectations
+
+- An intuitive and user-friendly interface.
+- Reliable, error-free operations.
+- Robust security measures to protect your data.
+- A wide range of surf schools, lessons, and gear.
+- Real-time, precise information.
+- Competitive pricing and unbeatable value.
+- Exceptional customer service.
+- Inclusivity and accessibility for all.
+
