@@ -66,3 +66,15 @@ SurfHaven operates with a clear organizational structure to ensure the smooth an
 - **Office Manager**: The office manager plays a crucial role in handling day-to-day administrative tasks. They ensure that SurfHaven operates efficiently, from scheduling lessons to managing equipment inventory.
 
 Our team is dedicated to providing the best possible surfing experience, combining expertise, passion, and organization to create a memorable journey for our customers.
+
+## Financial Plan
+A solid financial plan is the backbone of SurfHaven, ensuring the long-term success and growth of our platform. Our projected revenue streams come from two main sources:
+
+- **Lesson Bookings**: Surf lessons are a core offering at SurfHaven. Our competitive pricing and commitment to quality instruction are expected to attract a steady flow of bookings. We anticipate growth in this area as more individuals discover the joy of surfing.
+
+- **Equipment Sales**: In addition to lessons, SurfHaven offers a selection of top-quality surf equipment for purchase. This complements our service, providing customers with easy access to the gear they need to enjoy the waves to the fullest. We continually update our inventory to offer the latest and best surf equipment.
+
+We have established a detailed budget to support our business operations, allowing us to meet our financial goals while delivering a superior surfing experience to our customers.
+
+## Marketing
+Our marketing efforts are central to building brand visibility and engaging with potential customers.
