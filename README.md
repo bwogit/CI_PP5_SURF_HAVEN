@@ -70,8 +70,10 @@ Our team is dedicated to providing the best possible surfing experience, combini
 ## Financial Plan
 A solid financial plan is the backbone of SurfHaven, ensuring the long-term success and growth of our platform. Our projected revenue streams come from two main sources:
 
-- **Lesson Bookings**: Surf lessons are a core offering at SurfHaven. Our competitive pricing and commitment to quality instruction are expected to attract a steady flow of bookings. We anticipate growth in this area as more individuals discover the joy of surfing.
+- **Lesson Bookings through the platform**: Surf lessons are a core offering at SurfHaven. 
+Platform Sale: SurfHaven will generate revenue by selling access to its platform. Surf schools can purchase licenses to use the platform, which provides them with tools and features to enhance their operations and offer a better experience to their customers.
 
+    Subscription Model: An alternative revenue source is through a subscription-based model. Surf schools can subscribe to SurfHaven's services on a regular basis. This model may offer tiered subscription plans with varying features and support levels to cater to different school sizes and needs.
 - **Equipment Sales**: In addition to lessons, SurfHaven offers a selection of top-quality surf equipment for purchase. This complements our service, providing customers with easy access to the gear they need to enjoy the waves to the fullest. We continually update our inventory to offer the latest and best surf equipment.
 
 We have established a detailed budget to support our business operations, allowing us to meet our financial goals while delivering a superior surfing experience to our customers.
