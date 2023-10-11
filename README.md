@@ -78,3 +78,9 @@ We have established a detailed budget to support our business operations, allowi
 
 ## Marketing
 Our marketing efforts are central to building brand visibility and engaging with potential customers.
+
+### Social Media
+Leveraging the power of social media is a cornerstone of our marketing strategy. We use various platforms to share engaging content related to surfing, such as surf tips, remarkable surf destinations, and updates on available lessons and equipment. This approach helps us build a vibrant community of surf enthusiasts, connect with our audience, and create a supportive and enthusiastic online presence. Join our community and stay informed about the latest in the world of surfing.
+
+### Mailing List
+Our mailing list is a valuable tool for communication. We recognize that staying connected with our customers is essential, and our mailing list enables us to do just that. We regularly send out newsletters, promotional offers, and updates to keep our customers informed and engaged. By being part of our mailing list, you'll receive timely information and special deals that enhance your surfing experience. Join us, and be a part of the SurfHaven community.
