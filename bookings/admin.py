@@ -48,6 +48,6 @@ class BookingAdmin(admin.ModelAdmin):
         Confirms the selected bookings.
         """
 
-        queryset.update(status='Lesson Time Confirmed')
+        queryset.update(status='Booking Confirmed')
 
     confirm_bookings.short_description = "Confirm selected bookings"

@@ -22,9 +22,9 @@ lesson_times = (
 
 # Status options for lesson time bookings
 status_options = (
-    ('Lesson Time Confirmed', 'Lesson Time Confirmed'),
-    ('Lesson Time Rejected', 'Lesson Time Rejected'),
-    ('Lesson Time Expired', 'Lesson Time Expired'),
+    ('Booking Confirmed', 'Booking Confirmed'),
+    ('Booking Rejected', 'Booking Rejected'),
+    ('Awaiting Confirmation', 'Awaiting Confirmation'),
 )
 
 
@@ -66,7 +66,7 @@ class Booking(models.Model):
     email = models.EmailField(max_length=254, default="")
     phone = PhoneNumberField(null=True)
     status = models.CharField(max_length=25, choices=status_options,
-                              default='Lesson Confirmed')
+                              default='Booking Confirmed')
     surfers = (
         (1, "1 surfer"),
         (2, "2 surfers"),

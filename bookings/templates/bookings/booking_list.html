@@ -30,17 +30,25 @@
             <strong>Lesson Time:</strong> {{ booking.requested_time }}<br>
             <strong>Surfer:</strong> {{ booking.surfer_count }}
           </p>
-          {% if booking.status == 'Lesson Time Confirmed' %}
+          {% if booking.status == 'Booking Confirmed' %}
           <p class="text-primary fw-bold">Don't forget to pay upon arrival</p>
           <div class="d-grid gap-2">
             <div class="text-center">
+              {% if booking.status == 'Booking Confirmed' and booking.requested_date >= today %}
               <a class="btn btn-info btn-sm btn-block" href="{% url 'edit_booking' booking.pk %}" role="button">Edit</a>
               <a class="btn btn-dark btn-sm btn-block" href="{% url 'cancel_booking' booking.pk %}" role="button">Cancel</a>
+              {% endif %}
             </div>
           </div>
           {% else %}
-          <p class="text-danger fw-bold">EXPIRED</p>
-          <a class="btn btn-warning btn-sm" href="{% url 'cancel_booking' booking.pk %}" role="button">Cancel</a>
+          <p class="text-danger fw-bold">
+            {% if booking.requested_date < today %}
+              Expired
+            {% else %}
+              Awaiting Confirmation
+            {% endif %}
+          </p>
+          <!-- <a class="btn btn-warning btn-sm" href="{% url 'cancel_booking' booking.pk %}" role="button">Cancel</a> -->
           {% endif %}
         </div>
       </div>
