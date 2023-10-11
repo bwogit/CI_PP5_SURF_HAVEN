@@ -57,3 +57,12 @@ At SurfHaven, we place a strong emphasis on effective marketing and sales strate
 - **Mailing List**: Our mailing list is a vital tool for communication. We regularly send out newsletters, promotional offers, and updates to keep our customers informed and engaged.
 
 Our aim is to reach surf enthusiasts worldwide and attract a diverse range of customers, fostering a sense of community and excitement around the world of surfing.
+
+### Operations and Management
+SurfHaven operates with a clear organizational structure to ensure the smooth and efficient delivery of our services. Our dedicated team comprises three key roles:
+
+- **Director**: The director oversees the strategic direction of SurfHaven, making sure we remain at the forefront of the surfing industry. They work tirelessly to identify opportunities for growth and development.
+- **Surf Instructor**: Our experienced surf instructor is passionate about teaching the art of surfing. They are committed to providing top-notch lessons tailored to the needs and skill levels of our customers. Safety, skill development, and a love for surfing are at the core of their teaching philosophy.
+- **Office Manager**: The office manager plays a crucial role in handling day-to-day administrative tasks. They ensure that SurfHaven operates efficiently, from scheduling lessons to managing equipment inventory.
+
+Our team is dedicated to providing the best possible surfing experience, combining expertise, passion, and organization to create a memorable journey for our customers.
