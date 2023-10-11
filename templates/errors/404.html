@@ -2,17 +2,16 @@
 
 {% load static %}
 {% block content %}
-<div class="container-fluid header-container">
-    <div class="row">
-        <div class="col"></div>
-    </div>
-</div>
-<div class="container-fluid h-100">
-    <div class="row h-100">
-        <div class="col-12 col-md-6 my-auto text-center">
-            <h1 class="display-4 logo-font">
-                Oops! The page you are looking for is not available.
-            </h1>
+<div class="container">
+    <div class="row bg-light my-5 p-3 rounded">
+      <div class="col">
+        <div class="justify-content-center text-center rounded">
+          <div class="card-body">
+            <div class="row">
+                <div class="col-12 p-5 rounded card 404">
+                  <h1 style="font-size: 3rem;">Oops! The page you are looking for is not available.</h1>
+                </div>
+              </div>
             <p class="lead my-4">
                 Don't worry, you can return to our home page.
             </p>
@@ -27,5 +26,10 @@
         </div>
     </div>
 </div>
+        </div>
+      </div>
+    </div>
+</div>
+
 
 {% endblock %}
