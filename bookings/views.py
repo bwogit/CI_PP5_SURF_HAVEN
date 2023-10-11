@@ -132,9 +132,10 @@ class BookingList(LoginRequiredMixin, generic.ListView):
         # Update the status of bookings based on the requested_date
         for booking in booking_page:
             if booking.requested_date < today:
-                booking.status = 'Booking is Expired'
+                booking.status = 'Booking Expired'
 
         context['booking_page'] = booking_page
+        context['today'] = today  # Pass today to the template
         return context
 
 

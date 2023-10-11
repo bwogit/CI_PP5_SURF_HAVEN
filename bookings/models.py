@@ -25,6 +25,8 @@ status_options = (
     ('Booking Confirmed', 'Booking Confirmed'),
     ('Booking Rejected', 'Booking Rejected'),
     ('Awaiting Confirmation', 'Awaiting Confirmation'),
+    ('Booking Expired', 'Booking Expired'),
+
 )
 
 
