@@ -1,4 +1,7 @@
-# 3rd Party imports
+# Standard Library Imports
+from datetime import datetime
+
+# Third-Party Imports
 from django.shortcuts import render, get_object_or_404, redirect
 from django.views import generic, View
 from django.contrib import messages
@@ -7,8 +10,8 @@ from django.contrib.messages.views import SuccessMessageMixin
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic.edit import UpdateView
 from django.core.paginator import Paginator
-from datetime import datetime
 from django.utils import timezone
+
 # Internal Imports
 from .models import School, Booking
 from .forms import BookingForm
@@ -115,6 +118,7 @@ class BookingList(LoginRequiredMixin, generic.ListView):
     template_name = 'bookings/booking_list.html'
     context_object_name = 'bookings'
     paginate_by = 4
+    today = timezone.now().date()  # Use timezone-aware datetime
 
     def get_queryset(self):
         user = self.request.user
@@ -126,9 +130,8 @@ class BookingList(LoginRequiredMixin, generic.ListView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         booking_page = context['page_obj']
-
-        today = timezone.now().date()  # Use timezone-aware datetime
-
+        today = datetime.now().date()
+       
         # Update the status of bookings based on the requested_date
         for booking in booking_page:
             if booking.requested_date < today:
