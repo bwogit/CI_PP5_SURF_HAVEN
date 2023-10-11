@@ -28,10 +28,8 @@ class Post(models.Model):
     created_date = models.DateTimeField(auto_now_add=True)  # set on creation
     updated_date = models.DateTimeField(auto_now=True)  # update on every save
     content = models.TextField()
-    featured_image = models.ImageField(
-        null=True,
-        blank=True
-        )
+    featured_image = models.ImageField(upload_to='blog/',
+                                       null=True, blank=True)
     excerpt = models.TextField(blank=True)
     status = models.IntegerField(choices=STATUS, default=0)
 
