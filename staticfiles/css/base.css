@@ -154,7 +154,7 @@ footer {
   border-color: #1e7e34; /* Change the button's border color on hover */
 }
 
-/* Turning profile icon red when management mode is selected */
+/* Turning profile icon red when Admin mode is selected */
 .red-icon {
   color: red;
 }
