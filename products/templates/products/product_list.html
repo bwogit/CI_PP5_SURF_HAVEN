@@ -37,10 +37,11 @@
                         <p><a class="nav-link-pl text-black {% if category.name == selected_category %}selected-category-pl{% endif %}" href="{% url 'products' %}?category={{ category.name }}">{{ category.friendly_name }}</a></p>
                         {% endfor %}
                         <hr>
-                        <div class="m-3 w-50">
+                        <div class="w-40">
+                            <label for="sort-selector" class="mr-2">Sort by:</label>
                             <select id="sort-selector" aria-label="option select for sorting"
                                 class=" rounded-0 border border-{% if current_sort != 'None_None' %}success{% else %}light{% endif %}">
-                                <option value="reset" {% if current_sort == 'None_None' %}selected{% endif %}>Sort by...</option>
+                                <option value="reset" {% if current_sort == 'None_None' %}selected{% endif %}>Please select one</option>
                                 <option value="price_asc" {% if current_sort == 'price_asc' %}selected{% endif %}>Price (low to high)</option>
                                 <option value="price_desc" {% if current_sort == 'price_desc' %}selected{% endif %}>Price (high to low)</option>
                                 <option value="rating_asc" {% if current_sort == 'rating_asc' %}selected{% endif %}>Rating (low to high)</option>
