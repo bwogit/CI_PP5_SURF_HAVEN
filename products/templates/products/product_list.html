@@ -37,7 +37,7 @@
                         <p><a class="nav-link-pl text-black {% if category.name == selected_category %}selected-category-pl{% endif %}" href="{% url 'products' %}?category={{ category.name }}">{{ category.friendly_name }}</a></p>
                         {% endfor %}
                         <hr>
-                        <div class="w-40">
+                        <div class="w-50">
                             <label for="sort-selector" class="mr-2">Sort by:</label>
                             <select id="sort-selector" aria-label="option select for sorting"
                                 class=" rounded-0 border border-{% if current_sort != 'None_None' %}success{% else %}light{% endif %}">
