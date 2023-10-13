@@ -2,7 +2,6 @@
 from decimal import Decimal
 from django.conf import settings
 from django.shortcuts import get_object_or_404, Http404
-
 # Internal Imports
 from products.models import Product
 
@@ -40,6 +39,7 @@ def basket_contents(request):
                         'size': size,
                     })
                     product_added = True
+                    product_count += quantity
                 else:
                     for item in basket_items:
                         if item['item_id'] == item_id\
