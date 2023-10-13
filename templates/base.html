@@ -111,12 +111,12 @@
                         <a class="nav-link {% if request.user.is_authenticated %} {{ 'text-success' }}{% endif %}" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="navbarDropdownButton">
                             {% if request.user.is_authenticated %}
                                 {% if request.user.is_staff %}
-                                    <i class="fas fa-user fa-lg text-danger"></i><span class="sr-only">Profile</span>
+                                    <i class="fas fa-user fa-lg text-danger" title="User Profile"></i><span class="sr-only">Profile</span>
                                 {% else %}
-                                    <i class="fas fa-user fa-lg"></i><span class="sr-only">Profile</span>
+                                    <i class="fas fa-user fa-lg" title="User Profile"></i><span class="sr-only">Profile</span>
                                 {% endif %}
                             {% else %}
-                                <i class="fas fa-user fa-lg"></i><span class="sr-only">Profile</span>
+                                <i class="fas fa-user fa-lg" title="User Profile"></i><span class="sr-only">Profile</span>
                             {% endif %}
                         </a>
                         <!-- Login Dropdown -->
@@ -143,7 +143,7 @@
                            href="{% url 'view_basket' %}"
                            aria-label="Shopping Cart">
                             <div class="d-flex align-items-center">
-                                <div class="mr-2"><i class="fas fa-shopping-bag fa-lg btn-outline-info" aria-hidden="true"></i></div>
+                                <div class="mr-2" title="Shopping Basket"><i class="fas fa-shopping-bag fa-lg btn-outline-info" aria-hidden="true"></i></div>
                                 <p class="my-0">
                                     {% if grand_total > 0 %}
                                     €{{ grand_total|floatformat:2 }}
