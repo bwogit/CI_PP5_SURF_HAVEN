@@ -95,7 +95,8 @@ class TestViews(TestCase):
         new_product = Product.objects.get(code='new_product')
 
         # Construct the expected redirect URL using the product's ID
-        expected_redirect_url = reverse('product_detail', args=[new_product.id])
+        expected_redirect_url = reverse('product_detail',
+                                        args=[new_product.id])
 
         # Check if the response redirects to the expected URL:
         self.assertRedirects(response, expected_redirect_url)
@@ -112,4 +113,3 @@ class TestViews(TestCase):
         self.assertEqual(response.status_code, 302)
         # Check that the product is no longer in the database
         self.assertFalse(Product.objects.filter(id=self.product.id).exists())
-

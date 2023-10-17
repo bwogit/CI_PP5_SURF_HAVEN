@@ -53,8 +53,8 @@ def all_products(request):
 
             # Check if there are no  results fro teh search criteria
             if not products.exists():
-                messages.info(request, "No results found for your search criteria.")
-           
+                messages.info(request, "No results found" /
+                              "for your search criteria.")
 
     current_sort = f'{sort}_{direction}'
 
@@ -152,6 +152,7 @@ def edit_product(request, product_id):
     }
 
     return render(request, template, context)
+
 
 @login_required
 def delete_product(request, product_id):

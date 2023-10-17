@@ -49,4 +49,3 @@ class ProductModelTest(TestCase):
         self.assertAlmostEqual(product.price, 19.99, places=2)
         self.assertEqual(product.category, category)
         self.assertAlmostEqual(product.rating, 4.5, places=2)
-
