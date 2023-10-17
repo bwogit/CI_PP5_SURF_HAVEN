@@ -54,6 +54,20 @@
                                             {% include "basket/quantity_form.html" %}
                                         </td>
                                     </tr>
+                                    <tr>
+                                        <td colspan="3" class="pt-5 text-center">
+                                            <h4><strong>Total: €{{ total|floatformat:2 }}</strong></h4>
+                                            <h5>Delivery: €{{ delivery|floatformat:2 }}</h5>
+                                            <h5 class="mt-4"><strong>Grand Total:
+                                                    €{{ grand_total|floatformat:2 }}</strong></h5>
+                                            {% if free_delivery_delta > 0 %}
+                                            <p class="mb-1 text-danger">
+                                                Spend <strong>€{{ free_delivery_delta }}</strong> to qualify for free
+                                                delivery!
+                                            </p>
+                                            {% endif %}
+                                        </td>
+                                    </tr>
                                 {% endfor %}
                             </table>
                         <!-- Buttons for Further Actions -->
