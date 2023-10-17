@@ -25,12 +25,28 @@ body {
     margin-left: 1px; /* Adjust the margin as needed */
   }
 
-.toast {
-  position: absolute !important;
-  top: 200px;
-  display: block;
+
+
+/* ------------------------------- bootstrap toasts ------------------------------------*/
+
+.message-container {
+  position: fixed;
+  top: 72px;
+  right: 15px;
+  z-index: 99999999999;
 }
 
+.toast-capper {
+  height: 2px;
+}
+
+.basket-notification-wrapper {
+  height: 100px;
+  overflow-x: hidden;
+  overflow-y: auto;
+} 
+
+/* ------------------------------------------------ ---------------------------------------------------------------------------------------*/
 .allauth-form-inner-content p {
   color: #6c757d;
   margin-top: 1.4rem;
@@ -154,7 +170,7 @@ footer {
   border-color: #1e7e34; /* Change the button's border color on hover */
 }
 
-/* Turning profile icon red when Admin mode is selected */
+/* Turning profile icon red when management mode is selected */
 .red-icon {
   color: red;
 }
