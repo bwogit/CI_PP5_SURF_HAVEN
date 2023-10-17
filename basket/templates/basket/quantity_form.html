@@ -10,8 +10,8 @@
                     <span class="icon">-</span>
                 </button>
             </div>
-            <input class="form-control qty_input rounded-0 h-100 w-25 id_qty_{{ product.id }}"
-                type="number" name="quantity" value="1" min="1" max="99"
+            <input class="form-control qty_input rounded-0 h-100 w-25 id_qty_{{ product.id }} {% if item.size %}size_{{ item.item_id }}_{{ item.size }}{% endif %}"
+                type="number" name="quantity" value="{{ item.quantity }}" min="1" max="99"
                 data-item_id="{{ product.id }}" aria-label="add to basket" id="id_qty_{{ product.id }}">
             <div class="input-group-append">
                 <button
