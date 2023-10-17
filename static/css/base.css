@@ -25,14 +25,16 @@ body {
     margin-left: 1px; /* Adjust the margin as needed */
   }
 
+
+
 /* ------------------------------- bootstrap toasts ------------------------------------*/
 
-/* .message-container {
+.message-container {
   position: fixed;
   top: 72px;
   right: 15px;
   z-index: 99999999999;
-} */
+}
 
 .toast-capper {
   height: 2px;
@@ -42,7 +44,7 @@ body {
   height: 100px;
   overflow-x: hidden;
   overflow-y: auto;
-}
+} 
 
 /* ------------------------------------------------ ---------------------------------------------------------------------------------------*/
 .allauth-form-inner-content p {
