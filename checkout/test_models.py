@@ -4,6 +4,7 @@ from django.conf import settings
 from .models import Order, OrderLineItem
 from products.models import Product
 
+
 class TestCheckoutModels(TestCase):
     """
     A class for testing checkout models
