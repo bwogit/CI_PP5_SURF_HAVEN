@@ -43,7 +43,7 @@ class TestCheckout(TestCase):
 
     def test_checkout_view_empty_cart(self):
         """
-        This tests an empty basket 
+        This tests an empty basket
         """
         response = self.client.get('/checkout/')
         self.assertRedirects(response, '/products/')

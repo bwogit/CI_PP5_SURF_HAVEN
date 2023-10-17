@@ -1,4 +1,6 @@
+# 3rd Party Imports
 from django.test import TestCase
+# Internal imports
 from .forms import OrderForm
 
 
@@ -24,9 +26,9 @@ class TestOrderForm(TestCase):
         Test the OrderForm with invalid data.
         """
         form_data = {
-            'full_name': 'Etienne Cabri',  
+            'full_name': 'Etienne Cabri',
             'email': 'gg@gmail.m',
-            'phone_number': '12345', 
+            'phone_number': '12345',
         }
 
         form = OrderForm(data=form_data)
