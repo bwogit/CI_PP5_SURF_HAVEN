@@ -3,7 +3,6 @@ from django import forms
 from crispy_forms.helper import FormHelper
 from phonenumber_field.formfields import PhoneNumberField
 from django.core.validators import EmailValidator
-
 # Internal Imports
 from .models import Contact
 
@@ -29,6 +28,7 @@ class ContactForm(forms.ModelForm):
         Custom validation for the 'email' field.
         """
         email = self.cleaned_data['email']
-        email_validator = EmailValidator(message="Please use a valid email address.")
+        email_validator = EmailValidator(message="Please use "
+                                         "a valid email address.")
         email_validator(email)
         return email

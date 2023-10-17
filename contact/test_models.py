@@ -1,7 +1,9 @@
+# 3rd Party imports:
 from django.test import TestCase
 from django.contrib.auth.models import User
 from phonenumber_field.phonenumber import PhoneNumber
 from .models import Contact
+
 
 class ContactModelTest(TestCase):
     def setUp(self):
@@ -34,5 +36,6 @@ class ContactModelTest(TestCase):
         self.assertEqual(saved_contact.user, self.user)
         self.assertEqual(saved_contact.name, 'John Doe')
         self.assertEqual(saved_contact.email, 'johndoe@example.com')
-        self.assertEqual(saved_contact.phone, PhoneNumber.from_string('+1234567890'))
+        self.assertEqual(saved_contact.phone,
+                         PhoneNumber.from_string('+1234567890'))
         self.assertEqual(saved_contact.message, 'This is a test message.')
