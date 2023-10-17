@@ -48,7 +48,9 @@
                                             <p class="my-0"><strong>{{ item.product.name }}</strong></p>
                                             <p class="my-0">Price:<strong>€{{ item.product.price }}</strong> </p>
                                             <!-- <p class="my-0">{{ item.quantity }}</p> -->
-                                            <p class="my-0"><strong>Size:</strong> {{ item.size|upper }}</p>
+                                            {% if item.product.has_sizes %}
+                                                <p class="my-0"><strong>Size:</strong> {{ item.size|upper }}</p>
+                                            {% endif %}
                                             <!-- <p class="my-0 text-muted small">{{ item.product.code }}</p> -->
                                             <p class="my-0"><strong>Subtotal: €{{ item.product.price | calc_subtotal:item.quantity }}</strong></p>
                                         </td>
