@@ -1,7 +1,10 @@
+# Third-Party Imports
 from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+
+# Internal Imports
 from .views import handler404
 
 urlpatterns = [
