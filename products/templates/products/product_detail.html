@@ -2,15 +2,15 @@
 {% load static %}
 
 {% block page_header %}
-    
+
 {% endblock %}
 
 {% block content %}
-<div class="container-fluid">
-    <div class="row p-3 rounded bg-light m-5">
+<div class="container">
+    <div class="row my-5 bg-light">
         <div class="col-lg-2 d-none d-lg-block">
-            <a class="text-black text-decoration-none" href="{% url 'products' %}">
-                <h1 class="nav-link text-black nav-item my-5">
+            <a class="text-dark text-decoration-none" href="{% url 'products' %}">
+                <h1 class="nav-link text-dark nav-item my-5">
                     Explore the shop by categories
                 </h1>
             </a>
@@ -18,11 +18,11 @@
             <hr>
             <!-- Loop through categories and display links -->
             {% for category in categories_list %}
-            <p><a class="text-decoration-none text-black"
+            <p><a class="text-decoration-none text-dark"
                     href="{% url 'products' %}?category={{category.name}}">{{ category.friendly_name }}</a></p>
             {% endfor %}
         </div>
-        
+
         <div class="col-12 col-lg-4 offset-lg-1">
             <!-- Product image -->
             <div class="image-container my-4">
@@ -35,14 +35,14 @@
                 {% endif %}
             </div>
         </div>
-        
+
         <div class="col-12 col-lg-4">
             <!-- Product details -->
             <div class="mb-5 mt-md-5">
-                <span class="fs-6 text-black">{{ product.brand }}</span>
+                <span class="fs-6 text-dark">{{ product.brand }}</span>
                 <p>{{ product.name }}</p>
                 <p class="lead text-start fw-bold">Price: €{{ product.price }}{% if product.rating %}
-                    <span class="text-black text-end"><i class="fas fa-star"></i>{{ product.rating }}</span>
+                    <span class="text-dark text-end"><i class="fas fa-star"></i>{{ product.rating }}</span>
                     {% endif %}</p>
                 <p class="mt-4">{{ product.description }}</p>
 
@@ -53,7 +53,7 @@
                         {% if s %}
                         <div class="col-12">
                             <label for="id_product_size">Size</label>
-                            <select class="form-select rounded w-50" name="product_size" id='id_product_size'>
+                            <select class="form-select rounded w-50" name="product_size" id="id_product_size">
                                 <option value="xs">XS</option>
                                 <option value="s">S</option>
                                 <option value="m" selected>M</option>
@@ -84,7 +84,7 @@
                                 </div>
                                 {% if request.user.is_superuser %}
                                 <small class="my-5">
-                                    <a href="#" class="btn open btn-danger">Delete</a>
+                                    <a href="#" class="btn btn-danger">Delete</a>
                                     <a class="btn btn-success"
                                         href="{% url 'edit_product' product.id %}">Edit</a>
                                 </small>
@@ -106,7 +106,7 @@
                     <input type="hidden" name="redirect_url" value="{{ request.path }}">
                     {% endwith %}
                 </form>
-                
+
             </div>
         </div>
     </div>
