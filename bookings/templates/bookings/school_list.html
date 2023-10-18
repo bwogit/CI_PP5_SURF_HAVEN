@@ -25,7 +25,7 @@
       <div class="col-12 col-md-6 my-3">
         <div class="card shadow card-sl">
           {% if school.image %}
-          <img src="{{ school.image.url }}" alt="A photo of {{ school.school_name }}" class="card-img-top card-img-top-sl">
+          <img src="{{ school.image.url }}" alt="A photo of {{ school.school_name }}" class="card-img-top img-fluid">
           {% else %}
           <img src="{% static 'img/noimage.jpg' %}" alt="No Image Available" class="card-img-top card-img-top-sl">
           {% endif %}
