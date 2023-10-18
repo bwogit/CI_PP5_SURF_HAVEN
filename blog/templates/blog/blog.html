@@ -30,9 +30,9 @@
                 <div class="card shadow card-sl">
                     <!-- Post image -->
                     {% if post.featured_image %}
-                    <img class="card-img-top mt-2 w-100 card-img-top-sl" src="{{ post.featured_image.url }}" alt="{{ post.title }} Image">
+                    <img class="card-img-top mt-2 img-fluid" src="{{ post.featured_image.url }}" alt="{{ post.title }} Image">
                     {% else %}
-                    <img class="card-img-top mt-2 w-100 card-img-top-sl" src="{% static 'img/noimage.jpg' %}" alt="Default Image">
+                    <img class="card-img-top mt-2 img-fluid" src="{% static 'img/noimage.jpg' %}" alt="Default Image">
                     {% endif %}
                     <div class="card-body">
                         <!-- Post title -->
