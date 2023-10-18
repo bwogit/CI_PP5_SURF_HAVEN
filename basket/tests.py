@@ -1,8 +1,10 @@
+# 3rd Party Imports
 from django.test import TestCase
 from django.urls import reverse
 from django.contrib.messages import get_messages
 from django.shortcuts import get_object_or_404
 from django.contrib.auth.models import User
+# Internal Imports
 from products.models import Product, Category
 from basket.views import add_to_basket, view_basket
 
@@ -69,4 +71,7 @@ class BasketViewTests(TestCase):
         basket = self.client.session.get('basket', {})
         self.assertTrue(str(self.product.id) in basket)
         self.assertTrue('items_by_size' in basket[str(self.product.id)])
-        self.assertEqual(basket[str(self.product.id)]['items_by_size']['medium'], 1)
+        self.assertEqual(
+            basket[str(self.product.id)]['items_by_size']['medium'],
+            1
+        )
