@@ -1,5 +1,7 @@
+# 3rd Party Imports
 from django.test import TestCase
 from django.contrib.auth.models import User
+# Internal Imports
 from .models import School, Booking
 
 
@@ -35,7 +37,8 @@ class BookingModelTest(TestCase):
 
     def test_booking_str(self):
         # Test the __str__ method of the Booking model
-        expected_str = f"Booking {self.booking.booking_id} - Lesson Time Confirmed"
+        expected_str = f"Booking {self.booking.booking_id} - /
+        "Lesson Time Confirmed"
         self.assertEqual(str(self.booking), expected_str)
 
     def test_booking_school_relation(self):

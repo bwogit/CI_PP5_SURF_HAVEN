@@ -1,6 +1,6 @@
-# 3rd PArty imports
+# 3rd Party imports
 from django import forms
-# Local imports
+# Internal imports
 from .models import Order
 
 

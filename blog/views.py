@@ -3,6 +3,7 @@ from django.views import generic, View
 from django.shortcuts import render, get_object_or_404
 from django.contrib import messages
 from django.core.paginator import Paginator
+
 # Internal:
 from .models import Post
 from .forms import CommentForm
@@ -14,7 +15,7 @@ class PostList(generic.ListView):
     model = Post
     queryset = Post.objects.filter(status=1).order_by('-created_date')
     template_name = 'blog.html'
-    paginated_by = 2
+    paginate_by = 2  # Corrected the typo here
 
     def get(self, request, *args, **kwargs):
         """
@@ -30,8 +31,8 @@ class PostList(generic.ListView):
 
         # Render the blog page with the paginated posts
         return render(
-            request, 'blog/blog.html',  {'posts': posts, 'postings': postings})
-
+            request, 'blog/blog.html',  {'posts': posts, 'postings': postings}
+        )
 
 # View for the post to be read by the user
 
@@ -46,7 +47,8 @@ class PostDetail(View):
         # Get the post with the given slug
         post = get_object_or_404(Post.objects.filter(status=1), slug=slug)
         # Get all approved comments for the post
-        comments = post.comments.filter(approved=True).order_by('-created_date')
+        comments = post.comments.filter(approved=True)
+        comments = comments.order_by('-created_date')
 
         # Render the blog post detail page with the post and comments
         return render(
@@ -67,10 +69,11 @@ class PostDetail(View):
         post = get_object_or_404(
             Post.objects.filter(status=1),
             slug=slug
-            )
+        )
 
         # Get all approved comments for the post
-        comments = post.comments.filter(approved=True).order_by('-created_date')
+        comments = post.comments.filter(approved=True)
+        comments = comments.order_by('-created_date')
 
         # Create a comment form instance from the request POST data
         comment_form = CommentForm(data=request.POST)
@@ -93,5 +96,5 @@ class PostDetail(View):
              'comments': comments,
              'commented': True,
              'comment_form': CommentForm()
-             })
-
+             }
+        )

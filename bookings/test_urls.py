@@ -1,6 +1,10 @@
+# 3rd Party Imports
 from django.test import SimpleTestCase
 from django.urls import reverse, resolve
-from bookings.views import AllSchools, SchoolDetail, BookingList, EditBooking, cancel_booking
+# Internel Imports
+from bookings.views import AllSchools,
+SchoolDetail, BookingList, EditBooking, cancel_booking
+
 
 class TestUrls(SimpleTestCase):
     def test_school_list_url_resolves(self):

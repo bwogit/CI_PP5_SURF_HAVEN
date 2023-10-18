@@ -2,7 +2,8 @@
 from django.test import TestCase, Client
 from django.urls import reverse
 from django.contrib.auth.models import User
-from .models import School  # 
+# Internal Imports
+from .models import School
 
 
 class TestBookingsViews(TestCase):
@@ -31,7 +32,7 @@ class TestBookingsViews(TestCase):
         # Create a test school
         school = School.objects.create(
             school_name='Test School',
-            slug='test_school_1'  # 
+            slug='test_school_1'
         )
 
         response = self.client.get(self.school_detail_url)

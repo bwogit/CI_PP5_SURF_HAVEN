@@ -131,7 +131,7 @@ class BookingList(LoginRequiredMixin, generic.ListView):
         context = super().get_context_data(**kwargs)
         booking_page = context['page_obj']
         today = datetime.now().date()
-       
+
         # Update the status of bookings based on the requested_date
         for booking in booking_page:
             if booking.requested_date < today:
