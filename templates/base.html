@@ -74,12 +74,9 @@
                     </li>
                     {% endif %}
                     {% endif %}
-                    
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link text-muted" href="{% url 'products' %}">Shop</a>
-                        </li>
-                    </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{% url 'products' %}">Shop</a>
+                    </li>
                     <!-- Blog -->
                     <li class="nav-item">
                         <a class="nav-link" href="{% url 'blog' %}">Blog</a>
@@ -261,7 +258,6 @@
                         <a href="{% url 'blog' %}" class="text-reset">Blog</a>
                     </p>
                 </div>
-                
                 <!-- Useful Links Column -->
                 <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
                     <h6 class="text-uppercase fw-bold mb-4">
