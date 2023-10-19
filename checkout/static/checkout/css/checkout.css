@@ -83,3 +83,9 @@
         height: 100%;
     }
 
+    .standout {
+    font-weight: 700;
+    font-size: 20px;
+    color: rgb(245, 6, 6);
+    text-decoration: none;
+    }
