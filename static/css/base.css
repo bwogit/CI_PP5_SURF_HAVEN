@@ -24,7 +24,9 @@ body {
   .navbar-nav {
     margin-left: 1px;
   }
-
+  .navbar-nav .nav-link {
+    font-weight: 700; 
+}
 
 
 /* ------------------------------- bootstrap toasts ------------------------------------*/
