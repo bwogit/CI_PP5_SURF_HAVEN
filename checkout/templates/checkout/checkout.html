@@ -23,13 +23,13 @@
                 <div class="col-12">
                         <div class="row">
                             <div class="col-12 col-lg-6 order-lg-last mb-5">
-                                <p class="text-muted">Custom Order Summary ({{ product_count }})</p>
+                                <p class="">Custom Order Summary ({{ product_count }})</p>
                                 <div class="row">
                                     <div class="col-7 offset-2">
-                                        <p class="mb-1 mt-0 small text-muted custom-label">Item</p>
+                                        <p class="mb-1 mt-0 small  custom-label">Item</p>
                                     </div>
                                     <div class="col-3 text-end">
-                                        <p class="mb-1 mt-0 small text-muted custom-label">Subtotal</p>
+                                        <p class="mb-1 mt-0 small  custom-label">Subtotal</p>
                                     </div>
                                 </div>
                                 {% for item in basket_items %}
@@ -50,10 +50,10 @@
                                         <p class="my-0 small">Size:
                                             {% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}
                                         </p>
-                                        <p class="my-0 small text-muted">Qty: {{ item.quantity }}</p>
+                                        <p class="my-0 small ">Qty: {{ item.quantity }}</p>
                                     </div>
                                     <div class="col-3 text-end">
-                                        <p class="my-0 small text-muted">
+                                        <p class="my-0 small ">
                                             €{{ item.product.price | calc_subtotal:item.quantity }}</p>
                                     </div>
                                 </div>
@@ -73,7 +73,7 @@
                                 </div>
                             </div>
                             <div class="col-12 col-lg-6">
-                                <p class="text-muted">Please fill the form</p>
+                                <p class="">Please fill the form</p>
                                 <form action="{% url 'checkout' %}" method="POST" id="payment-form">
                                     {% csrf_token %}
                                     <fieldset class="rounded px-3 mb-5">
@@ -98,9 +98,9 @@
                                                 name="save-info" checked>
                                             {% else %}
                                             <label class="form-check-label" for="id-save-info">
-                                                <a class="text-success" href="{% url 'account_signup' %}"><strong>Create an
+                                                <a class="text-black " href="{% url 'account_signup' %}"><strong>Create an
                                                     account</strong></a> or
-                                                <a class="text-success" href="{% url 'account_login' %}"><strong>login</strong></a> to save
+                                                <a class="text-dark" href="{% url 'account_login' %}"><strong>login</strong></a> to save
                                                 this information
                                             </label>
                                             {% endif %}
@@ -117,9 +117,9 @@
                                     </fieldset>
 
                                     <div class="submit-button text-right m-5">
-                                        <a href="{% url 'view_basket' %}" class="btn btn-outline-secondary rounded">
+                                        <a href="{% url 'view_basket' %}" class="btn btn-secondary rounded">
                                             <span class="icon">
-                                                <i class="fas fa-chevron-left text-success"></i>
+                                                <i class="fas fa-chevron-left"></i>
                                             </span>
                                             <span class="font-weight-bold">Basket</span>
                                         </a>
@@ -129,7 +129,7 @@
                                                 <i class="fas fa-lock"></i>
                                             </span>
                                         </button>
-                                        <p class="small text-danger my-0">
+                                        <p class=" my-2">
                                             <span class="icon">
                                                 <i class="fas fa-exclamation-circle text-success"></i>
                                             </span>
