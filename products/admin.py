@@ -1,5 +1,4 @@
-# Imports
-# 3rd party:
+# 3rd Party Imports
 from django.contrib import admin
 
 # Internal
