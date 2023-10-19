@@ -143,7 +143,8 @@ footer {
 
 /* Style for the card */
 .card-pl {
-  height: 200px; 
+  height: 200px;
+  
 }
 
 
@@ -196,9 +197,9 @@ footer {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
-/* Style for the card images */
+
 .card-img-top {
-  height: 500px; 
+  height: 200px; 
   object-fit: cover; 
   border-top-left-radius: 8px; 
   border-top-right-radius: 8px; 
