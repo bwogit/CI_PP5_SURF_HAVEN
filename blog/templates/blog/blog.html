@@ -21,7 +21,6 @@
             </a>
         </div>
     </div>
-
     <div class="container">
         <div class="row my-5 justify-content-center">
             {% for post in postings %}
@@ -35,17 +34,12 @@
                     <img class="card-img-top img-fluid" src="{% static 'img/noimage.jpg' %}" alt="Default Image">
                     {% endif %}
                     <div class="card-body">
-                        <!-- Post title -->
                         <h2 class="card-title mt-3 card-title-sl">Title: {{ post.title }}</h2>
-                        <!-- Author -->
                         <p class="card-subtitle mb-2">By: {{ post.author }}</p>
-                        <!-- Excerpt -->
                         <p class="card-text mt-3 card-text-sl">Excerpt: {{ post.excerpt|safe }}</p>
                         <hr>
-                        <!-- Created date -->
                         <p class="card-text h6 mb-3">Created: {{ post.created_date }}</p>
-                        <!-- Details button -->
-                        <a href="{% url 'post_detail' post.slug %}" class="btn btn-primary btn-primary-sl">Details</a>
+                        <a href="{% url 'post_detail' post.slug %}" class="btn btn-primary">Details</a>
                     </div>
                 </div>
             </div>
@@ -53,7 +47,6 @@
             {% endfor %}
         </div>
     </div>
-
     <div class="container my-5">
         <div class="row justify-content-center">
             <div class="col-lg-6">

@@ -1,6 +1,6 @@
 # 3rd Party Imports
 from django import template
-# Internals
+# Internal Imports
 register = template.Library()
 
 

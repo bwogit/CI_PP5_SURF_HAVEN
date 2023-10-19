@@ -89,8 +89,6 @@
                             </div>
                         </div>
                         </div>
-                        
-                        
                     {% else %}
                         <!-- Empty Basket Message -->
                         <div class="justify-content-center text-center">
@@ -106,10 +104,10 @@
     </div>
 </div>
 {% endblock %}
-
 {% block postloadjs %}
 {{ block.super }}
 {% include 'products/includes/quantity_script.html' %}
+
 <script type="text/javascript">
     // Update quantity on click
     $('.update-qty').click(function (e) {
