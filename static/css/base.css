@@ -102,6 +102,7 @@ footer {
   object-fit: cover; 
   border-top-left-radius: 8px; 
   border-top-right-radius: 8px; 
+  border: 10px solid #ffffff;
 }
 
 /* Style for the card titles */
@@ -186,3 +187,20 @@ footer {
 #mc_embed_signup{background:#fff; false;clear:left; font:14px Helvetica,Arial,sans-serif; width: 600px;}
               /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
                  We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+
+
+/*-----------------------------------------------------------------------Blog---------------------------------------------------------*/
+.card {
+  border: 1px solid #ccc; 
+  border-radius: 8px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+/* Style for the card images */
+.card-img-top {
+  height: 500px; 
+  object-fit: cover; 
+  border-top-left-radius: 8px; 
+  border-top-right-radius: 8px; 
+  border: 10px solid #ffffff;
+}
