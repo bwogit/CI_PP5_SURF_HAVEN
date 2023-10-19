@@ -1,15 +1,14 @@
-<div class="toast custom-toast rounded border-top-0" data-autohide="false">
+<div class="toast custom-toast rounded-0 border border-top-0 border-warning" data-bs-autohide="false">
     <div class="arrow-up arrow-warning"></div>
     <div class="w-100 toast-capper bg-warning"></div>
-    <div class="col-2">
-        <button type="button" class="m-2 btn btn-secondary btn-sm close" data-dismiss="toast" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-        </button>
-    </div>
+    <button type="button" class="m-2 btn btn-secondary btn-sm close" data-bs-dismiss="toast" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
     <div class="toast-header bg-white text-dark">
-        <strong class="mr-auto">Warning!</strong>
+      <strong class="me-auto">Warning!</strong>
     </div>
     <div class="toast-body bg-white">
-        {{ message }}
+      {{ message }}
     </div>
-</div>
+  </div>
+  
