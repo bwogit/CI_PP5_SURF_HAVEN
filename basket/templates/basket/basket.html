@@ -27,7 +27,7 @@
                                     <tr>
                                         <th scope="col"><strong>Image</strong></th>
                                         <th scope="col"><strong>Product Info</strong></th>
-                                        <th></th>
+                                        <th scope="col"><strong>Quantity</strong></th>
                                     </tr>
                                 </thead>
                                 {% for item in basket_items %}
@@ -61,19 +61,18 @@
                                 <tr>
                                     <td colspan="3" class="pt-5 text-center">
                                         <hr>
-                                        <h4><strong>Total: €{{ total|floatformat:2 }}</strong></h4>
-                                        <h4 class="text-danger standout">Delivery: €{{ delivery|floatformat:2 }}</h4>
-                                        <h4 class="mt-4"><strong>Grand Total:
-                                                €{{ grand_total|floatformat:2 }}</strong></h4>
+                                        <p class="fs-4"><strong>Total: €{{ total|floatformat:2 }}</strong></p>
+                                        <p class="text-danger fs-4 standout"><strong>Delivery: €{{ delivery|floatformat:2 }}</strong> </p>
+                                        <p class="mt-4 fs-4"><strong>Grand Total: €{{ grand_total|floatformat:2 }}</strong></p>
                                         {% if free_delivery_delta > 0 %}
-                                        <h4 class="text-danger standout">
-                                            Spend <strong>€{{ free_delivery_delta }}</strong> to qualify for free
-                                            delivery!
-                                        </h4>
+                                        <p class="text-danger fs-4 standout">
+                                            Spend <strong>€{{ free_delivery_delta }}</strong> to qualify for free delivery!
+                                        </p>
                                         {% endif %}
                                         <hr>
                                     </td>
                                 </tr>
+                                
                             </table>
                         <!-- Buttons for Further Actions -->
                         <a href="{% url 'products' %}" class="btn btn-outline-dark rounded-0 btn-lg">
