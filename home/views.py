@@ -1,5 +1,4 @@
-# Imports
-# 3rd party:
+# 3rd Imports
 from django.shortcuts import render
 
 

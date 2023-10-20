@@ -1,4 +1,4 @@
-/* Custom CSS to remove the gap on the left of the logo */
+/* base.css */
 
 body {
   background: url('/media/base_image.jpg') no-repeat center center fixed;
@@ -11,12 +11,10 @@ body {
     margin-left: 0;
   }
 
-/* Default black icon color */
 .black-icon {
   color: #000;
 }
 
-/* White icon color on button click (active) */
 #search-btn:active #search-icon {
   color: #fff;
 }
@@ -47,7 +45,7 @@ body {
   overflow-y: auto;
 } 
 
-/* ------------------------------------------------ ---------------------------------------------------------------------------------------*/
+/* ---------------------------------------------------------------------------------------------------------------------------------------*/
 .allauth-form-inner-content p {
   color: #6c757d;
   margin-top: 1.4rem;
@@ -104,18 +102,15 @@ footer {
   border-top-right-radius: 8px; 
   border: 10px solid #ffffff;
 }
-
 /* Style for the card titles */
 .card-title-sl {
   font-size: 1.25rem; 
   margin-bottom: 0.5rem; 
 }
-
 /* Style for the card text */
 .card-text-sl {
   font-size: 1rem; 
 }
-
 /* Style for the "Details" button */
 .btn-primary-sl {
   background-color: #007bff; 
@@ -185,7 +180,8 @@ footer {
 }
 
 
-#mc_embed_signup{background:#fff; false;clear:left; font:14px Helvetica,Arial,sans-serif; width: 600px;}
+#mc_embed_signup{
+  background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width: 600px;}
               /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
                  We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
 

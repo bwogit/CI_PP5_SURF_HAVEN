@@ -1,4 +1,7 @@
+# Third-party imports
 from django.apps import AppConfig
+
+# Internal imports
 
 
 class HomeConfig(AppConfig):
