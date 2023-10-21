@@ -960,4 +960,37 @@ school_detail.html [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsurf
 ![booking list](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsurf-haven-39d68e86c0f1.herokuapp.com%2Fbookings%2Fcancel_booking%2F25)
 </details>
 
+### Shop  
+
+product_list.html [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsurf-haven-39d68e86c0f1.herokuapp.com%2Fproducts%2F) 
+- No Errors Found
+
+### Product Detail  
+
+product_detail.html [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsurf-haven-39d68e86c0f1.herokuapp.com%2Fproducts%2F11%2F) 
+- No Errors Found
+
+### Add Product
+
+<details><summary>add_product.html</summary>
+
+![add product](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/html/validation_html_add_product.jpg)
+</details>
+
+- No Errors Found
+
+### Edit Product
+
+<details><summary>edit_product.html</summary>
+
+![edit product](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/html/validation_html_edit_product.jpg)
+</details>
+
+- No Errors Found
+
+### Basket  
+
+basket.html [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsurf-haven-39d68e86c0f1.herokuapp.com%2Fbasket%2F) 
+- No Errors Found
+
 
