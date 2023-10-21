@@ -166,5 +166,21 @@ Our MailChimp-powered newsletters are your direct line to the latest insights re
 | 21 | Site User | view items in my basket | review and confirm my selections before checkout |
 | 22 | Site User | receive an order confirmation | increase or reduce item count according to my needs |
 | 23 | Site User | receive email confirmation | I have a receipt for my records |
+|Admin and Store Management ||||
+| 24 | Admin | add a product | keep the offerings up-to-date |
+| 25 | Admin | edit existing products/schools  | make necessary updates |
+| 26 | Admin | delete surf equipment/schools | remove outdated or discontinued items. |
+| 27 | Admin | add a new surf product/school  | expand the offerings |
+| 28 | Admin | edit an existing surf shop/product  |update information|
+| 29 | Admin | delete a school/product | remove outdated listings |
+| 30 | Admin | add a time slot | manage schedule effectively |
+| 31 | Admin | edit an existing time slot  |make adjustments as needed. |
+| 32 | Admin | delete a time | manage schedule |
+| 33 | Site User | book lessons | participate in the activities |
+| 34 | Site User | edit a booking | edit lesson time  |
+| 35 | Site User | cancel booking | delete a booking if I need to cancel |
+| 36 | Site User | view my bookings | view my bookings and status |
+
+
 
 
