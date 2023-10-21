@@ -1,6 +1,8 @@
-from decimal import Decimal, ROUND_DOWN  # Import ROUND_DOWN
+# 3rd PArty Imports
+from decimal import Decimal, ROUND_DOWN
 from django.test import TestCase
 from django.conf import settings
+# Internal Imports
 from .models import Order, OrderLineItem
 from products.models import Product
 

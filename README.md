@@ -805,3 +805,41 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 ![Email Confirmation](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_email_confirmation.jpg)
 </details>  
 
+
+### Add Product
+- Allows user with admin priviledge to add new products.  
+- User stories covered: 24
+
+<details><summary>See feature image</summary>
+
+![Add Product](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_products_add.jpg)
+</details>  
+
+
+### Edit Product
+- Allows user with admin priviledge to edit the products.  
+- User stories covered: 25
+
+<details><summary>See feature image</summary>
+
+![Edit Product](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_product_edit.jpg)
+</details>  
+
+
+### Delete Product
+- Allows the user to delete products, includes confirmation prompt before deletion.  
+- User stories covered: 26
+
+<details><summary>See feature image</summary>
+
+![Delete Product](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_product_delete.jpg)
+</details>  
+
+### Profile
+- Allows the user to update their personal information and check their order history.  
+- User stories covered: 5
+
+<details><summary>See feature image</summary>
+
+![Profile](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_profile.jpg)
+</details>  
