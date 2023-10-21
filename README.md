@@ -317,8 +317,6 @@ The color I chose was ligh background. The base image is teh ocean
 
  The font selected was from Google Fonts, Roboto. Chose because it is easy to read adn dislexia friendly
 
- <details><summary>See Font Image</summary>
-
 <hr>
 # Structure
 
@@ -364,4 +362,8 @@ AWS S3 buckets are my go-to for data storage. S3 is Amazon's cloud storage servi
 ![AWS Static](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/aws/aws_bucket_static.jpg)
 ![AWS Media](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/aws/aws_bucket_media.jpg)
 </details>
+
+## Database
+
+I built my Django project's database using PostgreSQL. PostgreSQL is a powerful and open-source object-relational database system that is known for its reliability, robustness, and performance. I chose it because it provides a flexible tool for efficiently managing and organizing my data, and it is well-suited for use with Django.
 
