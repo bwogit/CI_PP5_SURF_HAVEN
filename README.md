@@ -562,8 +562,29 @@ The User model is a built-in Django feature and is used for authentication and h
 
 - Validation:
   - [WC3 Validator](https://validator.w3.org/)
-  - [Jigsaw W3 Validator](https://jigsaw.w3.org/css-validator/)
-  - [JShint](https://jshint.com/)
   - [CI Python Liner(PEP8)](https://pep8ci.herokuapp.com/)
   - [Lighthouse](https://developers.google.com/web/tools/lighthouse/)
   - [Wave Validator](https://wave.webaim.org/)
+  - [Jigsaw W3 Validator](https://jigsaw.w3.org/css-validator/)
+  - [JShint](https://jshint.com/)
+
+## Features  
+
+
+### Search Engine Optimisation (SEO)
+I have used meta tags in the HTML of my web app's pages to optimize them for search engines. The description tag provides a brief summary of the content on the page, while the keywords tag lists relevant keywords to help search engines understand the content of the webpage and its relevance to related search queries.
+
+<details><summary>See feature image</summary>
+
+![SEO](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_seo.jpg)
+</details>  
+
+### Home page
+- Home page includes nav bar, main body and a footer.
+
+
+<details><summary>See feature images</summary>
+
+![Home page](https://raw.githubusercontent.com/ArronBeale/CI_PP5_tee_time/main/docs/features/feature_home.jpg)
+</details>  
+
