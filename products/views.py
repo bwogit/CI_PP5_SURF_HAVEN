@@ -51,10 +51,10 @@ def all_products(request):
                 Q(description__icontains=query)
             products = products.filter(queries)
 
-            # Check if there are no  results fro teh search criteria
+            # Check if there are no  results for the search criteria
             if not products.exists():
-                messages.info(request, "No results found" /
-                              "for your search criteria.")
+                messages.error(request,
+                               "No results found for your search criteria.")
 
     current_sort = f'{sort}_{direction}'
 
