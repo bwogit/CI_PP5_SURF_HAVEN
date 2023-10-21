@@ -332,11 +332,13 @@ The footer contains links to the business's social media pages, as well as an em
   - Cancel Booking
   - Product List
   - Product Details
+  - Add Product
+  - Edit Product
   - Basket
   - Checkout
   - Checkout Success
   - Blog
-  - Blog Detail
+  - Blog Details
   - Contact
   - Register
   - Profile
@@ -347,3 +349,14 @@ The footer contains links to the business's social media pages, as well as an em
 
   ##### Back to [top](#table-of-contents)
   <hr>
+
+  ## AWS 
+
+AWS S3 buckets are my go-to for data storage. S3 is Amazon's cloud storage service, and it's highly scalable, durable, and secure. I can easily store and retrieve large amounts of data with S3, and its built-in security features give me peace of mind knowing that my files are safe.
+
+<details><summary>See AWS Images</summary>
+![AWS Bucket](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/aws/aws_bucket.jpg)
+![AWS Static](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/aws/aws_bucket_static.jpg)
+![AWS Media](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/aws/aws_bucket_media.jpg)
+</details>
+
