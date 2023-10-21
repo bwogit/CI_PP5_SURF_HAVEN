@@ -718,3 +718,23 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 
 ![Cancel Booking](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_sign_up.jpg)
 </details>  
+
+### PopUp Box
+- GIves feedback to the user.  
+- User stories covered: 8
+
+<details><summary>See feature image</summary>
+
+![PopUp](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_popup.jpg)
+</details>  
+
+
+### Shop
+- Allows the user to view the list of surf products.  
+- User stories covered: 10
+
+<details><summary>See feature image</summary>
+
+![Shop](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_product_list.jpg)
+</details>  
+
