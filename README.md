@@ -581,10 +581,27 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 
 ### Home page
 - Home page includes nav bar, main body and a footer.
-
+- User stories covered: 6, 7
 
 <details><summary>See feature images</summary>
 
-![Home page](https://raw.githubusercontent.com/ArronBeale/CI_PP5_tee_time/main/docs/features/feature_home.jpg)
+![Home page](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_home.jpg)
 </details>  
 
+### Footer
+- Contains social media, privacy policy, Contact and tools
+- displayed across all pages.  
+- User stories covered: 6, 7
+
+<details><summary>See feature images</summary>
+
+![Footer](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_footer.jpg)
+</details>  
+
+### Mailchimp subscription
+- Mailchimp signup for email mailing list.  
+
+<details><summary>See feature images</summary>
+
+![Mailing](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_mailchimp.jpg)
+</details>
