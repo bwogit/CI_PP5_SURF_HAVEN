@@ -222,3 +222,81 @@ Our MailChimp-powered newsletters are your direct line to the latest insights re
 I employed Balsamiq, a user-friendly wireframing tool, to craft the preliminary designs for my project. This intuitive tool streamlines the creation of mockups for websites or applications, facilitating a swift and hassle-free process. Balsamiq boasts an extensive library of pre-designed user interface elements, making it a breeze to assemble compelling visuals. Moreover, it supports seamless collaboration with my project team, fostering a cohesive workflow.  
 
 <details><summary>Wireframe Home</summary>  
+
+![Wireframes](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/wireframes/wireframe_home.jpg)
+</details>
+
+<details><summary>Wireframe 404</summary>  
+
+![Wireframes](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/wireframes/wireframe_404.jpg)
+</details>
+
+<details><summary>Wireframe Add product</summary>  
+
+![Wireframes](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/wireframes/wireframe_add_product.jpg)
+</details>
+
+<details><summary>Wireframe basket </summary>  
+
+![Wireframes](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/wireframes/wireframe_basket.jpg)
+</details>
+
+<details><summary>Wireframe blog</summary>  
+
+![Wireframes](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/wireframes/wireframe_blog.jpg)
+</details>
+
+<details><summary>Wireframe Book Lesson </summary>  
+
+![Wireframes](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/wireframes/wireframe_book_lesson.jpg)
+</details>
+
+<details><summary>Wireframe Bookings </summary>  
+
+![Wireframes](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/wireframes/wireframe_bookings.jpg)
+</details>
+
+<details><summary>Wireframe checkout </summary>  
+
+![Wireframes](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/wireframes/wireframe_checkout.jpg)
+</details>
+
+<details><summary>Wireframe comment </summary>  
+
+![Wireframes](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/wireframes/wireframe_comment.jpg)
+</details>
+
+<details><summary>Wireframe Edit product </summary>  
+
+![Wireframes](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/wireframes/wireframe_edit_product.jpg)
+</details>
+
+<details><summary>Wireframe Product Detail</summary>  
+
+![Wireframes](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/wireframes/wireframe_product_detail.jpg)
+</details>
+
+<details><summary>Wireframe Product List</summary>  
+
+![Wireframes](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/wireframes/wireframe_product_list.jpg)
+</details>
+
+<details><summary>Wireframe Profile </summary>  
+
+![Wireframes](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/wireframes/wireframe_profile.jpg)
+</details>
+
+<details><summary>Wireframe School List</summary>  
+
+![Wireframes](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/wireframes/wireframe_schools.jpg)
+</details>
+
+<details><summary>Wireframe Sign IN</summary>  
+
+![Wireframes](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/wireframes/wireframe_sign_in.jpg)
+</details>
+
+<details><summary>Wireframe Sign Up</summary>  
+
+![Wireframes](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/wireframes/wireframe_SignUp.jpg)
+</details>
