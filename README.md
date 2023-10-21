@@ -161,26 +161,57 @@ Our MailChimp-powered newsletters are your direct line to the latest insights re
 | 17 | Site User | sort surf products by price | choose items that align with my budget |
 | 18 | Site User | select available dates/times | schedule lessons |
 |Purchasing and checkout ||||
-| 19 | Site User |use a card for payment | securely and conveniently make payments |
+| 19 | Site User | use a card for payment | securely and conveniently make payments |
 | 20 | Site User | adjust the quantity and size of any items in my cart | customize my selections |
 | 21 | Site User | view items in my basket | review and confirm my selections before checkout |
 | 22 | Site User | receive an order confirmation | increase or reduce item count according to my needs |
 | 23 | Site User | receive email confirmation | I have a receipt for my records |
-|Admin and Store Management ||||
+|Admin Duties/CRUD|||
 | 24 | Admin | add a product | keep the offerings up-to-date |
-| 25 | Admin | edit existing products/schools  | make necessary updates |
+| 25 | Admin | edit existing products/schools | make necessary updates |
 | 26 | Admin | delete surf equipment/schools | remove outdated or discontinued items. |
-| 27 | Admin | add a new surf product/school  | expand the offerings |
-| 28 | Admin | edit an existing surf shop/product  |update information|
+| 27 | Admin | add a new surf product/school | expand the offerings |
+| 28 | Admin | edit an existing surf shop/product | update information|
 | 29 | Admin | delete a school/product | remove outdated listings |
 | 30 | Admin | add a time slot | manage schedule effectively |
-| 31 | Admin | edit an existing time slot  |make adjustments as needed. |
+| 31 | Admin | edit an existing time slot  | make adjustments as needed. |
 | 32 | Admin | delete a time | manage schedule |
 | 33 | Site User | book lessons | participate in the activities |
 | 34 | Site User | edit a booking | edit lesson time  |
 | 35 | Site User | cancel booking | delete a booking if I need to cancel |
 | 36 | Site User | view my bookings | view my bookings and status |
 
+### Kanban, Epics & User Stories
+- GitHub Kanban was used to track all open user stories
+- Epics were created using the milestones feature
+- Backlog, In Progress, Done headings were used in the kanban
 
+<details><summary>Epics</summary>
 
+![Epics](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/agile/epics.jpg)
+</details>
 
+<details><summary>Epic 1</summary>
+
+![Epic 1](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/agile/epic1.jpg)
+</details>
+
+<details><summary>Epic 2</summary>
+
+![Epic 2](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/agile/epic2.jpg)
+
+<details><summary>Epic 3</summary>
+
+![Epic 3](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/agile/epic3.jpg)
+
+<details><summary>Epic 4</summary>
+
+![Epic 4](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/agile/epic4.jpg)
+
+<details><summary>Epic 5</summary>
+
+![Epic 5](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/agile/epic5.jpg)
+
+<details><summary>User Stories</summary>
+
+![User Stories](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/agile/user_stories.jpg)
