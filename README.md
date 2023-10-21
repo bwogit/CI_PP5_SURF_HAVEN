@@ -160,4 +160,11 @@ Our MailChimp-powered newsletters are your direct line to the latest insights re
 | 16 | Site User | sort surf products by category | find items that fit my interests |
 | 17 | Site User | sort surf products by price | choose items that align with my budget |
 | 18 | Site User | select available dates/times | schedule lessons |
+|Purchasing and checkout ||||
+| 19 | Site User |use a card for payment | securely and conveniently make payments |
+| 20 | Site User | adjust the quantity and size of any items in my cart | customize my selections |
+| 21 | Site User | view items in my basket | review and confirm my selections before checkout |
+| 22 | Site User | receive an order confirmation | increase or reduce item count according to my needs |
+| 23 | Site User | receive email confirmation | I have a receipt for my records |
+
 
