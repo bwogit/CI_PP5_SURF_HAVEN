@@ -145,6 +145,7 @@ Our MailChimp-powered newsletters are your direct line to the latest insights re
 | 3 | Site User | recover my password | regain access to my account in case of a forgotten password |
 | 4 | Site User | receive an email confirmation after registration| verify my account and ensure its security |
 | 5 | Site User | have a profile | easily manage my bookings and store information |
+| 37 | Site User | Contact the owner | Stay in touch and be informed |
 | Viewing and navigation ||||
 | 6 | Site User | navigate across the site | find the information I need quickly and effortlessly  |
 | 7 | Site User | use a navbar, footer, and social icons | access different parts of the website conveniently|
@@ -599,9 +600,33 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 </details>  
 
 ### Mailchimp subscription
-- Mailchimp signup for email mailing list.  
+- Mailchimp integration.
+- User stories covered: 37  
 
 <details><summary>See feature images</summary>
 
 ![Mailing](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_mailchimp.jpg)
 </details>
+
+### Logo
+- A custom logo for the business.
+- User stories covered: 6, 7
+
+<details><summary>See feature images</summary>
+
+![Logo](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_logo.jpg)
+</details>  
+
+
+### Navigation
+- Fully Responsive.
+- On small screens switches to hamburger menu.
+- Indicates login/logout in status.
+- displayed on all pages.  
+- User stories covered: 6, 7
+
+<details><summary>See feature images</summary>
+
+![Navigation](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_navbar.jpg)
+</details>
+
