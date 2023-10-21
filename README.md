@@ -300,3 +300,50 @@ I employed Balsamiq, a user-friendly wireframing tool, to craft the preliminary 
 
 ![Wireframes](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/wireframes/wireframe_SignUp.jpg)
 </details>
+
+## Design
+
+### Colors
+
+
+The color I chose was ligh background. The base image is teh ocean  
+
+### Fonts
+
+ The font selected was from Google Fonts, Roboto. Chose because it is easy to read adn dislexia friendly
+
+ <details><summary>See Font Image</summary>
+
+<hr>
+# Structure
+
+The website is designed to be easy to use and navigate. The navigation bar and hamburger menu are common features on websites, so users will know how to use them right away.
+
+The footer contains links to the business's social media pages, as well as an email sign-up form and other useful information. This makes it easy for users to connect with the business and stay informed.
+
+## Website pages
+
+- The site consists of the following pages:
+  - Home
+  - Surf Schools
+  - Surf Schools Details
+  - Booking List
+  - Edit Booking
+  - Cancel Booking
+  - Product List
+  - Product Details
+  - Basket
+  - Checkout
+  - Checkout Success
+  - Blog
+  - Blog Detail
+  - Contact
+  - Register
+  - Profile
+  - Login
+  - Logout
+  - Reset Password
+  - 404
+
+  ##### Back to [top](#table-of-contents)
+  <hr>
