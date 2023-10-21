@@ -1074,36 +1074,10 @@ checkout.html [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fci-pp5-te
 
 <details><summary>404.html</summary>
 
-404.html [profile](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/html/validation_404..jpg)
+404.html [profile](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/html/validation_404.jpg)
 </details>
 
 - No Errors Found
 
-### Contact
-
-<details><summary>contact.html</summary>
-
-![profile](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/html/validation_.jpg)
-</details>
-
-- No Errors Found
-
-### Contact
-
-<details><summary>contact.html</summary>
-
-![profile](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/html/validation_.jpg)
-</details>
-
-- No Errors Found
-
-### Contact
-
-<details><summary>contact.html</summary>
-
-![profile](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/html/validation_.jpg)
-</details>
-
-- No Errors Found
 
 
