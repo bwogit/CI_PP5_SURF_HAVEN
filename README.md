@@ -131,3 +131,17 @@ Our MailChimp-powered newsletters are your direct line to the latest insights re
 - Exceptional customer service.
 - Inclusivity and accessibility for all.
 
+##### Back to [top](#table-of-contents)<hr>
+
+
+## User Stories
+
+
+| User Story ID | As A/AN  | I CAN...| SO THAT I CAN       |
+|---------------|----------|---------|---------------------|
+| Registration and User Accounts ||||
+| 1 | Site User | register for an account | have an account and manage my personal information efficiently |
+| 2 | Site User | SignIn and SignOut | secure my account and access it when needed |
+| 3 | Site User | recover my password | regain access to my account in case of a forgotten password |
+| 4 | Site User | receive an email confirmation after registration| verify my account and ensure its security |
+| 5 | Site User | have a profile | easily manage my bookings and store information |
