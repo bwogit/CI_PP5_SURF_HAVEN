@@ -1,4 +1,4 @@
-# Imports
+# 3rd Party Imports
 from django.urls import path
 from . import views
 

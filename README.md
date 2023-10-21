@@ -670,6 +670,7 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 <details><summary>See feature images</summary>
 
 ![Recover APssword](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_password_reset.jpg)
+</details>  
 
 ### Schools
 - Allows the user to view all listed surf schools.  
@@ -926,4 +927,37 @@ index.html [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsurf-haven-3
 
 school_list.html [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsurf-haven-39d68e86c0f1.herokuapp.com%2Fbookings%2Fschool_list%2F) 
 - No Errors Found
+
+### School Details  
+
+school_detail.html [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsurf-haven-39d68e86c0f1.herokuapp.com%2Fbookings%2Fschool_detail%2Faquaflow-surf-school%2F) 
+- No Errors Found
+
+### Bookings
+
+<details><summary>Booking List</summary>
+
+![booking list](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsurf-haven-39d68e86c0f1.herokuapp.com%2Fbookings%2Fbooking_list%2F)
+</details>
+
+- No Errors Found
+- supporting pictures in docs folder in case the link is down
+
+### Edit Booking
+
+<details><summary>edit_booking.html</summary>
+
+![booking list](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsurf-haven-39d68e86c0f1.herokuapp.com%2Fbookings%2Fedit_booking%2F28)
+</details>
+
+- No Errors Found
+
+
+### Cancel Booking
+
+<details><summary>cancel_booking.html</summary>
+
+![booking list](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsurf-haven-39d68e86c0f1.herokuapp.com%2Fbookings%2Fcancel_booking%2F25)
+</details>
+
 
