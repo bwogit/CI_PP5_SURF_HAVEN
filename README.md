@@ -786,6 +786,7 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 
 ![Basket1](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_product_basket.jpg)
 ![Basket2](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_product_nav_basket.jpg)
+</details>  
 
 ### Checkout
 - Allows the user to purchase items in their basket.  
@@ -897,7 +898,7 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 <details><summary>See feature image</summary>
 
 ![Social Media Links](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_footer.jpg)
-
+</details>  
 
 ### Pagination
 - Pagination is used on the website 
@@ -906,9 +907,23 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 <details><summary>See feature images</summary>
 
 ![Pagination](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_pagination.jpg)
+</details>  
 
 ##### Back to [top](#table-of-contents)<hr>
 
 # Validation  
 
 ## HTML Validation
+
+The W3C Markup Validation Service was used to validate the HTML of the website.  
+
+### Home  
+
+index.html [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsurf-haven-39d68e86c0f1.herokuapp.com%2F) 
+- No Errors Found
+
+### Schools
+
+school_list.html [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsurf-haven-39d68e86c0f1.herokuapp.com%2Fbookings%2Fschool_list%2F) 
+- No Errors Found
+
