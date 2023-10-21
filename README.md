@@ -641,8 +641,9 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 
 
 ### Sign In
-- User can sign in.  
-- User stories covered: 2
+- User can sign in.
+- user knows their login status  
+- User stories covered: 2, 9
 
 <details><summary>See feature images</summary>
 
@@ -659,6 +660,13 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 ![Sign out](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_sign_out.jpg)
 </details>  
 
+### Password Reset
+- Allows password reset
+- User stories covered: 3
+  
+<details><summary>See feature images</summary>
+
+![Recover APssword](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_password_reset.jpg)
 
 ### Schools
 - Allows the user to view all listed surf schools.  
@@ -843,3 +851,56 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 
 ![Profile](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_profile.jpg)
 </details>  
+
+### Blog
+- The blog displays each post made by a authorised member
+- Paginations is used to display 2 posts per page  
+- User stories covered: extra feature
+  
+<details><summary>See feature images</summary>
+
+![Blog](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_blog.jpg)
+</details>
+
+
+### Blog Expanded
+- Expands into the selected blog the user wishes to read
+- Comments need approval  
+- User stories covered: extra feature
+  
+<details><summary>See feature images</summary>
+
+![Blog Expanded](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_blog_detail.jpg)
+</details>
+
+
+### Contact Us / Send Message
+- A contact page with all contact details listed
+- Users can send a message via the message form
+- User stories covered: 37
+  
+<details><summary>See feature images</summary>
+
+![Contact Us](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_contact.jpg)
+</details>
+
+
+### Social Media Links
+- Facebook business page and Instagram page.
+- All links open in a new tab to ensure the user is not directed away from main site.
+- noopener, noreferrer, nofollow used to communicate with web crawlers and for security and privacy concerns.  
+- User stories covered: 7
+  
+<details><summary>See feature image</summary>
+
+![Social Media Links](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_footer.jpg)
+
+
+### Pagination
+- Pagination is used on the
+- Ensures the page is kept tidy  
+  
+<details><summary>See feature images</summary>
+
+![Pagination](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_pagination.jpg)
+
