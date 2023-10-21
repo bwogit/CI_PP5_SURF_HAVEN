@@ -993,4 +993,117 @@ product_detail.html [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsur
 basket.html [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsurf-haven-39d68e86c0f1.herokuapp.com%2Fbasket%2F) 
 - No Errors Found
 
+### Checkout  
+
+checkout.html [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fci-pp5-teetime.herokuapp.com/checkout/) 
+- No Errors Found
+
+### Checkout Success  
+
+<details><summary>checkout_success.html</summary>
+
+![checkout success](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/html/validation_html_checkout_success.jpg)
+</details>
+
+- No Errors Found
+
+### Profile  
+
+<details><summary>profile.html</summary>
+
+![profile](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/html/validation_html_profile.jpg)
+</details>
+
+- No Errors Found
+
+### blog  
+
+<details><summary>blog.html</summary>
+
+![blog](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/html/validation_html_blog.jpg)
+</details>
+
+- No Errors Found
+
+### blog Detail 
+
+<details><summary>blog_detail.html</summary>
+
+![blog_detail](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/html/validation_blog_detail.jpg)
+</details>
+
+- No Errors Found
+
+### Contact
+
+<details><summary>contact.html</summary>
+
+![profile](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/html/validation_.jpg)
+</details>
+
+- No Errors Found
+
+### Sign In
+
+<details><summary>login.html</summary>
+
+![Sign In](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/html/validation_login.jpg)
+</details>
+
+- No Errors Found
+
+### SIgn out
+
+<details><summary>logout.html</summary>
+
+![Sign Out](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/html/validation_.jpg)
+</details>
+
+- No Errors Found
+
+### Sign Up
+
+<details><summary>signup.html</summary>
+
+![result](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsurf-haven-39d68e86c0f1.herokuapp.com%2Faccounts%2Fsignup%2F)
+</details>
+
+- No Errors Found
+
+### Contact
+
+<details><summary>404.html</summary>
+
+404.html [profile](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/html/validation_404..jpg)
+</details>
+
+- No Errors Found
+
+### Contact
+
+<details><summary>contact.html</summary>
+
+![profile](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/html/validation_.jpg)
+</details>
+
+- No Errors Found
+
+### Contact
+
+<details><summary>contact.html</summary>
+
+![profile](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/html/validation_.jpg)
+</details>
+
+- No Errors Found
+
+### Contact
+
+<details><summary>contact.html</summary>
+
+![profile](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/html/validation_.jpg)
+</details>
+
+- No Errors Found
+
 
