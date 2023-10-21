@@ -666,7 +666,7 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 
 <details><summary>See feature image</summary>
 
-![Golf Clubs](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_sign_up.jpg)
+![SChools](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_sign_up.jpg)
 </details>  
 
 ### School Detail
@@ -675,7 +675,7 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 
 <details><summary>See feature image</summary>
 
-![Golf Club Detail](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_sign_up.jpg)
+![SChool Detail](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_sign_up.jpg)
 </details>
 
 
@@ -686,6 +686,35 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 
 <details><summary>See feature images</summary>
 
-![Book](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_sign_up.jpg)
+![Book a Lesson](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_sign_up.jpg)
 </details>
 
+### Bookings 
+- Allows the user to see their bookings and status.
+- Booking status  
+- User stories covered: 36
+
+<details><summary>See feature image</summary>
+
+![Bookings](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_booking_information.jpg)
+</details>  
+
+
+### Edit Booking
+- Allows the user to edit their bookings.  
+- User stories covered: 34
+
+<details><summary>See feature image</summary>
+
+![Edit Booking](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_edit_bookings.jpg)
+</details>  
+
+
+### Cancel Booking
+- Allows the user to cancel their bookings.  
+- User stories covered: 35
+
+<details><summary>See feature image</summary>
+
+![Cancel Booking](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_sign_up.jpg)
+</details>  
