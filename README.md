@@ -215,3 +215,10 @@ Our MailChimp-powered newsletters are your direct line to the latest insights re
 <details><summary>User Stories</summary>
 
 ![User Stories](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/agile/user_stories.jpg)
+
+##### Back to [top](#table-of-contents)<hr>
+
+## Wireframes
+I employed Balsamiq, a user-friendly wireframing tool, to craft the preliminary designs for my project. This intuitive tool streamlines the creation of mockups for websites or applications, facilitating a swift and hassle-free process. Balsamiq boasts an extensive library of pre-designed user interface elements, making it a breeze to assemble compelling visuals. Moreover, it supports seamless collaboration with my project team, fostering a cohesive workflow.  
+
+<details><summary>Wireframe Home</summary>  
