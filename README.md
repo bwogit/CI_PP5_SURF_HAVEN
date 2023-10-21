@@ -738,3 +738,70 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 ![Shop](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_product_list.jpg)
 </details>  
 
+### product Detail
+- Allows the user to view the products details.  
+- User stories covered: 13
+
+<details><summary>See feature image</summary>
+
+![Product Detail](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_product_detail.jpg)
+</details>  
+
+### Sort
+- Allows the user to sort the listed products.  
+- User stories covered: 16, 17
+
+<details><summary>See feature images</summary>
+
+![Sort1](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_sort_1.jpg)
+![Sort2](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_sort_2.jpg)
+</details>  
+
+### Search
+- Allows the user to search for products.  
+- User stories covered: 14,15
+
+<details><summary>See feature image</summary>
+
+![Search](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_searchbar.jpg)
+</details>  
+
+### Basket
+- Allows the user to view the basket with their items.
+- Pops up as items are added and removed.  
+- User stories covered: 6, 11, 21
+
+<details><summary>See feature image</summary>
+
+![Basket1](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_product_basket.jpg)
+![Basket2](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_product_nav_basket.jpg)
+
+### Checkout
+- Allows the user to purchase items in their basket.  
+- User stories covered: 19, 22, 23
+
+<details><summary>See feature image</summary>
+
+![Checkout](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_product_checkout.jpg)
+</details>  
+
+
+### Stripe
+- Allows the user to use stripe for card payments.  
+- User stories covered: 19
+
+<details><summary>See feature image</summary>
+
+![Stripe](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_sripe.jpg)
+</details>  
+
+
+### Email Confirmation
+- Users  receive an email confirmation for their order.  
+- User stories covered: 23
+
+<details><summary>See feature image</summary>
+
+![Email Confirmation](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_email_confirmation.jpg)
+</details>  
+
