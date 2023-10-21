@@ -107,7 +107,7 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link {% if request.user.is_authenticated %} {{ 'text-success' }}{% endif %}" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" id="navbarDropdownButton">
                             {% if request.user.is_authenticated %}
-                                {% if request.user.is_staff %}
+                                {% if request.user.is_superuser %}
                                     <i class="fas fa-user fa-lg text-danger" title="User Profile"></i><span class="sr-only">Profile</span>
                                 {% else %}
                                     <i class="fas fa-user fa-lg" title="User Profile"></i><span class="sr-only">Profile</span>
@@ -280,7 +280,7 @@
                 
                 <!-- Contact Column -->
                 <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-                    <p class="text-uppercase fw-bold mb-4">Contact</p>
+                    <p class="text-uppercase fw-bold mb-4 ">Info</p>
                     <p><i class="fas fa-home me-3 text-secondary"></i> Surf Haven, Carlow, Ireland</p>
                     <p><i class="fas fa-envelope me-3 text-secondary"></i> info@surfhaven.com</p>
                     <p><i class="fas fa-phone me-3 text-secondary"></i> +1 234 567 899</p>
