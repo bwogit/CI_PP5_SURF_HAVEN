@@ -668,3 +668,24 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 
 ![Golf Clubs](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_sign_up.jpg)
 </details>  
+
+### School Detail
+- Allows the user to view details of a specific School.  
+- User stories covered: 13
+
+<details><summary>See feature image</summary>
+
+![Golf Club Detail](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_sign_up.jpg)
+</details>
+
+
+### Book a Lesson
+- Allows the user to book a lesson in specific school.
+- ADta input validation  
+- User stories covered: 33
+
+<details><summary>See feature images</summary>
+
+![Book](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_sign_up.jpg)
+</details>
+
