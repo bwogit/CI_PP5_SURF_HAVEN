@@ -199,22 +199,27 @@ Our MailChimp-powered newsletters are your direct line to the latest insights re
 <details><summary>Epic 2</summary>
 
 ![Epic 2](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/agile/epic2.jpg)
+</details>
 
 <details><summary>Epic 3</summary>
 
 ![Epic 3](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/agile/epic3.jpg)
+</details>
 
 <details><summary>Epic 4</summary>
 
 ![Epic 4](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/agile/epic4.jpg)
+</details>
 
 <details><summary>Epic 5</summary>
 
 ![Epic 5](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/agile/epic5.jpg)
+</details>
 
 <details><summary>User Stories</summary>
 
 ![User Stories](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/agile/user_stories.jpg)
+</details>
 
 ##### Back to [top](#table-of-contents)<hr>
 
