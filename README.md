@@ -154,5 +154,10 @@ Our MailChimp-powered newsletters are your direct line to the latest insights re
 | 11 | Site User | view my cart and its total cost at any time | I can keep track of my spending |
 | 12 | Site User | see a list of surf products/surf schools | browse and choose the items/school that interest me |
 | 13 | Site User | view an individual product/school details | make informed decisions about my selections |
-
+| Sorting and Searching ||||
+| 14 | Site User | search for surf products by name or description | find specific items that match my preferences |
+| 15 | Site User | see search results | review the surf products that match my search criteria|
+| 16 | Site User | sort surf products by category | find items that fit my interests |
+| 17 | Site User | sort surf products by price | choose items that align with my budget |
+| 18 | Site User | select available dates/times | schedule lessons |
 
