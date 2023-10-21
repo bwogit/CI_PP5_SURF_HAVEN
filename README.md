@@ -145,3 +145,14 @@ Our MailChimp-powered newsletters are your direct line to the latest insights re
 | 3 | Site User | recover my password | regain access to my account in case of a forgotten password |
 | 4 | Site User | receive an email confirmation after registration| verify my account and ensure its security |
 | 5 | Site User | have a profile | easily manage my bookings and store information |
+| Viewing and navigation ||||
+| 6 | Site User | navigate across the site | find the information I need quickly and effortlessly  |
+| 7 | Site User | use a navbar, footer, and social icons | access different parts of the website conveniently|
+| 8 | Site User | receive notifications for my actions | informed about the status of my activities on the site|
+| 9 | Site User | check my login status | confirm whether I am currently logged in or not |
+| 10 | Site User | visit the shop| explore all surf equipment |
+| 11 | Site User | view my cart and its total cost at any time | I can keep track of my spending |
+| 12 | Site User | see a list of surf products/surf schools | browse and choose the items/school that interest me |
+| 13 | Site User | view an individual product/school details | make informed decisions about my selections |
+
+
