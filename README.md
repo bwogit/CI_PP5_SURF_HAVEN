@@ -358,12 +358,106 @@ The footer contains links to the business's social media pages, as well as an em
 AWS S3 buckets are my go-to for data storage. S3 is Amazon's cloud storage service, and it's highly scalable, durable, and secure. I can easily store and retrieve large amounts of data with S3, and its built-in security features give me peace of mind knowing that my files are safe.
 
 <details><summary>See AWS Images</summary>
-![AWS Bucket](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/aws/aws_bucket.jpg)
-![AWS Static](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/aws/aws_bucket_static.jpg)
-![AWS Media](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/aws/aws_bucket_media.jpg)
+
+![AWS Bucket](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/aws/aws_bucket.png)
+
+![AWS Static](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/aws/aws_bucket_static.png)
+
+![AWS Media](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/aws/aws_bucket_media.png)
 </details>
 
 ## Database
 
 I built my Django project's database using PostgreSQL. PostgreSQL is a powerful and open-source object-relational database system that is known for its reliability, robustness, and performance. I chose it because it provides a flexible tool for efficiently managing and organizing my data, and it is well-suited for use with Django.
+
+<details><summary>See Database Image</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/database/database_erd_diagram.jpg">
+</details>
+<hr>
+
+## Models  
+
+### Users Model
+The User model is a built-in Django feature and is used for authentication and has the following fields:
+
+| Key        | Name         | Type        |
+| ---------- | ------------ | ----------- |
+| PrimaryKey | user_id      | AutoField   |
+|            | password     | VARCHAR(45) |
+|            | last_login   | VARCHAR(45) |
+|            | is_superuser | BOOLEAN     |
+|            | username     | VARCHAR(45) |
+|            | first_name   | VARCHAR(45) |
+|            | last_name    | VARCHAR(45) |
+|            | email        | VARCHAR(45) |
+|            | is_staff     | BOOLEAN     |
+|            |              |             |
+|            | is_active    | BOOLEAN     |
+|            | date_joined  | VARCHAR(45) |
+
+### Profile Model
+
+| Key        | Name                 | Type          |
+| ---------- | -------------------- | ------------- |
+| PrimaryKey | id                   | AutoField     |
+| ForeignKey | user_id              | User model    |
+|            | default_phone_number | CharField[20] |
+|            | default_address1     | CharField[80] |
+|            | default_address2     | CharField[80] |
+|            | default_town_city    | CharField[40] |
+|            | default_county       | CharField[80] |
+|            | default_postcode     | CharField[20] |
+|            | default_country      | CharField[40] |
+
+### School Model
+
+| Key        | Name           | Type          |
+| ---------- | -------------- | ------------- |
+| PrimaryKey | school_id      | AutoField     |
+|            | school_name    | AutoField     |
+|            | slug           | SlugField     |
+|            | location       | VARCHAR(45)   |   
+|            | description    | TextField     |
+|            | available      | BooleanField  |
+|            | image          | ImageField    |
+
+### Booking Model
+
+| Key        | Name           | Type            |
+| ---------- | -------------- | --------------- |
+| PrimaryKey | booking_id     | AutoField       |
+|            | created_date   | DateTime        |
+|            | requested_date | DateTime        |
+|            | requested_time | CharField[10]   |
+| ForeignKey | school_id      | School model |
+| ForeignKey | user           | User model      |
+|            | name           | CharField[50]   |
+|            | email          | EmailField      |
+|            | phone          | PhoneNumField   |
+|            | status         | CharField[50]   |
+|            | players        | Tuple           |
+|            | player_count   | intField        |
+
+### Product Model
+
+| Key        | Name        | Type           |
+| ---------- | ----------- | -------------- |
+| PrimaryKey | product_id  | AutoField      |
+|            | code        | CharField[50]  |
+|            | brand       | CharField[50]  |
+|            | name        | CharField[50]  |
+|            | description | TextField      |
+|            | has_sizes   | BooleanField   |
+|            | price       | DecimalField   |
+| ForeignKey | category    | Category model |
+|            | rating      | DecimalField   |
+|            | image       | ImageField     |
+
+### Category Model  
+
+| Key        | Name          | Type      |
+| ---------- | ------------- | --------- |
+| PrimaryKey | category_id   | AutoField |
+|            | name          | Char[254] |
+|            | friendly_name | Char[254] |
 
