@@ -621,7 +621,7 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 ### Navigation
 - Fully Responsive.
 - On small screens switches to hamburger menu.
-- Indicates login/logout in status.
+- Displays login/logout in status.
 - displayed on all pages.  
 - User stories covered: 6, 7
 
@@ -630,3 +630,41 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 ![Navigation](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_navbar.jpg)
 </details>
 
+### Sign up / Register
+- Users can register for an acoount.
+- User stories covered: 1  
+
+<details><summary>See feature image</summary>
+
+![Signup](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_sign_up.jpg)
+</details>
+
+
+### Sign In
+- User can sign in.  
+- User stories covered: 2
+
+<details><summary>See feature images</summary>
+
+![Signin](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_sign_in.jpg)
+</details>
+
+### Sign Out
+- Allows the user to securely sign out.
+- Ask user tp confirm their choice.  
+- User stories covered: 2
+
+<details><summary>See feature image</summary>
+
+![Sign out](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_sign_out.jpg)
+</details>  
+
+
+### Schools
+- Allows the user to view all listed surf schools.  
+- User stories covered: 12
+
+<details><summary>See feature image</summary>
+
+![Golf Clubs](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_sign_up.jpg)
+</details>  
