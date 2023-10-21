@@ -155,12 +155,14 @@ Our MailChimp-powered newsletters are your direct line to the latest insights re
 | 11 | Site User | view my cart and its total cost at any time | I can keep track of my spending |
 | 12 | Site User | see a list of surf products/surf schools | browse and choose the items/school that interest me |
 | 13 | Site User | view an individual product/school details | make informed decisions about my selections |
-| Sorting and Searching ||||
+| Accessing Sorting and Searching ||||
 | 14 | Site User | search for surf products by name or description | find specific items that match my preferences |
 | 15 | Site User | see search results | review the surf products that match my search criteria|
 | 16 | Site User | sort surf products by category | find items that fit my interests |
 | 17 | Site User | sort surf products by price | choose items that align with my budget |
 | 18 | Site User | select available dates/times | schedule lessons |
+| 38 | Site User | read blogs | view my bookings and status |
+| 39 | Site User | Leave Blog Comments  | BE part of the community |
 |Purchasing and checkout ||||
 | 19 | Site User | use a card for payment | securely and conveniently make payments |
 | 20 | Site User | adjust the quantity and size of any items in my cart | customize my selections |
@@ -181,6 +183,7 @@ Our MailChimp-powered newsletters are your direct line to the latest insights re
 | 34 | Site User | edit a booking | edit lesson time  |
 | 35 | Site User | cancel booking | delete a booking if I need to cancel |
 | 36 | Site User | view my bookings | view my bookings and status |
+
 
 ### Kanban, Epics & User Stories
 - GitHub Kanban was used to track all open user stories
@@ -855,7 +858,7 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 ### Blog
 - The blog displays each post made by a authorised member
 - Paginations is used to display 2 posts per page  
-- User stories covered: extra feature
+- User stories covered: 38
   
 <details><summary>See feature images</summary>
 
@@ -866,7 +869,7 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 ### Blog Expanded
 - Expands into the selected blog the user wishes to read
 - Comments need approval  
-- User stories covered: extra feature
+- User stories covered: 38, 39
   
 <details><summary>See feature images</summary>
 
@@ -897,10 +900,15 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 
 
 ### Pagination
-- Pagination is used on the
-- Ensures the page is kept tidy  
+- Pagination is used on the website 
+- Ensures the page is kept readable 
   
 <details><summary>See feature images</summary>
 
 ![Pagination](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_pagination.jpg)
 
+##### Back to [top](#table-of-contents)<hr>
+
+# Validation  
+
+## HTML Validation
