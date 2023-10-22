@@ -1,6 +1,6 @@
 eCommerce: Surf Haven (Building in Progress)
 
-![Am I Responsive]()
+![Am I Responsive](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/responsive.jpg)
 
 **Developer: BWOGIT**
 💻 [Visit live website]()
@@ -94,8 +94,8 @@ Our MailChimp-powered newsletters are your direct line to the latest insights re
 
 <details><summary>See Image</summary>
 
-![Mailchimp]()
-![Email]()
+![Mailchimp](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/mailchimp_settings.jpg)
+![Email]((https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/mailchimp_subscribe.jpg))
 ![Email content]()
 </details> 
 
@@ -300,14 +300,14 @@ I employed Balsamiq, a user-friendly wireframing tool, to craft the preliminary 
 ![Wireframes](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/wireframes/wireframe_schools.jpg)
 </details>
 
-<details><summary>Wireframe Sign IN</summary>  
+<details><summary>Wireframe Sign In</summary>  
 
 ![Wireframes](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/wireframes/wireframe_sign_in.jpg)
 </details>
 
 <details><summary>Wireframe Sign Up</summary>  
 
-![Wireframes](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/wireframes/wireframe_SignUp.jpg)
+![Wireframes](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/wireframes/wireframe_sign_up.jpg)
 </details>
 
 ## Design
@@ -669,7 +669,7 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
   
 <details><summary>See feature images</summary>
 
-![Recover APssword](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_password_reset.jpg)
+![Recover Password](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_password_reset.jpg)
 </details>  
 
 ### Schools
@@ -785,8 +785,8 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 
 <details><summary>See feature image</summary>
 
-![Basket1](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_product_basket.jpg)
-![Basket2](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_product_nav_basket.jpg)
+![Basket1](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_basket.jpg)
+![Basket2](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_nav_basket.jpg)
 </details>  
 
 ### Checkout
@@ -795,7 +795,7 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 
 <details><summary>See feature image</summary>
 
-![Checkout](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_product_checkout.jpg)
+![Checkout](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_checkout.jpg)
 </details>  
 
 
@@ -805,7 +805,7 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 
 <details><summary>See feature image</summary>
 
-![Stripe](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_sripe.jpg)
+![Stripe](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_stripe.jpg)
 </details>  
 
 
@@ -825,7 +825,7 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 
 <details><summary>See feature image</summary>
 
-![Add Product](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_products_add.jpg)
+![Add Product](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_product_add.jpg)
 </details>  
 
 
@@ -930,14 +930,14 @@ school_list.html [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsurf-h
 
 ### School Details  
 
-school_detail.html [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsurf-haven-39d68e86c0f1.herokuapp.com%2Fbookings%2Fschool_detail%2Faquaflow-surf-school%2F) 
+school_detail.html [results](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/html/validation_html_school_detail.jpg)
 - No Errors Found
 
 ### Bookings
 
 <details><summary>Booking List</summary>
 
-![booking list](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsurf-haven-39d68e86c0f1.herokuapp.com%2Fbookings%2Fbooking_list%2F)
+![booking list](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/html/validation_html_booking_list.jpg)
 </details>
 
 - No Errors Found
@@ -947,7 +947,7 @@ school_detail.html [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsurf
 
 <details><summary>edit_booking.html</summary>
 
-![booking list](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsurf-haven-39d68e86c0f1.herokuapp.com%2Fbookings%2Fedit_booking%2F28)
+![Edit Booking](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/html/validation_html_edit_booking.jpg)
 </details>
 
 - No Errors Found
@@ -957,7 +957,7 @@ school_detail.html [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsurf
 
 <details><summary>cancel_booking.html</summary>
 
-![booking list](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsurf-haven-39d68e86c0f1.herokuapp.com%2Fbookings%2Fcancel_booking%2F25)
+![booking list](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/html/validation_html_delete_booking.jpg)
 </details>
 
 ### Shop  
@@ -1029,7 +1029,7 @@ checkout.html [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fci-pp5-te
 
 <details><summary>blog_detail.html</summary>
 
-![blog_detail](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/html/validation_blog_detail.jpg)
+![blog_detail](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/html/validation_html_blog_detail.jpg)
 </details>
 
 - No Errors Found
@@ -1038,7 +1038,7 @@ checkout.html [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fci-pp5-te
 
 <details><summary>contact.html</summary>
 
-![profile](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/html/validation_.jpg)
+![profile](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/html/validation_html_contact.jpg)
 </details>
 
 - No Errors Found
@@ -1047,7 +1047,7 @@ checkout.html [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fci-pp5-te
 
 <details><summary>login.html</summary>
 
-![Sign In](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/html/validation_login.jpg)
+![Sign In](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/html/validation_html_login.jpg)
 </details>
 
 - No Errors Found
@@ -1056,7 +1056,7 @@ checkout.html [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fci-pp5-te
 
 <details><summary>logout.html</summary>
 
-![Sign Out](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/html/validation_.jpg)
+![Sign Out](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/html/validation_html_logout.jpg)
 </details>
 
 - No Errors Found
@@ -1065,7 +1065,7 @@ checkout.html [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fci-pp5-te
 
 <details><summary>signup.html</summary>
 
-![result](https://validator.w3.org/nu/?doc=https%3A%2F%2Fsurf-haven-39d68e86c0f1.herokuapp.com%2Faccounts%2Fsignup%2F)
+![result](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/html/validation_html_register.jpg)
 </details>
 
 - No Errors Found
@@ -1074,7 +1074,7 @@ checkout.html [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fci-pp5-te
 
 <details><summary>404.html</summary>
 
-404.html [profile](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/html/validation_404.jpg)
+404.html [profile](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/html/validation_html_404.jpg)
 </details>
 
 - No Errors Found
@@ -1085,12 +1085,13 @@ checkout.html [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fci-pp5-te
 ### CSS Validation
 The W3C Jigsaw CSS Validation tool was used to validate the CSS of the site.
 
-details><summary>base.css</summary>
+
+<details><summary>base.css</summary>
 <img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/css/validation_css_base.jpg">
 </details> 
 
 <details><summary>profile.css</summary>
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/css/validation_css_profile.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/css/validation_css_profiles.jpg">
 </details>  
 
 <details><summary>checkout.css</summary>
@@ -1108,7 +1109,7 @@ JSHint javaScript Validation tool was used to validate all javaScript files for 
 - no issue
 
 <details><summary>country_field.js</summary>
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/css/validation_css_checkout.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/css/validation_js_country_fields.jpg">
 </details>
 
 - No issues
@@ -1162,10 +1163,6 @@ JSHint javaScript Validation tool was used to validate all javaScript files for 
 <img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/pep8/validation_pep8_blog_views.jpg">
 </details>
 
-
-<details><summary>views.py</summary>
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/pep8/validation_pep8_bookings_.jpg">
-</details>
 
 <hr><summary>Bookings</summary>
 
@@ -1224,7 +1221,7 @@ JSHint javaScript Validation tool was used to validate all javaScript files for 
 </details>
 
 <details><summary>signals.py</summary>
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/pep8/validation_pep8_checkout_signal.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/pep8/validation_pep8_checkout_signals.jpg">
 </details>
 
 <details><summary>urls.py</summary>
@@ -1401,7 +1398,7 @@ The [WAVE WebAIM web accessibility evaluation tool](https://wave.webaim.org/) wa
 </details>  
 
 <details><summary>contact</summary>
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/accessibility/accessibility_contact.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/accessibility/accessibility_wave_contact.jpg">
 </details>  
 
 <details><summary>edit booking</summary>
@@ -1483,7 +1480,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 </details>
 
 <details><summary>edit_booking</summary>
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/lighthouse/lighthouse_.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/lighthouse/lighthouse_edit_booking.jpg">
 </details>
 
 <details><summary>login</summary>
@@ -1527,7 +1524,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 </details>
 
 <details><summary>cancel Booking</summary>
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/lighthouse/lighthouse_.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/lighthouse/lighthouse_cancel_booking.jpg">
 </details>
 
 <details><summary>school detail</summary>
