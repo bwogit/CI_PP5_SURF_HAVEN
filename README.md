@@ -1112,3 +1112,56 @@ JSHint javaScript Validation tool was used to validate all javaScript files for 
 </details>
 
 - No issues
+
+##### Back to [top](#table-of-contents)<hr>  
+
+## PEP8 Validation
+[CI Python Linter](https://pep8ci.herokuapp.com/) was used to check the code for PEP8 requirements.
+
+<summary>Basket</summary>
+
+<details><summary>contexts.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/pep8/validation_pep8_basket_contexts.jpg">
+</details>
+
+<details><summary>basket_tools.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/pep8/validation_pep8_basket_basket_tools.jpg">
+</details>
+
+<details><summary>views.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/pep8/validation_pep8_basket_views.jpg">
+</details>
+
+<details><summary>test_views.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/pep8/validation_pep8_basket_test.jpg">
+</details>
+
+<details><summary>urls.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/pep8/validation_pep8_basket_urls.jpg">
+</details>
+
+<hr><summary>Blog</summary>
+
+<details><summary>Admin.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/pep8/validation_pep8_basket_.jpg">
+</details>
+
+<details><summary>forms.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation">
+</details>
+
+<details><summary>models.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation">
+</details>
+
+<details><summary>urls.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation">
+</details>
+
+<details><summary>views.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation">
+</details>
+
+<details><summary>views.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation">
+</details>
