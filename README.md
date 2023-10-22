@@ -1537,3 +1537,21 @@ Performance, best practices and SEO was tested using Lighthouse.
 <details><summary>school_list</summary>
 <img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/lighthouse/lighthouse_school_list.jpg">
 </details>
+
+##### Back to [top](#table-of-contents)<hr>
+
+
+## Testing
+
+1. Manual testing User Stories
+2. Automated testing
+
+### Manual testing
+
+1.	As a site user I CAN register for an account SO THAT I CAN have an account and manage my personal information efficiently 
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Sign Up | Click pofile button then select register | User is brought to the sign up page | Works as expected  
+
+
