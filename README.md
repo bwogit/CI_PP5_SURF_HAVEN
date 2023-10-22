@@ -1094,5 +1094,21 @@ details><summary>base.css</summary>
 </details>  
 
 <details><summary>checkout.css</summary>
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/css/validation_css_checkout.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/js/validation_js_country_fields.jpg">
 </details><hr>
+
+
+### JavaScript Validation
+JSHint javaScript Validation tool was used to validate all javaScript files for the project.
+
+<details><summary>stripe_elements.js</summary>  
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/js/validation_js_stripe_element.jpg">
+</details>  
+
+- no issue
+
+<details><summary>country_field.js</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/css/validation_css_checkout.jpg">
+</details>
+
+- No issues
