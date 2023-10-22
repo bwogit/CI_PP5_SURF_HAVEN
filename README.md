@@ -1648,8 +1648,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 | Shop | Click shop in the navbar | User is then brought to the all products page of the shop | Works as expected  
 
 <details><summary>See Images</summary>
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_10.jpg">
 </details> 
 
 11.	As a Site User	I CAN view my basket and total cost at any time	so I can keep track of my spending  
@@ -1659,8 +1658,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 | Basket | Click the basket icon in the navbar | basket page where all products in basket are displayed with their price and total cost | Works as expected  |
 
 <details><summary>See Images</summary>
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_11.jpg">
 </details> 
 
 12.	As a Site User I CAN view a list of products	SO THAT I CAN browse and choose the items/school that interest me
@@ -1670,8 +1668,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 | Categories | Select a category on the side panel, select surfboards  | User is brought to the selected category of product and all products are listed | Works as expected |
 
 <details><summary>See Images</summary>
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_12.jpg">
 </details> 
 
 13.	As a Site User I CAN view an individual product details SO THAT I CAN make informed decisions about my selections  
@@ -1682,8 +1679,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 | SChool Detail | Click on any item image in the shcool list |  School detail page where school details are displayed | Works as expected  |
 
 <details><summary>See Images</summary>
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_13.jpg">
 </details> 
 
 14.	As a Site User I CAN search for surf products by name or description  SO THAT I CAN find specific items that match my preferences   
@@ -1694,8 +1690,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 | searchBAr | type supercalifra |  return "no item for yuor criteria" | Works as expected  |
 
 <details><summary>See Images</summary>
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_14.jpg">
 </details> 
 
 15.	As a Site User I CAN review search results  SO THAT I CAN analyse what has been returned  
@@ -1705,8 +1700,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 | searchBAr | type surfboard |  Product list page where all product - surfboard are displayed | Works as expected  |
 
 <details><summary>See Images</summary>
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_15.jpg">
 </details> 
 
 16.	As a Site User I CAN sort surf products by category so that i can find items that fit my interests  
@@ -1716,8 +1710,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 | Sort | From the shop page, click a category on the side panel such as surfboards | User is brought to the sufboard page where only products classed as sufboard are displayed | Works as expected  
 
 <details><summary>See Images</summary>
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_16.jpg">
 </details> 
 
 17.	As a Site User I CAN sort surf products by price so that i can find items that fit my budget 
@@ -1727,20 +1720,17 @@ Performance, best practices and SEO was tested using Lighthouse.
 | Sort | From the shop page, click the sort box and select price from high to low | All items will be sorted from the highest price to the lowest price | Works as expected  
 
 <details><summary>See Images</summary>
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_17.jpg">
 </details> 
 
 18.	As a Site User I CANNOT doublebook	SO THAT I CAN I can only book available time slots  
-
 
 | Feature | Action | Expected Result | Actual Result |
 | ------- | ------ | --------------- | ------------- |
 | Book a lesson | From booking page, select a date and time for selected club | If time is available a confirmation page will appear, if the time is already booked an error message will appear asking the user to select another time. | Works as expected  
 
 <details><summary>See Images</summary>
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_18.jpg">
 </details> 
 
 19.	As a Site User	I CAN use a card as the payment method SO THAT I CAN securely and conveniently make payment  
@@ -1750,8 +1740,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 | Checkout | From the basket select secure checkout | Input user information, input card number 4242 4242 4242 4242 04/24 424 24242, payment is successful | Works as expected |
 
 <details><summary>See Images</summary>
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_19.jpg">
 </details> 
 
 20.	As a Site User	I CAN select the size and quantity of a product	SO THAT I CAN customize my selections   
@@ -1761,8 +1750,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 | Product Details | Product detail page select a size for the product in the size box, increase or decrease quantity from the quantity box | Sizes will be selected and quantity adjusted | Works as expected |
 
 <details><summary>See Images</summary>
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_20.jpg">
 </details> 
 
 21.	As a Site User I CAN view items in my basket	SO THAT I CAN review and confirm my selections before checkout  
@@ -1772,8 +1760,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 | Basket | Click the basket icon in the navbar | Display all items in the basket and their cost and total price for basket | Works as expected |
 
 <details><summary>See Images</summary>
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_21.jpg">
 </details> 
 
 22.	As a Site User	I CAN receive order confirmation SO THAT I CAN be notified of a successful order  
@@ -1783,8 +1770,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 | Message Box | Upon successful checkouts an alert box will appear | box pops up with the order details | Works as expected  |
 
 <details><summary>See Images</summary>
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_22.jpg">
 </details> 
 
 23.	As a Site User	I CAN receive email confirmation SO THAT I CAN I have a receipt for my records
@@ -1794,8 +1780,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 | Email Confirmation | Upon successful checkout a confirmation email with order details will be sent to the provided email address  |     Email confirmation delivered | Works as expected  |
 
 <details><summary>See Images</summary>
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_23.jpg">
 </details> 
 
 24.	As a Admin I CAN add a product/school SO THAT I CAN keep the offerings up-to-date  
@@ -1806,8 +1791,10 @@ Performance, best practices and SEO was tested using Lighthouse.
 | School |browse to https://github.com/bwogit/CI_PP5_SURF_HAVEN/admin log in as admin and select schools in the side panel to the left, the schools screen will appear and then click add school button on the top right of the screen. Add school page will appear | Add school page will appear and the user can then add information for a new school | Works as expected  
 
 <details><summary>See Images</summary>
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_24.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_24b.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_24c.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_24d.jpg">
 </details> 
 
 25.	As an Admin	I CAN edit a product/school SO THAT I CAN make necessary updates  
@@ -1818,8 +1805,10 @@ Performance, best practices and SEO was tested using Lighthouse.
 | Edit School |browse to https://github.com/bwogit/CI_PP5_SURF_HAVEN/admin log in as admin and select schools in the side panel to the left, the schools screen will appear and then click add school button on the top right of the screen.  | School page will appear allowing the user to edit information  | Works as expected  |
 
 <details><summary>See Images</summary>
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_25a.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_25b.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_25c.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_25d.jpg">
 </details> 
 
 26.	As an admin I CAN delete a product/school SO THAT I CAN delete remove outdated or discontinued items
@@ -1829,8 +1818,8 @@ Performance, best practices and SEO was tested using Lighthouse.
 | Delete Product  | From product detail as an admin account, click delete | Modal pops up to confirm deletion of product | Works as expected |  
 | Delette School |browse to https://github.com/bwogit/CI_PP5_SURF_HAVEN/admin log in as admin and select schools in the side panel to the left, the schools screen will appear then select the club using the checkbox and cick the action dropdown above| choose delete selected clubs and press go | Works as expected  |
 <details><summary>See Images</summary>
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_26a.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_26b.jpg">
 </details> 
 
 27.	As Admin I CAN add a lesson time slot SO THAT I CAN add a more lesson times to each school  
@@ -1858,8 +1847,8 @@ Performance, best practices and SEO was tested using Lighthouse.
 | school Deatail| as a logged in user fill out the form and click book lesson time | Confirmation pop up | works as expected|
 
 <details><summary>See Images</summary>
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_29a.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_29b.jpg">
 </details> 
 
 30.	As user I CAN edit a lesson time slot SO THAT I CAN manage my times   
@@ -1869,8 +1858,8 @@ Performance, best practices and SEO was tested using Lighthouse.
 | Lessons| select the booking you want  click on edit | edit page/edit info | works as expected|
 
 <details><summary>See Images</summary>
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_30a.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_30a.jpg">
 </details> 
 
 31.	As user I CAN cancel a lesson time slot SO THAT I CAN manage my times   
@@ -1880,7 +1869,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 | Lessons| select the booking you want click cancel | Confirm cancel | works as expected|
 
 <details><summary>See Images</summary>
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_31a.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_32a.jpg">
 </details> 
 
