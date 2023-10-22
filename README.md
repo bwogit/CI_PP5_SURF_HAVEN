@@ -1200,3 +1200,49 @@ JSHint javaScript Validation tool was used to validate all javaScript files for 
 <details><summary>test_views.py</summary>
 <img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/pep8/validation_pep8_bookings_test_views.jpg">
 </details>
+
+<hr><summary>checkout</summary>
+
+<details><summary>Admin.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/pep8/validation_pep8_checkout_admin.jpg">
+</details>
+
+<details><summary>forms.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/pep8/validation_pep8_checkout_forms.jpg">
+</details> 
+
+<details><summary>test-forms.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/pep8/validation_pep8_checkout_test_forms.jpg">
+</details>
+
+<details><summary>models.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/pep8/validation_pep8_checkout_models.jpg">
+</details>
+
+<details><summary>test-models.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/pep8/validation_pep8_checkout_test_models.jpg">
+</details>
+
+<details><summary>signals.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/pep8/validation_pep8_checkout_signal.jpg">
+</details>
+
+<details><summary>urls.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/pep8/validation_pep8_checkout_urls.jpg">
+</details>
+
+<details><summary>views.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/pep8/validation_pep8_checkout_views.jpg">
+</details> 
+
+<details><summary>test_views.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/pep8/validation_pep8_checkout_test_views.jpg">
+</details> 
+
+<details><summary>webhook_handler.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/pep8/validation_pep8_checkout_webhook_handler.jpg">
+</details> 
+
+<details><summary>webhook.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/pep8/validation_pep8_checkout_webhook.jpg">
+</details>
