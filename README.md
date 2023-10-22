@@ -1164,5 +1164,39 @@ JSHint javaScript Validation tool was used to validate all javaScript files for 
 
 
 <details><summary>views.py</summary>
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/pep8/validation_pep8_blog_.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/pep8/validation_pep8_bookings_.jpg">
+</details>
+
+<hr><summary>Bookings</summary>
+
+<details><summary>Admin.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/pep8/validation_pep8_bookings_admin.jpg">
+</details>
+
+<details><summary>forms.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/pep8/validation_pep8_bookings_forms.jpg">
+</details>
+
+<details><summary>models.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/pep8/validation_pep8_bookings_models.jpg">
+</details>
+
+<details><summary>test_models.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/pep8/validation_pep8_bookings_test_models.jpg">
+</details>
+
+<details><summary>urls.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/pep8/validation_pep8_bookings_urls.jpg">
+</details>
+
+<details><summary>test_urls.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/pep8/validation_pep8_bookings_test_urls.jpg">
+</details>
+
+<details><summary>views.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/pep8/validation_pep8_bookings_views.jpg">
+</details>
+
+<details><summary>test_views.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/pep8/validation_pep8_bookings_test_views.jpg">
 </details>
