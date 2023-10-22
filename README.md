@@ -1452,3 +1452,88 @@ The [WAVE WebAIM web accessibility evaluation tool](https://wave.webaim.org/) wa
 <img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/accessibility/accessibility_wave_signup.jpg">
 </details>  
 
+##### Back to [top](#table-of-contents)<hr>  
+
+## Lighthouse
+
+Performance, best practices and SEO was tested using Lighthouse.
+
+<details><summary>basket</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/lighthouse/lighthouse_basket.jpg">
+</details>
+
+<details><summary>blog_detail</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/lighthouse/lighthouse_blog_detail.jpg">
+</details>
+
+<details><summary>blog_list</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/lighthouse/lighthouse_blog_list.jpg">
+</details>
+
+<details><summary>Book Lesson></summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/lighthouse/lighthouse_book_lesson.jpg">
+</details>
+
+<details><summary>booking_List</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/lighthouse/lighthouse_booking_list.jpg">
+</details>
+
+<details><summary>contact</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/lighthouse/lighthouse_contact.jpg">
+</details>
+
+<details><summary>edit_booking</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/lighthouse/lighthouse_.jpg">
+</details>
+
+<details><summary>login</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/lighthouse/lighthouse_login.jpg">
+</details>
+
+<details><summary>product_add</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/lighthouse/lighthouse_product_add.jpg">
+</details>
+
+<details><summary>product_detail</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/lighthouse/lighthouse_product_detail.jpg">
+</details>
+
+<details><summary>product_edit</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/lighthouse/lighthouse_product_edit.jpg">
+</details>
+
+<details><summary>product_list</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/lighthouse/lighthouse_product_list.jpg">
+</details>
+
+<details><summary>signup</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/lighthouse/lighthouse_signup.jpg">
+</details>
+
+<details><summary>home</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/lighthouse/lighthouse_home.jpg">
+</details>
+
+<details><summary>logout</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/lighthouse/lighthouse_logout.jpg">
+</details>
+
+<details><summary>checkout_success</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/lighthouse/lighthouse_checkout_success.jpg">
+</details>
+
+<details><summary>profile</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/lighthouse/lighthouse_profile.jpg">
+</details>
+
+<details><summary>cancel Booking</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/lighthouse/lighthouse_.jpg">
+</details>
+
+<details><summary>school detail</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/lighthouse/lighthouse_school_detail.jpg">
+</details>
+
+<details><summary>school_list</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/lighthouse/lighthouse_school_list.jpg">
+</details>
