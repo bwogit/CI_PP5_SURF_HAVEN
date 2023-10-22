@@ -1290,3 +1290,37 @@ JSHint javaScript Validation tool was used to validate all javaScript files for 
 <details><summary>urls.py</summary>
 <img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/pep8/validation_pep8_home_urls.jpg">
 </details>
+
+<hr><summary>products</summary>
+
+<details><summary>Admin.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/pep8/validation_pep8_products_admin.jpg">
+</details>
+
+<details><summary>forms.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/pep8/validation_pep8_products_forms.jpg">
+</details>
+
+<details><summary>models.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/pep8/validation_pep8_products_models.jpg">
+</details>
+
+<details><summary>test-models.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/pep8/validation_pep8_products_test_models.jpg">
+</details>
+
+<details><summary>urls.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/pep8/validation_pep8_products_urls.jpg">
+</details>
+
+<details><summary>views.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/pep8/validation_pep8_products_views.jpg">
+</details>
+
+<details><summary>test-views.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/pep8/validation_pep8_products_test_views.jpg">
+</details>
+
+<details><summary>widgets.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/pep8/validation_pep8_products_widget.jpg">
+</details>
