@@ -1079,5 +1079,20 @@ checkout.html [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fci-pp5-te
 
 - No Errors Found
 
+##### Back to [top](#table-of-contents)<hr>  
 
 
+### CSS Validation
+The W3C Jigsaw CSS Validation tool was used to validate the CSS of the site.
+
+details><summary>base.css</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/css/validation_css_base.jpg">
+</details> 
+
+<details><summary>profile.css</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/css/validation_css_profile.jpg">
+</details>  
+
+<details><summary>checkout.css</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/css/validation_css_checkout.jpg">
+</details><hr>
