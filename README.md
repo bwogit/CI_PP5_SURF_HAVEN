@@ -1876,7 +1876,6 @@ Performance, best practices and SEO was tested using Lighthouse.
 ### Automated testing
 
 - Testing was done using the built in Django module, unittest.
-- Coverage was also usesd to generate a report
 
 
 <details><summary> Basket, tests.py</summary>
@@ -1925,5 +1924,32 @@ Performance, best practices and SEO was tested using Lighthouse.
 
 <details><summary> profiles, test_views.py</summary>
 <img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/auto/profiles_test_views.jpg">
+</details>
+
+### Device Testing & Browser compatibility
+
+I used [BrowserStack](https://www.browserstack.com/) to test my site on real devices
+
+
+The following devices were used to test my site:
+
+<details><summary> Redmi Note 12</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/browserstack/browserstack_redmi_note.jpg">
+</details>
+
+<details><summary> Galaxy S22</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/browserstack/browserstack_galaxy_s22.jpg">
+</details>
+
+<details><summary> Opera</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/browserstack/browserstack_opera.jpg">
+</details>
+
+<details><summary> Edge</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/browserstack/browserstack_edge.jpg">
+</details>
+
+<details><summary>Firefox</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/browserstack/browserstack_firefox.jpg">
 </details>
 
