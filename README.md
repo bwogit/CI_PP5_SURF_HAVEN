@@ -1867,7 +1867,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 
 <details><summary>See Images</summary>
 <img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_31a.jpg">
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_32a.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_31a.jpg">
 </details> 
 
 ### Automated testing
