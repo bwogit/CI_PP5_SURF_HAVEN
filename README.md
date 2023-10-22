@@ -1552,6 +1552,110 @@ Performance, best practices and SEO was tested using Lighthouse.
 
 | Feature | Action | Expected Result | Actual Result |
 | ------- | ------ | --------------- | ------------- |
-| Sign Up | Click pofile button then select register | User is brought to the sign up page | Works as expected  
+| Sign Up | Click pofile button then select register | User is brought to the sign up page | Works as expected  |
+
+<details><summary>See Images</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+</details>  
 
 
+2.	As a Site User	I CAN login and logout SO THAT I CAN secure my account and access it when needed  
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Sign In | Click pofile button and select login| User is brought to the sign in page | Works as expected  |
+
+<details><summary>See Images</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+</details>  
+
+3.	As a Site User	I CAN	I CAN regain access to my account in case of a forgotten password   
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Reset Password | Click pofile button and select login then click forgot password | User is brought to password reset page | Works as expected  |
+
+<details><summary>See Images</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+</details>  
+
+4.	As a Site User	I CAN receive an email confirmation after registration	SO THAT I CAN be verify my account and ensure its security | 
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Registration | Upon registration an email is sent to verify the email address submitted | Registration email sent | Works as expected |
+
+<details><summary>See Images</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+</details>  
+
+
+5.	As a Site User	I CAN have a profile easily manage my bookings and store information | 
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Profile | From the Nav click the profile icon, select profile from dropdown  | Profile page | | Works as expected  
+
+<details><summary>See Images</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+</details>  
+
+6.	As a Site User I CAN navigate across the site SO THAT I CAN find the information I need quickly and effortlessly  
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Navbar | Click on any link in the navbar : ex schools  | View school list  | Works as expected  
+
+<details><summary>See Images</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+</details>  
+
+7.	As a Site User	I CAN use a navbar, footer, and social icons  SO THAT I CAN access different parts of the website conveniently  
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Navbar/Footer | Scoll to footer, click on the facebook logo | A new tab will open and bring user to the surfhaven page | Works as expected  
+
+<details><summary>See Images</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+</details> 
+
+8.	As A/AN Shopper / Site User	I CAN be notified of my actions	SO THAT I CAN informed about the status of my activities on the site  
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Popup | Add an item from the shop to the basket | A message will appear in the alert box on screen to notify the user of this action | Works as expected  
+
+<details><summary>See Images</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+</details> 
+
+9.	As a Site User	I CAN see my login status	SO THAT I CAN confirm whether I am currently logged in or not  
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Navigation | while logged out -->profile icon=gray, login-->Profile=green, log in as admin it turns red  | Once logged in the profile icon will be green or red | Works as expected  
+
+<details><summary>See Images</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+</details> 
+
+10.	As  Site User	I CAN visit the shop SO THAT I CAN explore all surf equipment   
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Shop | Click shop in the navbar | User is then brought to the all products page of the shop | Works as expected  
+
+<details><summary>See Images</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+</details> 
