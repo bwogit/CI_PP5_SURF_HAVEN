@@ -1360,3 +1360,95 @@ JSHint javaScript Validation tool was used to validate all javaScript files for 
 <details><summary>wsgi.py</summary>
 <img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/pep8/validation_pep8_surfhaven_wsgi.jpg">
 </details> 
+
+
+##### Back to [top](#table-of-contents)<hr>  
+
+## Accessibility  
+The [WAVE WebAIM web accessibility evaluation tool](https://wave.webaim.org/) was used to verify high accessibility standards.  
+- All pages returned 0 errors.  
+
+<details><summary>404</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/accessibility/accessibility_wave_add_product.jpg">
+</details>  
+
+<details><summary>add product</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/accessibility/accessibility_wave_add_product.jpg">
+</details>  
+
+<details><summary>basket</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/accessibility/accessibility_wave_basket.jpg">
+</details>  
+
+<details><summary>blog detail</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/accessibility/accessibility_wave_blog_detail.jpg">
+</details>  
+
+<details><summary>bokking list</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/accessibility/accessibility_wave_booking_list.jpg">
+</details>  
+
+<details><summary>cancel booking</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/accessibility/accessibility_wave_cancel_booking.jpg">
+</details>  
+
+<details><summary>checkout success</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/accessibility/accessibility_wave_checkout_success.jpg">
+</details>  
+
+<details><summary>checkout</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/accessibility/accessibility_wave_checkout.jpg">
+</details>  
+
+<details><summary>contact</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/accessibility/accessibility_contact.jpg">
+</details>  
+
+<details><summary>edit booking</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/accessibility/accessibility_wave_edit_booking.jpg">
+</details>  
+
+<details><summary>edit product</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/accessibility/accessibility_wave_edit_product.jpg">
+</details>  
+
+<details><summary>edit profile</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/accessibility/accessibility_wave_edit_profile.jpg">
+</details>  
+
+<details><summary>home</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/accessibility/accessibility_wave_home.jpg">
+</details> 
+
+<details><summary>login</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/accessibility/accessibility_wave_login.jpg">
+</details> 
+
+<details><summary>logout</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/accessibility/accessibility_wave_logout.jpg">
+</details> 
+
+<details><summary>password reset</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/accessibility/accessibility_wave_password_reset.jpg">
+</details> 
+
+<details><summary>product detail</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/accessibility/accessibility_wave_product_detail.jpg">
+</details>  
+
+<details><summary>school detail</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/accessibility/accessibility_wave_school_detail.jpg">
+</details> 
+
+<details><summary>school list</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/accessibility/accessibility_wave_schools.jpg">
+</details> 
+
+<details><summary>shop</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/accessibility/accessibility_wave_shop.jpg">
+</details> 
+
+<details><summary>signup</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/accessibility/accessibility_wave_signup.jpg">
+</details>  
+
