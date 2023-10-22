@@ -1806,11 +1806,86 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
 </details> 
 
-24.	As a Admin I CAN add a product SO THAT I CAN keep the offerings up-to-date  
+24.	As a Admin I CAN add a product/school SO THAT I CAN keep the offerings up-to-date  
 
 | Feature | Action | Expected Result | Actual Result |
 | ------- | ------ | --------------- | ------------- |
 | Add Product | Log in as admin user select the profile button then add product | The add product page will appear allowing the addition of a new product via the add product form | Works as expected  |
+| School |browse to https://github.com/bwogit/CI_PP5_SURF_HAVEN/admin log in as admin and select schools in the side panel to the left, the schools screen will appear and then click add school button on the top right of the screen. Add school page will appear | Add school page will appear and the user can then add information for a new school | Works as expected  
+
+<details><summary>See Images</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+</details> 
+
+25.	As an Admin	I CAN edit a product/school SO THAT I CAN make necessary updates  
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Edit Product | From product detail as an admin account, find a edit button on the page, click edit | Admin is brought to the edit product page where they can adjust any part of the product | Works as expected  |
+| Edit School |browse to https://github.com/bwogit/CI_PP5_SURF_HAVEN/admin log in as admin and select schools in the side panel to the left, the schools screen will appear and then click add school button on the top right of the screen.  | School page will appear allowing the user to edit information  | Works as expected  |
+
+<details><summary>See Images</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+</details> 
+
+26.	As an admin I CAN delete a product/school SO THAT I CAN delete remove outdated or discontinued items
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Delete Product  | From product detail as an admin account, click delete | Modal pops up to confirm deletion of product | Works as expected |  
+| Delette School |browse to https://github.com/bwogit/CI_PP5_SURF_HAVEN/admin log in as admin and select schools in the side panel to the left, the schools screen will appear then select the club using the checkbox and cick the action dropdown above| choose delete selected clubs and press go | Works as expected  |
+<details><summary>See Images</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+</details> 
+
+27.	As Admin I CAN add a lesson time slot SO THAT I CAN add a more lesson times to each school  
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Future Feature | N/A | N/A |
+
+28.	As Admin I CAN edit a lesson time slot SO THAT I CAN add a more lesson times to each school  
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Future Feature | N/A | N/A |
+
+29.	As Admin I CAN delete a lesson time slot SO THAT I CAN add a more lesson times to each school  
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Future Feature | N/A | N/A |
+
+29.	As user I CAN book a lesson time slot SO THAT I CAN participate in the activities   
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| school Deatail| as a logged in user fill out the form and click book lesson time | Confirmation pop up | works as expected|
+
+<details><summary>See Images</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+</details> 
+
+30.	As user I CAN edit a lesson time slot SO THAT I CAN manage my times   
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Lessons| select the booking you want  click on edit | edit page/edit info | works as expected|
+
+<details><summary>See Images</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+</details> 
+
+30.	As user I CAN cancel a lesson time slot SO THAT I CAN manage my times   
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Lessons| select the booking you want click cancel | Confirm cancel | works as expected|
 
 <details><summary>See Images</summary>
 <img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
