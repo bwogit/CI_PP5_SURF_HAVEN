@@ -1555,8 +1555,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 | Sign Up | Click pofile button then select register | User is brought to the sign up page | Works as expected  |
 
 <details><summary>See Images</summary>
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_1.jpg">
 </details>  
 
 
@@ -1567,8 +1566,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 | Sign In | Click pofile button and select login| User is brought to the sign in page | Works as expected  |
 
 <details><summary>See Images</summary>
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_2.jpg">
 </details>  
 
 3.	As a Site User	I CAN	I CAN regain access to my account in case of a forgotten password   
@@ -1578,8 +1576,8 @@ Performance, best practices and SEO was tested using Lighthouse.
 | Reset Password | Click pofile button and select login then click forgot password | User is brought to password reset page | Works as expected  |
 
 <details><summary>See Images</summary>
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_3a.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_3b.jpg">
 </details>  
 
 4.	As a Site User	I CAN receive an email confirmation after registration	SO THAT I CAN be verify my account and ensure its security | 
@@ -1589,8 +1587,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 | Registration | Upon registration an email is sent to verify the email address submitted | Registration email sent | Works as expected |
 
 <details><summary>See Images</summary>
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_4.jpg">
 </details>  
 
 
@@ -1601,8 +1598,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 | Profile | be logged in - click the profile icon, select profile from dropdown  | Profile page | | Works as expected  
 
 <details><summary>See Images</summary>
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_5.jpg">
 </details>  
 
 6.	As a Site User I CAN navigate across the site SO THAT I CAN find the information I need quickly and effortlessly  
@@ -1612,8 +1608,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 | Navbar | Click on any link in the navbar : ex schools  | View school list  | Works as expected  
 
 <details><summary>See Images</summary>
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_6.jpg">
 </details>  
 
 7.	As a Site User	I CAN use a navbar, footer, and social icons  SO THAT I CAN access different parts of the website conveniently  
@@ -1623,8 +1618,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 | Navbar/Footer | Scoll to footer, click on the facebook logo | A new tab will open and bring user to the surfhaven page | Works as expected  
 
 <details><summary>See Images</summary>
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_7.jpg">
 </details> 
 
 8.	As A/AN Shopper / Site User	I CAN be notified of my actions	SO THAT I CAN informed about the status of my activities on the site  
@@ -1634,8 +1628,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 | Popup | Add an item from the shop to the basket | A message will appear in the alert box on screen to notify the user of this action | Works as expected  
 
 <details><summary>See Images</summary>
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_8.jpg">
 </details> 
 
 9.	As a Site User	I CAN see my login status	SO THAT I CAN confirm whether I am currently logged in or not  
@@ -1645,8 +1638,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 | Navigation | while logged out -->profile icon=gray, login-->Profile=green, log in as admin it turns red  | Once logged in the profile icon will be green or red | Works as expected  
 
 <details><summary>See Images</summary>
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_9.jpg">
 </details> 
 
 10.	As  Site User	I CAN visit the shop SO THAT I CAN explore all surf equipment   
@@ -1881,7 +1873,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
 </details> 
 
-30.	As user I CAN cancel a lesson time slot SO THAT I CAN manage my times   
+31.	As user I CAN cancel a lesson time slot SO THAT I CAN manage my times   
 
 | Feature | Action | Expected Result | Actual Result |
 | ------- | ------ | --------------- | ------------- |
