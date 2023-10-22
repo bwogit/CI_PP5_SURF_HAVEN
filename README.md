@@ -1879,7 +1879,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 
 
 <details><summary> Basket, tests.py</summary>
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/auto/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/auto/basket.jpg">
 </details>
 
 <details><summary> Bookings test_models.py</summary>
@@ -1899,7 +1899,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 </details>
 
 <details><summary> Checkout test_forms.py</summary>
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/auto/Checkout test_forms.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/auto/checkout_test_forms.jpg">
 </details>
 
 <details><summary> Contact test_views.py</summary>
