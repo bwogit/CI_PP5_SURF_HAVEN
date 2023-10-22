@@ -1598,7 +1598,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 
 | Feature | Action | Expected Result | Actual Result |
 | ------- | ------ | --------------- | ------------- |
-| Profile | From the Nav click the profile icon, select profile from dropdown  | Profile page | | Works as expected  
+| Profile | be logged in - click the profile icon, select profile from dropdown  | Profile page | | Works as expected  
 
 <details><summary>See Images</summary>
 <img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
@@ -1891,3 +1891,4 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
 <img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
 </details> 
+
