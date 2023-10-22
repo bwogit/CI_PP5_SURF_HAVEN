@@ -1873,3 +1873,57 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_32a.jpg">
 </details> 
 
+### Automated testing
+
+- Testing was done using the built in Django module, unittest.
+- Coverage was also usesd to generate a report
+
+
+<details><summary> Basket, tests.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/auto/.jpg">
+</details>
+
+<details><summary> Bookings test_models.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/auto/bookings_test_models.jpg">
+</details>
+
+<details><summary> Bookings test_urls.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/auto/bookings_test_urls.jpg">
+</details>
+
+<details><summary> Bookings test_views.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/auto/bookings_test_views.jpg">
+</details>
+
+<details><summary> Checkout test_views.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/auto/checkout_test_views.jpg">
+</details>
+
+<details><summary> Checkout test_forms.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/auto/Checkout test_forms.jpg">
+</details>
+
+<details><summary> Contact test_views.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/auto/contact_test_views.jpg">
+</details>
+
+<details><summary> Contact test_forms.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/auto/contact_test_forms.jpg">
+</details>
+
+<details><summary>Contact test_models.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/auto/contact_test_models.jpg">
+</details>
+
+<details><summary> Product test_views.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/auto/product_test_views.jpg">
+</details>
+
+<details><summary> Product, test_models.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/auto/product_test_models.jpg">
+</details>
+
+<details><summary> profiles, test_views.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/auto/profiles_test_views.jpg">
+</details>
+
