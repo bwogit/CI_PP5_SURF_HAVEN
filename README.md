@@ -1953,3 +1953,14 @@ The following devices were used to test my site:
 <img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/browserstack/browserstack_firefox.jpg">
 </details>
 
+##### Back to [top](#table-of-contents)<hr>
+
+
+## Bugs
+
+| **Bug** | **Fix** |
+| ------- | ------- |
+| Users are not receiving confirmation emails after registration | seetings.py not configured properly. fixed |
+| Toast not working |  version of jQuery isuse - Fixed |
+| no email sent after successful checkout | wrong valiable used in webhook_handler.py - fixed |
+| search function not working | issue with logic in views.py - fix |
