@@ -1324,3 +1324,21 @@ JSHint javaScript Validation tool was used to validate all javaScript files for 
 <details><summary>widgets.py</summary>
 <img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/pep8/validation_pep8_products_widget.jpg">
 </details>
+
+<hr><summary>profiles</summary>
+
+<details><summary>forms.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/pep8/validation_pep8_profiles_forms.jpg">
+</details>
+
+<details><summary>models.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/pep8/validation_pep8_profiles_models.jpg">
+</details>
+
+<details><summary>urls.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/pep8/validation_pep8_profiles_urls.jpg">
+</details>
+
+<details><summary>views.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/pep8/validation_pep8_profiles_views.jpg">
+</details> 
