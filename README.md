@@ -1659,3 +1659,160 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
 <img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
 </details> 
+
+11.	As a Site User	I CAN view my basket and total cost at any time	so I can keep track of my spending  
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Basket | Click the basket icon in the navbar | basket page where all products in basket are displayed with their price and total cost | Works as expected  |
+
+<details><summary>See Images</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+</details> 
+
+12.	As a Site User I CAN view a list of products	SO THAT I CAN browse and choose the items/school that interest me
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Categories | Select a category on the side panel, select surfboards  | User is brought to the selected category of product and all products are listed | Works as expected |
+
+<details><summary>See Images</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+</details> 
+
+13.	As a Site User I CAN view an individual product details SO THAT I CAN make informed decisions about my selections  
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Product Detail | Click on any item image in the shop |  Product detail page where product details are displayed | Works as expected  |
+| SChool Detail | Click on any item image in the shcool list |  School detail page where school details are displayed | Works as expected  |
+
+<details><summary>See Images</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+</details> 
+
+14.	As a Site User I CAN search for surf products by name or description  SO THAT I CAN find specific items that match my preferences   
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| searchBAr | type surfboard |  Product list page where all product - surfboard are displayed | Works as expected  |
+| searchBAr | type supercalifra |  return "no item for yuor criteria" | Works as expected  |
+
+<details><summary>See Images</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+</details> 
+
+15.	As a Site User I CAN review search results  SO THAT I CAN analyse what has been returned  
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| searchBAr | type surfboard |  Product list page where all product - surfboard are displayed | Works as expected  |
+
+<details><summary>See Images</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+</details> 
+
+16.	As a Site User I CAN sort surf products by category so that i can find items that fit my interests  
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Sort | From the shop page, click a category on the side panel such as surfboards | User is brought to the sufboard page where only products classed as sufboard are displayed | Works as expected  
+
+<details><summary>See Images</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+</details> 
+
+17.	As a Site User I CAN sort surf products by price so that i can find items that fit my budget 
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Sort | From the shop page, click the sort box and select price from high to low | All items will be sorted from the highest price to the lowest price | Works as expected  
+
+<details><summary>See Images</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+</details> 
+
+18.	As a Site User I CANNOT doublebook	SO THAT I CAN I can only book available time slots  
+
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Book a lesson | From booking page, select a date and time for selected club | If time is available a confirmation page will appear, if the time is already booked an error message will appear asking the user to select another time. | Works as expected  
+
+<details><summary>See Images</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+</details> 
+
+19.	As a Site User	I CAN use a card as the payment method SO THAT I CAN securely and conveniently make payment  
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Checkout | From the basket select secure checkout | Input user information, input card number 4242 4242 4242 4242 04/24 424 24242, payment is successful | Works as expected |
+
+<details><summary>See Images</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+</details> 
+
+20.	As a Site User	I CAN select the size and quantity of a product	SO THAT I CAN customize my selections   
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Product Details | Product detail page select a size for the product in the size box, increase or decrease quantity from the quantity box | Sizes will be selected and quantity adjusted | Works as expected |
+
+<details><summary>See Images</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+</details> 
+
+21.	As a Site User I CAN view items in my basket	SO THAT I CAN review and confirm my selections before checkout  
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Basket | Click the basket icon in the navbar | Display all items in the basket and their cost and total price for basket | Works as expected |
+
+<details><summary>See Images</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+</details> 
+
+22.	As a Site User	I CAN receive order confirmation SO THAT I CAN be notified of a successful order  
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Message Box | Upon successful checkouts an alert box will appear | box pops up with the order details | Works as expected  |
+
+<details><summary>See Images</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+</details> 
+
+23.	As a Site User	I CAN receive email confirmation SO THAT I CAN I have a receipt for my records
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Email Confirmation | Upon successful checkout a confirmation email with order details will be sent to the provided email address  |     Email confirmation delivered | Works as expected  |
+
+<details><summary>See Images</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+</details> 
+
+24.	As a Admin I CAN add a product SO THAT I CAN keep the offerings up-to-date  
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| Add Product | Log in as admin user select the profile button then add product | The add product page will appear allowing the addition of a new product via the add product form | Works as expected  |
+
+<details><summary>See Images</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/.jpg">
+</details> 
