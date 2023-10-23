@@ -1791,7 +1791,6 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_24.jpg">
 <img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_24b.jpg">
 <img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_24c.jpg">
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_24d.jpg">
 </details> 
 
 25.	As an Admin	I CAN edit a product/school SO THAT I CAN make necessary updates  
@@ -1907,16 +1906,16 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/auto/contact_test_models.jpg">
 </details>
 
-<details><summary> Product test_views.py</summary>
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/auto/product_test_views.jpg">
+<details><summary> Products test_views.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/auto/products_test_views.jpg">
 </details>
 
-<details><summary> Product, test_models.py</summary>
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/auto/product_test_models.jpg">
+<details><summary> Products, test_models.py</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/auto/products_test_models.jpg">
 </details>
 
 <details><summary> profiles, test_views.py</summary>
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/auto/profiles_test_views.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/auto/profiles_test.jpg">
 </details>
 
 ### Device Testing & Browser compatibility
@@ -2154,7 +2153,7 @@ To set up an AWS S3 bucket:
 Turn Debug mode off
 
 <details><summary>Show Document</summary>
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP4_caiman_cove/main/docs/deploy/Heroku_debug_.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP4_caiman_cove/main/docs/deploy/Heroku_debug.jpg">
 </details>
 
 - Click deploy to deploy your application to Heroku for the first time
