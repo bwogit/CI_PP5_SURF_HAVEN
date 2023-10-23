@@ -2181,3 +2181,27 @@ You can clone the repository by following these steps:
 7.Press Enter to create your local clone.
 
 ##### Back to [top](#table-of-contents)<hr>
+
+##### Back to [top](#table-of-contents)<hr>
+
+
+## Credits
+
+### Code  
+- Code Institute for the bag, product, profiles and checkout app as a basis for my own product, checkout, profile product and basket apps
+- github community for sharing their knowledge
+- githup repositories
+- Code Institute Slack channels
+
+
+### Media
+[Pexels](https://www.pexels.com/)
+
+##### Back to [top](#table-of-contents)<hr>
+
+## Acknowledgements
+
+### Special thanks to the following:
+- My Mentor Mo Shami for his excellent guidance and valuable advice  
+- Code Institute Slack Community
+- Code Institute Tutor Support
