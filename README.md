@@ -2042,3 +2042,138 @@ To set up an AWS S3 bucket:
 <details><summary>See Images</summary>
 <img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/stripe/stripe_setup_10.jpg">
 </details> 
+
+### Heroku Configuration
+
+[Heroku](https://id.heroku.com/login) (Ctrl + click)
+
+1. sign Up
+
+<details><summary>Show Document</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP4_caiman_cove/main/docs/deploy/Heroku_deployment_1.jpg">
+</details>
+
+2. Fill out the registration form with your name, surname, email, role region and select I.m not a robot
+
+<details><summary>Show Document</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP4_caiman_cove/main/docs/deploy/Heroku_deployment_2.jpg">
+</details>
+
+3. Create the Heroku app
+
+On the main dashboard page click on new and type the name of your project i.e "caiman_cove"
+
+<details><summary>Show Document</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP4_caiman_cove/main/docs/deploy/Heroku_deployment_3.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP4_caiman_cove/main/docs/deploy/Heroku_deployment_3a.jpg">
+</details>
+
+4. Attach the database to Heroku
+
+- Open the settings tab 
+- Click reveal config Vars
+- add a config var DATABASE_URL (seen in step 9 above)
+
+<details><summary>Show Document</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP4_caiman_cove/main/docs/deploy/Heroku_deployment_4.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP4_caiman_cove/main/docs/deploy/Heroku_deployment_5.jpg">
+<img src="docs/deploy/Heroku_deployment_4.jpg">
+<img src="docs/deploy/Heroku_deployment_5.jpg">
+</details>
+
+5. Create new env.py on root directory with the correct values
+
+- import os
+- os.environ["DATABASE_URL"] = "Paste in ElephantSQL database URL"
+- os.environ["SECRET_KEY"] = "Make up your own randomSecretKey"
+
+<details><summary>Show Document</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP4_caiman_cove/main/docs/deploy/env_1.jpg">
+<img src="docs/deploy/env_1.jpg">
+</details>
+
+6. Edit the settings.py 
+
+- Replace links to the SECRET_KEY variable on Heroku
+
+<details><summary>Show Document</summary>
+<img src="docs/deploy/Heroku_deployment_6.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP4_caiman_cove/main/docs/deploy/Heroku_deployment_6.jpg">
+</details>
+
+- Comment out old Databse secion and add new
+
+<details><summary>Show Document</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP4_caiman_cove/main/docs/deploy/Heroku_deployment_6a.jpg">
+<img src="docs/deploy/Heroku_deployment_6a.jpg">
+</details>
+
+
+- Add Heroku Hostname to ALLOWED_HOSTS
+
+<details><summary>Show Document</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP4_caiman_cove/main/docs/deploy/Heroku_deployment_6e.jpg">
+</details>
+
+
+7. create on the root Procfile file
+
+- Add code "web: gunicorn PROJ_NAME.wsgi"
+
+<details><summary>Show Document</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP4_caiman_cove/main/docs/deploy/Heroku_deployment_7.jpg">
+</details>
+
+8. In Heroku
+
+
+Add SECRET_KEY var
+add the AWS settings 
+remove the var DISABLE_COLLECTSTATIC=1
+
+<details><summary>Shoe Document</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP4_caiman_cove/main/docs/deploy/Heroku_deployment_8.jpg">
+</details>
+
+<hr>
+
+### Heroku deployment
+
+- Run "python3 manage.py showmigrations" to check the status of the migrations
+- Run "python3 manage.py migrate" to migrate the database
+- Connect the app to GitHub, and enable automatic deploys from main
+
+<details><summary>Show Document</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP4_caiman_cove/main/docs/deploy/Heroku_Final.jpg">
+</details>
+
+Turn Debug mode off
+
+<details><summary>Show Document</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP4_caiman_cove/main/docs/deploy/Heroku_debug_.jpg">
+</details>
+
+- Click deploy to deploy your application to Heroku for the first time
+
+- Click on the link provided to access the application
+
+- If you encounter any issues accessing the build logs is a good way to troubleshoot the issue
+
+
+### Fork Repository
+To fork the repository by following these steps:
+1. Go to the GitHub repository
+2. Click on Fork button in upper right hand corner
+<hr>
+
+### Clone Repository
+You can clone the repository by following these steps:
+1. Go to the GitHub repository 
+2. Locate the Code button above the number of commits 
+3. Select cloning using HTTPS, SSH, or Github CLI and click the copy button to copy the URL to your clipboard
+4. Open Git Bash
+5. Change the current working directory to the one where you want the cloned directory
+6. Type git clone and paste the URL from the clipboard ($ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY)
+7.Press Enter to create your local clone.
+
+##### Back to [top](#table-of-contents)<hr>
