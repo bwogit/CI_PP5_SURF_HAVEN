@@ -1,4 +1,4 @@
-eCommerce: Surf Haven (Building in Progress)
+eCommerce: Surf Haven
 
 ![Am I Responsive](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/responsive.jpg)
 
@@ -1108,7 +1108,7 @@ JSHint javaScript Validation tool was used to validate all javaScript files for 
 
 - no issue
 
-<details><summary>country_field.js</summary>
+<details><summary>country_fields.js</summary>
 <img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/css/validation_js_country_fields.jpg">
 </details>
 
@@ -1492,7 +1492,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 </details>
 
 <details><summary>product_detail</summary>
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/lighthouse/lighthouse_product_detail.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/lighthouse/lighthouse_product_details.jpg">
 </details>
 
 <details><summary>product_edit</summary>
@@ -1899,10 +1899,6 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/auto/checkout_test_forms.jpg">
 </details>
 
-<details><summary> Contact test_views.py</summary>
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/auto/contact_test_views.jpg">
-</details>
-
 <details><summary> Contact test_forms.py</summary>
 <img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/auto/contact_test_forms.jpg">
 </details>
@@ -1961,3 +1957,88 @@ The following devices were used to test my site:
 | Toast not working |  version of jQuery isuse - Fixed |
 | no email sent after successful checkout | wrong valiable used in webhook_handler.py - fixed |
 | search function not working | issue with logic in views.py - fix |
+
+##### Back to [top](#table-of-contents)<hr>
+
+## Deployment  
+### AWS S3 Bucket Setup  
+
+To set up an AWS S3 bucket:
+
+1. Sign in to the AWS Management Console and open the Amazon S3 console.  
+<details><summary>See Images</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/aws/aws_setup_1a.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/aws/aws_setup_1b.jpg">
+</details>
+
+2. Click on the "Create Bucket" button.  
+<details><summary>See Images</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/aws/aws_setup_2.jpg">
+</details>
+
+3. Give bucket a unique name, and select the region where you want the bucket to be located.
+<details><summary>See Images</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/aws/aws_setup_3.jpg">
+
+4. Configure any additional options, such as versioning, object-level logging, and object tagging, as needed.  
+
+5. Click on the "Create" button to create the bucket.
+
+6. once bucket created set up the appropriate permissions for the bucket, such as access control lists (ACLs) and bucket policies, to control who can access the data in the bucket. 
+<details><summary>See Images</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/aws/aws_setup_6.jpg">
+</details>
+
+7. Upload files to the bucket using the AWS S3 console, the AWS S3 CLI, or the AWS S3 SDK. 
+<details><summary>See Images</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/aws/aws_setup_7a.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/aws/aws_setup_7b.jpg">
+</details>
+
+8. Access your files through the AWS S3 Console, AWS S3 CLI, or the AWS S3 SDK.
+<details><summary>See Images</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/aws/aws_setup_8.jpg">
+</details>
+
+### Stripe Endpoint
+
+1. Register for a Stripe account at stripe.com
+<details><summary>See Images</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/stripe/stripe_setup_1.jpg">
+</details>  
+
+2. Log into your Stripe account and navigate to the Developers section
+<details><summary>See Images</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/stripe/stripe_setup_2.jpg">
+</details>  
+
+3. In the Developers section, locate the API keys section and take note of the publishable and secret keys  
+<details><summary>See Images</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/stripe/stripe_setup_3.jpg">
+</details>  
+
+4. Create environment variables STRIPE_PUBLIC_KEY and STRIPE_SECRET_KEY with the values extracted in step 3
+
+
+5. Click on the Webhooks tab  and create an endpoint
+<details><summary>See Images</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/stripe/stripe_setup_5.jpg">
+
+6. Configure webhook with the URL of your website,and select select events
+<details><summary>See Images</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/stripe/stripe_setup_6.jpg">
+</details> 
+
+7. Choose all events events then create the endpoint  
+<details><summary>See Images</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/stripe/stripe_setup_7.jpg">
+</details> 
+
+8. Take note of the key generated for this webhook  
+
+9. Create an environment variable, such as STRIPE_WH_SECRET, with the value of the webhook secret key on your local environment and Heroku  
+
+10. Test the webhook to ensure it is working properly and troubleshoot any issues that may arise.  
+<details><summary>See Images</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/stripe/stripe_setup_10.jpg">
+</details> 
