@@ -13,12 +13,6 @@ from products.models import Product, Category
 @login_required
 def profile(request):
     """Display the user's profile.
-
-    Args:
-        request: The HTTP request object.
-
-    Returns:
-        HttpResponse: The HTTP response containing the user's profile.
     """
     categories_list = Category.objects.all()
     profile = get_object_or_404(UserProfile, user=request.user)
@@ -48,13 +42,6 @@ def profile(request):
 
 def order_history(request, order_number):
     """Display the order history for a given order number.
-
-    Args:
-        request: The HTTP request object.
-        order_number: The order number to retrieve order history.
-
-    Returns:
-        HttpResponse: The HTTP response containing the order history.
     """
     categories_list = Category.objects.all()
     order = get_object_or_404(Order, order_number=order_number)
