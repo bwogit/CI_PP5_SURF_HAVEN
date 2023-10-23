@@ -1119,6 +1119,11 @@ JSHint javaScript Validation tool was used to validate all javaScript files for 
 ## PEP8 Validation
 [CI Python Linter](https://pep8ci.herokuapp.com/) was used to check the code for PEP8 requirements.
 
+
+<details><summary>Custom Storages</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/pep8/validation_pep8_custom_storages.jpg">
+</details>
+
 <summary>Basket</summary>
 
 <details><summary>contexts.py</summary>
