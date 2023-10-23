@@ -85,6 +85,8 @@ Our marketing efforts are central to building brand visibility and engaging with
 Leveraging the power of social media is a cornerstone of our marketing strategy. We use various platforms to share engaging content related to surfing, such as surf tips, remarkable surf destinations, and updates on available lessons and equipment. This approach helps us build a vibrant community of surf enthusiasts, connect with our audience, and create a supportive and enthusiastic online presence. Our Facebook page is more than just a virtual space; it's a digital hub for surfers of all levels to come together, share their experiences, and stay updated on everything related to the world of surfing. Join our community and stay informed about the latest in our world.
 
 [Facebook](https://www.facebook.com/people/Surf-Haven/61552109496668/)  
+[Facebook page](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/web_marketing/facebook_business.jpg)
+[Facebook post](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/web_marketing/facebook_post.jpg)
 
 
 ### Mailing List
@@ -96,7 +98,6 @@ Our MailChimp-powered newsletters are your direct line to the latest insights re
 
 ![Mailchimp](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/mailchimp_settings.jpg)
 ![Email]((https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/mailchimp_subscribe.jpg))
-![Email content]()
 </details> 
 
 ### User Goals
@@ -395,7 +396,6 @@ The User model is a built-in Django feature and is used for authentication and h
 |            | last_name    | VARCHAR(45) |
 |            | email        | VARCHAR(45) |
 |            | is_staff     | BOOLEAN     |
-|            |              |             |
 |            | is_active    | BOOLEAN     |
 |            | date_joined  | VARCHAR(45) |
 
@@ -2221,6 +2221,6 @@ You can clone the repository by following these steps:
 ## Acknowledgements
 
 ### Special thanks to the following:
-- My Mentor Mo Shami for his excellent guidance and valuable advice  
+- My Mentor Mo Shami for his constant support, availability and encouragement. Thank you Mo!
 - Code Institute Slack Community
 - Code Institute Tutor Support
