@@ -2,8 +2,8 @@
 from django.test import SimpleTestCase
 from django.urls import reverse, resolve
 # Internel Imports
-from bookings.views import AllSchools,
-SchoolDetail, BookingList, EditBooking, cancel_booking
+from bookings.views import AllSchools, SchoolDetail
+from bookings.views import BookingList, EditBooking, cancel_booking
 
 
 class TestUrls(SimpleTestCase):
