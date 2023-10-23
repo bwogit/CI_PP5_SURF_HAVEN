@@ -1979,6 +1979,7 @@ To set up an AWS S3 bucket:
 3. Give bucket a unique name, and select the region where you want the bucket to be located.
 <details><summary>See Images</summary>
 <img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/aws/aws_setup_3.jpg">
+</details>
 
 4. Configure any additional options, such as versioning, object-level logging, and object tagging, as needed.  
 
@@ -2023,6 +2024,7 @@ To set up an AWS S3 bucket:
 5. Click on the Webhooks tab  and create an endpoint
 <details><summary>See Images</summary>
 <img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/stripe/stripe_setup_5.jpg">
+</details> 
 
 6. Configure webhook with the URL of your website,and select select events
 <details><summary>See Images</summary>
@@ -2047,7 +2049,7 @@ To set up an AWS S3 bucket:
 
 [Heroku](https://id.heroku.com/login) (Ctrl + click)
 
-1. sign Up
+1. Sign Up
 
 <details><summary>Show Document</summary>
 <img src="https://raw.githubusercontent.com/bwogit/CI_PP4_caiman_cove/main/docs/deploy/Heroku_deployment_1.jpg">
@@ -2061,7 +2063,7 @@ To set up an AWS S3 bucket:
 
 3. Create the Heroku app
 
-On the main dashboard page click on new and type the name of your project i.e "caiman_cove"
+- On the main dashboard page click on new and type the name of your project i.e "caiman_cove"
 
 <details><summary>Show Document</summary>
 <img src="https://raw.githubusercontent.com/bwogit/CI_PP4_caiman_cove/main/docs/deploy/Heroku_deployment_3.jpg">
@@ -2086,15 +2088,17 @@ On the main dashboard page click on new and type the name of your project i.e "c
 - import os
 - os.environ["DATABASE_URL"] = "Paste in ElephantSQL database URL"
 - os.environ["SECRET_KEY"] = "Make up your own randomSecretKey"
+- 
 
 <details><summary>Show Document</summary>
 <img src="https://raw.githubusercontent.com/bwogit/CI_PP4_caiman_cove/main/docs/deploy/env_1.jpg">
 <img src="docs/deploy/env_1.jpg">
 </details>
 
-6. Edit the settings.py 
+6. In settings.py 
 
 - Replace links to the SECRET_KEY variable on Heroku
+
 
 <details><summary>Show Document</summary>
 <img src="docs/deploy/Heroku_deployment_6.jpg">
@@ -2127,11 +2131,11 @@ On the main dashboard page click on new and type the name of your project i.e "c
 8. In Heroku
 
 
-Add SECRET_KEY var
-add the AWS settings 
-remove the var DISABLE_COLLECTSTATIC=1
+- Add all variables used in your development environemnt
+- remove the var DISABLE_COLLECTSTATIC=1
 
 <details><summary>Shoe Document</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/heroku/Heroku_deployment_8.jpg">
 <img src="https://raw.githubusercontent.com/bwogit/CI_PP4_caiman_cove/main/docs/deploy/Heroku_deployment_8.jpg">
 </details>
 
