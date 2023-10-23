@@ -578,6 +578,8 @@ The User model is a built-in Django feature and is used for authentication and h
 ### Search Engine Optimisation (SEO)
 I have used meta tags in the HTML of my web app's pages to optimize them for search engines. The description tag provides a brief summary of the content on the page, while the keywords tag lists relevant keywords to help search engines understand the content of the webpage and its relevance to related search queries.
 
+
+
 <details><summary>See feature image</summary>
 
 ![SEO](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_seo.jpg)
@@ -1555,6 +1557,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 | Feature | Action | Expected Result | Actual Result |
 | ------- | ------ | --------------- | ------------- |
 | Sign Up | Click pofile button then select register | User is brought to the sign up page | Works as expected  |
+
 
 <details><summary>See Images</summary>
 <img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_1.jpg">

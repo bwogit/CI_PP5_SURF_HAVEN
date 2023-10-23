@@ -3,6 +3,10 @@
 {% load crispy_forms_filters %}
 {% load crispy_forms_tags %}
 
+{% block extra_title %}
+| Profile
+{% endblock %}
+
 {% block extracss %}
     <!-- Include additional CSS for this template -->
     <link rel="stylesheet" href="{% static 'profiles/css/profile.css' %}">
