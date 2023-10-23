@@ -3,7 +3,7 @@ eCommerce: Surf Haven
 ![Am I Responsive](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/responsive.jpg)
 
 **Developer: BWOGIT**
-💻 [Visit live website]()
+💻 [Visit live website](https://surf-haven-39d68e86c0f1.herokuapp.com/)
 ## Table of Contents
   - [Executive Summary](#executive-summary)
      - [Market Analysis](#market-analysis)
@@ -161,7 +161,7 @@ Our MailChimp-powered newsletters are your direct line to the latest insights re
 | 16 | Site User | sort surf products by category | find items that fit my interests |
 | 17 | Site User | sort surf products by price | choose items that align with my budget |
 | 18 | Site User | select available dates/times | schedule lessons |
-| 38 | Site User | read blogs | view my bookings and status |
+| 38 | Site User | read blogs | Be informed |
 | 39 | Site User | Leave Blog Comments  | BE part of the community |
 |Purchasing and checkout ||||
 | 19 | Site User | use a card for payment | securely and conveniently make payments |
@@ -1836,7 +1836,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 | ------- | ------ | --------------- | ------------- |
 | Future Feature | N/A | N/A |
 
-29.	As user I CAN book a lesson time slot SO THAT I CAN participate in the activities   
+30.	As user I CAN book a lesson time slot SO THAT I CAN participate in the activities   
 
 | Feature | Action | Expected Result | Actual Result |
 | ------- | ------ | --------------- | ------------- |
@@ -1847,7 +1847,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_29b.jpg">
 </details> 
 
-30.	As user I CAN edit a lesson time slot SO THAT I CAN manage my times   
+31.	As user I CAN edit a lesson time slot SO THAT I CAN manage my times   
 
 | Feature | Action | Expected Result | Actual Result |
 | ------- | ------ | --------------- | ------------- |
@@ -1858,7 +1858,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 <img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_30a.jpg">
 </details> 
 
-31.	As user I CAN cancel a lesson time slot SO THAT I CAN manage my times   
+32.	As user I CAN cancel a lesson time slot SO THAT I CAN manage my times   
 
 | Feature | Action | Expected Result | Actual Result |
 | ------- | ------ | --------------- | ------------- |
@@ -1867,6 +1867,26 @@ Performance, best practices and SEO was tested using Lighthouse.
 <details><summary>See Images</summary>
 <img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_31a.jpg">
 <img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_31a.jpg">
+</details> 
+
+33.	As user I CAN read blogs SO THAT I CAN be informed of latest in surfing
+
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| blog| navbar click on blog | Chose blog you want to read | works as expected|
+
+<details><summary>See Images</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_38.jpg">
+</details> 
+
+34.	As user I CAN comment on blogs SO THAT I CAN contribute to the community
+| Feature | Action | Expected Result | Actual Result |
+| ------- | ------ | --------------- | ------------- |
+| blog| as logged in user navbar click on blog | Chose blog you want to read, then add comment at the end of blog | works as expected|
+
+<details><summary>See Images</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_39a.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_39b.jpg">
 </details> 
 
 ### Automated testing
