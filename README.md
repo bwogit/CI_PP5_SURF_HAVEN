@@ -821,6 +821,10 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 - GIves feedback to the user.  
 - User stories covered: 8
 
+**Feature Test**: 
+1. Add a product to the basket.
+2. Verify that the popup alert appears promptly and list the content of teh basket.
+
 <details><summary>See feature image</summary>
 
 ![PopUp](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_popup.jpg)
@@ -831,6 +835,11 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 - Allows the user to view the list of surf products.  
 - User stories covered: 10
 
+**Feature Test**: 
+1. Navigate to the "Shop" page.
+2. Verify that all products are listed with clear images, titles, descriptions, prices.
+3. Ensure that product categories and filters are available to help users find specific products.
+
 <details><summary>See feature image</summary>
 
 ![Shop](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_product_list.jpg)
@@ -839,6 +848,10 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 ### product Detail
 - Allows the user to view the products details.  
 - User stories covered: 13
+
+**Feature Test**:
+1. Click on a product to view its details.
+2. Verify that the product details page displays comprehensive information about the product, including images, descriptions, prices, and rating
 
 <details><summary>See feature image</summary>
 
@@ -849,15 +862,26 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 - Allows the user to sort the listed products.  
 - User stories covered: 16, 17
 
+**Feature Test**: 
+1. Navigate to the "Shop" page.
+2. Verify that the sorting options are available, such as sorting by price, rating, or catagory.
+3. Test each sorting option and confirm that the product list is updated accordingly.
+
 <details><summary>See feature images</summary>
 
 ![Sort1](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_sort_1.jpg)
 ![Sort2](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_sort_2.jpg)
 </details>  
 
+
 ### Search
 - Allows the user to search for products.  
 - User stories covered: 14,15
+
+**Feature Test**: 
+1. Navigate to the "Shop" page.
+2. Verify that a search input field is visible and easily accessible.
+3. Test the input field by entering search queries and confirming that it responds in real-time
 
 <details><summary>See feature image</summary>
 
