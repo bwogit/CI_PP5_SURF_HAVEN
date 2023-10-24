@@ -1164,8 +1164,8 @@ Ttest covered in features, add product, edit product and delete product
 - Ensures the site is kept professional
 
 **Feature Test**
-1. As an admin user go to A"dd a product"
-2. Fillout the form without providing a picture
+1. As an admin user go to "Add a product"
+2. Fill out the form without providing a picture
 3. Verify that the noimage is displayed
 
 - Result : OK
