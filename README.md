@@ -96,8 +96,7 @@ Our MailChimp-powered newsletters are your direct line to the latest insights re
 
 <details><summary>See Image</summary>
 
-![Mailchimp](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/mailchimp_settings.jpg)
-![Email]((https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/mailchimp_subscribe.jpg))
+[Mailchimp](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/mailchimp_settings.jpg)
 </details> 
 
 ### User Goals
@@ -583,7 +582,7 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 2. Check the URL structure to ensure it is clear, concise, and includes relevant keywords.
 3. Confirm that URL slugs are generated dynamically based on page content.
 
-Result : OK
+- Result : OK
 
 <details><summary>See feature image</summary>
 
@@ -599,7 +598,7 @@ Result : OK
 1. Review the content on the home page to ensure it's informative and engaging.
 2. Confirm that keywords related to our surf school and services are strategically placed within the content.
 
-Result : OK
+- Result : OK
 
 <details><summary>See feature images</summary>
 
@@ -616,7 +615,7 @@ Result : OK
 1. Inspect the footer of the website and ensure it includes accurate and up-to-date contact information, including a physical address and contact email.
 2. Verify that important links to pages like the privacy policy, are present and functional.
 
-Result : OK
+- Result : OK
 
 <details><summary>See feature images</summary>
 
@@ -631,7 +630,7 @@ Result : OK
 1. Inspect the website to confirm the visibility and accessibility of the signup form.
 2. Ensure the form is easily accessible from all pages.
 
-Result : OK
+- Result : OK
 
 <details><summary>See feature images</summary>
 
@@ -645,7 +644,7 @@ Result : OK
 **Feature Test**:
 1. Click on the logo on various pages and confirm that it correctly links to the homepage.
 
-Result : OK
+- Result : OK
 
 <details><summary>See feature images</summary>
 
@@ -667,7 +666,7 @@ Result : OK
 4. Verify that the navigation adapts to the smaller screen and elements are still accessible.
 5. Confirm that links in the navigation work correctly.
 
-Result : OK
+- Result : OK
 
 <details><summary>See feature images</summary>
 
@@ -686,7 +685,7 @@ Result : OK
 5. Confirm email address
 5. Check that the user's details are correctly stored in the database by login in
 
-Result : OK
+- Result : OK
 
 <details><summary>See feature image</summary>
 
@@ -704,7 +703,7 @@ Result : OK
 1. Attempt to sign in with an incorrect password.
 2. Verify that the system properly handles invalid login attempts, providing informative error messages without revealing sensitive information.
 
-Result : OK
+- Result : OK
 
 
 <details><summary>See feature images</summary>
@@ -723,7 +722,7 @@ Result : OK
 2. Initiate the sign-out process by clicking the "Log Out" button.
 3. Verify that the system logs the user out securely, removing their session and ensuring that they are no longer authenticated.
 
-Result : OK
+- Result : OK
 
 <details><summary>See feature image</summary>
 
@@ -739,7 +738,7 @@ Result : OK
 2. Verify that the system sends a password reset email with a secure token.
 3. Test the password reset link to ensure users can create a new password successfully.
 
-Result : OK
+- Result : OK
   
 <details><summary>See feature images</summary>
 
@@ -754,7 +753,7 @@ Result : OK
 1. Navigate to the "Surf Schools" page.
 2. Verify that all surf schools are listed with relevant information.
 
-Result : OK
+- Result : OK
 
 <details><summary>See feature image</summary>
 
@@ -770,7 +769,7 @@ Result : OK
 2. Verify that all surf schools are listed with relevant information.
 3. Check that the surf school details can be accesed on separate page.
 
-Result : OK
+- Result : OK
 
 <details><summary>See feature image</summary>
 
@@ -783,12 +782,12 @@ Result : OK
 - ADta input validation  
 - User stories covered: 33
 
-Result : OK
-
 **Feature Test**:
 1. as logged in user Navigate to the "school detail" page.
 2. Verify that the booking form is easy to use and includes clear labels for all input fields.
 3. Submit a test booking with valid information and confirm that it is successfully recorded.
+
+- Result : OK
 
 <details><summary>See feature images</summary>
 
@@ -806,7 +805,7 @@ Result : OK
 2. Navigate to the "Lessons"
 3. Verify that the user can see their booked lessons and the status.
 
-Result : OK
+- Result : OK
 
 <details><summary>See feature image</summary>
 
@@ -818,7 +817,7 @@ Result : OK
 - Allows the user to edit their bookings.  
 - User stories covered: 34
 
-Result : OK
+- Result : OK
 
 **Feature Test**: 
 1. Log in as a user with existing bookings.
@@ -827,7 +826,7 @@ Result : OK
 3. Verify that the edit form is easy to use and includes clear labels for all editable fields.
 4. Submit a test edit with valid information and confirm that the changes are saved correctly.
 
-Result : OK
+- Result : OK
 
 <details><summary>See feature image</summary>
 
@@ -844,7 +843,7 @@ Result : OK
 2. Select a booking and click "delete"
 3. Verify booking has been deleted
 
-Result : OK
+- Result : OK
 
 <details><summary>See feature image</summary>
 
@@ -859,7 +858,7 @@ Result : OK
 1. Add a product to the basket.
 2. Verify that the popup alert appears promptly and list the content of teh basket.
 
-Result : OK
+- Result : OK
 
 <details><summary>See feature image</summary>
 
@@ -876,7 +875,7 @@ Result : OK
 2. Verify that all products are listed with clear images, titles, descriptions, prices.
 3. Ensure that product categories and filters are available to help users find specific products.
 
-Result : OK
+- Result : OK
 
 <details><summary>See feature image</summary>
 
@@ -891,7 +890,7 @@ Result : OK
 1. Click on a product to view its details.
 2. Verify that the product details page displays comprehensive information about the product, including images, descriptions, prices, and rating
 
-Result : OK
+- Result : OK
 
 <details><summary>See feature image</summary>
 
@@ -907,7 +906,7 @@ Result : OK
 2. Verify that the sorting options are available, such as sorting by price, rating, or catagory.
 3. Test each sorting option and confirm that the product list is updated accordingly.
 
-Result : OK
+- Result : OK
 
 <details><summary>See feature images</summary>
 
@@ -925,7 +924,7 @@ Result : OK
 2. Verify that a search input field is visible and easily accessible.
 3. Test the input field by entering search queries and confirming that it responds in real-time
 
-Result : OK
+- Result : OK
 
 <details><summary>See feature image</summary>
 
@@ -942,7 +941,7 @@ Result : OK
 2. Click the "Add to basket"
 3. Verify that the product is added to the basket, and the baset icon updates to reflect the price of teh basket.
 
-Result : OK
+- Result : OK
 
 
 <details><summary>See feature image</summary>
@@ -961,7 +960,7 @@ Result : OK
 3. Fill in the required shipping details and confirm that the form accepts valid information.
 4. veryfiy that you are receiving a checkout sucess page
 
-Result : OK
+- Result : OK
 
 <details><summary>See feature image</summary>
 
@@ -978,7 +977,7 @@ Result : OK
 2. Verify that you cn pay by credit card.
 3. Complete a test payment using Stripe and confirm that the payment is processed securely.
 
-result : OK
+- Result : OK
 
 <details><summary>See feature image</summary>
 
@@ -995,7 +994,7 @@ result : OK
 2. Verify that a confirmation email is sent to the provided email address.
 3. Check the email for the confirmation message and verify that it contains order details, a confirmation message, and a purchase summary.
 
-Result : OK
+- Result : OK
 
 <details><summary>See feature image</summary>
 
@@ -1058,7 +1057,7 @@ Result : OK
 2. Access the profile update page.
 3. Verify that only authenticated users have access to this page.
 
-Result : OK
+- Result : OK
 
 <details><summary>See feature image</summary>
 
@@ -1086,7 +1085,7 @@ Ttest covered in features, add product, edit product and delete product
 2. Verify that the list displays blog post titles, publication dates, and brief summaries.
 3. Ensure that the list is visually appealing and easy to navigate.
 
-Result : OK
+- Result : OK
   
 <details><summary>See feature images</summary>
 
@@ -1099,12 +1098,12 @@ Result : OK
 - Comments need approval  
 - User stories covered: 38, 39
 
-**Feature Test**: 
+**Feature Test**
 1. Click on a blog post in the list to access the detail view.
 2. Verify that the post's full content, including text, images, and media, is displayed accurately.
 3. verify that there is a section for leaving a comment
 
-Result : OK
+- Result : OK
   
 <details><summary>See feature images</summary>
 
@@ -1117,7 +1116,7 @@ Result : OK
 - Users can send a message via the message form
 - User stories covered: 37
 
-**Feature Test**: 
+**Feature Test**
 1. Navigate to the "Contact" page.
 2. Verify that a section is available with fields for user information, subject, and message.(might have to log in) 
 3. Test the form by filling in information and sending a test message.
@@ -1134,7 +1133,7 @@ Result : OK
 - noopener, noreferrer, nofollow used to communicate with web crawlers and for security and privacy concerns.  
 - User stories covered: 7
 
-**Feature Test**: 
+**Feature Test**
 1. Scroll to the footer section of the website.
 2. Verify that easily recognizable social media icons are present.
 3. Click on each icon to ensure that it redirects users to the respective social media profiles.
@@ -1148,17 +1147,34 @@ Result : OK
 - Pagination is used on the website 
 - Ensures the page is kept readable 
 
-**Feature Test**: 
+**Feature Test**
 1. Go to a page with paginated content "Schools", "blog".
 2. Verify that pagination controls, including page numbers and navigation arrows, are available.
 3. Test the pagination controls by navigating through different pages and confirm that it functions as expected.
 
-Result : OK
+- Result : OK
   
 <details><summary>See feature images</summary>
 
 ![Pagination](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_pagination.jpg)
 </details>  
+
+### Default Image
+- Ensures taht a default image is displayed it the image is not available of corrupted
+- Ensures the site is kept professional
+
+**Feature Test**
+1. As an admin user go to A"dd a product"
+2. Fillout the form without providing a picture
+3. Verify that the noimage is displayed
+
+- Result : OK
+
+<details><summary>See feature image</summary>
+
+![No Image](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_noimage.jpg)
+</details>  
+
 
 ##### Back to [top](#table-of-contents)<hr>
 
