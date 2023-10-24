@@ -583,6 +583,8 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 2. Check the URL structure to ensure it is clear, concise, and includes relevant keywords.
 3. Confirm that URL slugs are generated dynamically based on page content.
 
+Result : OK
+
 <details><summary>See feature image</summary>
 
 ![SEO](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_seo.jpg)
@@ -596,6 +598,8 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 **Feature Test**: 
 1. Review the content on the home page to ensure it's informative and engaging.
 2. Confirm that keywords related to our surf school and services are strategically placed within the content.
+
+Result : OK
 
 <details><summary>See feature images</summary>
 
@@ -612,6 +616,8 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 1. Inspect the footer of the website and ensure it includes accurate and up-to-date contact information, including a physical address and contact email.
 2. Verify that important links to pages like the privacy policy, are present and functional.
 
+Result : OK
+
 <details><summary>See feature images</summary>
 
 ![Footer](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_footer.jpg)
@@ -625,6 +631,8 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 1. Inspect the website to confirm the visibility and accessibility of the signup form.
 2. Ensure the form is easily accessible from all pages.
 
+Result : OK
+
 <details><summary>See feature images</summary>
 
 ![Mailing](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_mailchimp.jpg)
@@ -636,6 +644,8 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 
 **Feature Test**:
 1. Click on the logo on various pages and confirm that it correctly links to the homepage.
+
+Result : OK
 
 <details><summary>See feature images</summary>
 
@@ -657,6 +667,8 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 4. Verify that the navigation adapts to the smaller screen and elements are still accessible.
 5. Confirm that links in the navigation work correctly.
 
+Result : OK
+
 <details><summary>See feature images</summary>
 
 ![Navigation](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_navbar.jpg)
@@ -674,6 +686,8 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 5. Confirm email address
 5. Check that the user's details are correctly stored in the database by login in
 
+Result : OK
+
 <details><summary>See feature image</summary>
 
 ![Signup](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_sign_up.jpg)
@@ -689,6 +703,8 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 **Feature Test**: 
 1. Attempt to sign in with an incorrect password.
 2. Verify that the system properly handles invalid login attempts, providing informative error messages without revealing sensitive information.
+
+Result : OK
 
 
 <details><summary>See feature images</summary>
@@ -707,6 +723,8 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 2. Initiate the sign-out process by clicking the "Log Out" button.
 3. Verify that the system logs the user out securely, removing their session and ensuring that they are no longer authenticated.
 
+Result : OK
+
 <details><summary>See feature image</summary>
 
 ![Sign out](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_sign_out.jpg)
@@ -720,6 +738,8 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 1. Attempt to initiate the account recovery process by requesting a password reset.
 2. Verify that the system sends a password reset email with a secure token.
 3. Test the password reset link to ensure users can create a new password successfully.
+
+Result : OK
   
 <details><summary>See feature images</summary>
 
@@ -733,6 +753,8 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 **Feature Test**: 
 1. Navigate to the "Surf Schools" page.
 2. Verify that all surf schools are listed with relevant information.
+
+Result : OK
 
 <details><summary>See feature image</summary>
 
@@ -748,6 +770,8 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 2. Verify that all surf schools are listed with relevant information.
 3. Check that the surf school details can be accesed on separate page.
 
+Result : OK
+
 <details><summary>See feature image</summary>
 
 ![SChool Detail](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_sign_up.jpg)
@@ -758,6 +782,8 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 - Allows the user to book a lesson in specific school.
 - ADta input validation  
 - User stories covered: 33
+
+Result : OK
 
 **Feature Test**:
 1. as logged in user Navigate to the "school detail" page.
@@ -780,6 +806,8 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 2. Navigate to the "Lessons"
 3. Verify that the user can see their booked lessons and the status.
 
+Result : OK
+
 <details><summary>See feature image</summary>
 
 ![Bookings](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_booking_information.jpg)
@@ -790,10 +818,7 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 - Allows the user to edit their bookings.  
 - User stories covered: 34
 
-<details><summary>See feature image</summary>
-
-![Edit Booking](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_edit_bookings.jpg)
-</details>  
+Result : OK
 
 **Feature Test**: 
 1. Log in as a user with existing bookings.
@@ -801,6 +826,13 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 2. Select a booking and click "Edit"
 3. Verify that the edit form is easy to use and includes clear labels for all editable fields.
 4. Submit a test edit with valid information and confirm that the changes are saved correctly.
+
+Result : OK
+
+<details><summary>See feature image</summary>
+
+![Edit Booking](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_edit_bookings.jpg)
+</details>  
 
 ### Cancel Booking
 - Allows the user to cancel their bookings.  
@@ -811,6 +843,8 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 2. Navigate to the "Lessons" page
 2. Select a booking and click "delete"
 3. Verify booking has been deleted
+
+Result : OK
 
 <details><summary>See feature image</summary>
 
@@ -824,6 +858,8 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 **Feature Test**: 
 1. Add a product to the basket.
 2. Verify that the popup alert appears promptly and list the content of teh basket.
+
+Result : OK
 
 <details><summary>See feature image</summary>
 
@@ -840,6 +876,8 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 2. Verify that all products are listed with clear images, titles, descriptions, prices.
 3. Ensure that product categories and filters are available to help users find specific products.
 
+Result : OK
+
 <details><summary>See feature image</summary>
 
 ![Shop](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_product_list.jpg)
@@ -852,6 +890,8 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 **Feature Test**:
 1. Click on a product to view its details.
 2. Verify that the product details page displays comprehensive information about the product, including images, descriptions, prices, and rating
+
+Result : OK
 
 <details><summary>See feature image</summary>
 
@@ -866,6 +906,8 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 1. Navigate to the "Shop" page.
 2. Verify that the sorting options are available, such as sorting by price, rating, or catagory.
 3. Test each sorting option and confirm that the product list is updated accordingly.
+
+Result : OK
 
 <details><summary>See feature images</summary>
 
@@ -883,6 +925,8 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 2. Verify that a search input field is visible and easily accessible.
 3. Test the input field by entering search queries and confirming that it responds in real-time
 
+Result : OK
+
 <details><summary>See feature image</summary>
 
 ![Search](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_searchbar.jpg)
@@ -892,6 +936,14 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 - Allows the user to view the basket with their items.
 - Pops up as items are added and removed.  
 - User stories covered: 6, 11, 21
+
+**Feature Test**: 
+1. While in product details page.
+2. Click the "Add to basket"
+3. Verify that the product is added to the basket, and the baset icon updates to reflect the price of teh basket.
+
+Result : OK
+
 
 <details><summary>See feature image</summary>
 
@@ -903,15 +955,30 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 - Allows the user to purchase items in their basket.  
 - User stories covered: 19, 22, 23
 
+**Feature Test**: 
+1. Proceed to the checkout process from the basket.
+2. Verify that the checkout form includes fields for shipping information.
+3. Fill in the required shipping details and confirm that the form accepts valid information.
+4. veryfiy that you are receiving a checkout sucess page
+
+Result : OK
+
 <details><summary>See feature image</summary>
 
 ![Checkout](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_checkout.jpg)
 </details>  
 
 
-### Stripe
+### Stripe (credit card payment)
 - Allows the user to use stripe for card payments.  
 - User stories covered: 19
+
+**Feature Test**: 
+1. Navigate to the checkout process and proceed to the payment step.
+2. Verify that you cn pay by credit card.
+3. Complete a test payment using Stripe and confirm that the payment is processed securely.
+
+result : OK
 
 <details><summary>See feature image</summary>
 
@@ -923,6 +990,13 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 - Users  receive an email confirmation for their order.  
 - User stories covered: 23
 
+**Feature Test**: 
+1. Complete a test purchase on the site
+2. Verify that a confirmation email is sent to the provided email address.
+3. Check the email for the confirmation message and verify that it contains order details, a confirmation message, and a purchase summary.
+
+Result : OK
+
 <details><summary>See feature image</summary>
 
 ![Email Confirmation](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_email_confirmation.jpg)
@@ -931,13 +1005,24 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 
 ### Add Product
 - Allows user with admin priviledge to add new products.  
-- User stories covered: 24
+- User stories covered: 24 
+
+**Feature Test**: 
+1. Log in as a user with admin privileges.
+2. Access the "Add Product" feature.
+3. Verify that only admin users (red icon) have access to this feature
+
 
 <details><summary>See feature image</summary>
 
 ![Add Product](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_product_add.jpg)
 </details>  
 
+1. Log in as a user with admin privileges.
+2. go to the "shop" page.
+3. Click on edit on any product card
+4. Edit product page is loaded
+3. Verify that only admin users (red icon) have access to this feature
 
 ### Edit Product
 - Allows user with admin priviledge to edit the products.  
@@ -953,6 +1038,12 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 - Allows the user to delete products, includes confirmation prompt before deletion.  
 - User stories covered: 26
 
+1. Log in as a user with admin privileges.
+2. go to the "shop" page.
+3. Click on delete on any product card
+4. Item delete with alert
+3. Verify that only admin users (red icon) have access to this feature
+
 <details><summary>See feature image</summary>
 
 ![Delete Product](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_product_delete.jpg)
@@ -961,6 +1052,13 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 ### Profile
 - Allows the user to update their personal information and check their order history.  
 - User stories covered: 5
+
+**Feature Test**: 
+1. Log in as a registered user.
+2. Access the profile update page.
+3. Verify that only authenticated users have access to this page.
+
+Result : OK
 
 <details><summary>See feature image</summary>
 
@@ -971,15 +1069,24 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 - Allows the user with admin priviledges to add, edit or delete product from the shop 
 - User stories covered: 5, 9, 24, 25. 26
 
+Ttest covered in features, add product, edit product and delete product
+
 <details><summary>See feature image</summary>
 
 ![Admin](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_admin.jpg)
 </details>  
 
-### Blog
+### Blog list
 - The blog displays each post made by a authorised member
 - Paginations is used to display 2 posts per page  
 - User stories covered: 38
+
+**Feature Test**: 
+1. Access the blog section or the main page with the list of blog posts.
+2. Verify that the list displays blog post titles, publication dates, and brief summaries.
+3. Ensure that the list is visually appealing and easy to navigate.
+
+Result : OK
   
 <details><summary>See feature images</summary>
 
@@ -991,6 +1098,13 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 - Expands into the selected blog the user wishes to read
 - Comments need approval  
 - User stories covered: 38, 39
+
+**Feature Test**: 
+1. Click on a blog post in the list to access the detail view.
+2. Verify that the post's full content, including text, images, and media, is displayed accurately.
+3. verify that there is a section for leaving a comment
+
+Result : OK
   
 <details><summary>See feature images</summary>
 
@@ -1003,7 +1117,10 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 - Users can send a message via the message form
 - User stories covered: 37
 
-feature testing : 
+**Feature Test**: 
+1. Navigate to the "Contact" page.
+2. Verify that a section is available with fields for user information, subject, and message.(might have to log in) 
+3. Test the form by filling in information and sending a test message.
   
 <details><summary>See feature images</summary>
 
@@ -1012,10 +1129,15 @@ feature testing :
 
 
 ### Social Media Links
-- Facebook business page and Instagram page.
+- Facebook business page.
 - All links open in a new tab to ensure the user is not directed away from main site.
 - noopener, noreferrer, nofollow used to communicate with web crawlers and for security and privacy concerns.  
 - User stories covered: 7
+
+**Feature Test**: 
+1. Scroll to the footer section of the website.
+2. Verify that easily recognizable social media icons are present.
+3. Click on each icon to ensure that it redirects users to the respective social media profiles.
   
 <details><summary>See feature image</summary>
 
@@ -1025,6 +1147,13 @@ feature testing :
 ### Pagination
 - Pagination is used on the website 
 - Ensures the page is kept readable 
+
+**Feature Test**: 
+1. Go to a page with paginated content "Schools", "blog".
+2. Verify that pagination controls, including page numbers and navigation arrows, are available.
+3. Test the pagination controls by navigating through different pages and confirm that it functions as expected.
+
+Result : OK
   
 <details><summary>See feature images</summary>
 
