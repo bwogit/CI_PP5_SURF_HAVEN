@@ -8,7 +8,6 @@
 {% endblock %}
 
 {% block page_header %}
-    <title>School Detail</title>
 {% endblock %}
 
 {% block content %}
@@ -28,6 +27,12 @@
                   {% else %}
                   <img class="card-img-top mt-2 p-3 rounded" src="{% static 'img/noimage.jpg' %}" alt="Default Image">
                   {% endif %}
+                  <div class=" justify-content-center">
+                    <!-- <h3 class="text-success"> {{ school.school_name }} </h3> -->
+                    <ul class="list-unstyled">
+                        <li class="text-success"><h3>Location: {{ school.location }}</h3></li>
+                    </ul>
+                </div>
                 </div>
                 <div class="col-12 col-md-6 mt-2 p-3">
                   <p class="card-text">{{ school.description | safe}}</p>
@@ -40,6 +45,7 @@
                     </div>
                   </div>
                 </div>
+                
                   {% else %}
                   <!-- Display form if user is logged in -->
                   <div class="row text-center">
@@ -51,7 +57,7 @@
                     {% csrf_token %}
                     <!-- Booking form -->
                     {{ booking_form|crispy }}
-                    <button class="btn btn-success" type="submit">Book lesson time</button>
+                    <button class="btn btn-success" type="submit">Book lesson</button>
                   </form>
                 </div>
               
