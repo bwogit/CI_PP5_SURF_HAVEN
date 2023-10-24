@@ -578,16 +578,24 @@ The User model is a built-in Django feature and is used for authentication and h
 ### Search Engine Optimisation (SEO)
 I have used meta tags in the HTML of my web app's pages to optimize them for search engines. The description tag provides a brief summary of the content on the page, while the keywords tag lists relevant keywords to help search engines understand the content of the webpage and its relevance to related search queries.
 
-
+**Feature Test**: 
+1. Navigate to various pages on the website.
+2. Check the URL structure to ensure it is clear, concise, and includes relevant keywords.
+3. Confirm that URL slugs are generated dynamically based on page content.
 
 <details><summary>See feature image</summary>
 
 ![SEO](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_seo.jpg)
 </details>  
 
+
 ### Home page
 - Home page includes nav bar, main body and a footer.
 - User stories covered: 6, 7
+
+**Feature Test**: 
+1. Review the content on the home page to ensure it's informative and engaging.
+2. Confirm that keywords related to our surf school and services are strategically placed within the content.
 
 <details><summary>See feature images</summary>
 
@@ -599,6 +607,11 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 - displayed across all pages.  
 - User stories covered: 6, 7
 
+**Feature Test**: 
+1. scroll to bottom of any page and verify there is a footer section
+1. Inspect the footer of the website and ensure it includes accurate and up-to-date contact information, including a physical address and contact email.
+2. Verify that important links to pages like the privacy policy, are present and functional.
+
 <details><summary>See feature images</summary>
 
 ![Footer](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_footer.jpg)
@@ -608,6 +621,10 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 - Mailchimp integration.
 - User stories covered: 37  
 
+**Feature Test**: 
+1. Inspect the website to confirm the visibility and accessibility of the signup form.
+2. Ensure the form is easily accessible from all pages.
+
 <details><summary>See feature images</summary>
 
 ![Mailing](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_mailchimp.jpg)
@@ -616,6 +633,8 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 ### Logo
 - A custom logo for the business.
 - User stories covered: 6, 7
+
+
 
 <details><summary>See feature images</summary>
 
@@ -630,6 +649,13 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 - displayed on all pages.  
 - User stories covered: 6, 7
 
+**Feature Test**:
+1. Open the website on a desktop/laptop screen.
+2. Ensure that all navigation elements (e.g., menu items, logo) are displayed and fully functional.
+3. Resize the browser window to simulate a smaller screen size.
+4. Verify that the navigation adapts to the smaller screen and elements are still accessible.
+5. Confirm that links in the navigation work correctly.
+
 <details><summary>See feature images</summary>
 
 ![Navigation](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_navbar.jpg)
@@ -639,6 +665,14 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 - Users can register for an acoount.
 - User stories covered: 1  
 
+**Feature Test**:
+1. Navigate to the registration page.
+2. Fill in the registration form with valid user information (e.g., name, email, password).
+3. Submit the registration form.
+4. Verify that email has been sent.
+5. Confirm email address
+5. Check that the user's details are correctly stored in the database by login in
+
 <details><summary>See feature image</summary>
 
 ![Signup](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_sign_up.jpg)
@@ -647,13 +681,15 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 
 ### Sign In
 - User can sign in.
-- user knows their login status  
+- user knows their login status
+- choice of colour to show priviledges  
 - User stories covered: 2, 9
 
 <details><summary>See feature images</summary>
 
 ![Signin](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_sign_in.jpg)
 </details>
+
 
 ### Sign Out
 - Allows the user to securely sign out.
@@ -859,6 +895,15 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 ![Profile](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_profile.jpg)
 </details>  
 
+### Admin Section
+- Allows the user with admin priviledges to add, edit or delete product from the shop 
+- User stories covered: 5, 9, 24, 25. 26
+
+<details><summary>See feature image</summary>
+
+![Admin](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_admin.jpg)
+</details>  
+
 ### Blog
 - The blog displays each post made by a authorised member
 - Paginations is used to display 2 posts per page  
@@ -885,6 +930,8 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 - A contact page with all contact details listed
 - Users can send a message via the message form
 - User stories covered: 37
+
+feature testing : 
   
 <details><summary>See feature images</summary>
 
