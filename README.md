@@ -634,7 +634,8 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 - A custom logo for the business.
 - User stories covered: 6, 7
 
-
+**Feature Test**:
+1. Click on the logo on various pages and confirm that it correctly links to the homepage.
 
 <details><summary>See feature images</summary>
 
@@ -685,6 +686,11 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 - choice of colour to show priviledges  
 - User stories covered: 2, 9
 
+**Feature Test**: 
+1. Attempt to sign in with an incorrect password.
+2. Verify that the system properly handles invalid login attempts, providing informative error messages without revealing sensitive information.
+
+
 <details><summary>See feature images</summary>
 
 ![Signin](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_sign_in.jpg)
@@ -696,6 +702,11 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 - Ask user tp confirm their choice.  
 - User stories covered: 2
 
+**Feature Test**: 
+1. Sign in to a user account.
+2. Initiate the sign-out process by clicking the "Log Out" button.
+3. Verify that the system logs the user out securely, removing their session and ensuring that they are no longer authenticated.
+
 <details><summary>See feature image</summary>
 
 ![Sign out](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_sign_out.jpg)
@@ -704,6 +715,11 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 ### Password Reset
 - Allows password reset
 - User stories covered: 3
+
+**Feature Test**:
+1. Attempt to initiate the account recovery process by requesting a password reset.
+2. Verify that the system sends a password reset email with a secure token.
+3. Test the password reset link to ensure users can create a new password successfully.
   
 <details><summary>See feature images</summary>
 
@@ -714,6 +730,10 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 - Allows the user to view all listed surf schools.  
 - User stories covered: 12
 
+**Feature Test**: 
+1. Navigate to the "Surf Schools" page.
+2. Verify that all surf schools are listed with relevant information.
+
 <details><summary>See feature image</summary>
 
 ![SChools](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_sign_up.jpg)
@@ -722,6 +742,11 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 ### School Detail
 - Allows the user to view details of a specific School.  
 - User stories covered: 13
+
+**Feature Test**: 
+1. Navigate to the "Surf Schools" page.
+2. Verify that all surf schools are listed with relevant information.
+3. Check that the surf school details can be accesed on separate page.
 
 <details><summary>See feature image</summary>
 
@@ -734,6 +759,11 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 - ADta input validation  
 - User stories covered: 33
 
+**Feature Test**:
+1. as logged in user Navigate to the "school detail" page.
+2. Verify that the booking form is easy to use and includes clear labels for all input fields.
+3. Submit a test booking with valid information and confirm that it is successfully recorded.
+
 <details><summary>See feature images</summary>
 
 ![Book a Lesson](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_sign_up.jpg)
@@ -742,7 +772,13 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 ### Bookings 
 - Allows the user to see their bookings and status.
 - Booking status  
+- Status : Confirmed - Expired - Confirmed
 - User stories covered: 36
+
+**Feature Test**: 
+1. Log in as a user with existing bookings.
+2. Navigate to the "Lessons"
+3. Verify that the user can see their booked lessons and the status.
 
 <details><summary>See feature image</summary>
 
@@ -759,10 +795,22 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 ![Edit Booking](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_edit_bookings.jpg)
 </details>  
 
+**Feature Test**: 
+1. Log in as a user with existing bookings.
+2. Navigate to the "Lessons" page
+2. Select a booking and click "Edit"
+3. Verify that the edit form is easy to use and includes clear labels for all editable fields.
+4. Submit a test edit with valid information and confirm that the changes are saved correctly.
 
 ### Cancel Booking
 - Allows the user to cancel their bookings.  
 - User stories covered: 35
+
+**Feature Test**: 
+1. Log in as a user with existing bookings.
+2. Navigate to the "Lessons" page
+2. Select a booking and click "delete"
+3. Verify booking has been deleted
 
 <details><summary>See feature image</summary>
 
