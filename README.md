@@ -2253,11 +2253,12 @@ The following devices were used to test my site:
 
 | **Bug** | **Fix** |
 | ------- | ------- |
-| Users are not receiving confirmation emails after registration | seetings.py not configured properly. fixed |
-| Toast not working |  version of jQuery isuse - Fixed |
-| no email sent after successful checkout | wrong valiable used in webhook_handler.py - fixed |
-| search function not working | issue with logic in views.py - fix |
-| Default superuser "gitpod" has no profile | throws an error when invoqued - Not fixed other superuser have profile| 
+| Users are not receiving confirmation emails after registration | Settings.py not configured properly. fixed |
+| Toast not working |  Version of jQuery isuse - Fixed |
+| No email sent after successful checkout | Wrong valiable used in webhook_handler.py - fixed |
+| Search function not working | Issue with logic in views.py - fixed |
+| Default superuser "gitpod" has no profile | 404 error - Other superuser have profile - Ignored as "gitpod" for login and admin purposes | 
+| Default superuser "gitpod" cannot complete purchase | 500 error  - Other superuser can purchase - Ignored as "gitpod" for login and admin purposes| 
 
 ##### Back to [top](#table-of-contents)<hr>
 
