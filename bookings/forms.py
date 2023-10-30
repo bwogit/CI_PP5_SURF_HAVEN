@@ -18,7 +18,7 @@ class BookingForm(forms.ModelForm):
                                datetime.now().date()}))
 
     phone = PhoneNumberField(widget=forms.TextInput(attrs={'placeholder':
-                             ('+ and 12 digits')}))
+                             ('+353123456789')}))
 
     class Meta:
         model = Booking
