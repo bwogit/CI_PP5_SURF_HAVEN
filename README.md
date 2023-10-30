@@ -2258,8 +2258,8 @@ The following devices were used to test my site:
 | Toast not working |  Version of jQuery isuse - Fixed |
 | No email sent after successful checkout | Wrong valiable used in webhook_handler.py - fixed |
 | Search function not working | Issue with logic in views.py - fixed |
-| Default superuser "gitpod" has no profile | 404 error - Other superuser have profile - Ignored as "gitpod" for login and admin purposes | 
-| Default superuser "gitpod" cannot complete purchase | 500 error - duplicate code on booking_list.html, Fixed| 
+| Default superuser "gitpod" has no profile | 404 error - Other superuser have profile - Ignored as "gitpod" for login and admin purposes only | 
+| Default superuser "gitpod" cannot complete purchase | 500 error - Ignored as "gitpod" for login and admin purposes only| 
 
 ##### Back to [top](#table-of-contents)<hr>
 
