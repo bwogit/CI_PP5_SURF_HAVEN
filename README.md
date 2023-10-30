@@ -1634,7 +1634,7 @@ JSHint javaScript Validation tool was used to validate all javaScript files for 
 
 ## Accessibility  
 The [WAVE WebAIM web accessibility evaluation tool](https://wave.webaim.org/) was used to verify high accessibility standards.  
-- All pages returned 0 errors.  
+- All pages returned 0 errors and 0 warnings 
 
 <details><summary>404</summary>
 <img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/accessibility/accessibility_wave_add_product.jpg">
@@ -1904,7 +1904,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 
 | Feature | Action | Expected Result | Actual Result |
 | ------- | ------ | --------------- | ------------- |
-| Navigation | while logged out -->profile icon=gray, login-->Profile=green, log in as admin it turns red  | Once logged in the profile icon will be green or red | Works as expected  
+| Login Status | while logged out -->profile icon=gray, login-->Profile=green, log in as admin it turns red  | Once logged in the profile icon will be green or red | Works as expected  
 
 <details><summary>See Images</summary>
 <img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_9.jpg">
@@ -1955,8 +1955,8 @@ Performance, best practices and SEO was tested using Lighthouse.
 
 | Feature | Action | Expected Result | Actual Result |
 | ------- | ------ | --------------- | ------------- |
-| searchBAr | type surfboard |  Product list page where all product - surfboard are displayed | Works as expected  |
-| searchBAr | type supercalifra |  return "no item for yuor criteria" | Works as expected  |
+| SearchBar | type surfboard |  Product list page where all product - surfboard are displayed | Works as expected  |
+| SearchBar | type supercalifra |  return "no item for yuor criteria" | Works as expected  |
 
 <details><summary>See Images</summary>
 <img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_14.jpg">
@@ -1966,7 +1966,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 
 | Feature | Action | Expected Result | Actual Result |
 | ------- | ------ | --------------- | ------------- |
-| searchBAr | type surfboard |  Product list page where all product - surfboard are displayed | Works as expected  |
+| SearchBar | type surfboard |  Product list page where all product - surfboard are displayed | Works as expected  |
 
 <details><summary>See Images</summary>
 <img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/manual/user_story_15.jpg">
@@ -2257,6 +2257,7 @@ The following devices were used to test my site:
 | Toast not working |  version of jQuery isuse - Fixed |
 | no email sent after successful checkout | wrong valiable used in webhook_handler.py - fixed |
 | search function not working | issue with logic in views.py - fix |
+| Default superuser "gitpod" has no profile | throws an error when invoqued - Not fixed other superuser have profile| 
 
 ##### Back to [top](#table-of-contents)<hr>
 
@@ -2434,7 +2435,7 @@ To set up an AWS S3 bucket:
 - Add all variables used in your development environemnt
 - remove the var DISABLE_COLLECTSTATIC=1
 
-<details><summary>Shoe Document</summary>
+<details><summary>Show Document</summary>
 <img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/heroku/Heroku_deployment_8.jpg">
 <img src="https://raw.githubusercontent.com/bwogit/CI_PP4_caiman_cove/main/docs/deploy/Heroku_deployment_8.jpg">
 </details>
