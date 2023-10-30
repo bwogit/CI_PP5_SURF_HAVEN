@@ -745,7 +745,7 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 ![Recover Password](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_password_reset.jpg)
 </details>  
 
-### Schools
+### (Surf) Schools
 - Allows the user to view all listed surf schools.  
 - User stories covered: 12
 
@@ -882,7 +882,7 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 ![Shop](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_product_list.jpg)
 </details>  
 
-### product Detail
+### Product Detail
 - Allows the user to view the products details.  
 - User stories covered: 13
 
@@ -1160,8 +1160,8 @@ Ttest covered in features, add product, edit product and delete product
 </details>  
 
 ### Default Image
-- Ensures taht a default image is displayed it the image is not available of corrupted
-- Ensures the site is kept professional
+- Ensures that a default image is displayed if the image is not available of is corrupted
+- Ensures the site is kept professional looking
 
 **Feature Test**
 1. As an admin user go to "Add a product"
@@ -1331,7 +1331,7 @@ checkout.html [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fci-pp5-te
 
 <details><summary>signup.html</summary>
 
-![result](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/html/validation_html_register.jpg)
+![Sign Up](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/html/validation_html_register.jpg)
 </details>
 
 - No Errors Found
@@ -1340,7 +1340,7 @@ checkout.html [results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fci-pp5-te
 
 <details><summary>404.html</summary>
 
-404.html [profile](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/html/validation_html_404.jpg)
+404.html [404](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/html/validation_html_404.jpg)
 </details>
 
 - No Errors Found
@@ -1361,7 +1361,7 @@ The W3C Jigsaw CSS Validation tool was used to validate the CSS of the site.
 </details>  
 
 <details><summary>checkout.css</summary>
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/js/validation_js_country_fields.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/css/validation_css_checkout.jpg">
 </details><hr>
 
 
@@ -1375,7 +1375,7 @@ JSHint javaScript Validation tool was used to validate all javaScript files for 
 - no issue
 
 <details><summary>country_fields.js</summary>
-<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/css/validation_js_country_fields.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/js/validation_js_country_fields.jpg">
 </details>
 
 - No issues
@@ -2164,6 +2164,7 @@ Performance, best practices and SEO was tested using Lighthouse.
 ### Automated testing
 
 - Testing was done using the built in Django module, unittest.
+- Coverage was usesd to generate a report
 
 
 <details><summary> Basket, tests.py</summary>
@@ -2208,6 +2209,14 @@ Performance, best practices and SEO was tested using Lighthouse.
 
 <details><summary> profiles, test_views.py</summary>
 <img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/auto/profiles_test.jpg">
+</details>
+
+### Coverage
+- Coverage, a python test plugin was used to generate the following results and display percentage of code was covered by the unittest module.
+<details><summary> Coverage</summary>
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/auto/coverage_report_1.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/auto/coverage_report_2.jpg">
+<img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/testing/auto/coverage_report_3.jpg">
 </details>
 
 ### Device Testing & Browser compatibility
