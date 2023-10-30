@@ -62,8 +62,8 @@ Our aim is to reach surf enthusiasts worldwide and attract a diverse range of cu
 SurfHaven operates with a clear organizational structure to ensure the smooth and efficient delivery of our services. Our dedicated team comprises three key roles:
 
 - **Director**: The director oversees the strategic direction of SurfHaven, making sure we remain at the forefront of the surfing industry. They work tirelessly to identify opportunities for growth and development.
-- **Surf Instructor**: Our experienced surf instructor is passionate about teaching the art of surfing. They are committed to providing top-notch lessons tailored to the needs and skill levels of our customers. Safety, skill development, and a love for surfing are at the core of their teaching philosophy.
-- **Office Manager**: The office manager plays a crucial role in handling day-to-day administrative tasks. They ensure that SurfHaven operates efficiently, from scheduling lessons to managing equipment inventory.
+- **Surf Instructor**: Our experienced surf instructor(s) is dedicated to maintaining the high standards of our surf schools. They work diligently to ensure that our partner schools meet and exceed our quality requirements. Safety, adherence to standards, and fostering a love for surfing are central to their mission.
+- **Office Manager**: The office manager plays a crucial role in handling day-to-day administrative tasks. They ensure that SurfHaven operates efficiently, from scheduling meetings to managing equipment inventory.
 
 Our team is dedicated to providing the best possible surfing experience, combining expertise, passion, and organization to create a memorable journey for our customers.
 
@@ -73,7 +73,8 @@ A solid financial plan is the backbone of SurfHaven, ensuring the long-term succ
 - **Lesson Bookings through the platform**: Surf lessons are a core offering at SurfHaven. 
 Platform Sale: SurfHaven will generate revenue by selling access to its platform. Surf schools can purchase licenses to use the platform, which provides them with tools and features to enhance their operations and offer a better experience to their customers.
 
-    Subscription Model: An alternative revenue source is through a subscription-based model. Surf schools can subscribe to SurfHaven's services on a regular basis. This model may offer tiered subscription plans with varying features and support levels to cater to different school sizes and needs.
+Subscription Model: An alternative revenue source is through a subscription-based model. Surf schools can subscribe to SurfHaven's services on a regular basis. This model may offer tiered subscription plans with varying features and support levels to cater to different school sizes and needs.
+
 - **Equipment Sales**: In addition to lessons, SurfHaven offers a selection of top-quality surf equipment for purchase. This complements our service, providing customers with easy access to the gear they need to enjoy the waves to the fullest. We continually update our inventory to offer the latest and best surf equipment.
 
 We have established a detailed budget to support our business operations, allowing us to meet our financial goals while delivering a superior surfing experience to our customers.
