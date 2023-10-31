@@ -1485,6 +1485,7 @@ JSHint javaScript Validation tool was used to validate all javaScript files for 
 </details>
 
 <details><summary>models.py</summary>
+- country field was modified after this image was uploaded however there is no effect on pep8 result
 <img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/pep8/validation_pep8_checkout_models.jpg">
 </details>
 
@@ -1571,6 +1572,7 @@ JSHint javaScript Validation tool was used to validate all javaScript files for 
 </details>
 
 <details><summary>models.py</summary>
+- rating field was modified after this image was uploaded however there is no effect on pep8 result
 <img src="https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/validation/pep8/validation_pep8_products_models.jpg">
 </details>
 
@@ -2262,6 +2264,7 @@ The following devices were used to test my site:
 | Default superuser "gitpod" cannot complete purchase | 500 error - Ignored as "gitpod" for login and admin purposes only| 
 
 
+
 ##### Back to [top](#table-of-contents)<hr>
 
 ## Deployment  
@@ -2496,6 +2499,7 @@ You can clone the repository by following these steps:
 - github community for sharing their knowledge
 - githup repositories
 - Code Institute Slack channels
+
 
 
 ### Media
