@@ -2261,6 +2261,7 @@ The following devices were used to test my site:
 | Default superuser "gitpod" has no profile | 404 error - Other superuser have profile - Ignored as "gitpod" for login and admin purposes only | 
 | Default superuser "gitpod" cannot complete purchase | 500 error - Ignored as "gitpod" for login and admin purposes only| 
 
+
 ##### Back to [top](#table-of-contents)<hr>
 
 ## Deployment  
@@ -2491,7 +2492,7 @@ You can clone the repository by following these steps:
 ## Credits
 
 ### Code  
-- Code Institute for the bag, product, profiles and checkout app as a basis for my own product, checkout, profile product and basket apps
+- Code Institute for the bag, product, profiles and checkout app as a basis for my own product, checkout, profile and basket apps
 - github community for sharing their knowledge
 - githup repositories
 - Code Institute Slack channels
