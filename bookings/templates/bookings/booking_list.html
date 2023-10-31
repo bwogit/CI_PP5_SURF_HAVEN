@@ -47,6 +47,10 @@
             {% elif booking.status == 'Booking Expired' %}
               <p class="text-danger fw-bold">Booking Expired</p>
               <a class="btn btn-warning btn-sm" href="{% url 'cancel_booking' booking.pk %}" role="button">Cancel</a>
+            {% elif booking.status == 'Booking Rejected' %}
+              <p class="text-danger fw-bold">Booking Rejected</p>
+              <a class="btn btn-info btn-sm btn-block" href="{% url 'edit_booking' booking.pk %}" role="button">Edit</a>
+              <a class="btn btn-dark btn-sm btn-block" href="{% url 'cancel_booking' booking.pk %}" role="button">Cancel</a>  
             {% else %}
               <p class="text-danger fw-bold">Awaiting Confirmation</p>
               <a class="btn btn-info btn-sm btn-block" href="{% url 'edit_booking' booking.pk %}" role="button">Edit</a>
