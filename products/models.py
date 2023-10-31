@@ -19,12 +19,12 @@ class Category(models.Model):
 
 class Product(models.Model):
     code = models.CharField(
-        max_length=50,
+        max_length=55,
         null=True,
         blank=True
         )
     brand = models.CharField(
-        max_length=50,
+        max_length=55,
         null=True,
         blank=True
         )
@@ -45,8 +45,8 @@ class Product(models.Model):
         on_delete=models.SET_NULL
         )
     rating = models.DecimalField(
-        max_digits=6,
-        decimal_places=2,
+        max_digits=2,
+        decimal_places=1,
         null=True,
         blank=True
         )
