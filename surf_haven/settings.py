@@ -127,6 +127,7 @@ LOGIN_REDIRECT_URL = '/'
 
 WSGI_APPLICATION = 'surf_haven.wsgi.application'
 
+LOGOUT_REDIRECT_URL = '/'
 
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
