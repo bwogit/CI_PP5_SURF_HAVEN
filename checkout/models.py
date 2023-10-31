@@ -4,6 +4,7 @@ import uuid
 from django.conf import settings
 from django.db import models
 from django.db.models import Sum
+from django_countries.fields import CountryField
 from profiles.models import UserProfile
 from products.models import Product
 
@@ -12,7 +13,7 @@ class Order(models.Model):
     """
     A Django model representing an order placed by a customer.
     """
-    order_number = models.CharField(max_length=32,
+    order_number = models.CharField(max_length=35,
                                     null=False, editable=False, default='')
     user_profile = models.ForeignKey(
         UserProfile,
@@ -21,7 +22,7 @@ class Order(models.Model):
         blank=True,
         related_name='orders'
         )
-    full_name = models.CharField(max_length=50,
+    full_name = models.CharField(max_length=55,
                                  null=False, blank=False, default='')
     email = models.EmailField(max_length=254,
                               null=False, blank=False, default='')
@@ -29,16 +30,16 @@ class Order(models.Model):
                                     null=False, blank=False, default='')
     town_or_city = models.CharField(max_length=40,
                                     null=False, blank=False, default='')
-    address1 = models.CharField(max_length=80,
+    address1 = models.CharField(max_length=85,
                                 null=False, blank=False, default='')
-    address2 = models.CharField(max_length=80,
+    address2 = models.CharField(max_length=85,
                                 null=True, blank=True, default='')
     county = models.CharField(max_length=80,
                               null=True, blank=True, default='')
     postcode = models.CharField(max_length=20,
                                 null=True, blank=True, default='')
-    country = models.CharField(max_length=40,
-                               null=False, blank=False, default='')
+    country = CountryField(blank_label='Country *',
+                           null=False, blank=False,)
     date = models.DateTimeField(auto_now_add=True)
     delivery_cost = models.DecimalField(max_digits=6,
                                         decimal_places=2,
@@ -59,8 +60,8 @@ class Order(models.Model):
 
     def update_total(self):
         """
-        Update grand total each time a line item is added,
-        accounting for delivery costs.
+        Recalculate the grand total whenever a line item is added,
+        taking into account any associated delivery costs.
         """
         aggregate_result = self.lineitems.aggregate(Sum('lineitem_total'))
         self.order_total = aggregate_result['lineitem_total__sum'] or 0
