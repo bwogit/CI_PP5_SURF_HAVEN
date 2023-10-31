@@ -758,7 +758,7 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 
 <details><summary>See feature image</summary>
 
-![SChools](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_sign_up.jpg)
+![Schools](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_sign_up.jpg)
 </details>  
 
 ### School Detail
@@ -774,7 +774,7 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 
 <details><summary>See feature image</summary>
 
-![SChool Detail](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_sign_up.jpg)
+![School Detail](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_sign_up.jpg)
 </details>
 
 
@@ -795,10 +795,10 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 ![Book a Lesson](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_sign_up.jpg)
 </details>
 
-### Bookings 
+### Booking List
 - Allows the user to see their bookings and status.
 - Booking status  
-- Status : Confirmed - Expired - Confirmed
+- Status : Confirmed - Expired - Awaiting Confirmation - Rejected
 - User stories covered: 36
 
 **Feature Test**: 
@@ -810,7 +810,7 @@ I have used meta tags in the HTML of my web app's pages to optimize them for sea
 
 <details><summary>See feature image</summary>
 
-![Bookings](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_booking_information.jpg)
+![Bookings](https://raw.githubusercontent.com/bwogit/CI_PP5_surf_haven/main/docs/features/feature_smart_booking_list.jpg)
 </details>  
 
 
